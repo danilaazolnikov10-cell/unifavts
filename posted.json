@@ -129,7 +129,19 @@
   "970d37effad2",
   "9f003c8afdf8",
   "1ab5a4f8eaeb",
-  "babd907c94f6"
+  "babd907c94f6",
+  "649c15bc926b",
+  "2a956f245a64",
+  "49458b5c6fd3",
+  "310c15c1fbff",
+  "8d7d829ad3d7",
+  "ee2b86a516b9",
+  "4bc827fc8d05",
+  "da96ac8263de",
+  "12c2c27c0af6",
+  "aae678523c82",
+  "035e93e974a6",
+  "e0a1e5069ece"
  ],
  "last_kind": "admissions",
  "extra_universities": [],
@@ -333,17 +345,6 @@
    "tier": "reserve"
   },
   {
-   "id": "81785ae31f19",
-   "link": "https://www.highereddive.com/news/3-admissions-experts-on-why-they-require-or-nixed-supplemental-essays/832896/",
-   "outlet": "Higher Ed Dive",
-   "kind": "admissions",
-   "title": "3 admissions experts on why they require — or nixed — supplemental essays",
-   "date": "2026-10-13T17:53:00-04:00",
-   "rating": 7.3,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
    "id": "c0a1be7bb281",
    "link": "https://www.highereddive.com/news/penn-state-looks-to-cut-47-undergraduate-degrees/832908/",
    "outlet": "Higher Ed Dive",
@@ -356,7 +357,7 @@
   }
  ],
  "since_fact": 5,
- "next_post_at": "2026-10-14T12:46:46+00:00",
+ "next_post_at": "2026-10-14T12:43:37+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
