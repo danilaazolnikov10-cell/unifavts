@@ -40,7 +40,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 import zlib
 from email.utils import parsedate_to_datetime
-from html import unescape
+from html import escape as html_escape, unescape
 from html.entities import name2codepoint
 from html.parser import HTMLParser
 from pathlib import Path
@@ -119,8 +119,12 @@ FACT_PROMPT = """Ты ведёшь русскоязычный Telegram-кана�
 - Не пиши про рейтинги, стоимость обучения и шансы поступления.
 - 350-650 символов, живой русский язык, без воды, без хэштегов, без разметки (звёздочек и решёток).
 - В заголовке есть название вуза.
-- Оформление: первая строка - цепляющий заголовок. Дальше 3-4 коротких абзаца по 1-2 предложения, между абзацами пустая строка. Эмодзи в посте ровно {emoji_n} шт., все разные, по смыслу: ставь их там, где они уместны (в начале заголовка, в начале или конце абзаца), не обязательно в каждом абзаце. Если новость грустная (смерть, трагедия, скандал), используй не больше двух сдержанных эмодзи. Эмодзи-цифры не используй.
-- Выведи только текст поста, без вступлений.
+- Формат ответа: только JSON-объект, без пояснений и без markdown-разметки. Пример схемы:
+{{"title": "заголовок", "title_emoji": "🎓", "paragraphs": [{{"emoji": "📌", "text": "первый абзац"}}, {{"emoji": "🔎", "text": "второй абзац"}}], "sad": false}}
+- title: цепляющий заголовок без эмодзи. paragraphs: 3-4 коротких абзаца по 1-2 предложения, в тексте абзацев эмодзи нет.
+- title_emoji и emoji каждого абзаца: ровно один эмодзи, который по СМЫСЛУ подходит именно этому заголовку или абзацу (визы и документы 🛂, деньги и стипендии 💰, наука 🔬, рейтинг 🏆, дата или срок 📅, место 📍, студенты 🎓, правила и законы ⚖️, технологии 💻, здоровье и биология 🧬, космос 🚀, исследование 🔎, предупреждение ⚠️). Эмодзи не повторяются, эмодзи-цифры не используй.
+- sad: true, если новость про смерть, трагедию, насилие или преступление, иначе false.
+- Выведи только JSON, без вступлений.
 - Если в тексте нет подходящего факта, ответь одним словом: SKIP.
 
 Текст статьи:
@@ -136,8 +140,12 @@ NEWS_PROMPT = """Ты ведёшь русскоязычный Telegram-кана�
 - Числа, годы и названия бери в точности как в тексте. Не округляй, не считай, не выводи новые числа.
 - Пересказывай своими словами, не копируй предложения, прямые цитаты не используй.
 - 350-700 символов, живой русский язык, без хэштегов, без разметки (звёздочек и решёток).
-- Оформление: первая строка - цепляющий заголовок. Дальше 3-4 коротких абзаца по 1-2 предложения, между абзацами пустая строка. Эмодзи в посте ровно {emoji_n} шт., все разные, по смыслу: ставь их там, где они уместны (в начале заголовка, в начале или конце абзаца), не обязательно в каждом абзаце. Если новость грустная (смерть, трагедия, скандал), используй не больше двух сдержанных эмодзи. Эмодзи-цифры не используй.
-- Выведи только текст поста, без вступлений.
+- Формат ответа: только JSON-объект, без пояснений и без markdown-разметки. Пример схемы:
+{{"title": "заголовок", "title_emoji": "🎓", "paragraphs": [{{"emoji": "📌", "text": "первый абзац"}}, {{"emoji": "🔎", "text": "второй абзац"}}], "sad": false}}
+- title: цепляющий заголовок без эмодзи. paragraphs: 3-4 коротких абзаца по 1-2 предложения, в тексте абзацев эмодзи нет.
+- title_emoji и emoji каждого абзаца: ровно один эмодзи, который по СМЫСЛУ подходит именно этому заголовку или абзацу (визы и документы 🛂, деньги и стипендии 💰, наука 🔬, рейтинг 🏆, дата или срок 📅, место 📍, студенты 🎓, правила и законы ⚖️, технологии 💻, здоровье и биология 🧬, космос 🚀, исследование 🔎, предупреждение ⚠️). Эмодзи не повторяются, эмодзи-цифры не используй.
+- sad: true, если новость про смерть, трагедию, насилие или преступление, иначе false.
+- Выведи только JSON, без вступлений.
 - Если в тексте мало содержания или это реклама, ответь одним словом: SKIP.
 
 Текст новости:
@@ -284,28 +292,46 @@ def tg(method, fields, photo=None):
         raise RuntimeError(f"Telegram {method}: {raw!r}")
 
 
+def render(post, credit=""):
+    """Текст поста для Telegram (HTML со ссылкой-названием) и такой же простой текст для подсчёта длины."""
+    body, src = post["text"], post.get("source")
+    esc = lambda t: html_escape(t, quote=False)
+    html_t, plain = esc(body), body
+    if src:
+        label, url = src
+        html_t += f'\n\nИсточник: <a href="{html_escape(url, quote=True)}">{esc(label)}</a>'
+        plain += f"\n\nИсточник: {label}"
+    if credit:
+        html_t += "\n" + esc(credit)
+        plain += "\n" + credit
+    return html_t, plain
+
+
 def publish(post):
-    text, photo = post["text"], post.get("photo")
+    photo = post.get("photo")
+    html_t, plain = render(post)
     if DRY:
         print("----- DRY RUN -----")
-        print(text)
+        print(plain)
+        print("[ссылка]", post["source"][1] if post.get("source") else "нет")
         print("[фото]", (photo["credit"] or "карточка") if photo else "нет")
         print("-------------------")
         return
     chat = os.environ["TELEGRAM_CHAT_ID"]
     sent_photo = False
     if photo:
-        caption = text + ("\n" + photo["credit"] if photo["credit"] else "")
+        cap_html, cap_plain = render(post, photo["credit"])
         try:
-            if len(caption) <= 1024:  # лимит подписи к фото в Telegram
-                tg("sendPhoto", {"chat_id": chat, "caption": caption}, photo["bytes"])
+            if len(cap_plain) <= 1024:  # лимит подписи к фото в Telegram (считается без тегов)
+                tg("sendPhoto", {"chat_id": chat, "caption": cap_html, "parse_mode": "HTML"}, photo["bytes"])
                 return
-            tg("sendPhoto", {"chat_id": chat, **({"caption": photo["credit"]} if photo["credit"] else {})}, photo["bytes"])
+            tg("sendPhoto", {"chat_id": chat, **({"caption": html_escape(photo["credit"], quote=False)} if photo["credit"] else {}),
+                             **({"parse_mode": "HTML"} if photo["credit"] else {})}, photo["bytes"])
             sent_photo = True
         except RuntimeError as e:
             print("фото не отправилось, шлю только текст:", e)
     tg("sendMessage", {
-        "chat_id": chat, "text": text,
+        "chat_id": chat, "text": html_t, "parse_mode": "HTML",
         # картинка уже ушла: второе превью ссылки не нужно
         "link_preview_options": json.dumps({"is_disabled": sent_photo or not post["preview"]}),
     })
@@ -357,6 +383,37 @@ def known_numbers(text):
 
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\u2B50\u2B06\u2B07\u2934\u2935\u2B05\u2B1B\u2B1C\u2B55]")
 DEFAULT_EMOJI = {"fact": "🏛", "admissions": "🎓", "science": "🔬"}
+# один эмодзи целиком: флаг, символ с вариантом или составная последовательность
+EMOJI_SEQ = re.compile("(?:[\U0001F1E6-\U0001F1FF]{2}|[\U0001F300-\U0001FAFF\u2600-\u27BF\u2B50\u2B55\u2B05-\u2B07\u2934\u2935\u2B1B\u2B1C]"
+                       "[\ufe0f\U0001F3FB-\U0001F3FF]?(?:\u200d[\U0001F300-\U0001FAFF\u2600-\u27BF]\ufe0f?)*)")
+
+
+def spread_emoji(paras):
+    """Если модель собрала эмодзи в кучу (подряд или в конце поста), раскладывает их по началам абзацев:
+    заголовок, потом абзацы, равномерно. Если эмодзи уже стоят по тексту, ничего не трогает."""
+    seq = EMOJI_SEQ.pattern
+    per = [EMOJI_SEQ.findall(p) for p in paras]
+    total = sum(map(len, per))
+    adjacent = any(re.search(f"(?:{seq})\\s*(?:{seq})", p) for p in paras)
+    last_heavy = len(per[-1]) >= 2 and len(per[-1]) * 2 >= total
+    if total < 2 or not (adjacent or last_heavy):
+        return paras
+    emojis = [e for group in per for e in group]
+    clean = []
+    for p in paras:
+        p = EMOJI_SEQ.sub("", p)
+        p = re.sub(r"[ \t]{2,}", " ", re.sub(r"\s+([.,!?;:…])", r"\1", p)).strip()
+        clean.append(p)
+    n = len(clean)
+    k = min(len(emojis), n)
+    slots = [0] if k == 1 else sorted({round(i * (n - 1) / (k - 1)) for i in range(k)})
+    for slot, e in zip(slots, emojis):
+        clean[slot] = e + " " + clean[slot]
+    for i, e in enumerate(emojis[len(slots):]):  # лишние: после первого предложения абзаца
+        j = 1 + i % max(1, n - 1)
+        m = re.search(r"[.!?…]", clean[j])
+        clean[j] = clean[j][:m.end()] + " " + e + clean[j][m.end():] if m else clean[j] + " " + e
+    return clean
 
 
 def pretty(text, kind):
@@ -369,27 +426,70 @@ def pretty(text, kind):
         title, rest = paras[0], " ".join(paras[1:])
         sents = re.split(r"(?<=[.!?…])\s+(?=[A-ZА-ЯЁ0-9«\"(])", rest)
         paras = [title] + [" ".join(sents[i:i + 2]) for i in range(0, len(sents), 2) if sents[i:i + 2]]
+    paras = spread_emoji(paras)
     if not EMOJI.search(paras[0]):
         paras[0] = DEFAULT_EMOJI.get(kind, "📌") + " " + paras[0]
     return "\n\n".join(paras)
 
 
+def clean_text(t):
+    """Текст без эмодзи и разметки: эмодзи расставляет код."""
+    t = re.sub("[\ufe0f\u200d]", "", EMOJI_SEQ.sub("", str(t)))
+    return re.sub(r"[ \t]{2,}", " ", re.sub(r"[*#`]+", "", t)).strip()
+
+
+def compose(obj, kind, n):
+    """Собирает пост из JSON модели. Эмодзи подобраны моделью под каждый абзац, а код решает,
+    сколько их оставить (n) и куда: заголовок всегда, остальные на начала случайных абзацев."""
+    title = clean_text(obj["title"])
+    paras = [(clean_text(p["text"]), p.get("emoji")) for p in obj["paragraphs"] if isinstance(p, dict) and clean_text(p["text"])]
+    if not title or len(paras) < 2:
+        raise ValueError("нет заголовка или мало абзацев")
+
+    def valid(e):
+        e = str(e or "").strip()
+        return e if EMOJI_SEQ.fullmatch(e) else None
+
+    if obj.get("sad"):
+        n = min(n, 2)  # про печальное: смайликов поменьше
+    head = valid(obj.get("title_emoji")) or DEFAULT_EMOJI.get(kind, "📌")
+    used = {head}
+    free = []
+    for i, (_, e) in enumerate(paras):
+        e = valid(e)
+        if e and e not in used:
+            used.add(e)
+            free.append((i, e))
+    chosen = dict(sorted(random.sample(free, min(len(free), max(0, n - 1)))))
+    body = [(chosen[i] + " " if i in chosen else "") + t for i, (t, _) in enumerate(paras)]
+    return "\n\n".join([f"{head} {title}"] + body)
+
+
 def make_post(prompt_tpl, source_text, kind="fact", **fields):
     known = known_numbers(source_text)
-    emoji_n = random.choice([1, 2, 2, 3, 3, 4, 4, 5, 6])  # у разных постов разное число смайликов
-    prompt = prompt_tpl.format(text=source_text, emoji_n=emoji_n, **fields)
+    prompt = prompt_tpl.format(text=source_text, **fields)
     for attempt in range(3):
-        out = ask_llm(prompt).strip()
+        out = ask_llm(prompt, max_tokens=1000).strip()
         if out.upper().startswith("SKIP"):
             return None
-        bad = sorted(n for n in joined_numbers(out) if n not in known)
+        m = re.search(r"\{.*\}", out, re.S)
+        if m:
+            try:
+                n = random.choice([1, 2, 2, 3, 3, 4, 4, 5])  # у разных постов разное число смайликов
+                text = compose(json.loads(m.group(0), strict=False), kind, n)
+            except (ValueError, KeyError, TypeError, AttributeError) as e:
+                print(f"  ответ не по схеме: {e} (попытка {attempt + 1})")
+                continue
+        else:
+            text = pretty(out, kind)  # модель ответила обычным текстом
+        bad = sorted(n for n in joined_numbers(text) if n not in known)
         if bad:
             print(f"  отклонено, чисел нет в источнике: {bad} (попытка {attempt + 1})")
             continue
-        if not 200 <= len(out) <= 1800:
-            print(f"  отклонено, длина {len(out)}")
+        if not 200 <= len(text) <= 1800:
+            print(f"  отклонено, длина {len(text)}")
             continue
-        return pretty(out, kind)
+        return text
     return None
 
 
@@ -488,7 +588,7 @@ def build_fact_post(state):
                 photo = ai_image("fact", page["name"])
             if not photo and CARD_ON:
                 photo = make_card(post, "fact", "Википедия: " + page["name"])
-            return {"text": f"{post}\n\nИсточник: Википедия, {url}", "preview": False,
+            return {"text": post, "source": ("Википедия", url), "preview": False,
                     "photo": photo, "kind": "fact", "key": title}
     return None
 
@@ -1048,7 +1148,7 @@ def build_news_post(item):
         photo = ai_image(item["kind"], item["title"], text)
     if not photo and CARD_ON:  # своей картинки у источника нет или она не подошла
         photo = make_card(post, item["kind"], item["outlet"], item["title"] + " " + text)
-    return {"text": f"{post}\n\nИсточник: {item['outlet']}, {link}", "preview": True,
+    return {"text": post, "source": (item["outlet"], link), "preview": True,
             "photo": photo, "kind": item["kind"], "key": item["id"]}
 
 
