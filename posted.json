@@ -89,7 +89,47 @@
   "12d568f68ffd",
   "a5b204169f0f",
   "26bc3795066e",
-  "2cfeb9c44ba5"
+  "2cfeb9c44ba5",
+  "326b11a80070",
+  "bc087d739107",
+  "66dd734e4e68",
+  "70b49d5ea424",
+  "33cf9b1c873e",
+  "4f8a1b415874",
+  "ae5b323d1d30",
+  "9ec571d3b07e",
+  "26a7b2e97851",
+  "b7306a2c1a36",
+  "764ed92e367d",
+  "4d95f432162c",
+  "3a911e5d50f4",
+  "f5c19ddeab9f",
+  "4a6e2e0316d5",
+  "477245a53167",
+  "66eb35d524c0",
+  "81785ae31f19",
+  "c0a1be7bb281",
+  "f95cdff65aaa",
+  "9a2df9ebd58d",
+  "ef40d95db1a8",
+  "973e4df371b0",
+  "41da0fb47da3",
+  "6a00ffb3befe",
+  "85b514f1422c",
+  "5dc96407ff26",
+  "7fc21eddbfc4",
+  "f3d0f6b946e0",
+  "8bcf913a4fde",
+  "fcea7a4f647b",
+  "6576710b0aa3",
+  "089e26be9c88",
+  "7f57499589ea",
+  "7c431d9eeb01",
+  "6e9e05c3cbc6",
+  "970d37effad2",
+  "9f003c8afdf8",
+  "1ab5a4f8eaeb",
+  "babd907c94f6"
  ],
  "last_kind": "admissions",
  "extra_universities": [],
@@ -157,17 +197,6 @@
    "title": "How NYU Can Fix Its Free Speech Crisis",
    "date": "2026-10-14T07:00:00+00:00",
    "rating": 6.0,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
-   "id": "1ea2980cad81",
-   "link": "https://www.insidehighered.com/news/student-success/life-after-college/2026/10/14/expanding-college-success-low-income-students",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "Expanding College Success for Low-Income Students",
-   "date": "2026-10-14T07:00:00+00:00",
-   "rating": 7.5,
    "timely": 0,
    "tier": "reserve"
   },
@@ -302,8 +331,39 @@
    "rating": 5.1,
    "timely": 0,
    "tier": "reserve"
+  },
+  {
+   "id": "81785ae31f19",
+   "link": "https://www.highereddive.com/news/3-admissions-experts-on-why-they-require-or-nixed-supplemental-essays/832896/",
+   "outlet": "Higher Ed Dive",
+   "kind": "admissions",
+   "title": "3 admissions experts on why they require — or nixed — supplemental essays",
+   "date": "2026-10-13T17:53:00-04:00",
+   "rating": 7.3,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "c0a1be7bb281",
+   "link": "https://www.highereddive.com/news/penn-state-looks-to-cut-47-undergraduate-degrees/832908/",
+   "outlet": "Higher Ed Dive",
+   "kind": "admissions",
+   "title": "Penn State looks to cut 47 undergraduate degrees",
+   "date": "2026-10-13T17:51:00-04:00",
+   "rating": 6.9,
+   "timely": 0,
+   "tier": "reserve"
   }
  ],
- "since_fact": 4,
- "next_post_at": "2026-10-14T12:33:43+00:00"
+ "since_fact": 5,
+ "next_post_at": "2026-10-14T12:46:46+00:00",
+ "recent": [
+  {
+   "title": "Expanding College Success for Low-Income Students",
+   "outlet": "Inside Higher Ed"
+  }
+ ],
+ "last_outlets": [
+  "Inside Higher Ed"
+ ]
 }
