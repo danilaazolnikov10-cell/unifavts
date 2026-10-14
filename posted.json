@@ -155,9 +155,11 @@
   "6b38e26f43e2",
   "9fa80400b77f",
   "57b1a69ca2b1",
-  "e9a2948d0b3b"
+  "e9a2948d0b3b",
+  "9ba7d7e151fb",
+  "2ee3d2145eef"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [],
  "pool": [
   {
@@ -238,17 +240,6 @@
    "tier": "reserve"
   },
   {
-   "id": "8527bdbd39a5",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261008102713.htm",
-   "outlet": "ScienceDaily",
-   "kind": "science",
-   "title": "New injection makes fat cells self-destruct",
-   "date": "2026-10-11T11:08:28-04:00",
-   "rating": 6.0,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
    "id": "2bbcb6556ab2",
    "link": "https://www.sciencedaily.com/releases/2026/10/261008005254.htm",
    "outlet": "ScienceDaily",
@@ -282,8 +273,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-10-14T20:45:11+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-14T22:11:10+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -320,13 +311,17 @@
   {
    "title": "Can Colleges Achieve Viewpoint Diversity Without ‘Affirmative Action for Conservatives’?",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "New injection makes fat cells self-destruct",
+   "outlet": "ScienceDaily"
   }
  ],
  "last_outlets": [
-  "ScienceDaily",
   "Science News",
   "The PIE News",
   "Википедия",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "ScienceDaily"
  ]
 }
