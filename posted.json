@@ -152,9 +152,10 @@
   "550aa79730b3",
   "f6423fae8324",
   "6b38e26f43e2",
-  "9fa80400b77f"
+  "9fa80400b77f",
+  "57b1a69ca2b1"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [],
  "pool": [
   {
@@ -210,17 +211,6 @@
    "date": "2026-10-13T20:24:40-04:00",
    "rating": 5.1,
    "timely": 0,
-   "tier": "reserve"
-  },
-  {
-   "id": "05b1eda92201",
-   "link": "https://thepienews.com/iteca-warns-australian-policy-is-choking-international-education-and-skills-pipeline/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "ITECA warns Australian policy is “choking” international education and skills pipeline",
-   "date": "2026-10-13T10:49:03+00:00",
-   "rating": 6.5,
-   "timely": 1,
    "tier": "reserve"
   },
   {
@@ -301,8 +291,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 5,
- "next_post_at": "2026-10-14T17:40:41+00:00",
+ "since_fact": 6,
+ "next_post_at": "2026-10-14T18:16:19+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -331,13 +321,17 @@
   {
    "title": "Gene therapy and special goggles give some blind people limited sight",
    "outlet": "Science News"
+  },
+  {
+   "title": "ITECA warns Australian policy is “choking” international education and skills pipeline",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "ICEF Monitor",
   "The PIE News",
   "ScienceDaily",
-  "Science News"
+  "Science News",
+  "The PIE News"
  ]
 }
