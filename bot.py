@@ -16,7 +16,8 @@ Workflow запускает этот скрипт каждые 10 минут, н
      Слабые отбрасываются.
   4. Каждый FACT_EVERY-й пост, а также когда новостей нет, это факт о вузе по
      статье Википедии, с фото, если лицензия свободная.
-  5. Пост пишется по-русски ТОЛЬКО по тексту источника. Любое число, которого
+  5. К новости берётся картинка: из ленты, а если там нет, то og:image со страницы.
+     Пост пишется по-русски ТОЛЬКО по тексту источника. Любое число, которого
      нет в источнике, считается выдумкой и пост отклоняется. Внизу ссылка.
 Только стандартная библиотека Python.
 """
@@ -26,6 +27,7 @@ import json
 import os
 import random
 import re
+import struct
 import sys
 import time
 import urllib.error
@@ -33,6 +35,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
+from html import unescape
 from html.entities import name2codepoint
 from html.parser import HTMLParser
 from pathlib import Path
@@ -103,8 +106,9 @@ FACT_PROMPT = """Ты ведёшь русскоязычный Telegram-кана�
 - Используй только то, что прямо написано в тексте. Ничего не добавляй из своих знаний.
 - Числа, годы и имена бери в точности как в тексте. Не округляй, не считай, не выводи новые числа.
 - Не пиши про рейтинги, стоимость обучения и шансы поступления.
-- 400-700 символов, живой русский язык, без воды, максимум 1 эмодзи в начале, без хэштегов.
-- Первая строка - цепляющий заголовок с названием вуза, дальше 2-4 коротких абзаца.
+- 350-650 символов, живой русский язык, без воды, без хэштегов, без разметки (звёздочек и решёток).
+- В заголовке есть название вуза.
+- Оформление: первая строка - цепляющий заголовок, в начале него эмодзи по теме. Дальше 3-4 коротких абзаца по 1-2 предложения, между абзацами пустая строка. Всего 3-5 эмодзи по смыслу (в заголовке и в начале или конце абзацев), не больше одного на абзац, эмодзи-цифры не используй.
 - Выведи только текст поста, без вступлений.
 - Если в тексте нет подходящего факта, ответь одним словом: SKIP.
 
@@ -120,8 +124,9 @@ NEWS_PROMPT = """Ты ведёшь русскоязычный Telegram-кана�
 - Только факты из текста. Не добавляй ничего от себя, не делай прогнозов и выводов, которых в тексте нет.
 - Числа, годы и названия бери в точности как в тексте. Не округляй, не считай, не выводи новые числа.
 - Пересказывай своими словами, не копируй предложения, прямые цитаты не используй.
-- 400-800 символов, живой русский язык, максимум 1 эмодзи в начале, без хэштегов.
-- Первая строка - заголовок, дальше 2-4 коротких абзаца. Выведи только текст поста, без вступлений.
+- 350-700 символов, живой русский язык, без хэштегов, без разметки (звёздочек и решёток).
+- Оформление: первая строка - цепляющий заголовок, в начале него эмодзи по теме. Дальше 3-4 коротких абзаца по 1-2 предложения, между абзацами пустая строка. Всего 3-5 эмодзи по смыслу (в заголовке и в начале или конце абзацев), не больше одного на абзац, эмодзи-цифры не используй.
+- Выведи только текст поста, без вступлений.
 - Если в тексте мало содержания или это реклама, ответь одним словом: SKIP.
 
 Текст новости:
@@ -252,9 +257,10 @@ def tg(method, fields, photo=None):
             f'--{boundary}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode()
             for k, v in fields.items()
         ]
+        ext, ctype = ("png", "image/png") if photo[:4] == b"\x89PNG" else ("jpg", "image/jpeg")
         parts.append(
-            f'--{boundary}\r\nContent-Disposition: form-data; name="photo"; filename="photo.jpg"\r\n'
-            f'Content-Type: image/jpeg\r\n\r\n'.encode() + photo + b"\r\n")
+            f'--{boundary}\r\nContent-Disposition: form-data; name="photo"; filename="photo.{ext}"\r\n'
+            f'Content-Type: {ctype}\r\n\r\n'.encode() + photo + b"\r\n")
         parts.append(f"--{boundary}--\r\n".encode())
         data, headers = b"".join(parts), {"Content-Type": f"multipart/form-data; boundary={boundary}"}
     else:
@@ -276,6 +282,7 @@ def publish(post):
         print("-------------------")
         return
     chat = os.environ["TELEGRAM_CHAT_ID"]
+    sent_photo = False
     if photo:
         caption = text + "\n" + photo["credit"]
         try:
@@ -283,11 +290,13 @@ def publish(post):
                 tg("sendPhoto", {"chat_id": chat, "caption": caption}, photo["bytes"])
                 return
             tg("sendPhoto", {"chat_id": chat, "caption": photo["credit"]}, photo["bytes"])
+            sent_photo = True
         except RuntimeError as e:
             print("фото не отправилось, шлю только текст:", e)
     tg("sendMessage", {
         "chat_id": chat, "text": text,
-        "link_preview_options": json.dumps({"is_disabled": not post["preview"]}),
+        # картинка уже ушла: второе превью ссылки не нужно
+        "link_preview_options": json.dumps({"is_disabled": sent_photo or not post["preview"]}),
     })
 
 
@@ -335,7 +344,26 @@ def known_numbers(text):
     return set(re.findall(r"\d+", text)) | joined_numbers(text)
 
 
-def make_post(prompt_tpl, source_text, **fields):
+EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\u2B50\u2B06\u2B07\u2934\u2935\u2B05\u2B1B\u2B1C\u2B55]")
+DEFAULT_EMOJI = {"fact": "🏛", "admissions": "🎓", "science": "🔬"}
+
+
+def pretty(text, kind):
+    """Оформление: без разметки, абзацы через пустую строку, эмодзи в заголовке."""
+    t = re.sub(r"[*#`]+", "", text).strip()
+    paras = [p.strip() for p in re.split(r"\n+", t) if p.strip()]
+    if not paras:
+        return text
+    if len(paras) < 3:  # модель выдала сплошной текст: режем по предложениям, по два в абзац
+        title, rest = paras[0], " ".join(paras[1:])
+        sents = re.split(r"(?<=[.!?…])\s+(?=[A-ZА-ЯЁ0-9«\"(])", rest)
+        paras = [title] + [" ".join(sents[i:i + 2]) for i in range(0, len(sents), 2) if sents[i:i + 2]]
+    if not EMOJI.search(paras[0]):
+        paras[0] = DEFAULT_EMOJI.get(kind, "📌") + " " + paras[0]
+    return "\n\n".join(paras)
+
+
+def make_post(prompt_tpl, source_text, kind="fact", **fields):
     known = known_numbers(source_text)
     prompt = prompt_tpl.format(text=source_text, **fields)
     for attempt in range(3):
@@ -349,7 +377,7 @@ def make_post(prompt_tpl, source_text, **fields):
         if not 200 <= len(out) <= 1800:
             print(f"  отклонено, длина {len(out)}")
             continue
-        return out
+        return pretty(out, kind)
     return None
 
 
@@ -438,7 +466,7 @@ def build_fact_post(state):
         if len(page["text"]) < 1500:
             state["posted"].append(title)  # статья слишком короткая, больше не пробуем
             continue
-        post = make_post(FACT_PROMPT, page["text"][:MAX_CHARS], name=page["name"])
+        post = make_post(FACT_PROMPT, page["text"][:MAX_CHARS], kind="fact", name=page["name"])
         if post:
             url = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(page["name"].replace(" ", "_"))
             return {"text": f"{post}\n\nИсточник: Википедия, {url}", "preview": False,
@@ -458,6 +486,81 @@ def _fix_entities(xml):
     return re.sub(r"&(?!(?:amp|lt|gt|quot|apos);)([A-Za-z][A-Za-z0-9]*);", sub, xml)
 
 
+MEDIA = "{http://search.yahoo.com/mrss/}"
+IMG_BAD = re.compile(r"(?i)logo|icon|avatar|sprite|pixel|tracking|placeholder|badge|favicon|\.svg|\.gif|\.webp|1x1")
+NEWS_PHOTOS = _env("NEWS_PHOTOS", "1") != "0"  # NEWS_PHOTOS=0 выключает картинки у новостей
+
+
+def feed_image(it, body):
+    """Адрес картинки из элемента ленты: media:content, media:thumbnail, enclosure, первый <img>."""
+    for tag in ("content", "thumbnail"):
+        for el in it.iter(MEDIA + tag):
+            url, typ = el.get("url"), el.get("type", "")
+            if url and (tag == "thumbnail" or el.get("medium") == "image" or typ.startswith("image")
+                        or re.search(r"\.(jpe?g|png)(\?|$)", url, re.I)):
+                return url
+    for el in it.iter("enclosure"):
+        if el.get("url") and el.get("type", "").startswith("image"):
+            return el.get("url")
+    for m in re.finditer(r"""<img\b[^>]*?\bsrc=["']([^"']+)""", body, re.I):
+        if not IMG_BAD.search(m.group(1)):
+            return m.group(1)
+    return None
+
+
+def page_image(page_html):
+    """og:image или twitter:image со страницы статьи."""
+    for tag in re.findall(r"<meta\b[^>]*>", page_html[:200000], re.I):
+        if re.search(r"""(?:property|name)=["'](?:og:image(?::url)?|twitter:image)["']""", tag, re.I):
+            m = re.search(r"""content=["']([^"']+)""", tag, re.I)
+            if m:
+                return m.group(1)
+    return None
+
+
+def image_size(b):
+    """Ширина и высота JPEG или PNG по заголовку, без сторонних библиотек."""
+    if b[:8] == b"\x89PNG\r\n\x1a\n" and len(b) > 24:
+        return struct.unpack(">II", b[16:24])
+    if b[:2] == b"\xff\xd8":
+        i = 2
+        while i + 9 < len(b):
+            if b[i] != 0xFF:
+                i += 1
+                continue
+            m = b[i + 1]
+            if m == 0xFF:
+                i += 1
+            elif m in (0x01, 0xD8) or 0xD0 <= m <= 0xD7:
+                i += 2
+            elif 0xC0 <= m <= 0xCF and m not in (0xC4, 0xC8, 0xCC):
+                h, w = struct.unpack(">HH", b[i + 5:i + 9])
+                return w, h
+            else:
+                i += 2 + struct.unpack(">H", b[i + 2:i + 4])[0]
+    return None
+
+
+def fetch_image(url, base):
+    """Скачивает картинку и проверяет, что это не логотип, не баннер и Telegram её примет."""
+    url = urllib.parse.urljoin(base, unescape(url).strip())
+    if not url.startswith("http") or IMG_BAD.search(url.split("?")[0]):
+        return None
+    try:
+        data = http_get(url, headers={"Referer": base, "Accept": "image/jpeg,image/png,*/*;q=0.5"})
+    except Exception as e:
+        print("  картинка не скачалась:", e)
+        return None
+    size = image_size(data)
+    if not size:
+        return None
+    w, h = size
+    if w < 500 or h < 250 or len(data) < 15000 or len(data) > 8_000_000 or max(w, h) > 3 * min(w, h) or w + h > 10000:
+        print(f"  картинка не подошла: {w}x{h}, {len(data) // 1000} КБ")
+        return None
+    return data
+
+
 def read_feed(feed):
     root = ET.fromstring(_fix_entities(http_get(feed["url"]).decode("utf-8", errors="replace")))
     items = []
@@ -468,11 +571,12 @@ def read_feed(feed):
             date = utcnow()
         if date.tzinfo is None:
             date = date.replace(tzinfo=dt.timezone.utc)
+        body = it.findtext(CONTENT_NS) or it.findtext("description") or ""
         items.append({
             "outlet": feed["name"], "kind": feed["category"],
             "title": (it.findtext("title") or "").strip(),
             "link": (it.findtext("link") or "").strip(),
-            "body": it.findtext(CONTENT_NS) or it.findtext("description") or "",
+            "body": body, "image": feed_image(it, body),
             "date": date,
         })
     return items
@@ -515,6 +619,7 @@ def tier_of(r, timely):
 
 
 BODIES = {}  # link -> текст из ленты, только в этом запуске
+IMAGES = {}  # link -> адрес картинки из ленты, только в этом запуске
 
 
 def refresh_pool(state, now):
@@ -543,6 +648,7 @@ def refresh_pool(state, now):
             if not it["link"]:
                 continue
             BODIES[it["link"]] = it["body"]
+            IMAGES[it["link"]] = it.get("image")
             if item_id(it["link"]) in known or it["date"] < cutoff or n >= PER_FEED_LIMIT:
                 continue
             fresh.append(it)
@@ -571,23 +677,41 @@ def refresh_pool(state, now):
 
 def build_news_post(item):
     print(f"новость [{item['tier']}] {item['rating']}: {item['title'][:70]}")
-    text = html_to_text(BODIES.get(item["link"], ""))
+    link = item["link"]
+    text = html_to_text(BODIES.get(link, ""))
+    page_html = None
+
+    def page():
+        nonlocal page_html
+        if page_html is None:
+            try:
+                page_html = http_get(link).decode("utf-8", errors="replace")
+            except Exception as e:
+                print("  страница не открылась:", e)
+                page_html = ""
+        return page_html
+
     if len(text) < 1500:  # в ленте только анонс: пробуем взять страницу целиком
-        try:
-            page = html_to_text(http_get(item["link"]).decode("utf-8", errors="replace"))
-            if len(page) > len(text):
-                text = page
-        except Exception as e:
-            print("  страница не открылась:", e)
+        full = html_to_text(page())
+        if len(full) > len(text):
+            text = full
     text = text[:MAX_CHARS]
     if len(text) < 400:
         print("  мало текста, пропускаю")
         return None
-    post = make_post(NEWS_PROMPT, text, name=item["title"], outlet=item["outlet"])
+    post = make_post(NEWS_PROMPT, text, kind=item["kind"], name=item["title"], outlet=item["outlet"])
     if not post:
         return None
-    return {"text": f"{post}\n\nИсточник: {item['outlet']}, {item['link']}", "preview": True,
-            "photo": None, "kind": item["kind"], "key": item["id"]}
+    photo = None
+    if NEWS_PHOTOS:  # сначала картинка из ленты, потом og:image со страницы
+        for get_url in (lambda: IMAGES.get(link), lambda: page_image(page())):
+            url = get_url()
+            data = fetch_image(url, link) if url else None
+            if data:
+                photo = {"bytes": data, "credit": f"Фото: {item['outlet']}"}
+                break
+    return {"text": f"{post}\n\nИсточник: {item['outlet']}, {link}", "preview": True,
+            "photo": photo, "kind": item["kind"], "key": item["id"]}
 
 
 # ---------- выбор поста ----------
