@@ -145,9 +145,11 @@
   "035e93e974a6",
   "e0a1e5069ece",
   "a81aeed3bf8e",
-  "cce52075b310"
+  "cce52075b310",
+  "72cdad5fc9db",
+  "7dc49c377a95"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [],
  "pool": [
   {
@@ -169,17 +171,6 @@
    "title": "Can Colleges Achieve Viewpoint Diversity Without ‘Affirmative Action for Conservatives’?",
    "date": "2026-10-14T07:00:00+00:00",
    "rating": 6.0,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
-   "id": "a4e09dfb03d2",
-   "link": "https://www.insidehighered.com/news/students/free-speech/2026/10/14/survey-most-college-students-say-free-speech-threatened",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "Survey: Majority of College Students Say Free Speech Threatened",
-   "date": "2026-10-14T07:00:00+00:00",
-   "rating": 7.0,
    "timely": 0,
    "tier": "reserve"
   },
@@ -349,8 +340,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 0,
- "next_post_at": "2026-10-14T13:57:08+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-14T14:40:18+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -359,11 +350,16 @@
   {
    "title": "Ireland’s international education challenge is access, not demand",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Survey: Majority of College Students Say Free Speech Threatened",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Inside Higher Ed",
   "The PIE News",
-  "Википедия"
+  "Википедия",
+  "Inside Higher Ed"
  ]
 }
