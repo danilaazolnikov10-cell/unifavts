@@ -150,7 +150,8 @@
   "7dc49c377a95",
   "074cd7534aa7",
   "550aa79730b3",
-  "f6423fae8324"
+  "f6423fae8324",
+  "6b38e26f43e2"
  ],
  "last_kind": "admissions",
  "extra_universities": [],
@@ -244,17 +245,6 @@
    "tier": "reserve"
   },
   {
-   "id": "0c1f9da5dd82",
-   "link": "https://thepienews.com/trusted-framework-and-consistent-visa-process-should-enhance-irelands-position/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "TrustEd framework and consistent visa process should enhance Ireland’s position",
-   "date": "2026-10-12T11:40:37+00:00",
-   "rating": 6.6,
-   "timely": 1,
-   "tier": "reserve"
-  },
-  {
    "id": "0bcb97fa7bc5",
    "link": "https://www.sciencedaily.com/releases/2026/10/261008102714.htm",
    "outlet": "ScienceDaily",
@@ -321,17 +311,6 @@
    "tier": "reserve"
   },
   {
-   "id": "c0a1be7bb281",
-   "link": "https://www.highereddive.com/news/penn-state-looks-to-cut-47-undergraduate-degrees/832908/",
-   "outlet": "Higher Ed Dive",
-   "kind": "admissions",
-   "title": "Penn State looks to cut 47 undergraduate degrees",
-   "date": "2026-10-13T17:51:00-04:00",
-   "rating": 6.9,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
    "id": "550aa79730b3",
    "link": "https://www.nasa.gov/centers-and-facilities/langley/nasa-develops-batteries-to-power-humanitys-return-to-moon/",
    "outlet": "NASA",
@@ -343,8 +322,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 2,
- "next_post_at": "2026-10-14T15:37:57+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-10-14T16:22:31+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -361,13 +340,17 @@
   {
    "title": "Administrative clarity in TNE: Making the student journey easier to navigate",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "TrustEd framework and consistent visa process should enhance Ireland’s position",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "The PIE News",
   "Википедия",
   "Inside Higher Ed",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "The PIE News"
  ]
 }
