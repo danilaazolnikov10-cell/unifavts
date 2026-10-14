@@ -92,7 +92,7 @@ ERROR_BACKOFF_MINUTES = 30  # если запуск упал
 
 # Рейтинг
 TOP_MIN = float(_env("TOP_MIN", 7.0))
-RESERVE_MIN = float(_env("RESERVE_MIN", 5.0))
+RESERVE_MIN = float(_env("RESERVE_MIN", 6.0))   # ниже: выбрасываем, средние новости не публикуем
 TOP_MAX_AGE_DAYS = 3        # срочная новость старше этого уходит в запас
 RESERVE_MAX_AGE_DAYS = 30   # запас старше этого забывается
 FEED_MAX_AGE_DAYS = 7
@@ -100,6 +100,8 @@ PER_FEED_LIMIT = 15
 SCORE_BATCH = 10
 SCORE_MAX_PER_RUN = 40
 SAME_KIND_PENALTY = 0.7     # небольшой штраф, если тип такой же, как у прошлого поста
+OUTLET_PENALTY = 1.0        # штраф, если издание то же, что у прошлого поста (половина, если у позапрошлого)
+RECENT_KEEP = 150           # сколько заголовков опубликованных новостей помним для поиска дублей
 FACT_EVERY = int(_env("FACT_EVERY", 6))
 MAX_ATTEMPTS = 3            # сколько кандидатов пробуем превратить в пост за запуск
 REFILL_BELOW = 10
@@ -1018,6 +1020,60 @@ def item_id(link):
     return hashlib.sha1(link.encode()).hexdigest()[:12]
 
 
+STOP = set("this that with from have will into over after about their what when which while more than also been were your says said "
+           "university universities college colleges students student higher education school schools international global world study studies".split())
+
+
+# Страны и известные вузы: если в заголовках названы РАЗНЫЕ, это разные новости ("UK visa fees rise" и "Canada visa fees rise").
+ENTITIES = set(("australia canada china india japan korea uk us britain ireland scotland germany france netherlands sweden denmark norway "
+                "finland spain italy russia ukraine singapore malaysia indonesia thailand vietnam turkey uae dubai qatar saudi pakistan "
+                "bangladesh nigeria ghana kenya africa brazil mexico argentina chile zealand europe asia texas california hong kong "
+                "harvard oxford cambridge mit stanford yale princeton columbia caltech berkeley ucl imperial eth toronto mcgill "
+                "melbourne sydney tsinghua peking nus cornell duke brown penn dartmouth").split())
+SYNONYMS = [(r"\bu\.s\.a?\b|\busa\b|\bunited states\b|\bamerican?\b", "us"),
+            (r"\bu\.k\.|\bunited kingdom\b|\bbritish\b|\bengland\b|\bbritain\b", "uk"),
+            (r"\bnew zealand\b", "zealand"), (r"\bchinese\b", "china"), (r"\bindian\b", "india"),
+            (r"\baustralian\b", "australia"), (r"\bcanadian\b", "canada"), (r"\bjapanese\b", "japan")]
+
+
+def entities(title):
+    t = title.lower()
+    for pat, rep_ in SYNONYMS:
+        t = re.sub(pat, rep_, t)
+    return {w for w in re.findall(r"[a-z]+", t) if w in ENTITIES}
+
+
+def stems(title):
+    """Значимые слова заголовка, обрезанные до 6 букв: так 'tightens' и 'tightened' совпадают."""
+    return {w[:6] for w in re.findall(r"[a-zа-яё]{4,}", title.lower()) if w not in STOP}
+
+
+def similar(a, b):
+    """Один и тот же сюжет у разных изданий: у заголовков сильно пересекаются значимые слова."""
+    A, B = stems(a), stems(b)
+    if not A or not B:
+        return False
+    EA, EB = entities(a), entities(b)
+    if EA and EB and not (EA & EB):  # названы разные страны или вузы
+        return False
+    inter, small = len(A & B), min(len(A), len(B))
+    return (inter >= 3 and inter / small >= 0.6) or (inter >= 4 and inter / small >= 0.45)
+
+
+def dedupe_fresh(fresh, state):
+    """Убирает из новых статей те, что повторяют уже опубликованное, лежащее в очереди, или друг друга
+    (из нескольких версий одного сюжета берётся самая подробная). Это экономит и запросы к ИИ."""
+    have = [r["title"] for r in state["recent"]] + [p["title"] for p in state["pool"]]
+    kept = []
+    for it in sorted(fresh, key=lambda i: -len(BODIES.get(i["link"], ""))):
+        if any(similar(it["title"], t) for t in have) or any(similar(it["title"], k["title"]) for k in kept):
+            state["seen"].append(item_id(it["link"]))
+            print(f"  дубль, пропускаю: {it['title'][:70]}")
+            continue
+        kept.append(it)
+    return sorted(kept, key=lambda i: i["date"], reverse=True)
+
+
 def _clamp(x):
     return max(0.0, min(10.0, float(x)))
 
@@ -1036,6 +1092,28 @@ def score_batch(batch):
     except Exception as e:
         print("  оценка не удалась:", e)
         return None
+
+
+BOOST_RE = {  # то, что абитуриенту особенно нужно: чуть повышаем пользу
+    "admissions": re.compile(r"(?i)scholarship|olympiad|\bsat\b|admission|financial aid|tuition|international student|\bvisa\b|"
+                             r"acceptance rate|early decision|common app|summer program|fellowship|application deadline"),
+    "science": re.compile(r"(?i)breakthrough|first time|first-ever|nobel|record|discover|new study finds|cure|solves"),
+}
+DEMOTE_RE = re.compile(r"(?i)^\W*(opinion|column|op-ed|editorial|podcast|webinar|sponsored|partner content|the download)\b|"
+                       r"\b(football|basketball|athletic director|head coach)\b")
+
+
+def adjust(s, title, kind):
+    """Модель оценивает по заголовку и паре предложений и ошибается. Добавляем простые правила:
+    полезные ключевые слова чуть повышают пользу, мнения, подкасты и спорт понижают."""
+    s = dict(s)
+    b = BOOST_RE.get(kind)
+    if b and b.search(title):
+        s["relevant"] = min(10.0, s["relevant"] + 1.0)
+    if DEMOTE_RE.search(title):
+        s["important"] = max(0.0, s["important"] - 2.5)
+        s["relevant"] = max(0.0, s["relevant"] - 1.5)
+    return s
 
 
 def rating(s):
@@ -1086,7 +1164,7 @@ def refresh_pool(state, now):
             fresh.append(it)
             n += 1
     fresh.sort(key=lambda i: i["date"], reverse=True)
-    fresh = fresh[:SCORE_MAX_PER_RUN]
+    fresh = dedupe_fresh(fresh, state)[:SCORE_MAX_PER_RUN]
     print(f"новых новостей: {len(fresh)}, в очереди: {len(state['pool'])}")
 
     # 3. оценка пачками
@@ -1096,6 +1174,7 @@ def refresh_pool(state, now):
         if not scores:
             continue  # вернёмся к этим новостям в следующий раз
         for it, s in zip(batch, scores):
+            s = adjust(s, it["title"], it["kind"])
             r = rating(s)
             tier = tier_of(r, s["timely"])
             state["seen"].append(item_id(it["link"]))
@@ -1149,18 +1228,31 @@ def build_news_post(item):
     if not photo and CARD_ON:  # своей картинки у источника нет или она не подошла
         photo = make_card(post, item["kind"], item["outlet"], item["title"] + " " + text)
     return {"text": post, "source": (item["outlet"], link), "preview": True,
-            "photo": photo, "kind": item["kind"], "key": item["id"]}
+            "photo": photo, "kind": item["kind"], "key": item["id"],
+            "title": item["title"], "outlet": item["outlet"]}
 
 
 # ---------- выбор поста ----------
 
+def outlet_penalty(state, outlet):
+    last = state["last_outlets"]
+    return (OUTLET_PENALTY if last and last[-1] == outlet else 0) + \
+           (OUTLET_PENALTY / 2 if len(last) > 1 and last[-2] == outlet else 0)
+
+
 def pick_post(state, now):
-    def eff(p):  # срочные: рейтинг минус возраст, чуть реже повторяем тип прошлого поста
+    # очередь могла получить сюжет, который только что вышел у другого издания: убираем такие
+    recent = [r["title"] for r in state["recent"]]
+    state["pool"] = [p for p in state["pool"] if not any(similar(p["title"], t) for t in recent)]
+
+    def eff(p):  # срочные: рейтинг минус возраст, штрафы за тот же тип и то же издание подряд
         age = (now - dt.datetime.fromisoformat(p["date"])).total_seconds() / 86400
-        return p["rating"] - 0.5 * age - (SAME_KIND_PENALTY if p["kind"] == state["last_kind"] else 0)
+        return p["rating"] - 0.5 * age - (SAME_KIND_PENALTY if p["kind"] == state["last_kind"] else 0) \
+            - outlet_penalty(state, p["outlet"])
 
     top = sorted((p for p in state["pool"] if p["tier"] == "top"), key=eff, reverse=True)
-    reserve = sorted((p for p in state["pool"] if p["tier"] == "reserve"), key=lambda p: p["rating"], reverse=True)
+    reserve = sorted((p for p in state["pool"] if p["tier"] == "reserve"),
+                     key=lambda p: p["rating"] - outlet_penalty(state, p["outlet"]), reverse=True)
     order = []
     if state["since_fact"] >= FACT_EVERY:
         order.append(None)  # None = факт о вузе
@@ -1191,9 +1283,14 @@ def apply_post(state, post):
     if post["kind"] == "fact":
         state["posted"].append(post["key"])
         state["since_fact"] = 0
+        state["last_outlets"].append("Википедия")
     else:
         state["pool"] = [p for p in state["pool"] if p["id"] != post["key"]]
         state["since_fact"] += 1
+        state["recent"].append({"title": post["title"], "outlet": post["outlet"]})
+        state["last_outlets"].append(post["outlet"])
+    state["recent"] = state["recent"][-RECENT_KEEP:]
+    state["last_outlets"] = state["last_outlets"][-5:]
     state["last_kind"] = post["kind"]
 
 
@@ -1202,7 +1299,8 @@ def apply_post(state, post):
 def load_state():
     s = json.loads(STATE_FILE.read_text(encoding="utf-8")) if STATE_FILE.exists() else {}
     for k, v in {"posted": [], "extra_universities": [], "seen": [], "pool": [],
-                 "since_fact": 0, "last_kind": None, "next_post_at": None}.items():
+                 "since_fact": 0, "last_kind": None, "next_post_at": None,
+                 "recent": [], "last_outlets": []}.items():
         s.setdefault(k, v)
     return s
 
