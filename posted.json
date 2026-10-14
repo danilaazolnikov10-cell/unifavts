@@ -1,5 +1,7 @@
 {
- "posted": [],
+ "posted": [
+  "University of Copenhagen"
+ ],
  "seen": [
   "741cd072e273",
   "15aa39fc584b",
@@ -142,9 +144,10 @@
   "aae678523c82",
   "035e93e974a6",
   "e0a1e5069ece",
-  "a81aeed3bf8e"
+  "a81aeed3bf8e",
+  "cce52075b310"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [],
  "pool": [
   {
@@ -346,8 +349,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 6,
- "next_post_at": "2026-10-14T13:11:20+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-14T13:57:08+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -360,6 +363,7 @@
  ],
  "last_outlets": [
   "Inside Higher Ed",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ]
 }
