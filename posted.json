@@ -84,7 +84,12 @@
   "05bbc81dcefc",
   "0a256c82bde6",
   "5069bf02ccd0",
-  "387bebe3df64"
+  "387bebe3df64",
+  "a51bd1d28253",
+  "12d568f68ffd",
+  "a5b204169f0f",
+  "26bc3795066e",
+  "2cfeb9c44ba5"
  ],
  "last_kind": "admissions",
  "extra_universities": [],
@@ -277,17 +282,6 @@
    "tier": "reserve"
   },
   {
-   "id": "e64576d28ebe",
-   "link": "https://monitor.icef.com/2026/10/us-climate-of-uncertainty-continues-for-international-students-amid-legal-action-on-internships-and-a-proposed-70000-opt-fee/",
-   "outlet": "ICEF Monitor",
-   "kind": "admissions",
-   "title": "US: Climate of uncertainty continues for international students amid legal action on internships and a proposed $70,000 OPT fee",
-   "date": "2026-10-07T23:08:20+00:00",
-   "rating": 8.4,
-   "timely": 1,
-   "tier": "reserve"
-  },
-  {
    "id": "c6b4af0ce398",
    "link": "https://www.sciencenews.org/article/cells-detect-light-blind-vision",
    "outlet": "Science News",
@@ -297,8 +291,19 @@
    "rating": 6.1,
    "timely": 0,
    "tier": "reserve"
+  },
+  {
+   "id": "2cfeb9c44ba5",
+   "link": "https://www.sciencedaily.com/releases/2026/10/261005071515.htm",
+   "outlet": "ScienceDaily",
+   "kind": "science",
+   "title": "Drug target could block brain inflammation linked to Alzheimer’s and Parkinson’s",
+   "date": "2026-10-07T08:13:35-04:00",
+   "rating": 5.1,
+   "timely": 0,
+   "tier": "reserve"
   }
  ],
- "since_fact": 3,
- "next_post_at": "2026-10-14T12:22:11+00:00"
+ "since_fact": 4,
+ "next_post_at": "2026-10-14T12:33:43+00:00"
 }
