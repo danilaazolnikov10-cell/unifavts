@@ -147,7 +147,10 @@
   "a81aeed3bf8e",
   "cce52075b310",
   "72cdad5fc9db",
-  "7dc49c377a95"
+  "7dc49c377a95",
+  "074cd7534aa7",
+  "550aa79730b3",
+  "f6423fae8324"
  ],
  "last_kind": "admissions",
  "extra_universities": [],
@@ -296,17 +299,6 @@
    "tier": "reserve"
   },
   {
-   "id": "3365f8c1dac0",
-   "link": "https://monitor.icef.com/2026/10/administrative-clarity-in-tne-making-the-student-journey-easier-to-navigate/",
-   "outlet": "ICEF Monitor",
-   "kind": "admissions",
-   "title": "Administrative clarity in TNE: Making the student journey easier to navigate",
-   "date": "2026-10-08T12:45:11+00:00",
-   "rating": 6.9,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
    "id": "c6b4af0ce398",
    "link": "https://www.sciencenews.org/article/cells-detect-light-blind-vision",
    "outlet": "Science News",
@@ -338,10 +330,21 @@
    "rating": 6.9,
    "timely": 0,
    "tier": "reserve"
+  },
+  {
+   "id": "550aa79730b3",
+   "link": "https://www.nasa.gov/centers-and-facilities/langley/nasa-develops-batteries-to-power-humanitys-return-to-moon/",
+   "outlet": "NASA",
+   "kind": "science",
+   "title": "NASA Develops Batteries to Power Humanity’s Return to Moon",
+   "date": "2026-10-14T14:41:21+00:00",
+   "rating": 6.0,
+   "timely": 1,
+   "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-10-14T14:40:18+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-14T15:37:57+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -354,12 +357,17 @@
   {
    "title": "Survey: Majority of College Students Say Free Speech Threatened",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Administrative clarity in TNE: Making the student journey easier to navigate",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
   "Inside Higher Ed",
   "The PIE News",
   "Википедия",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "ICEF Monitor"
  ]
 }
