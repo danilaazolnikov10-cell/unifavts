@@ -1,18 +1,27 @@
 #!/usr/bin/env python3
-"""Ежедневный пост в Telegram-канал про вузы, поступление и науку.
+"""Автоканал про вузы, поступление и науку.
 
-Каждый день бот собирает кандидатов:
-  fact       - вуз из списка, факт по статье Википедии (с фото, если лицензия свободная)
-  admissions - новости про поступление и международное образование (RSS)
-  science    - научные новости (RSS)
-ИИ-модель (Claude или бесплатная, см. LLM_API_KEY) оценивает кандидатов по шкале 1-10 (насколько зацепит школьника, который
-хочет учиться за рубежом), берёт лучшего и пишет по-русски пересказ ТОЛЬКО по
-тексту источника (англоязычный источник переводится и пересказывается).
-Любое число в посте, которого нет в источнике, считается выдумкой: пост
-отклоняется. В конце всегда ссылка на оригинал.
+Workflow запускает этот скрипт каждые 10 минут, но публикует он только когда
+подошло время (next_post_at в posted.json). Днём пост примерно раз в 30 минут,
+ночью примерно раз в 90, с разбросом. Время следующего поста каждый раз
+выбирается случайно.
+
+Когда пора публиковать:
+  1. Бот читает ВСЕ ленты из sources.json и находит новые новости.
+  2. Дешёвая модель ставит каждой три оценки: важность, польза абитуриенту и
+     срочность. Из них считается рейтинг 0-10.
+  3. Срочные и важные (рейтинг >= TOP_MIN) идут в очередь top и публикуются
+     первыми, лучшие вперёд. Общие, но важные и средние (рейтинг >= RESERVE_MIN)
+     откладываются в запас reserve и выходят, только когда хороших новостей нет.
+     Слабые отбрасываются.
+  4. Каждый FACT_EVERY-й пост, а также когда новостей нет, это факт о вузе по
+     статье Википедии, с фото, если лицензия свободная.
+  5. Пост пишется по-русски ТОЛЬКО по тексту источника. Любое число, которого
+     нет в источнике, считается выдумкой и пост отклоняется. Внизу ссылка.
 Только стандартная библиотека Python.
 """
 import datetime as dt
+import hashlib
 import json
 import os
 import random
@@ -24,6 +33,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
+from html.entities import name2codepoint
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -31,20 +41,54 @@ ROOT = Path(__file__).parent
 STATE_FILE = ROOT / "posted.json"
 SOURCES = json.loads((ROOT / "sources.json").read_text(encoding="utf-8"))
 
-# Бесплатный вариант: любой OpenAI-совместимый API. По умолчанию Groq.
-# Пустые значения из GitHub (секрет не задан) считаются незаданными.
+
+def _env(name, default):
+    """Пустые значения из GitHub (переменная не задана) считаются незаданными."""
+    return os.environ.get(name) or default
+
+
+# ---------- настройки ----------
+
+# ИИ. Бесплатный вариант: любой OpenAI-совместимый API, по умолчанию Groq.
 LLM_KEY = (os.environ.get("LLM_API_KEY") or "").strip()
-LLM_URL = (os.environ.get("LLM_BASE_URL") or "https://api.groq.com/openai/v1").rstrip("/")
-LLM_PAUSE = float(os.environ.get("LLM_PAUSE") or 20)
-MODEL = os.environ.get("LLM_MODEL") or (
-    "llama-3.3-70b-versatile" if LLM_KEY else os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5"))
+LLM_URL = _env("LLM_BASE_URL", "https://api.groq.com/openai/v1").rstrip("/")
+LLM_PAUSE = float(_env("LLM_PAUSE", 20))  # пауза между запросами: лимит токенов в минуту
+MODEL = _env("LLM_MODEL", "" if LLM_KEY else _env("CLAUDE_MODEL", "claude-haiku-5-5"))
+RANK_MODEL = _env("LLM_RANK_MODEL", MODEL)
+# Если модель не задана, бот спрашивает у Groq список доступных и берёт первую из этих.
+PREFER_MAIN = ["openai/gpt-oss-120b", "llama-3.3-70b-versatile", "openai/gpt-oss-20b", "llama-3.1-8b-instant"]
+PREFER_RANK = ["llama-3.1-8b-instant", "openai/gpt-oss-20b", "openai/gpt-oss-120b", "llama-3.3-70b-versatile"]
+NOT_TEXT_MODELS = ("whisper", "orpheus", "guard", "tts", "safeguard", "embed")
+
 DRY = os.environ.get("DRY_RUN") == "1"
+FORCE = DRY or _env("FORCE", "").lower() in ("1", "true")  # ручной запуск: публиковать сразу
 UA = "Mozilla/5.0 (compatible; unifacts-bot/1.0)"
-MAX_CHARS = 7000 if LLM_KEY else 15000  # у бесплатных API мал лимит токенов в минуту
+MAX_CHARS = 5000 if LLM_KEY else 15000  # у бесплатных API мал лимит токенов в минуту
 CONTENT_NS = "{http://purl.org/rss/1.0/modules/content/}encoded"
-FACT_CANDIDATES = 3     # сколько вузов участвует в ежедневном отборе
-TRIES = 3               # сколько лучших кандидатов пробуем превратить в пост
-SAME_KIND_PENALTY = 1.5 # штраф, если тип поста такой же, как вчера
+
+# Расписание (Маврикий = UTC+4). Всё можно менять переменными репозитория на GitHub.
+DAY_MINUTES = float(_env("DAY_MINUTES", 30))
+NIGHT_MINUTES = float(_env("NIGHT_MINUTES", 90))
+JITTER = float(_env("JITTER", 0.25))          # разброс: 0.25 = плюс-минус 25%
+NIGHT_START = int(_env("NIGHT_START", 23))    # ночь с 23:00 до 07:00 по местному времени
+NIGHT_END = int(_env("NIGHT_END", 7))
+TZ = dt.timezone(dt.timedelta(hours=float(_env("TZ_OFFSET", 4))))
+RETRY_MINUTES = 15          # если публиковать нечего
+ERROR_BACKOFF_MINUTES = 30  # если запуск упал
+
+# Рейтинг
+TOP_MIN = float(_env("TOP_MIN", 7.0))
+RESERVE_MIN = float(_env("RESERVE_MIN", 5.0))
+TOP_MAX_AGE_DAYS = 3        # срочная новость старше этого уходит в запас
+RESERVE_MAX_AGE_DAYS = 30   # запас старше этого забывается
+FEED_MAX_AGE_DAYS = 7
+PER_FEED_LIMIT = 15
+SCORE_BATCH = 10
+SCORE_MAX_PER_RUN = 40
+SAME_KIND_PENALTY = 0.7     # небольшой штраф, если тип такой же, как у прошлого поста
+FACT_EVERY = int(_env("FACT_EVERY", 6))
+MAX_ATTEMPTS = 3            # сколько кандидатов пробуем превратить в пост за запуск
+REFILL_BELOW = 10
 
 TRANSLATE = ("Источник на английском: пиши пост по-русски (это перевод и пересказ). "
              "Названия вузов и программ при первом упоминании давай по-русски, "
@@ -78,19 +122,47 @@ NEWS_PROMPT = """Ты ведёшь русскоязычный Telegram-кана�
 - Пересказывай своими словами, не копируй предложения, прямые цитаты не используй.
 - 400-800 символов, живой русский язык, максимум 1 эмодзи в начале, без хэштегов.
 - Первая строка - заголовок, дальше 2-4 коротких абзаца. Выведи только текст поста, без вступлений.
-- Если новость не будет интересна школьнику, который планирует учиться за рубежом (локальные скандалы, внутренняя политика вуза, узкие административные темы), или в тексте мало содержания, ответь одним словом: SKIP.
+- Если в тексте мало содержания или это реклама, ответь одним словом: SKIP.
 
 Текст новости:
 {text}"""
 
-RANK_PROMPT = """Ты редактор Telegram-канала для школьников 14-18 лет, которые хотят поступать в зарубежные вузы (олимпиады, SAT, летние школы, стипендии, наука).
-Ниже кандидаты для сегодняшнего поста. Оцени каждого по шкале от 1 до 10: насколько он зацепит такую аудиторию, удивит или принесёт пользу.
-Высоко: неожиданные факты, заметные научные открытия, реальные изменения правил поступления, виз, стипендий.
-Низко: локальные скандалы, реклама, узкие административные новости, банальности.
-Для типа fact оценивай, насколько вуз знаменит и интересен абитуриентам.
-Ответь только JSON-массивом чисел в том же порядке, без пояснений. Пример для трёх кандидатов: [7, 3, 9]
+SCORE_PROMPT = """Ты редактор Telegram-канала для школьников 14-18 лет, которые хотят поступать в зарубежные вузы (олимпиады, SAT, летние школы, стипендии, наука).
+Оцени каждую новость по трём признакам:
+important - насколько новость значима, от 0 до 10. 9-10: крупные изменения правил поступления, виз, стипендий, крупные научные открытия, события мирового уровня. 5-8: заметные новости. 0-4: мелочи, локальные истории, реклама, внутренние дела одного вуза.
+relevant - насколько новость полезна или интересна абитуриенту, который хочет учиться за рубежом, от 0 до 10.
+timely - 1, если новость привязана ко времени и устареет за несколько дней. 0, если это общая тема, которая останется актуальной (обзор, тренд, объяснение).
+Ответь только JSON-массивом объектов, по одному на каждую новость, в том же порядке. Пример для двух новостей: [{"important": 8, "relevant": 9, "timely": 1}, {"important": 5, "relevant": 4, "timely": 0}]
 
+Новости:
 {items}"""
+
+REFILL_PROMPT = """Назови {n} разных университетов мира, известных абитуриентам (разные страны и континенты, не только США и Великобритания).
+Для каждого дай точное название статьи в английской Википедии.
+Не повторяй эти: {known}
+Ответь только JSON-массивом строк, без пояснений."""
+
+
+# ---------- время ----------
+
+def utcnow():
+    return dt.datetime.now(dt.timezone.utc)
+
+
+def iso(t):
+    return t.isoformat(timespec="seconds")
+
+
+def is_night(now):
+    h = now.astimezone(TZ).hour
+    if NIGHT_START > NIGHT_END:  # ночь через полночь: 23-7
+        return h >= NIGHT_START or h < NIGHT_END
+    return NIGHT_START <= h < NIGHT_END
+
+
+def next_delay(now):
+    base = NIGHT_MINUTES if is_night(now) else DAY_MINUTES
+    return dt.timedelta(minutes=base * random.uniform(1 - JITTER, 1 + JITTER))
 
 
 # ---------- сеть ----------
@@ -101,6 +173,24 @@ def http_get(url, data=None, headers=None):
         return r.read()
 
 
+def init_models():
+    """Если модель не задана вручную, берём первую доступную этому ключу."""
+    global MODEL, RANK_MODEL
+    if not LLM_KEY or (MODEL and os.environ.get("LLM_MODEL")):
+        return
+    try:
+        data = json.loads(http_get(f"{LLM_URL}/models", headers={"Authorization": f"Bearer {LLM_KEY}"}))
+        avail = {m["id"] for m in data["data"]}
+    except Exception as e:
+        print("список моделей не получен:", e)
+        avail = set()
+    usable = sorted(m for m in avail if not any(x in m for x in NOT_TEXT_MODELS))
+    pick = lambda prefs: next((m for m in prefs if m in avail), usable[0] if usable else None)
+    MODEL = MODEL if os.environ.get("LLM_MODEL") else (pick(PREFER_MAIN) or "llama-3.3-70b-versatile")
+    RANK_MODEL = os.environ.get("LLM_RANK_MODEL") or pick(PREFER_RANK) or MODEL
+    print(f"модели: основная {MODEL}, для оценок {RANK_MODEL}")
+
+
 def _retry_after(e, attempt):
     try:
         return min(float(e.headers.get("retry-after")), 90)
@@ -108,18 +198,28 @@ def _retry_after(e, attempt):
         return 20 * (attempt + 1)
 
 
-def ask_llm(prompt, max_tokens=800):
+_last_llm = 0.0
+
+
+def ask_llm(prompt, max_tokens=800, model=None):
     """Один запрос к модели. Если задан LLM_API_KEY, идёт в OpenAI-совместимый API
-    (Groq, Gemini и т.п., есть бесплатные тарифы), иначе в Claude по ANTHROPIC_API_KEY."""
+    (Groq, Gemini и т.п.), иначе в Claude по ANTHROPIC_API_KEY."""
+    global _last_llm
+    model = model or MODEL
     if LLM_KEY:
-        time.sleep(LLM_PAUSE)  # бесплатные тарифы ограничивают токены в минуту
-        url = f"{LLM_URL}/chat/completions"
-        body = {"model": MODEL, "max_tokens": max_tokens, "temperature": 0.4,
+        wait = LLM_PAUSE - (time.time() - _last_llm)  # бесплатные тарифы ограничивают токены в минуту
+        if wait > 0:
+            time.sleep(wait)
+        body = {"model": model, "max_tokens": max_tokens, "temperature": 0.4,
                 "messages": [{"role": "user", "content": prompt}]}
+        if "gpt-oss" in model:  # рассуждающая модель: меньше рассуждений, больше места для ответа
+            body["reasoning_effort"] = "low"
+            body["max_tokens"] = max_tokens + 1000
+        url = f"{LLM_URL}/chat/completions"
         headers = {"Authorization": f"Bearer {LLM_KEY}", "content-type": "application/json"}
     else:
         url = "https://api.anthropic.com/v1/messages"
-        body = {"model": MODEL, "max_tokens": max_tokens,
+        body = {"model": model, "max_tokens": max_tokens,
                 "messages": [{"role": "user", "content": prompt}]}
         headers = {"x-api-key": os.environ["ANTHROPIC_API_KEY"],
                    "anthropic-version": "2023-06-01", "content-type": "application/json"}
@@ -127,15 +227,17 @@ def ask_llm(prompt, max_tokens=800):
     for attempt in range(5):
         try:
             raw = http_get(url, data, headers)
+            _last_llm = time.time()
             break
         except urllib.error.HTTPError as e:
+            _last_llm = time.time()
             detail = e.read().decode(errors="replace")
             if e.code in (429, 500, 502, 503) and attempt < 4:
                 wait = _retry_after(e, attempt)
                 print(f"  ИИ вернул {e.code}, жду {wait:.0f} с и повторяю")
                 time.sleep(wait)
                 continue
-            sys.exit(f"ИИ-API: {e.code} {detail}")
+            sys.exit(f"ИИ-API ({model}): {e.code} {detail}")
     out = json.loads(raw)
     if LLM_KEY:
         return (out["choices"][0]["message"].get("content") or "").strip()
@@ -292,21 +394,12 @@ def wiki_photo(page):
         return None
 
 
-REFILL_BELOW = 10   # когда непоказанных вузов меньше, бот сам придумывает новые
-
-
-REFILL_PROMPT = """Назови {n} разных университетов мира, известных абитуриентам (разные страны и континенты, не только США и Великобритания).
-Для каждого дай точное название статьи в английской Википедии.
-Не повторяй эти: {known}
-Ответь только JSON-массивом строк, без пояснений."""
-
-
 def all_universities(state):
     return SOURCES["universities"] + [u for u in state["extra_universities"] if u not in SOURCES["universities"]]
 
 
 def refill_universities(state):
-    """Пополняет список вузов: Claude предлагает названия, бот оставляет только те,
+    """Пополняет список вузов: модель предлагает названия, бот оставляет только те,
     что реально нашлись в Википедии и достаточно длинные. Работает без участия человека."""
     known = all_universities(state)
     try:
@@ -329,37 +422,50 @@ def refill_universities(state):
     print(f"в список вузов добавлено: {added}")
 
 
-def fact_candidates(state):
-    if len([u for u in all_universities(state) if u not in state["posted"]]) < REFILL_BELOW:
-        refill_universities(state)
+def build_fact_post(state):
     left = [u for u in all_universities(state) if u not in state["posted"]]
-    if not left:
-        print("Список вузов закончился, пополнить не удалось")
+    if len(left) < REFILL_BELOW:
+        refill_universities(state)
+        left = [u for u in all_universities(state) if u not in state["posted"]]
     random.shuffle(left)
-    out = []
-    for title in left[:FACT_CANDIDATES]:
+    for title in left[:3]:
+        print("факт:", title)
         try:
             page = wiki_page(title)
         except Exception as e:
             print("  Википедия недоступна:", e)
             continue
         if len(page["text"]) < 1500:
+            state["posted"].append(title)  # статья слишком короткая, больше не пробуем
             continue
-        out.append({"kind": "fact", "title": page["name"], "snippet": "факты по статье Википедии",
-                    "page": page, "key": title})
-    return out
+        post = make_post(FACT_PROMPT, page["text"][:MAX_CHARS], name=page["name"])
+        if post:
+            url = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(page["name"].replace(" ", "_"))
+            return {"text": f"{post}\n\nИсточник: Википедия, {url}", "preview": False,
+                    "photo": wiki_photo(page), "kind": "fact", "key": title}
+    return None
 
 
 # ---------- новости (RSS) ----------
 
+def _fix_entities(xml):
+    """В лентах бывают HTML-сущности вроде &nbsp;, которых нет в XML: заменяем на числовые."""
+    xml = re.sub(r"^\s*<\?xml[^>]*\?>", "", xml)
+
+    def sub(m):
+        cp = name2codepoint.get(m.group(1))
+        return f"&#{cp};" if cp else ""
+    return re.sub(r"&(?!(?:amp|lt|gt|quot|apos);)([A-Za-z][A-Za-z0-9]*);", sub, xml)
+
+
 def read_feed(feed):
-    root = ET.fromstring(http_get(feed["url"]))
+    root = ET.fromstring(_fix_entities(http_get(feed["url"]).decode("utf-8", errors="replace")))
     items = []
     for it in root.iter("item"):
         try:
             date = parsedate_to_datetime(it.findtext("pubDate"))
         except Exception:
-            date = dt.datetime.now(dt.timezone.utc)
+            date = utcnow()
         if date.tzinfo is None:
             date = date.replace(tzinfo=dt.timezone.utc)
         items.append({
@@ -372,61 +478,103 @@ def read_feed(feed):
     return items
 
 
-def news_candidates(state, category):
-    cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=7)
-    out = []
+def item_id(link):
+    return hashlib.sha1(link.encode()).hexdigest()[:12]
+
+
+def _clamp(x):
+    return max(0.0, min(10.0, float(x)))
+
+
+def score_batch(batch):
+    """Оценки важности, пользы и срочности для пачки новостей. None, если не получилось."""
+    lines = [f"{i}. [{b['outlet']}] {b['title']}. {html_to_text(b['body'])[:350]}"
+             for i, b in enumerate(batch, 1)]
+    try:
+        out = ask_llm(SCORE_PROMPT.replace("{items}", "\n".join(lines)),
+                      max_tokens=60 * len(batch) + 100, model=RANK_MODEL)
+        arr = json.loads(re.search(r"\[.*\]", out, re.S).group(0))
+        res = [{"important": _clamp(o["important"]), "relevant": _clamp(o["relevant"]),
+                "timely": 1 if int(o.get("timely", 1)) else 0} for o in arr]
+        return res if len(res) == len(batch) else None
+    except Exception as e:
+        print("  оценка не удалась:", e)
+        return None
+
+
+def rating(s):
+    return round(0.55 * s["important"] + 0.45 * s["relevant"], 1)
+
+
+def tier_of(r, timely):
+    if r >= TOP_MIN:
+        return "top" if timely else "reserve"  # важная, но общая: в запас
+    if r >= RESERVE_MIN:
+        return "reserve"
+    return "drop"
+
+
+BODIES = {}  # link -> текст из ленты, только в этом запуске
+
+
+def refresh_pool(state, now):
+    # 1. старение очереди
+    keep = []
+    for p in state["pool"]:
+        age = (now - dt.datetime.fromisoformat(p["date"])).days
+        if p["tier"] == "top" and age > TOP_MAX_AGE_DAYS:
+            p["tier"] = "reserve"
+        if age <= RESERVE_MAX_AGE_DAYS:
+            keep.append(p)
+    state["pool"] = keep
+
+    # 2. все ленты: что нового
+    known = set(state["seen"]) | {p["id"] for p in state["pool"]}
+    cutoff = now - dt.timedelta(days=FEED_MAX_AGE_DAYS)
+    fresh = []
     for feed in SOURCES["feeds"]:
-        if category and feed["category"] != category:
-            continue
         try:
             items = read_feed(feed)
         except Exception as e:
             print(f"  лента {feed['name']} не открылась: {e}")
             continue
-        items = [i for i in items if i["link"] and i["link"] not in state["seen"] and i["date"] >= cutoff]
-        items.sort(key=lambda i: i["date"], reverse=True)
-        for i in items[:6]:
-            i["snippet"] = html_to_text(i["body"])[:300]
-            out.append(i)
-    return out
+        n = 0
+        for it in sorted(items, key=lambda i: i["date"], reverse=True):
+            if not it["link"]:
+                continue
+            BODIES[it["link"]] = it["body"]
+            if item_id(it["link"]) in known or it["date"] < cutoff or n >= PER_FEED_LIMIT:
+                continue
+            fresh.append(it)
+            n += 1
+    fresh.sort(key=lambda i: i["date"], reverse=True)
+    fresh = fresh[:SCORE_MAX_PER_RUN]
+    print(f"новых новостей: {len(fresh)}, в очереди: {len(state['pool'])}")
+
+    # 3. оценка пачками
+    for i in range(0, len(fresh), SCORE_BATCH):
+        batch = fresh[i:i + SCORE_BATCH]
+        scores = score_batch(batch)
+        if not scores:
+            continue  # вернёмся к этим новостям в следующий раз
+        for it, s in zip(batch, scores):
+            r = rating(s)
+            tier = tier_of(r, s["timely"])
+            state["seen"].append(item_id(it["link"]))
+            print(f"  {r:>4} {tier:<7} {'срочно' if s['timely'] else 'общее ':<6} {it['title'][:60]}")
+            if tier != "drop":
+                state["pool"].append({
+                    "id": item_id(it["link"]), "link": it["link"], "outlet": it["outlet"],
+                    "kind": it["kind"], "title": it["title"], "date": iso(it["date"]),
+                    "rating": r, "timely": s["timely"], "tier": tier})
 
 
-# ---------- отбор лучшего ----------
-
-def rank(cands, last_kind):
-    lines = [f"{i}. [{c['kind']}] {c['title']}. {c['snippet']}" for i, c in enumerate(cands, 1)]
-    scores = [5.0] * len(cands)
-    try:
-        out = ask_llm(RANK_PROMPT.format(items="\n".join(lines)), max_tokens=300)
-        parsed = [float(s) for s in json.loads(re.search(r"\[[^\]]*\]", out).group(0))]
-        if len(parsed) == len(cands):
-            scores = parsed
-        else:
-            print("ранжирование: неверная длина ответа, все оценки равны")
-    except Exception as e:
-        print("ранжирование не удалось, все оценки равны:", e)
-    for c, s in zip(cands, scores):
-        c["ai_score"] = s
-        c["score"] = s - (SAME_KIND_PENALTY if c["kind"] == last_kind else 0) + random.random() * 0.1
-    cands.sort(key=lambda c: c["score"], reverse=True)
-    for c in cands:
-        print(f"  {c['score']:.1f} (ИИ {c['ai_score']:.0f}) [{c['kind']}] {c['title'][:70]}")
-
-
-def build_post(c, state):
-    if c["kind"] == "fact":
-        page = c["page"]
-        post = make_post(FACT_PROMPT, page["text"][:MAX_CHARS], name=page["name"])
-        if not post:
-            return None
-        url = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(page["name"].replace(" ", "_"))
-        return {"text": f"{post}\n\nИсточник: Википедия, {url}", "preview": False,
-                "photo": wiki_photo(page), "kind": "fact", "record": ("posted", c["key"])}
-    state["seen"].append(c["link"])  # к этой новости больше не возвращаемся
-    text = html_to_text(c["body"])
+def build_news_post(item):
+    print(f"новость [{item['tier']}] {item['rating']}: {item['title'][:70]}")
+    text = html_to_text(BODIES.get(item["link"], ""))
     if len(text) < 1500:  # в ленте только анонс: пробуем взять страницу целиком
         try:
-            page = html_to_text(http_get(c["link"]).decode("utf-8", errors="replace"))
+            page = html_to_text(http_get(item["link"]).decode("utf-8", errors="replace"))
             if len(page) > len(text):
                 text = page
         except Exception as e:
@@ -435,55 +583,98 @@ def build_post(c, state):
     if len(text) < 400:
         print("  мало текста, пропускаю")
         return None
-    post = make_post(NEWS_PROMPT, text, name=c["title"], outlet=c["outlet"])
+    post = make_post(NEWS_PROMPT, text, name=item["title"], outlet=item["outlet"])
     if not post:
         return None
-    return {"text": f"{post}\n\nИсточник: {c['outlet']}, {c['link']}", "preview": True,
-            "photo": None, "kind": c["kind"], "record": None}
+    return {"text": f"{post}\n\nИсточник: {item['outlet']}, {item['link']}", "preview": True,
+            "photo": None, "kind": item["kind"], "key": item["id"]}
+
+
+# ---------- выбор поста ----------
+
+def pick_post(state, now):
+    def eff(p):  # срочные: рейтинг минус возраст, чуть реже повторяем тип прошлого поста
+        age = (now - dt.datetime.fromisoformat(p["date"])).total_seconds() / 86400
+        return p["rating"] - 0.5 * age - (SAME_KIND_PENALTY if p["kind"] == state["last_kind"] else 0)
+
+    top = sorted((p for p in state["pool"] if p["tier"] == "top"), key=eff, reverse=True)
+    reserve = sorted((p for p in state["pool"] if p["tier"] == "reserve"), key=lambda p: p["rating"], reverse=True)
+    order = []
+    if state["since_fact"] >= FACT_EVERY:
+        order.append(None)  # None = факт о вузе
+    order += top + reserve
+    order.append(None)
+
+    attempts, fact_tried = 0, False
+    for item in order:
+        if attempts >= MAX_ATTEMPTS:
+            break
+        if item is None:
+            if fact_tried:
+                continue
+            fact_tried = True
+            attempts += 1
+            post = build_fact_post(state)
+        else:
+            attempts += 1
+            post = build_news_post(item)
+            if not post:  # не подошла: убираем из очереди насовсем
+                state["pool"] = [p for p in state["pool"] if p["id"] != item["id"]]
+        if post:
+            return post
+    return None
+
+
+def apply_post(state, post):
+    if post["kind"] == "fact":
+        state["posted"].append(post["key"])
+        state["since_fact"] = 0
+    else:
+        state["pool"] = [p for p in state["pool"] if p["id"] != post["key"]]
+        state["since_fact"] += 1
+    state["last_kind"] = post["kind"]
 
 
 # ---------- запуск ----------
 
 def load_state():
     s = json.loads(STATE_FILE.read_text(encoding="utf-8")) if STATE_FILE.exists() else {}
-    s.setdefault("posted", [])
-    s.setdefault("seen", [])
-    s.setdefault("last_kind", None)
-    s.setdefault("extra_universities", [])
+    for k, v in {"posted": [], "extra_universities": [], "seen": [], "pool": [],
+                 "since_fact": 0, "last_kind": None, "next_post_at": None}.items():
+        s.setdefault(k, v)
     return s
 
 
 def save_state(state):
     if DRY:
         return
-    state["seen"] = state["seen"][-500:]
+    state["seen"] = state["seen"][-4000:]
     STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 def main():
     state = load_state()
-    kind = os.environ.get("KIND", "").strip()  # fact / admissions / science / пусто = все
-    cands = []
-    if kind in ("", "fact"):
-        cands += fact_candidates(state)
-    if kind != "fact":
-        cands += news_candidates(state, kind or None)
-    if not cands:
-        sys.exit("Нет кандидатов: проверь ленты и список вузов")
+    now = utcnow()
+    due = state["next_post_at"]
+    if not FORCE and due and now < dt.datetime.fromisoformat(due):
+        print(f"рано: следующий пост после {due} (сейчас {iso(now)})")
+        return
     try:
-        print(f"кандидатов: {len(cands)}")
-        rank(cands, state["last_kind"])
-        for c in cands[:TRIES]:
-            print("пробую:", c["title"][:70])
-            post = build_post(c, state)
-            if post:
-                publish(post)
-                if post["record"]:
-                    state[post["record"][0]].append(post["record"][1])
-                state["last_kind"] = post["kind"]
-                print("опубликовано:", post["kind"])
-                return
-        sys.exit("Ни один из лучших кандидатов не прошёл проверку, завтра попробуем снова")
+        init_models()
+        refresh_pool(state, now)
+        post = pick_post(state, now)
+        if not post:
+            state["next_post_at"] = iso(now + dt.timedelta(minutes=RETRY_MINUTES))
+            print(f"публиковать нечего, повторю через {RETRY_MINUTES} минут")
+            return
+        publish(post)
+        apply_post(state, post)
+        delay = next_delay(now)
+        state["next_post_at"] = iso(now + delay)
+        print(f"опубликовано ({post['kind']}), следующий пост через {delay.total_seconds() / 60:.0f} мин")
+    except BaseException:
+        state["next_post_at"] = iso(now + dt.timedelta(minutes=ERROR_BACKOFF_MINUTES))
+        raise
     finally:
         save_state(state)
 
