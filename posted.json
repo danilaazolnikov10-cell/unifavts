@@ -69,7 +69,22 @@
   "9a43f9622902",
   "03128b2e62b7",
   "7585476c8160",
-  "839abdc88176"
+  "839abdc88176",
+  "9eac9ed1aab7",
+  "5c20c12f952a",
+  "fecd05bdfe1f",
+  "b5cc9b4f9b22",
+  "4933ec0534e7",
+  "d07071b62169",
+  "39ed6b43c23d",
+  "1e012ab8390f",
+  "2f058269d49e",
+  "4865bae711bc",
+  "65c09097ec3d",
+  "05bbc81dcefc",
+  "0a256c82bde6",
+  "5069bf02ccd0",
+  "387bebe3df64"
  ],
  "last_kind": "admissions",
  "extra_universities": [],
@@ -270,7 +285,7 @@
    "date": "2026-10-07T23:08:20+00:00",
    "rating": 8.4,
    "timely": 1,
-   "tier": "top"
+   "tier": "reserve"
   },
   {
    "id": "c6b4af0ce398",
@@ -282,19 +297,8 @@
    "rating": 6.1,
    "timely": 0,
    "tier": "reserve"
-  },
-  {
-   "id": "9a43f9622902",
-   "link": "https://monitor.icef.com/2026/10/australia-new-rules-now-in-force-for-accompanying-dependants-and-onshore-student-visa-applications/",
-   "outlet": "ICEF Monitor",
-   "kind": "admissions",
-   "title": "Australia: New rules now in force for accompanying dependants and onshore student visa applications",
-   "date": "2026-10-07T18:45:45+00:00",
-   "rating": 9.0,
-   "timely": 1,
-   "tier": "top"
   }
  ],
- "since_fact": 2,
- "next_post_at": "2026-10-14T12:10:20+00:00"
+ "since_fact": 3,
+ "next_post_at": "2026-10-14T12:22:11+00:00"
 }
