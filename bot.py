@@ -17,13 +17,17 @@ Workflow запускает этот скрипт каждые 10 минут, н
   4. Каждый FACT_EVERY-й пост, а также когда новостей нет, это факт о вузе по
      статье Википедии, с фото, если лицензия свободная.
   5. К новости берётся картинка: из ленты, а если там нет, то og:image со страницы.
+     Если нет, ИИ предлагает запросы и выбирает свободное фото на Wikimedia Commons;
+     потом нейросетевая иллюстрация (по желанию), потом своя карточка.
      Пост пишется по-русски ТОЛЬКО по тексту источника. Любое число, которого
      нет в источнике, считается выдумкой и пост отклоняется. Внизу ссылка.
 Только стандартная библиотека Python.
 """
 import datetime as dt
 import hashlib
+import io
 import json
+import math
 import os
 import random
 import re
@@ -34,6 +38,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+import zlib
 from email.utils import parsedate_to_datetime
 from html import unescape
 from html.entities import name2codepoint
@@ -45,9 +50,15 @@ STATE_FILE = ROOT / "posted.json"
 SOURCES = json.loads((ROOT / "sources.json").read_text(encoding="utf-8"))
 
 
+try:  # все переменные репозитория одним куском (если workflow их передаёт)
+    _VARS = json.loads(os.environ.get("VARS_JSON") or "{}")
+except ValueError:
+    _VARS = {}
+
+
 def _env(name, default):
     """Пустые значения из GitHub (переменная не задана) считаются незаданными."""
-    return os.environ.get(name) or default
+    return os.environ.get(name) or _VARS.get(name) or default
 
 
 # ---------- настройки ----------
@@ -108,7 +119,7 @@ FACT_PROMPT = """Ты ведёшь русскоязычный Telegram-кана�
 - Не пиши про рейтинги, стоимость обучения и шансы поступления.
 - 350-650 символов, живой русский язык, без воды, без хэштегов, без разметки (звёздочек и решёток).
 - В заголовке есть название вуза.
-- Оформление: первая строка - цепляющий заголовок, в начале него эмодзи по теме. Дальше 3-4 коротких абзаца по 1-2 предложения, между абзацами пустая строка. Всего 3-5 эмодзи по смыслу (в заголовке и в начале или конце абзацев), не больше одного на абзац, эмодзи-цифры не используй.
+- Оформление: первая строка - цепляющий заголовок. Дальше 3-4 коротких абзаца по 1-2 предложения, между абзацами пустая строка. Эмодзи в посте ровно {emoji_n} шт., все разные, по смыслу: ставь их там, где они уместны (в начале заголовка, в начале или конце абзаца), не обязательно в каждом абзаце. Если новость грустная (смерть, трагедия, скандал), используй не больше двух сдержанных эмодзи. Эмодзи-цифры не используй.
 - Выведи только текст поста, без вступлений.
 - Если в тексте нет подходящего факта, ответь одним словом: SKIP.
 
@@ -125,7 +136,7 @@ NEWS_PROMPT = """Ты ведёшь русскоязычный Telegram-кана�
 - Числа, годы и названия бери в точности как в тексте. Не округляй, не считай, не выводи новые числа.
 - Пересказывай своими словами, не копируй предложения, прямые цитаты не используй.
 - 350-700 символов, живой русский язык, без хэштегов, без разметки (звёздочек и решёток).
-- Оформление: первая строка - цепляющий заголовок, в начале него эмодзи по теме. Дальше 3-4 коротких абзаца по 1-2 предложения, между абзацами пустая строка. Всего 3-5 эмодзи по смыслу (в заголовке и в начале или конце абзацев), не больше одного на абзац, эмодзи-цифры не используй.
+- Оформление: первая строка - цепляющий заголовок. Дальше 3-4 коротких абзаца по 1-2 предложения, между абзацами пустая строка. Эмодзи в посте ровно {emoji_n} шт., все разные, по смыслу: ставь их там, где они уместны (в начале заголовка, в начале или конце абзаца), не обязательно в каждом абзаце. Если новость грустная (смерть, трагедия, скандал), используй не больше двух сдержанных эмодзи. Эмодзи-цифры не используй.
 - Выведи только текст поста, без вступлений.
 - Если в тексте мало содержания или это реклама, ответь одним словом: SKIP.
 
@@ -181,7 +192,7 @@ def http_get(url, data=None, headers=None):
 def init_models():
     """Если модель не задана вручную, берём первую доступную этому ключу."""
     global MODEL, RANK_MODEL
-    if not LLM_KEY or (MODEL and os.environ.get("LLM_MODEL")):
+    if not LLM_KEY or (MODEL and _env("LLM_MODEL", "")):
         return
     try:
         data = json.loads(http_get(f"{LLM_URL}/models", headers={"Authorization": f"Bearer {LLM_KEY}"}))
@@ -191,8 +202,8 @@ def init_models():
         avail = set()
     usable = sorted(m for m in avail if not any(x in m for x in NOT_TEXT_MODELS))
     pick = lambda prefs: next((m for m in prefs if m in avail), usable[0] if usable else None)
-    MODEL = MODEL if os.environ.get("LLM_MODEL") else (pick(PREFER_MAIN) or "llama-3.3-70b-versatile")
-    RANK_MODEL = os.environ.get("LLM_RANK_MODEL") or pick(PREFER_RANK) or MODEL
+    MODEL = MODEL if _env("LLM_MODEL", "") else (pick(PREFER_MAIN) or "llama-3.3-70b-versatile")
+    RANK_MODEL = _env("LLM_RANK_MODEL", "") or pick(PREFER_RANK) or MODEL
     print(f"модели: основная {MODEL}, для оценок {RANK_MODEL}")
 
 
@@ -278,18 +289,18 @@ def publish(post):
     if DRY:
         print("----- DRY RUN -----")
         print(text)
-        print("[фото]", photo["credit"] if photo else "нет")
+        print("[фото]", (photo["credit"] or "карточка") if photo else "нет")
         print("-------------------")
         return
     chat = os.environ["TELEGRAM_CHAT_ID"]
     sent_photo = False
     if photo:
-        caption = text + "\n" + photo["credit"]
+        caption = text + ("\n" + photo["credit"] if photo["credit"] else "")
         try:
             if len(caption) <= 1024:  # лимит подписи к фото в Telegram
                 tg("sendPhoto", {"chat_id": chat, "caption": caption}, photo["bytes"])
                 return
-            tg("sendPhoto", {"chat_id": chat, "caption": photo["credit"]}, photo["bytes"])
+            tg("sendPhoto", {"chat_id": chat, **({"caption": photo["credit"]} if photo["credit"] else {})}, photo["bytes"])
             sent_photo = True
         except RuntimeError as e:
             print("фото не отправилось, шлю только текст:", e)
@@ -365,7 +376,8 @@ def pretty(text, kind):
 
 def make_post(prompt_tpl, source_text, kind="fact", **fields):
     known = known_numbers(source_text)
-    prompt = prompt_tpl.format(text=source_text, **fields)
+    emoji_n = random.choice([1, 2, 2, 3, 3, 4, 4, 5, 6])  # у разных постов разное число смайликов
+    prompt = prompt_tpl.format(text=source_text, emoji_n=emoji_n, **fields)
     for attempt in range(3):
         out = ask_llm(prompt).strip()
         if out.upper().startswith("SKIP"):
@@ -469,8 +481,15 @@ def build_fact_post(state):
         post = make_post(FACT_PROMPT, page["text"][:MAX_CHARS], kind="fact", name=page["name"])
         if post:
             url = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(page["name"].replace(" ", "_"))
+            photo = wiki_photo(page)
+            if not photo and IMAGE_SEARCH:
+                photo = commons_photo(page["name"], page["text"], queries=[page["name"]])
+            if not photo and AI_IMAGES:
+                photo = ai_image("fact", page["name"])
+            if not photo and CARD_ON:
+                photo = make_card(post, "fact", "Википедия: " + page["name"])
             return {"text": f"{post}\n\nИсточник: Википедия, {url}", "preview": False,
-                    "photo": wiki_photo(page), "kind": "fact", "key": title}
+                    "photo": photo, "kind": "fact", "key": title}
     return None
 
 
@@ -559,6 +578,319 @@ def fetch_image(url, base):
         print(f"  картинка не подошла: {w}x{h}, {len(data) // 1000} КБ")
         return None
     return data
+
+
+FONT_PATHS = [str(ROOT / "font.ttf"), "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+              "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"]
+CARD_ON = _env("CARD", "1") != "0"        # CARD=0 выключает собственные картинки-карточки
+AI_IMAGES = _env("IMAGE_AI", "0") == "1"  # IMAGE_AI=1: сначала пробовать нейросетевую иллюстрацию
+
+# Стиль карточки зависит от темы новости: цвета, подпись и рисунок справа.
+STYLES = {
+    "campus":  dict(label="ПОСТУПЛЕНИЕ", bg="#0F1B3D", line="#1D3067", acc="#F2B84B", txt="#FFF1CF", sub="#8FA3D9"),
+    "policy":  dict(label="ПРАВИЛА И ВИЗЫ", bg="#3A1020", line="#6A2A40", acc="#FF8A65", txt="#FFEFE8", sub="#E0A3A8"),
+    "money":   dict(label="ДЕНЬГИ И СТИПЕНДИИ", bg="#14281D", line="#24503A", acc="#E6C65C", txt="#FFF8DC", sub="#9BC4A5"),
+    "ranking": dict(label="РЕЙТИНГИ", bg="#1B1B2F", line="#33335C", acc="#FFD166", txt="#FFF6D8", sub="#A5A5D6"),
+    "tech":    dict(label="ТЕХНОЛОГИИ", bg="#08131F", line="#14405F", acc="#4CC9F0", txt="#E6FAFF", sub="#7FB4CC"),
+    "space":   dict(label="КОСМОС И ФИЗИКА", bg="#06060F", line="#26266B", acc="#B388FF", txt="#F0E9FF", sub="#9C93CC"),
+    "bio":     dict(label="БИОЛОГИЯ И МЕДИЦИНА", bg="#0C2F3C", line="#17667A", acc="#5EEAD4", txt="#E8FFFA", sub="#7FC4C0"),
+    "science": dict(label="НАУКА", bg="#1E1245", line="#3B2A8A", acc="#FF7AB6", txt="#FFF0F8", sub="#B8A5E6"),
+    "fact":    dict(label="ФАКТ О ВУЗЕ", bg="#2B1A12", line="#5A3A2A", acc="#F2B84B", txt="#FFF1CF", sub="#C9A58C"),
+}
+SCIENCE_TOPICS = [
+    ("tech", r"\bai\b|artificial intelligence|machine learning|robot|quantum|software|algorithm|computer|semiconductor|\bchips?\b"),
+    ("space", r"\bspace\b|planet|galax|telescope|nasa|\bstars?\b|cosmic|\bmars\b|\bmoon\b|black hole|physic|particle|asteroid"),
+    ("bio", r"\bgenes?\b|\bdna\b|\bcells?\b|brain|cancer|vaccine|medic|bacteri|virus|biolog|species|disease|protein|health"),
+]
+ADMISSION_TOPICS = [
+    ("policy", r"visa|immigra|work permit|border|regulation|legislat|\bban\b|\blaw\b|policy|crackdown|deport|tariff|\bcap\b"),
+    ("money", r"scholarship|funding|\bgrants?\b|tuition|\bfees?\b|\bloans?\b|financial aid|endowment|budget"),
+    ("ranking", r"ranking|\branks?\b|league table|\bindex\b|\btop \d+|best universit"),
+] + SCIENCE_TOPICS
+AI_STYLE = {  # описание стиля для нейросети (только абстракция: без людей, текста и логотипов)
+    "campus": "isometric illustration of a university campus and a globe, navy and gold",
+    "policy": "flat illustration of documents, passport stamps and a map, burgundy and coral",
+    "money": "flat illustration of coins and a graduation cap, dark green and gold",
+    "ranking": "flat illustration of a podium and ascending bars, indigo and yellow",
+    "tech": "futuristic neural network of glowing nodes, dark blue and cyan",
+    "space": "deep space with a ringed planet and stars, black and violet",
+    "bio": "abstract DNA helix and cells, deep teal and mint",
+    "science": "abstract atom with orbiting electrons, indigo and pink",
+    "fact": "classical university building with columns, warm brown and gold",
+}
+
+
+def topic_of(kind, title, body=""):
+    if kind == "fact":
+        return "fact"
+    rules, default = (ADMISSION_TOPICS, "campus") if kind == "admissions" else (SCIENCE_TOPICS, "science")
+    for scope in (title.lower(), (title + " " + body[:1500]).lower()):  # заголовок важнее текста
+        for name, pat in rules:
+            if re.search(pat, scope):
+                return name
+    return default
+
+
+def _ell(d, cx, cy, a, b, deg, fill, width):
+    th, pts = math.radians(deg), []
+    for i in range(121):
+        t = 2 * math.pi * i / 120
+        x, y = a * math.cos(t), b * math.sin(t)
+        pts.append((cx + x * math.cos(th) - y * math.sin(th), cy + x * math.sin(th) + y * math.cos(th)))
+    d.line(pts, fill=fill, width=width, joint="curve")
+
+
+def _rect(d, cx, cy, w, h, deg, outline, width):
+    th = math.radians(deg)
+    pts = [(cx + x * math.cos(th) - y * math.sin(th), cy + x * math.sin(th) + y * math.cos(th))
+           for x, y in ((-w / 2, -h / 2), (w / 2, -h / 2), (w / 2, h / 2), (-w / 2, h / 2))]
+    d.line(pts + [pts[0]], fill=outline, width=width, joint="curve")
+
+
+def _dot(d, x, y, r, fill):
+    d.ellipse((x - r, y - r, x + r, y + r), fill=fill)
+
+
+def motif(d, name, cx, cy, r, rng, line, acc, W, H):
+    w = 5
+    if name == "campus":  # глобус
+        d.ellipse((cx - r, cy - r, cx + r, cy + r), outline=line, width=w)
+        d.ellipse((cx - 150, cy - r, cx + 150, cy + r), outline=line, width=w)
+        for dy in (-r * 0.5, 0, r * 0.5):
+            half = (r * r - dy * dy) ** 0.5
+            d.line((cx - half, cy + dy, cx + half, cy + dy), fill=line, width=w)
+    elif name == "science":  # атом
+        for deg in (0, 60, 120):
+            _ell(d, cx, cy, r * 0.85, r * 0.33, deg, line, w)
+        _dot(d, cx, cy, 38, acc)
+        for deg, t in ((0, 0.4), (60, 2.4), (120, 4.4)):
+            th = math.radians(deg)
+            x, y = r * 0.85 * math.cos(t), r * 0.33 * math.sin(t)
+            _dot(d, cx + x * math.cos(th) - y * math.sin(th), cy + x * math.sin(th) + y * math.cos(th), 14, acc)
+    elif name == "space":  # звёзды и планета с кольцом
+        for _ in range(140):
+            _dot(d, rng.randint(0, W), rng.randint(0, H), rng.choice((1, 1, 2, 3)), line if rng.random() < 0.7 else acc)
+        d.ellipse((cx - r * 0.55, cy - r * 0.55, cx + r * 0.55, cy + r * 0.55), fill=line)
+        _ell(d, cx, cy, r * 0.95, r * 0.25, -22, acc, 7)
+    elif name == "tech":  # сеть узлов
+        pts = []
+        while len(pts) < 16:
+            x, y = rng.uniform(-r, r), rng.uniform(-r, r)
+            if x * x + y * y <= r * r:
+                pts.append((cx + x, cy + y))
+        for i, (x, y) in enumerate(pts):
+            near = sorted(range(len(pts)), key=lambda j: (pts[j][0] - x) ** 2 + (pts[j][1] - y) ** 2)[1:3]
+            for j in near:
+                d.line((x, y, pts[j][0], pts[j][1]), fill=line, width=4)
+        for i, (x, y) in enumerate(pts):
+            _dot(d, x, y, 16 if i % 5 == 0 else 9, acc if i % 5 == 0 else line)
+    elif name == "bio":  # спираль ДНК
+        top, bottom, amp = cy - r, cy + r, r * 0.42
+        s1, s2 = [], []
+        for i in range(0, 101):
+            y = top + (bottom - top) * i / 100
+            ph = i / 100 * 4 * math.pi
+            s1.append((cx + amp * math.sin(ph), y))
+            s2.append((cx - amp * math.sin(ph), y))
+        for i in range(4, 100, 6):
+            d.line((s1[i], s2[i]), fill=line, width=5)
+            _dot(d, s1[i][0], s1[i][1], 8, acc)
+            _dot(d, s2[i][0], s2[i][1], 8, acc)
+        d.line(s1, fill=acc, width=7, joint="curve")
+        d.line(s2, fill=line, width=7, joint="curve")
+    elif name == "ranking":  # столбцы рейтинга
+        base, bw, gap = cy + r * 0.8, 84, 26
+        x0 = cx - 70 - (5 * bw + 4 * gap) / 2
+        for i, hgt in enumerate((0.35, 0.55, 0.45, 0.8, 1.1)):
+            x = x0 + i * (bw + gap)
+            d.rectangle((x, base - hgt * r, x + bw, base), fill=acc if i == 4 else line)
+        d.line((x0 - 20, base + 6, x0 + 5 * bw + 4 * gap + 20, base + 6), fill=line, width=w)
+    elif name == "money":  # монеты
+        for k, (dx, dy, rr) in enumerate(((-110, 110, 110), (60, 150, 90), (-20, -70, 120), (160, -90, 80))):
+            d.ellipse((cx + dx - rr, cy + dy - rr, cx + dx + rr, cy + dy + rr), fill=line, outline=acc, width=6)
+            d.ellipse((cx + dx - rr * 0.7, cy + dy - rr * 0.7, cx + dx + rr * 0.7, cy + dy + rr * 0.7), outline=acc, width=4)
+    elif name == "policy":  # документы и печать
+        for deg, off in ((-12, -40), (0, 0), (10, 40)):
+            _rect(d, cx + off, cy, 360, 470, deg, line, w)
+        for k in range(6):
+            y = cy - 150 + k * 46
+            d.line((cx - 120, y, cx + (80 if k % 2 else 130), y), fill=line, width=5)
+        d.ellipse((cx + 0, cy + 70, cx + 190, cy + 260), outline=acc, width=9)
+        d.ellipse((cx + 28, cy + 98, cx + 162, cy + 232), outline=acc, width=5)
+    elif name == "fact":  # здание с колоннами
+        bx0, bx1 = cx - r * 0.85, cx + r * 0.85
+        base = cy + r * 0.75
+        d.polygon([(bx0 - 20, base - 400), (cx, base - 560), (bx1 + 20, base - 400)], outline=line, width=w)
+        d.line((bx0 - 20, base - 400, bx1 + 20, base - 400), fill=line, width=w)
+        for i in range(5):
+            x = bx0 + 20 + i * (bx1 - bx0 - 40) / 4
+            d.rectangle((x - 30, base - 380, x + 30, base - 40), outline=line, width=w)
+        for k in range(3):
+            d.rectangle((bx0 - 20 - k * 25, base - 40 + k * 28, bx1 + 20 + k * 25, base - 12 + k * 28), outline=line, width=w)
+
+
+def _pillow():
+    """Pillow на раннере GitHub может не стоять: доустанавливаем один раз прямо из бота."""
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except ImportError:
+        import subprocess
+        print("  ставлю Pillow")
+        subprocess.run([sys.executable, "-m", "pip", "install", "--quiet", "--user",
+                        "--break-system-packages", "pillow"], check=False)
+        try:
+            from PIL import Image, ImageDraw, ImageFont
+        except ImportError:
+            return None
+    return Image, ImageDraw, ImageFont
+
+
+def make_card(post_text, kind, outlet, source=""):
+    """Собственная картинка 1280x720: стиль зависит от темы новости. Чужих прав нет и она всегда есть."""
+    try:
+        mods = _pillow()
+        font_path = next((f for f in FONT_PATHS if os.path.exists(f)), None)
+        if not mods or not font_path:
+            return None
+        Image, ImageDraw, ImageFont = mods
+        title = re.sub(r"\s+", " ", re.sub("[\ufe0f\u200d]", "", EMOJI.sub("", post_text.strip().split("\n")[0]))).strip()
+        st = STYLES[topic_of(kind, title, source)]
+        rng = random.Random(zlib.crc32(title.encode()))  # у каждого поста свой рисунок, но стабильный
+        W, H = 1280, 720
+        img = Image.new("RGB", (W, H), st["bg"])
+        d = ImageDraw.Draw(img)
+        motif(d, next(k for k, v in STYLES.items() if v is st), 1070, 360, 290, rng, st["line"], st["acc"], W, H)
+        d.rectangle((80, 78, 160, 86), fill=st["acc"])
+        font = lambda size: ImageFont.truetype(font_path, size)
+        d.text((80, 104), "МИРОВОЙ КАМПУС  ·  " + st["label"], font=font(30), fill=st["acc"])
+
+        def wrap(size, width):
+            f, lines, cur = font(size), [], ""
+            for w in title.split():
+                t = (cur + " " + w).strip()
+                if d.textlength(t, font=f) <= width or not cur:
+                    cur = t
+                else:
+                    lines.append(cur)
+                    cur = w
+            return lines + [cur], f
+
+        for size in (76, 68, 60, 54, 48, 42):
+            lines, f = wrap(size, 760)
+            if len(lines) * size * 1.2 <= 440:
+                break
+        else:
+            lines = lines[:6]
+            lines[-1] = lines[-1].rstrip(" ,.;:") + "…"
+        y = 170
+        for ln in lines:
+            d.text((80, y), ln, font=f, fill=st["txt"])
+            y += int(size * 1.2)
+        d.text((80, H - 90), outlet, font=font(30), fill=st["sub"])
+        buf = io.BytesIO()
+        img.save(buf, "JPEG", quality=90)
+        return {"bytes": buf.getvalue(), "credit": ""}
+    except Exception as e:
+        print("  карточка не вышла:", e)
+        return None
+
+
+def ai_image(kind, title, source=""):
+    """Необязательно (IMAGE_AI=1): абстрактная иллюстрация от бесплатного генератора Pollinations.
+    Любая ошибка или странный ответ: None, тогда бот рисует карточку."""
+    try:
+        name = topic_of(kind, title, source)
+        prompt = (AI_STYLE[name] + ", abstract editorial illustration, clean vector style, no text, no letters, "
+                  "no people, no faces, no logos")
+        url = ("https://image.pollinations.ai/prompt/" + urllib.parse.quote(prompt) +
+               f"?width=1280&height=720&nologo=true&seed={random.randint(1, 10**6)}")
+        data = http_get(url)
+        size = image_size(data)
+        if size and size[0] >= 500 and 20000 <= len(data) <= 8_000_000:
+            return {"bytes": data, "credit": "Иллюстрация: ИИ"}
+    except Exception as e:
+        print("  ИИ-иллюстрация не вышла:", e)
+    return None
+
+
+# ---------- поиск свободных фото (Wikimedia Commons) с проверкой ИИ ----------
+
+COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+IMAGE_SEARCH = _env("IMAGE_SEARCH", "1") != "0"  # IMAGE_SEARCH=0 выключает поиск фото
+
+QUERY_PROMPT = """Нужна свободная фотография к новости (поиск по Wikimedia Commons, запросы на английском).
+Заголовок: {title}
+Текст: {text}
+Назови до 3 коротких поисковых запросов на английском для фотографии КОНКРЕТНОГО места, здания или организации из новости: название университета, кампуса, города, лаборатории, обсерватории. Бери только названия, которые есть в тексте.
+Если в новости нет конкретного места или организации, которое можно сфотографировать (общая тема, закон, исследование, рейтинг, человек), ответь []. Не придумывай названия.
+Ответь только JSON-массивом строк."""
+
+PICK_PROMPT = """Редактор выбирает фотографию к новости.
+Новость: {title}. {text}
+Кандидаты (номер. название файла | описание | категории):
+{items}
+Выбери номер фотографии, которая показывает ТО ЖЕ САМОЕ конкретное место, здание или организацию, о которых новость. Если ни одна явно не подходит (другое место, общий вид, старое событие, портрет, схема), ответь -1. Лучше -1, чем неточная фотография.
+Ответь только JSON-объектом вида {"best": номер или -1}"""
+
+
+def commons_candidates(query):
+    """Свободные JPEG с Commons по запросу: лицензия CC или общественное достояние."""
+    q = urllib.parse.urlencode({
+        "action": "query", "generator": "search", "gsrnamespace": 6, "gsrlimit": 8,
+        "gsrsearch": query + " filetype:bitmap", "prop": "imageinfo",
+        "iiprop": "url|size|mime|extmetadata", "iiurlwidth": 1280, "format": "json"})
+    pages = json.loads(http_get(f"{COMMONS_API}?{q}")).get("query", {}).get("pages", {})
+    out = []
+    for pg in pages.values():
+        ii = (pg.get("imageinfo") or [None])[0]
+        if not ii or ii.get("mime") != "image/jpeg" or ii.get("width", 0) < 1000 or ii.get("height", 0) < 500:
+            continue
+        meta = ii.get("extmetadata", {})
+        val = lambda k: meta.get(k, {}).get("value", "")
+        lic = val("LicenseShortName")
+        if str(val("NonFree")).lower() in ("true", "1") or not re.match(r"(?i)(cc[ -]|cc0|public domain|pd)", lic):
+            continue
+        out.append({"title": pg.get("title", "").removeprefix("File:"), "url": ii.get("thumburl") or ii["url"],
+                    "desc": html_to_text(val("ImageDescription"))[:200], "cats": val("Categories")[:150],
+                    "artist": html_to_text(val("Artist"))[:60] or "автор не указан", "lic": lic,
+                    "order": pg.get("index", 99)})
+    return sorted(out, key=lambda c: c["order"])
+
+
+def commons_photo(title, text, queries=None):
+    """Ищет свободное фото на Commons и просит ИИ выбрать подходящее по названию, описанию и категориям
+    файла. Саму картинку ИИ не видит. Если ничего явно не подошло, возвращает None."""
+    try:
+        if queries is None:
+            out = ask_llm(QUERY_PROMPT.replace("{title}", title).replace("{text}", text[:700]),
+                          max_tokens=150, model=RANK_MODEL)
+            queries = json.loads(re.search(r"\[.*\]", out, re.S).group(0))
+        cands, urls = [], set()
+        for q in [q for q in queries if isinstance(q, str) and q.strip()][:3]:
+            for c in commons_candidates(q):
+                if c["url"] not in urls:
+                    urls.add(c["url"])
+                    cands.append(c)
+        cands = cands[:8]
+        if not cands:
+            print("  фото на Commons: кандидатов нет")
+            return None
+        lines = "\n".join(f"{i}. {c['title']} | {c['desc']} | {c['cats']}" for i, c in enumerate(cands))
+        out = ask_llm(PICK_PROMPT.replace("{title}", title).replace("{text}", text[:500]).replace("{items}", lines),
+                      max_tokens=60, model=RANK_MODEL)
+        best = int(json.loads(re.search(r"\{.*\}", out, re.S).group(0))["best"])
+        if not 0 <= best < len(cands):
+            print(f"  фото на Commons: ИИ отклонил всех кандидатов ({len(cands)})")
+            return None
+        c = cands[best]
+        data = fetch_image(c["url"], "https://commons.wikimedia.org/")
+        if not data:
+            return None
+        print("  фото на Commons:", c["title"])
+        return {"bytes": data, "credit": f"Фото: {c['artist']}, {c['lic']}, Wikimedia Commons"}
+    except (Exception, SystemExit) as e:  # поиск фото не должен ронять запуск
+        print("  поиск фото не удался:", e)
+        return None
 
 
 def read_feed(feed):
@@ -710,6 +1042,12 @@ def build_news_post(item):
             if data:
                 photo = {"bytes": data, "credit": f"Фото: {item['outlet']}"}
                 break
+    if not photo and IMAGE_SEARCH:  # поиск свободного фото на Commons, выбор делает ИИ
+        photo = commons_photo(item["title"], text)
+    if not photo and AI_IMAGES:
+        photo = ai_image(item["kind"], item["title"], text)
+    if not photo and CARD_ON:  # своей картинки у источника нет или она не подошла
+        photo = make_card(post, item["kind"], item["outlet"], item["title"] + " " + text)
     return {"text": f"{post}\n\nИсточник: {item['outlet']}, {link}", "preview": True,
             "photo": photo, "kind": item["kind"], "key": item["id"]}
 
