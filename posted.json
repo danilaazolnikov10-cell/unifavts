@@ -160,9 +160,10 @@
   "2ee3d2145eef",
   "12be4f889214",
   "74e7353d2b3a",
-  "7e52a142421f"
+  "7e52a142421f",
+  "412ce601247e"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [],
  "pool": [
   {
@@ -184,17 +185,6 @@
    "title": "5 Colleges Sign On as Founding Members of New Accreditor",
    "date": "2026-10-14T07:00:00+00:00",
    "rating": 5.0,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
-   "id": "83c77f336ebd",
-   "link": "https://www.insidehighered.com/opinion/columns/debatable-ideas/2026/10/14/how-nyu-can-fix-its-free-speech-crisis",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "How NYU Can Fix Its Free Speech Crisis",
-   "date": "2026-10-14T07:00:00+00:00",
-   "rating": 6.0,
    "timely": 0,
    "tier": "reserve"
   },
@@ -265,8 +255,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 3,
- "next_post_at": "2026-10-14T23:36:04+00:00",
+ "since_fact": 4,
+ "next_post_at": "2026-10-15T01:24:37+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -311,13 +301,17 @@
   {
    "title": "NASA Develops Batteries to Power Humanity’s Return to Moon",
    "outlet": "NASA"
+  },
+  {
+   "title": "How NYU Can Fix Its Free Speech Crisis",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Википедия",
   "Inside Higher Ed",
   "ScienceDaily",
-  "NASA"
+  "NASA",
+  "Inside Higher Ed"
  ]
 }
