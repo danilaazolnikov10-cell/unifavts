@@ -151,7 +151,8 @@
   "074cd7534aa7",
   "550aa79730b3",
   "f6423fae8324",
-  "6b38e26f43e2"
+  "6b38e26f43e2",
+  "9fa80400b77f"
  ],
  "last_kind": "science",
  "extra_universities": [],
@@ -278,17 +279,6 @@
    "tier": "reserve"
   },
   {
-   "id": "c6b4af0ce398",
-   "link": "https://www.sciencenews.org/article/cells-detect-light-blind-vision",
-   "outlet": "Science News",
-   "kind": "science",
-   "title": "Gene therapy and special goggles give some blind people limited sight",
-   "date": "2026-10-07T21:00:00+00:00",
-   "rating": 6.1,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
    "id": "2cfeb9c44ba5",
    "link": "https://www.sciencedaily.com/releases/2026/10/261005071515.htm",
    "outlet": "ScienceDaily",
@@ -311,8 +301,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 4,
- "next_post_at": "2026-10-14T16:56:31+00:00",
+ "since_fact": 5,
+ "next_post_at": "2026-10-14T17:40:41+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -337,13 +327,17 @@
   {
    "title": "AI reveals a hidden chemical shortcut that could turn CO2 into fuel",
    "outlet": "ScienceDaily"
+  },
+  {
+   "title": "Gene therapy and special goggles give some blind people limited sight",
+   "outlet": "Science News"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "Inside Higher Ed",
   "ICEF Monitor",
   "The PIE News",
-  "ScienceDaily"
+  "ScienceDaily",
+  "Science News"
  ]
 }
