@@ -157,7 +157,7 @@
   "57b1a69ca2b1",
   "e9a2948d0b3b"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [],
  "pool": [
   {
@@ -168,17 +168,6 @@
    "title": "Student voice: How Malta turned an English course into a new beginning",
    "date": "2026-10-14T09:14:58+00:00",
    "rating": 5.9,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
-   "id": "9e8395a68550",
-   "link": "https://www.insidehighered.com/news/faculty/career-development/2026/10/14/does-viewpoint-diversity-require-more-conservative",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "Can Colleges Achieve Viewpoint Diversity Without ‘Affirmative Action for Conservatives’?",
-   "date": "2026-10-14T07:00:00+00:00",
-   "rating": 6.0,
    "timely": 0,
    "tier": "reserve"
   },
@@ -293,8 +282,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 0,
- "next_post_at": "2026-10-14T18:54:53+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-14T20:45:11+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -327,13 +316,17 @@
   {
    "title": "ITECA warns Australian policy is “choking” international education and skills pipeline",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Can Colleges Achieve Viewpoint Diversity Without ‘Affirmative Action for Conservatives’?",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "ScienceDaily",
   "Science News",
   "The PIE News",
-  "Википедия"
+  "Википедия",
+  "Inside Higher Ed"
  ]
 }
