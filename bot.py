@@ -294,18 +294,32 @@ def tg(method, fields, photo=None):
         raise RuntimeError(f"Telegram {method}: {raw!r}")
 
 
+TOPIC_TAGS = {"campus": "#поступление", "policy": "#визы #правила", "money": "#стипендии", "ranking": "#рейтинги",
+              "tech": "#технологии", "space": "#космос", "bio": "#медицина", "science": "#наука", "fact": "#вузы"}
+
+
 def render(post, credit=""):
-    """Текст поста для Telegram (HTML со ссылкой-названием) и такой же простой текст для подсчёта длины."""
-    body, src = post["text"], post.get("source")
+    """Текст для Telegram (HTML) и такой же простой текст для подсчёта длины подписи.
+    Заголовок жирным, источник ссылкой-названием, подпись фото и хэштег темы курсивом/в конце."""
+    body, src, tags = post["text"], post.get("source"), post.get("tags")
     esc = lambda t: html_escape(t, quote=False)
-    html_t, plain = esc(body), body
+    head, _, rest = body.partition("\n\n")
+    html_t = f"<b>{esc(head)}</b>" + (f"\n\n{esc(rest)}" if rest else "")
+    plain = body
+    foot_html, foot_plain = [], []
     if src:
         label, url = src
-        html_t += f'\n\nИсточник: <a href="{html_escape(url, quote=True)}">{esc(label)}</a>'
-        plain += f"\n\nИсточник: {label}"
+        foot_html.append(f'<i>Источник:</i> <a href="{html_escape(url, quote=True)}">{esc(label)}</a>')
+        foot_plain.append(f"Источник: {label}")
     if credit:
-        html_t += "\n" + esc(credit)
-        plain += "\n" + credit
+        foot_html.append(f"<i>{esc(credit)}</i>")
+        foot_plain.append(credit)
+    if tags:
+        foot_html.append(esc(tags))
+        foot_plain.append(tags)
+    if foot_html:
+        html_t += "\n\n" + "\n".join(foot_html)
+        plain += "\n\n" + "\n".join(foot_plain)
     return html_t, plain
 
 
@@ -327,7 +341,7 @@ def publish(post):
             if len(cap_plain) <= 1024:  # лимит подписи к фото в Telegram (считается без тегов)
                 tg("sendPhoto", {"chat_id": chat, "caption": cap_html, "parse_mode": "HTML"}, photo["bytes"])
                 return
-            tg("sendPhoto", {"chat_id": chat, **({"caption": html_escape(photo["credit"], quote=False)} if photo["credit"] else {}),
+            tg("sendPhoto", {"chat_id": chat, **({"caption": "<i>" + html_escape(photo["credit"], quote=False) + "</i>"} if photo["credit"] else {}),
                              **({"parse_mode": "HTML"} if photo["credit"] else {})}, photo["bytes"])
             sent_photo = True
         except RuntimeError as e:
@@ -591,7 +605,7 @@ def build_fact_post(state):
             if not photo and CARD_ON:
                 photo = make_card(post, "fact", "Википедия: " + page["name"])
             return {"text": post, "source": ("Википедия", url), "preview": False,
-                    "photo": photo, "kind": "fact", "key": title}
+                    "photo": photo, "kind": "fact", "key": title, "tags": TOPIC_TAGS["fact"]}
     return None
 
 
@@ -1229,7 +1243,8 @@ def build_news_post(item):
         photo = make_card(post, item["kind"], item["outlet"], item["title"] + " " + text)
     return {"text": post, "source": (item["outlet"], link), "preview": True,
             "photo": photo, "kind": item["kind"], "key": item["id"],
-            "title": item["title"], "outlet": item["outlet"]}
+            "title": item["title"], "outlet": item["outlet"],
+            "tags": TOPIC_TAGS[topic_of(item["kind"], item["title"], text)]}
 
 
 # ---------- выбор поста ----------
