@@ -157,7 +157,10 @@
   "57b1a69ca2b1",
   "e9a2948d0b3b",
   "9ba7d7e151fb",
-  "2ee3d2145eef"
+  "2ee3d2145eef",
+  "12be4f889214",
+  "74e7353d2b3a",
+  "7e52a142421f"
  ],
  "last_kind": "science",
  "extra_universities": [],
@@ -260,21 +263,10 @@
    "rating": 5.1,
    "timely": 0,
    "tier": "reserve"
-  },
-  {
-   "id": "550aa79730b3",
-   "link": "https://www.nasa.gov/centers-and-facilities/langley/nasa-develops-batteries-to-power-humanitys-return-to-moon/",
-   "outlet": "NASA",
-   "kind": "science",
-   "title": "NASA Develops Batteries to Power Humanity’s Return to Moon",
-   "date": "2026-10-14T14:41:21+00:00",
-   "rating": 6.0,
-   "timely": 1,
-   "tier": "reserve"
   }
  ],
- "since_fact": 2,
- "next_post_at": "2026-10-14T22:11:10+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-10-14T23:36:04+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -315,13 +307,17 @@
   {
    "title": "New injection makes fat cells self-destruct",
    "outlet": "ScienceDaily"
+  },
+  {
+   "title": "NASA Develops Batteries to Power Humanity’s Return to Moon",
+   "outlet": "NASA"
   }
  ],
  "last_outlets": [
-  "Science News",
   "The PIE News",
   "Википедия",
   "Inside Higher Ed",
-  "ScienceDaily"
+  "ScienceDaily",
+  "NASA"
  ]
 }
