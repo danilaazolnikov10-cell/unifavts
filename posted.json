@@ -1,6 +1,7 @@
 {
  "posted": [
-  "University of Copenhagen"
+  "University of Copenhagen",
+  "Karolinska Institute"
  ],
  "seen": [
   "741cd072e273",
@@ -153,9 +154,10 @@
   "f6423fae8324",
   "6b38e26f43e2",
   "9fa80400b77f",
-  "57b1a69ca2b1"
+  "57b1a69ca2b1",
+  "e9a2948d0b3b"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [],
  "pool": [
   {
@@ -291,8 +293,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 6,
- "next_post_at": "2026-10-14T18:16:19+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-14T18:54:53+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -328,10 +330,10 @@
   }
  ],
  "last_outlets": [
-  "ICEF Monitor",
   "The PIE News",
   "ScienceDaily",
   "Science News",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ]
 }
