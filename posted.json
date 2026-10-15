@@ -6,7 +6,8 @@
   "KAIST",
   "Stanford University",
   "King's College London",
-  "McGill University"
+  "McGill University",
+  "London School of Economics"
  ],
  "seen": [
   "741cd072e273",
@@ -225,34 +226,11 @@
   "2d98128ea808",
   "55fd5b8e8ffd"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [],
- "pool": [
-  {
-   "id": "f7ff4dbd05c1",
-   "link": "https://www.highereddive.com/news/trump-admin-reignites-court-battle-over-student-deportations-based-on-speec/833151/",
-   "outlet": "Higher Ed Dive",
-   "kind": "admissions",
-   "title": "Trump admin reignites court battle over student deportations based on speech",
-   "date": "2026-10-15T18:03:00-04:00",
-   "rating": 8.6,
-   "timely": 1,
-   "tier": "top"
-  },
-  {
-   "id": "ffd1ce68ded8",
-   "link": "https://www.highereddive.com/news/judge-declines-to-block-trumps-march-anti-dei-order-for-federal-contractor/833180/",
-   "outlet": "Higher Ed Dive",
-   "kind": "admissions",
-   "title": "Judge declines to block Trump’s March anti-DEI order for federal contractors",
-   "date": "2026-10-15T17:52:00-04:00",
-   "rating": 7.6,
-   "timely": 1,
-   "tier": "top"
-  }
- ],
- "since_fact": 1,
- "next_post_at": "2026-10-15T23:32:08+00:00",
+ "pool": [],
+ "since_fact": 0,
+ "next_post_at": "2026-10-16T00:47:32+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -372,11 +350,11 @@
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "ScienceDaily",
   "Википедия",
   "Википедия",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
