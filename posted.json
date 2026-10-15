@@ -161,9 +161,10 @@
   "12be4f889214",
   "74e7353d2b3a",
   "7e52a142421f",
-  "412ce601247e"
+  "412ce601247e",
+  "b829a2098a41"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [],
  "pool": [
   {
@@ -233,17 +234,6 @@
    "tier": "reserve"
   },
   {
-   "id": "2bbcb6556ab2",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261008005254.htm",
-   "outlet": "ScienceDaily",
-   "kind": "science",
-   "title": "The eye has a hidden cleanup system scientists never knew existed",
-   "date": "2026-10-11T02:01:54-04:00",
-   "rating": 6.0,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
    "id": "2cfeb9c44ba5",
    "link": "https://www.sciencedaily.com/releases/2026/10/261005071515.htm",
    "outlet": "ScienceDaily",
@@ -255,8 +245,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 4,
- "next_post_at": "2026-10-15T01:24:37+00:00",
+ "since_fact": 5,
+ "next_post_at": "2026-10-15T03:16:30+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -305,13 +295,17 @@
   {
    "title": "How NYU Can Fix Its Free Speech Crisis",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "The eye has a hidden cleanup system scientists never knew existed",
+   "outlet": "ScienceDaily"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "Inside Higher Ed",
   "ScienceDaily",
   "NASA",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "ScienceDaily"
  ]
 }
