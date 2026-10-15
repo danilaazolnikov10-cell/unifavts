@@ -1,0 +1,143 @@
+{
+ "source": [
+  "BestColleges и Oriel Admissions, даты сверены между собой",
+  "https://www.bestcolleges.com/blog/college-application-deadlines/"
+ ],
+ "note": "Даты, которые совпали минимум у двух источников. MIT и Brown (основной этап) сюда не включены: источники расходятся на пару дней.",
+ "items": [
+  {
+   "uni": "Harvard",
+   "round": "Restrictive Early Action",
+   "md": "11-01",
+   "kind": "early",
+   "verified": 2026
+  },
+  {
+   "uni": "Stanford",
+   "round": "Restrictive Early Action",
+   "md": "11-01",
+   "kind": "early",
+   "verified": 2026
+  },
+  {
+   "uni": "Yale",
+   "round": "Single-Choice Early Action",
+   "md": "11-01",
+   "kind": "early",
+   "verified": 2026
+  },
+  {
+   "uni": "Princeton",
+   "round": "Single-Choice Early Action",
+   "md": "11-01",
+   "kind": "early",
+   "verified": 2026
+  },
+  {
+   "uni": "Columbia",
+   "round": "Early Decision",
+   "md": "11-01",
+   "kind": "early",
+   "verified": 2026
+  },
+  {
+   "uni": "Penn",
+   "round": "Early Decision",
+   "md": "11-01",
+   "kind": "early",
+   "verified": 2026
+  },
+  {
+   "uni": "Cornell",
+   "round": "Early Decision",
+   "md": "11-01",
+   "kind": "early",
+   "verified": 2026
+  },
+  {
+   "uni": "Dartmouth",
+   "round": "Early Decision",
+   "md": "11-01",
+   "kind": "early",
+   "verified": 2026
+  },
+  {
+   "uni": "MIT",
+   "round": "Early Action",
+   "md": "11-01",
+   "kind": "early",
+   "verified": 2026
+  },
+  {
+   "uni": "Brown",
+   "round": "Early Decision",
+   "md": "11-01",
+   "kind": "early",
+   "verified": 2026
+  },
+  {
+   "uni": "Harvard",
+   "round": "Regular Decision",
+   "md": "01-01",
+   "kind": "regular",
+   "verified": 2026
+  },
+  {
+   "uni": "Princeton",
+   "round": "Regular Decision",
+   "md": "01-01",
+   "kind": "regular",
+   "verified": 2026
+  },
+  {
+   "uni": "Columbia",
+   "round": "Regular Decision",
+   "md": "01-01",
+   "kind": "regular",
+   "verified": 2026
+  },
+  {
+   "uni": "Dartmouth",
+   "round": "Regular Decision",
+   "md": "01-01",
+   "kind": "regular",
+   "verified": 2026
+  },
+  {
+   "uni": "Yale",
+   "round": "Regular Decision",
+   "md": "01-02",
+   "kind": "regular",
+   "verified": 2026
+  },
+  {
+   "uni": "Cornell",
+   "round": "Regular Decision",
+   "md": "01-02",
+   "kind": "regular",
+   "verified": 2026
+  },
+  {
+   "uni": "Stanford",
+   "round": "Regular Decision",
+   "md": "01-05",
+   "kind": "regular",
+   "verified": 2026
+  },
+  {
+   "uni": "Penn",
+   "round": "Regular Decision",
+   "md": "01-05",
+   "kind": "regular",
+   "verified": 2026
+  },
+  {
+   "uni": "Oxford и Cambridge (UCAS)",
+   "round": "срок подачи",
+   "md": "10-15",
+   "kind": "uk",
+   "verified": 2026,
+   "note": "до 18:00 по Лондону"
+  }
+ ]
+}

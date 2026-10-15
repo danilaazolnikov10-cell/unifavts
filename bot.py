@@ -122,8 +122,9 @@ FACT_PROMPT = """Ты ведёшь русскоязычный Telegram-кана�
 - 350-650 символов, живой русский язык, без воды, без хэштегов, без разметки (звёздочек и решёток).
 - В заголовке есть название вуза.
 - Формат ответа: только JSON-объект, без пояснений и без markdown-разметки. Пример схемы:
-{{"title": "заголовок", "title_emoji": "🎓", "paragraphs": [{{"emoji": "📌", "text": "первый абзац"}}, {{"emoji": "🔎", "text": "второй абзац"}}], "sad": false}}
+{{"title": "заголовок", "title_emoji": "🎓", "paragraphs": [{{"emoji": "📌", "text": "первый абзац"}}, {{"emoji": "🔎", "text": "второй абзац"}}], "takeaway": "главное одной фразой", "sad": false}}
 - title: цепляющий заголовок без эмодзи. paragraphs: 3-4 коротких абзаца по 1-2 предложения, в тексте абзацев эмодзи нет.
+- takeaway: одна короткая фраза (до 110 символов) с главным выводом для абитуриента. Только то, что есть в тексте, без новых чисел и без эмодзи.
 - title_emoji и emoji каждого абзаца: ровно один эмодзи, который по СМЫСЛУ подходит именно этому заголовку или абзацу (визы и документы 🛂, деньги и стипендии 💰, наука 🔬, рейтинг 🏆, дата или срок 📅, место 📍, студенты 🎓, правила и законы ⚖️, технологии 💻, здоровье и биология 🧬, космос 🚀, исследование 🔎, предупреждение ⚠️). Эмодзи не повторяются, эмодзи-цифры не используй.
 - sad: true, если новость про смерть, трагедию, насилие или преступление, иначе false.
 - Выведи только JSON, без вступлений.
@@ -143,8 +144,9 @@ NEWS_PROMPT = """Ты ведёшь русскоязычный Telegram-кана�
 - Пересказывай своими словами, не копируй предложения, прямые цитаты не используй.
 - 350-700 символов, живой русский язык, без хэштегов, без разметки (звёздочек и решёток).
 - Формат ответа: только JSON-объект, без пояснений и без markdown-разметки. Пример схемы:
-{{"title": "заголовок", "title_emoji": "🎓", "paragraphs": [{{"emoji": "📌", "text": "первый абзац"}}, {{"emoji": "🔎", "text": "второй абзац"}}], "sad": false}}
+{{"title": "заголовок", "title_emoji": "🎓", "paragraphs": [{{"emoji": "📌", "text": "первый абзац"}}, {{"emoji": "🔎", "text": "второй абзац"}}], "takeaway": "главное одной фразой", "sad": false}}
 - title: цепляющий заголовок без эмодзи. paragraphs: 3-4 коротких абзаца по 1-2 предложения, в тексте абзацев эмодзи нет.
+- takeaway: одна короткая фраза (до 110 символов) с главным выводом для абитуриента. Только то, что есть в тексте, без новых чисел и без эмодзи.
 - title_emoji и emoji каждого абзаца: ровно один эмодзи, который по СМЫСЛУ подходит именно этому заголовку или абзацу (визы и документы 🛂, деньги и стипендии 💰, наука 🔬, рейтинг 🏆, дата или срок 📅, место 📍, студенты 🎓, правила и законы ⚖️, технологии 💻, здоровье и биология 🧬, космос 🚀, исследование 🔎, предупреждение ⚠️). Эмодзи не повторяются, эмодзи-цифры не используй.
 - sad: true, если новость про смерть, трагедию, насилие или преступление, иначе false.
 - Выведи только JSON, без вступлений.
@@ -304,13 +306,24 @@ def render(post, credit=""):
     body, src, tags = post["text"], post.get("source"), post.get("tags")
     esc = lambda t: html_escape(t, quote=False)
     head, _, rest = body.partition("\n\n")
-    html_t = f"<b>{esc(head)}</b>" + (f"\n\n{esc(rest)}" if rest else "")
+    def one(p):
+        if p.startswith("💡 Главное:"):
+            return f"<blockquote>{esc(p)}</blockquote>"
+        if post.get("bold_headings") and "\n" in p:  # у статей первая строка раздела: заголовок
+            first, second = p.split("\n", 1)
+            return f"<b>{esc(first)}</b>\n{esc(second)}"
+        return esc(p)
+    paras = [one(p) for p in rest.split("\n\n")] if rest else []
+    html_t = f"<b>{esc(head)}</b>" + ("\n\n" + "\n\n".join(paras) if paras else "")
     plain = body
     foot_html, foot_plain = [], []
     if src:
         label, url = src
         foot_html.append(f'<i>Источник:</i> <a href="{html_escape(url, quote=True)}">{esc(label)}</a>')
         foot_plain.append(f"Источник: {label}")
+    for label, url in post.get("extra_links") or []:
+        foot_html.append(f'<i>{esc(label)}:</i> <a href="{html_escape(url, quote=True)}">{esc(urllib.parse.urlparse(url).netloc)}</a>')
+        foot_plain.append(f"{label}: {urllib.parse.urlparse(url).netloc}")
     if credit:
         foot_html.append(f"<i>{esc(credit)}</i>")
         foot_plain.append(credit)
@@ -478,6 +491,9 @@ def compose(obj, kind, n):
             free.append((i, e))
     chosen = dict(sorted(random.sample(free, min(len(free), max(0, n - 1)))))
     body = [(chosen[i] + " " if i in chosen else "") + t for i, (t, _) in enumerate(paras)]
+    gist = clean_text(str(obj.get("takeaway") or ""))
+    if 15 <= len(gist) <= 160 and not EMOJI.search(gist):  # строка «Главное» в конце поста
+        body.append("💡 Главное: " + gist.rstrip(" ."))
     return "\n\n".join([f"{head} {title}"] + body)
 
 
@@ -1123,7 +1139,9 @@ def score_batch(batch):
 
 BOOST_RE = {  # то, что абитуриенту особенно нужно: чуть повышаем пользу
     "admissions": re.compile(r"(?i)scholarship|olympiad|\bsat\b|admission|financial aid|tuition|international student|\bvisa\b|"
-                             r"acceptance rate|early decision|common app|summer program|fellowship|application deadline"),
+                             r"acceptance rate|early decision|common app|summer program|fellowship|application deadline|"
+                             r"\bact\b|\bap exams?\b|toefl|ielts|duolingo|test-optional|test optional|admissions? test|entrance exam|"
+                             r"standardi[sz]ed test|a-levels?|\bgre\b|\bgmat\b|baccalaureate|exam (?:change|reform|format)"),
     "science": re.compile(r"(?i)breakthrough|first time|first-ever|nobel|record|discover|new study finds|cure|solves"),
 }
 DEMOTE_RE = re.compile(r"(?i)^\W*(opinion|column|op-ed|editorial|podcast|webinar|sponsored|partner content|the download)\b|"
@@ -1370,7 +1388,7 @@ def make_ranking_card(lst):
             d.line((0, y, W, y), fill=tuple(int(BG1[i] * (1 - k) + BG2[i] * k) for i in range(3)))
         font = lambda s: ImageFont.truetype(font_path, s)
         d.rectangle((70, 64, 150, 72), fill=GOLD)
-        d.text((70, 88), "МИРОВОЙ КАМПУС  ·  РЕЙТИНГИ", font=font(28), fill=GOLD)
+        d.text((70, 88), "МИРОВОЙ КАМПУС  ·  " + lst.get("label", "РЕЙТИНГИ"), font=font(28), fill=GOLD)
 
         def wrap(text, f, width):
             lines, cur = [], ""
@@ -1674,6 +1692,391 @@ def apply_ranking(state, post, now):
     state["rank_hist"] = (state.get("rank_hist", []) + [post["key"]])[-3000:]
 
 
+# ---------- опросы (раз в день) и шпаргалки (раз в два дня) ----------
+
+POLL_ON = _env("POLLS", "1") != "0"                  # POLLS=0 выключает опросы
+POLL_HOUR = int(_env("POLL_HOUR", 12))               # не раньше этого часа по местному времени
+POLL_FORCE = _env("POLL_FORCE", "") in ("1", "true")
+TIPS_ON = _env("TIPS", "1") != "0"                   # TIPS=0 выключает шпаргалки
+TIPS_HOUR = int(_env("TIPS_HOUR", 15))
+TIPS_EVERY_DAYS = int(_env("TIPS_EVERY_DAYS", 2))
+TIPS_FORCE = _env("TIPS_FORCE", "") in ("1", "true")
+
+
+def _local_day(now):
+    return now.astimezone(TZ).date()
+
+
+def poll_due(state, now):
+    return state.get("poll_day") != _local_day(now).isoformat() and now.astimezone(TZ).hour >= POLL_HOUR
+
+
+def tips_due(state, now):
+    last = state.get("tips_day")
+    gap = (_local_day(now) - dt.date.fromisoformat(last)).days if last else 99
+    return gap >= TIPS_EVERY_DAYS and now.astimezone(TZ).hour >= TIPS_HOUR
+
+
+def _lru(items, hist):
+    last = {i["id"]: max((n for n, h in enumerate(hist) if h == i["id"]), default=-1) for i in items}
+    return min(items, key=lambda i: last[i["id"]], default=None)
+
+
+def arwu_quiz(state, now):
+    """Вопрос «какой вуз выше в рейтинге»: два-три вуза из топ-100 ARWU, правильный ответ вычисляется по данным."""
+    year = arwu_year(state, now)
+    top = [e for e in arwu_entries("arwu", year)[:100] if e["rank"].isdigit()]
+    for _ in range(30):
+        trio = sorted(random.sample(top, 3), key=lambda e: int(e["rank"]))
+        if int(trio[1]["rank"]) - int(trio[0]["rank"]) >= 10 and int(trio[2]["rank"]) - int(trio[1]["rank"]) >= 10:
+            break
+    else:
+        return None
+    names = [e["name"] for e in trio]
+    key = "quiz:" + "|".join(sorted(names))
+    if key in state.get("poll_hist", []):
+        return None
+    options = names[:]
+    random.shuffle(options)
+    expl = f"Места в ARWU {year}: " + ", ".join(f"{e['name']} {e['rank']}" for e in trio)
+    return {"kind": "poll", "key": key, "question": f"Какой университет выше в рейтинге ARWU {year}?", "options": options,
+            "quiz": True, "correct": options.index(names[0]), "explanation": expl[:200]}
+
+
+def build_poll(state, now):
+    p = None
+    if RANKING_DYNAMIC and random.random() < 0.5:
+        try:
+            p = arwu_quiz(state, now)
+        except Exception as e:
+            print("  опрос из ARWU не вышел:", e)
+    if not p:
+        polls = json.loads((ROOT / "polls.json").read_text(encoding="utf-8"))["polls"]
+        q = _lru(polls, state.get("poll_hist", []))
+        if not q:
+            return None
+        opts = q["o"][:]
+        if "a" in q:  # у викторины порядок вариантов перемешиваем, правильный ответ отслеживаем
+            right = opts[q["a"]]
+            random.shuffle(opts)
+            p = {"kind": "poll", "key": q["id"], "question": q["q"], "options": opts, "quiz": True,
+                 "correct": opts.index(right), "explanation": q["e"]}
+        else:
+            p = {"kind": "poll", "key": q["id"], "question": q["q"], "options": opts, "quiz": False}
+    print("опрос:", p["key"])
+    return p
+
+
+def publish_poll(p):
+    if DRY:
+        print("----- DRY RUN (опрос) -----")
+        print(p["question"], p["options"], p.get("correct"))
+        return
+    fields = {"chat_id": os.environ["TELEGRAM_CHAT_ID"], "question": p["question"], "is_anonymous": "true",
+              "options": json.dumps([{"text": o} for o in p["options"]], ensure_ascii=False)}
+    if p["quiz"]:
+        fields.update({"type": "quiz", "correct_option_id": p["correct"], "explanation": p["explanation"]})
+    tg("sendPoll", fields)
+
+
+def apply_poll(state, p, now):
+    state["poll_day"] = _local_day(now).isoformat()
+    state["poll_hist"] = (state.get("poll_hist", []) + [p["key"]])[-300:]
+
+
+def build_tips_post(state):
+    tips = json.loads((ROOT / "tips.json").read_text(encoding="utf-8"))["tips"]
+    t = _lru(tips, state.get("tips_hist", []))
+    if not t:
+        return None
+    print("шпаргалка:", t["id"])
+    text = "\n\n".join([f"{t['emoji']} {t['title']}"] + [f"{e} {x}" for e, x in t["paras"]])
+    photo = make_card(text, "admissions", "Шпаргалка абитуриента", t["title"]) if CARD_ON else None
+    return {"text": text, "source": None, "preview": False, "photo": photo, "kind": "tips", "key": t["id"],
+            "tags": t.get("tags", "#шпаргалка")}
+
+
+def apply_tips(state, post, now):
+    state["tips_day"] = _local_day(now).isoformat()
+    state["tips_hist"] = (state.get("tips_hist", []) + [post["key"]])[-100:]
+
+
+# ---------- календарь дедлайнов (раз в неделю) ----------
+
+DEADLINES_ON = _env("DEADLINES", "1") != "0"        # DEADLINES=0 выключает календарь
+DEADLINES_HOUR = int(_env("DEADLINES_HOUR", 10))
+DEADLINES_FORCE = _env("DEADLINES_FORCE", "") in ("1", "true")
+DEADLINES_WINDOW_DAYS = int(_env("DEADLINES_WINDOW", 50))
+RU_MONTHS = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"]
+
+
+def upcoming_deadlines(now, window=DEADLINES_WINDOW_DAYS):
+    """Сроки из deadlines.json на ближайшие дни. Даты хранятся как месяц-день и каждый год переносятся сами;
+    если сезон не тот, в котором их сверяли, к дате добавляется «около»."""
+    data = json.loads((ROOT / "deadlines.json").read_text(encoding="utf-8"))
+    today = _local_day(now)
+    out = []
+    for it in data["items"]:
+        m, d = map(int, it["md"].split("-"))
+        date = dt.date(today.year, m, d)
+        if date < today:
+            date = dt.date(today.year + 1, m, d)
+        days = (date - today).days
+        if days <= window:
+            out.append({**it, "date": date, "days": days, "approx": date.year != it.get("verified", date.year)})
+    return sorted(out, key=lambda x: (x["date"], x["uni"])), data
+
+
+def deadlines_due(state, now):
+    wk = "%d-%02d" % now.astimezone(TZ).isocalendar()[:2]
+    return state.get("deadlines_week") != wk and now.astimezone(TZ).hour >= DEADLINES_HOUR
+
+
+def build_deadlines_post(state, now):
+    items, data = upcoming_deadlines(now)
+    if len(items) < 3:
+        return None
+    items = items[:11]
+    rows = []
+    for it in items:
+        when = f"{'около ' if it['approx'] else ''}{it['date'].day} {RU_MONTHS[it['date'].month - 1]}"
+        left = "сегодня" if it["days"] == 0 else ("завтра" if it["days"] == 1 else f"через {it['days']} дн.")
+        rows.append({"rank": str(it["days"]), "name": f"{it['uni']}: {it['round']}", "sub": when + (" · " + it["note"] if it.get("note") else ""), "extra": left})
+    lst = {"title": "Ближайшие дедлайны в лучшие университеты", "subtitle": "число в кружке: сколько дней осталось", "rows": rows,
+           "source": tuple(data["source"]), "emoji": "📅", "label": "ДЕДЛАЙНЫ"}
+    notes = [("🔒", "Early Decision обязывает пойти в вуз, если приняли. Restrictive и Single-Choice Early Action не обязывают, но ограничивают подачу в другие ранние программы."),
+             ("⚠️", "Даты могут сдвигаться на день-два от сезона к сезону. Проверяй их на странице приёма самого вуза.")]
+    photo = make_ranking_card(lst)
+    paras = [f"{e} {t}" for e, t in notes]
+    if not photo:
+        paras.insert(0, "\n".join(f"{r['sub']}: {r['name']}" for r in rows))
+    return {"text": "\n\n".join([f"📅 {lst['title']}"] + paras), "source": lst["source"], "preview": False, "photo": photo,
+            "kind": "deadlines", "key": "deadlines", "tags": "#дедлайны #поступление"}
+
+
+def apply_deadlines(state, now):
+    state["deadlines_week"] = "%d-%02d" % now.astimezone(TZ).isocalendar()[:2]
+
+
+# ---------- статья про вуз из топ-100 (раз в день, утром) ----------
+
+ARTICLE_ON = _env("ARTICLES", "1") != "0"           # ARTICLES=0 выключает статьи о вузах
+ARTICLE_HOUR = int(_env("ARTICLE_HOUR", 8))
+ARTICLE_FORCE = _env("ARTICLE_FORCE", "") in ("1", "true")
+ARTICLE_CHARS = int(_env("ARTICLE_CHARS", 10000))
+SEC_RE = re.compile(r"(?i)academ|admission|financ|aid|scholar|tuition|cost|student|campus|research|school|college|facult|program|department|athlet|alumni|history|organi[sz]ation|international")
+SEC_SKIP = re.compile(r"(?i)see also|references|external links|further reading|notes|footnotes|bibliography|gallery|in popular culture|controversy|controversies")
+OFFICIAL_KEYS = ["scholarship", "financial aid", "financial-aid", "international", "admission", "tuition", "cost", "apply"]
+
+ARTICLE_PROMPT = """Ты ведёшь русскоязычный Telegram-канал для школьников, которые думают о поступлении в зарубежные вузы.
+Ниже материалы про университет: {name}. Это статья Википедии и, возможно, страницы официального сайта вуза.
+Напиши обзорную статью для абитуриента.
+
+Правила:
+- """ + TRANSLATE + """
+- Используй только то, что прямо написано в материалах. Ничего не добавляй из своих знаний и не угадывай.
+- Числа, годы и названия бери в точности как в материалах. Не округляй, не считай, не выводи новые числа.
+- Про рейтинги не пиши: они добавляются отдельно.
+- Если в материалах нет данных для раздела (например, про стипендии или требования), раздел НЕ пиши. Лучше меньше разделов, чем выдумка.
+- Разделы выбирай только из тех, по которым есть данные: «О вузе», «Сильные направления», «Поступление и требования», «Стоимость и стипендии», «Студенческая жизнь», «Известные выпускники и достижения».
+- От 3 до 6 разделов, в каждом 2-4 коротких предложения. Весь текст 1800-3200 символов, без хэштегов, без разметки (звёздочек и решёток).
+- Формат ответа: только JSON-объект без пояснений. Схема:
+{{"title": "заголовок с названием вуза", "title_emoji": "🎓", "intro": "1-2 предложения о вузе", "sections": [{{"emoji": "🔬", "heading": "Сильные направления", "text": "текст раздела"}}], "takeaway": "главное одной фразой до 110 символов"}}
+- emoji каждого раздела: один эмодзи по смыслу раздела, эмодзи не повторяются, в текстах эмодзи нет.
+- Если материалов недостаточно для статьи, ответь одним словом: SKIP.
+
+Материалы:
+{text}"""
+
+
+def wiki_sections(title):
+    """Статья Википедии с заголовками разделов: введение плюс разделы про учёбу, поступление, деньги, жизнь."""
+    q = urllib.parse.urlencode({"action": "query", "prop": "extracts|pageimages|pageprops", "explaintext": 1, "exsectionformat": "wiki",
+                                "piprop": "thumbnail|name", "pithumbsize": 1280, "ppprop": "wikibase_item", "redirects": 1,
+                                "titles": title, "format": "json"})
+    page = next(iter(json.loads(http_get(f"https://en.wikipedia.org/w/api.php?{q}"))["query"]["pages"].values()))
+    text = page.get("extract", "")
+    parts = re.split(r"\n(=+) (.+?) \1\n", text)
+    lead, secs = parts[0].strip(), []
+    for i in range(1, len(parts) - 2, 3):
+        title_, body = parts[i + 1].strip(), parts[i + 2].strip()
+        if body and SEC_RE.search(title_) and not SEC_SKIP.search(title_):
+            secs.append((title_, body))
+    out, total = [lead[:2500]], 2500
+    for t_, b in secs:
+        if total >= ARTICLE_CHARS * 0.65:
+            break
+        chunk = f"== {t_} ==\n{b[:1800]}"
+        out.append(chunk)
+        total += len(chunk)
+    return {"name": page.get("title", title), "text": "\n\n".join(out), "full_len": len(text), "image_file": page.get("pageimage"),
+            "image_url": page.get("thumbnail", {}).get("source"), "item": page.get("pageprops", {}).get("wikibase_item")}
+
+
+def official_pages(item):
+    """Официальный сайт вуза из Викиданных и до трёх его страниц про поступление и стипендии. Любая ошибка: пусто."""
+    try:
+        j = json.loads(http_get("https://www.wikidata.org/w/api.php?" + urllib.parse.urlencode(
+            {"action": "wbgetclaims", "entity": item, "property": "P856", "format": "json"})))
+        home = j["claims"]["P856"][0]["mainsnak"]["datavalue"]["value"]
+    except Exception as e:
+        print("  официальный сайт не найден:", e)
+        return None, []
+    try:
+        html = http_get(home).decode("utf-8", errors="replace")
+    except Exception as e:
+        print("  сайт вуза не открылся:", e)
+        return home, []
+    host = urllib.parse.urlparse(home).netloc.lower()
+    root = ".".join(host.split(".")[-2:]) if not re.search(r"\.(ac|co|edu)\.[a-z]{2}$", host) else ".".join(host.split(".")[-3:])
+    found = {}
+    for m in re.finditer(r'(?is)<a\s[^>]*href=["\']([^"\'#]+)["\'][^>]*>(.*?)</a>', html):
+        href, label = urllib.parse.urljoin(home, m.group(1)), re.sub(r"<[^>]+>|\s+", " ", m.group(2)).strip().lower()
+        h = urllib.parse.urlparse(href)
+        if h.scheme not in ("http", "https") or not h.netloc.lower().endswith(root) or re.search(r"(?i)\.(pdf|jpg|png|zip)$", h.path):
+            continue
+        for rank, k in enumerate(OFFICIAL_KEYS):
+            if k in label or k in h.path.lower():
+                found.setdefault(href, rank)
+                break
+    pages = []
+    for href in sorted(found, key=found.get)[:3]:
+        try:
+            txt = html_to_text(http_get(href).decode("utf-8", errors="replace"))
+            if len(txt) > 600:
+                pages.append((href, txt[:2500]))
+        except Exception as e:
+            print("  страница вуза не открылась:", href[:60], e)
+    return home, pages
+
+
+def strong_subjects(name, year):
+    """Лучшие предметы вуза по ARWU: просматриваем все предметы параллельно, берём пять с лучшими местами."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    def one(code):
+        try:
+            for e in arwu_entries("gras", year, code):
+                if e["name"] == name:
+                    return (int(e["rank"]), SUBJECTS[code][1]) if e["rank"].isdigit() else None
+        except Exception:
+            return None
+    with ThreadPoolExecutor(8) as ex:
+        res = [r for r in ex.map(one, list(SUBJECTS)) if r]
+    return sorted(res)[:5]
+
+
+def compose_article(obj, rank_line):
+    title = clean_text(obj["title"])
+    intro = clean_text(obj.get("intro") or "")
+    secs = []
+    for s in obj.get("sections") or []:
+        if isinstance(s, dict) and clean_text(s.get("text") or "") and clean_text(s.get("heading") or ""):
+            e = str(s.get("emoji") or "").strip()
+            secs.append(((e if EMOJI_SEQ.fullmatch(e) else "📌"), clean_text(s["heading"]), clean_text(s["text"])))
+    if not title or not intro or len(secs) < 3:
+        raise ValueError("мало разделов")
+    head = str(obj.get("title_emoji") or "").strip()
+    head = head if EMOJI_SEQ.fullmatch(head) else "🎓"
+    gist = clean_text(str(obj.get("takeaway") or ""))
+    blocks = [f"{e} {h}\n{t}" for e, h, t in secs]
+    return head, title, intro, blocks, (gist.rstrip(" .") if 15 <= len(gist) <= 160 and not EMOJI.search(gist) else "")
+
+
+def article_for(name, year, ranked):
+    """Собирает статью о вузе. None, если материалов мало или модель ответила не по правилам."""
+    page = wiki_sections(name)
+    if page["full_len"] < 4000:
+        print("  статья Википедии короткая, пропускаю")
+        return None
+    home, pages = official_pages(page["item"]) if page.get("item") else (None, [])
+    text = page["text"]
+    for href, t in pages:
+        text += f"\n\n=== Официальный сайт вуза ({href}) ===\n{t}"
+    text = text[:ARTICLE_CHARS]
+    known = known_numbers(text)
+    prompt = ARTICLE_PROMPT.format(text=text, name=page["name"])
+    for attempt in range(3):
+        out = ask_llm(prompt, max_tokens=2200).strip()
+        if out.upper().startswith("SKIP"):
+            return None
+        m = re.search(r"\{.*\}", out, re.S)
+        if not m:
+            continue
+        try:
+            head, title, intro, blocks, gist = compose_article(json.loads(m.group(0), strict=False), "")
+        except (ValueError, KeyError, TypeError, AttributeError) as e:
+            print(f"  ответ не по схеме: {e} (попытка {attempt + 1})")
+            continue
+        bad = sorted(n for n in joined_numbers("\n".join([title, intro] + blocks + [gist])) if n not in known)
+        if bad:
+            print(f"  отклонено, чисел нет в источнике: {bad} (попытка {attempt + 1})")
+            continue
+        extra = []
+        if ranked:
+            rank, subjects = ranked() if callable(ranked) else ranked
+            line = f"🏆 Рейтинг ShanghaiRanking (ARWU) {year}: {rank} место в мире."
+            if subjects:
+                line += " Лучшие направления по этому рейтингу: " + ", ".join(f"{s} ({r})" for r, s in subjects) + "."
+            extra.append(line)
+        body_text = "\n".join(blocks)
+        if not re.search(r"(?i)поступлен|стипенд|стоимост|требован", body_text):
+            extra.append("ℹ️ Условия поступления и стипендии лучше проверить на официальном сайте вуза: они меняются каждый год.")
+        if gist:
+            extra.append("💡 Главное: " + gist)
+        parts = [f"{head} {title}", intro] + blocks
+        while len("\n\n".join(parts + extra)) > 3500 and len(parts) > 5:
+            parts.pop()
+        return {"text": "\n\n".join(parts + extra), "page": page, "home": home}
+    return None
+
+
+def build_article_post(state, now):
+    init_models()
+    year = arwu_year(state, now)
+    done = set(state.get("profiled", []))
+    world = []
+    try:
+        world = [e for e in arwu_entries("arwu", year)[:100] if e["rank"].isdigit()]
+    except Exception as e:
+        print("  список ARWU недоступен, беру вуз из своего списка:", e)
+    cands = [(e["name"], e) for e in world if e["name"] not in done] or [(u, None) for u in all_universities(state) if u not in done]
+    random.shuffle(cands)
+    for name, e in cands[:3]:
+        print("статья о вузе:", name)
+        state.setdefault("profiled", []).append(name)  # неудачные тоже помечаем, чтобы не биться об один и тот же
+        try:
+            ranked = (lambda: (e["rank"], strong_subjects(name, year))) if e else None
+            art = article_for(name, year, ranked)
+        except Exception as ex:
+            print("  статья не вышла:", ex)
+            continue
+        if not art:
+            continue
+        page = art["page"]
+        photo = wiki_photo(page)
+        if not photo and IMAGE_SEARCH:
+            photo = commons_photo(page["name"], page["text"], queries=[page["name"], page["name"] + " campus"])
+        if not photo and CARD_ON:
+            photo = make_card(art["text"], "fact", "Обзор вуза: " + page["name"])
+        wiki_url = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(page["name"].replace(" ", "_"))
+        post = {"text": art["text"], "source": ("Википедия", wiki_url), "preview": False, "photo": photo, "kind": "article",
+                "key": name, "tags": "#вузы #обзор #университеты", "bold_headings": True}
+        if art["home"]:
+            post["extra_links"] = [("Официальный сайт", art["home"])]
+        return post
+    return None
+
+
+def apply_article(state, now):
+    state["article_day"] = _local_day(now).isoformat()
+    state["profiled"] = state.get("profiled", [])[-400:]
+
+
+def article_due(state, now):
+    return state.get("article_day") != _local_day(now).isoformat() and now.astimezone(TZ).hour >= ARTICLE_HOUR
+
+
 # ---------- запуск ----------
 
 def load_state():
@@ -1708,6 +2111,39 @@ def main():
                 delay = next_delay(now)
                 state["next_post_at"] = iso(now + delay)
                 print(f"опубликован рейтинг ({rp['key']}), следующий пост через {delay.total_seconds() / 60:.0f} мин")
+                return
+        if ARTICLE_ON and (ARTICLE_FORCE or article_due(state, now)):  # утром статья про один вуз из топ-100
+            ap = build_article_post(state, now)
+            if ap:
+                publish(ap)
+                apply_article(state, now)
+                state["next_post_at"] = iso(now + next_delay(now))
+                print(f"опубликована статья о вузе ({ap['key']})")
+                return
+        if DEADLINES_ON and (DEADLINES_FORCE or deadlines_due(state, now)):  # раз в неделю календарь дедлайнов
+            dp = build_deadlines_post(state, now)
+            if dp:
+                publish(dp)
+                apply_deadlines(state, now)
+                state["next_post_at"] = iso(now + next_delay(now))
+                print("опубликован календарь дедлайнов")
+                return
+            apply_deadlines(state, now)  # ближайших дедлайнов нет: до следующей недели не проверяем
+        if POLL_ON and (POLL_FORCE or poll_due(state, now)):  # раз в день опрос или викторина
+            p = build_poll(state, now)
+            if p:
+                publish_poll(p)
+                apply_poll(state, p, now)
+                state["next_post_at"] = iso(now + next_delay(now))
+                print("опубликован опрос")
+                return
+        if TIPS_ON and (TIPS_FORCE or tips_due(state, now)):  # раз в два дня шпаргалка
+            tp = build_tips_post(state)
+            if tp:
+                publish(tp)
+                apply_tips(state, tp, now)
+                state["next_post_at"] = iso(now + next_delay(now))
+                print(f"опубликована шпаргалка ({tp['key']})")
                 return
         init_models()
         refresh_pool(state, now)
