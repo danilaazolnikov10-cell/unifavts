@@ -4,7 +4,8 @@
   "Karolinska Institute",
   "Johns Hopkins University",
   "KAIST",
-  "Stanford University"
+  "Stanford University",
+  "King's College London"
  ],
  "seen": [
   "741cd072e273",
@@ -213,13 +214,14 @@
   "9d5f98fdafa9",
   "eb8ae8da944a",
   "dc6871739892",
-  "c6b6d28e2893"
+  "c6b6d28e2893",
+  "b4fa6a814a31"
  ],
- "last_kind": "science",
+ "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
- "since_fact": 2,
- "next_post_at": "2026-10-15T18:18:50+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-15T20:32:13+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -335,11 +337,11 @@
   }
  ],
  "last_outlets": [
-  "ICEF Monitor",
   "Inside Higher Ed",
   "Википедия",
   "Inside Higher Ed",
-  "ScienceDaily"
+  "ScienceDaily",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
