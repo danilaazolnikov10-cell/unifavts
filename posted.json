@@ -199,7 +199,8 @@
   "13464bb5e6e9",
   "1bed6ec29c87",
   "9baa32e9d10b",
-  "66c173d4969e"
+  "66c173d4969e",
+  "442d91a26a06"
  ],
  "last_kind": "admissions",
  "extra_universities": [],
@@ -227,17 +228,6 @@
    "tier": "reserve"
   },
   {
-   "id": "d69f2af61bde",
-   "link": "https://www.insidehighered.com/news/quick-takes/2026/10/15/new-earnings-test-will-have-limited-concentrated-impact",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "New Earnings Test Will Have Limited but Concentrated Impact",
-   "date": "2026-10-15T07:00:00+00:00",
-   "rating": 6.5,
-   "timely": 1,
-   "tier": "reserve"
-  },
-  {
    "id": "10949feef18c",
    "link": "https://www.insidehighered.com/news/student-success/health-wellness/2026/10/15/rebuilding-student-safety-net",
    "outlet": "Inside Higher Ed",
@@ -260,8 +250,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 2,
- "next_post_at": "2026-10-15T13:59:27+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-10-15T14:40:16+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -350,13 +340,17 @@
   {
    "title": "You Can’t Build Golden Science Without Global Talent",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "New Earnings Test Will Have Limited but Concentrated Impact",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Inside Higher Ed",
-  "Inside Higher Ed",
   "Википедия",
   "The PIE News",
+  "Inside Higher Ed",
   "Inside Higher Ed"
  ],
  "arwu_year": 2026,
