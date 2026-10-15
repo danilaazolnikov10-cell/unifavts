@@ -208,9 +208,13 @@
   "05d2a610ef35",
   "d1f6651ddee3",
   "69c31d25c65c",
-  "1ed0bc9732a5"
+  "1ed0bc9732a5",
+  "228595c8568a",
+  "9d5f98fdafa9",
+  "eb8ae8da944a",
+  "dc6871739892"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [],
  "pool": [
   {
@@ -223,21 +227,10 @@
    "rating": 5.1,
    "timely": 0,
    "tier": "reserve"
-  },
-  {
-   "id": "2c1e24d169c0",
-   "link": "https://www.insidehighered.com/news/students/academics/2026/10/15/more-uk-universities-end-turnitin-contracts",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "More U.K. Universities End Turnitin Contracts as Concerns Mount",
-   "date": "2026-10-15T07:00:00+00:00",
-   "rating": 6.5,
-   "timely": 1,
-   "tier": "reserve"
   }
  ],
- "since_fact": 0,
- "next_post_at": "2026-10-15T17:06:24+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-15T17:44:47+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -342,14 +335,18 @@
   {
    "title": "Rebuilding the Student Safety Net",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "More U.K. Universities End Turnitin Contracts as Concerns Mount",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "ScienceDaily",
   "ICEF Monitor",
   "Inside Higher Ed",
-  "Википедия"
+  "Википедия",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
