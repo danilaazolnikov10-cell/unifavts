@@ -186,7 +186,9 @@
   "2c1e24d169c0",
   "5977aa0d9079",
   "717ce755bcad",
-  "ad767f55264e"
+  "ad767f55264e",
+  "2fe8eae18f46",
+  "f6e9e34a0fe2"
  ],
  "last_kind": "admissions",
  "extra_universities": [],
@@ -247,17 +249,6 @@
    "tier": "reserve"
   },
   {
-   "id": "22481dec0af2",
-   "link": "https://www.insidehighered.com/news/government/courts/2026/10/15/legal-advocate-decries-coordinated-assault-noncitizens",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "Longtime Legal Advocate Decries ‘Coordinated Assault’ on Noncitizens’ Rights",
-   "date": "2026-10-15T07:00:00+00:00",
-   "rating": 7.5,
-   "timely": 1,
-   "tier": "top"
-  },
-  {
    "id": "2c1e24d169c0",
    "link": "https://www.insidehighered.com/news/students/academics/2026/10/15/more-uk-universities-end-turnitin-contracts",
    "outlet": "Inside Higher Ed",
@@ -280,8 +271,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 5,
- "next_post_at": "2026-10-15T10:20:44+00:00",
+ "since_fact": 6,
+ "next_post_at": "2026-10-15T10:58:32+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -358,13 +349,17 @@
   {
    "title": "Congressional Democrats Condemn MSI Funding Transfer",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Longtime Legal Advocate Decries ‘Coordinated Assault’ on Noncitizens’ Rights",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "ScienceDaily",
   "The PIE News",
   "Inside Higher Ed",
   "ScienceDaily",
+  "Inside Higher Ed",
   "Inside Higher Ed"
  ],
  "arwu_year": 2026,
