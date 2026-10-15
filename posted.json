@@ -171,22 +171,14 @@
   "8c9d0e53423c",
   "d4c726a6c243",
   "332fe27dd988",
-  "c3cd9021172e"
+  "c3cd9021172e",
+  "77e324377b19",
+  "37bcb97a0878",
+  "2e4702bf2cfa"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [],
  "pool": [
-  {
-   "id": "dadb072e27ca",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261012185015.htm",
-   "outlet": "ScienceDaily",
-   "kind": "science",
-   "title": "A planet 320 light-years away confirms what scientists long suspected",
-   "date": "2026-10-13T20:24:40-04:00",
-   "rating": 5.1,
-   "timely": 0,
-   "tier": "reserve"
-  },
   {
    "id": "566c76b829f6",
    "link": "https://www.sciencedaily.com/releases/2026/10/261009025602.htm",
@@ -210,8 +202,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 3,
- "next_post_at": "2026-10-15T09:06:15+00:00",
+ "since_fact": 4,
+ "next_post_at": "2026-10-15T09:49:02+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -280,14 +272,18 @@
   {
    "title": "5 Colleges Sign On as Founding Members of New Accreditor",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "A planet 320 light-years away confirms what scientists long suspected",
+   "outlet": "ScienceDaily"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Википедия",
   "ScienceDaily",
   "The PIE News",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "ScienceDaily"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
