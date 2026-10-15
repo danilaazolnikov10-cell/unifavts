@@ -5,7 +5,8 @@
   "Johns Hopkins University",
   "KAIST",
   "Stanford University",
-  "King's College London"
+  "King's College London",
+  "McGill University"
  ],
  "seen": [
   "741cd072e273",
@@ -215,13 +216,14 @@
   "eb8ae8da944a",
   "dc6871739892",
   "c6b6d28e2893",
-  "b4fa6a814a31"
+  "b4fa6a814a31",
+  "a28cc4f36e26"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-15T20:32:13+00:00",
+ "next_post_at": "2026-10-15T21:54:40+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -337,10 +339,10 @@
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "Википедия",
   "Inside Higher Ed",
   "ScienceDaily",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
