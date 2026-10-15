@@ -3,7 +3,8 @@
   "University of Copenhagen",
   "Karolinska Institute",
   "Johns Hopkins University",
-  "KAIST"
+  "KAIST",
+  "Stanford University"
  ],
  "seen": [
   "741cd072e273",
@@ -206,9 +207,10 @@
   "0275a089e2f1",
   "05d2a610ef35",
   "d1f6651ddee3",
-  "69c31d25c65c"
+  "69c31d25c65c",
+  "1ed0bc9732a5"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [],
  "pool": [
   {
@@ -234,8 +236,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 6,
- "next_post_at": "2026-10-15T16:29:49+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-15T17:06:24+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -344,10 +346,10 @@
  ],
  "last_outlets": [
   "Inside Higher Ed",
-  "Inside Higher Ed",
   "ScienceDaily",
   "ICEF Monitor",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
