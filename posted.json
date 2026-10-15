@@ -174,9 +174,21 @@
   "c3cd9021172e",
   "77e324377b19",
   "37bcb97a0878",
-  "2e4702bf2cfa"
+  "2e4702bf2cfa",
+  "7f7f9cbe9e62",
+  "dc2e161a06b9",
+  "d69f2af61bde",
+  "cc5077942623",
+  "10949feef18c",
+  "22481dec0af2",
+  "6793849c88b7",
+  "935f6f780921",
+  "2c1e24d169c0",
+  "5977aa0d9079",
+  "717ce755bcad",
+  "ad767f55264e"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [],
  "pool": [
   {
@@ -200,10 +212,76 @@
    "rating": 5.1,
    "timely": 0,
    "tier": "reserve"
+  },
+  {
+   "id": "dc2e161a06b9",
+   "link": "https://thepienews.com/international-graduates-deliver-1-7tn-lifetime-boost-to-host-economies/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "International graduates deliver $1.7tn lifetime boost to host economies",
+   "date": "2026-10-15T09:30:31+00:00",
+   "rating": 8.4,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "d69f2af61bde",
+   "link": "https://www.insidehighered.com/news/quick-takes/2026/10/15/new-earnings-test-will-have-limited-concentrated-impact",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "New Earnings Test Will Have Limited but Concentrated Impact",
+   "date": "2026-10-15T07:00:00+00:00",
+   "rating": 6.5,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "10949feef18c",
+   "link": "https://www.insidehighered.com/news/student-success/health-wellness/2026/10/15/rebuilding-student-safety-net",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "Rebuilding the Student Safety Net",
+   "date": "2026-10-15T07:00:00+00:00",
+   "rating": 6.5,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "22481dec0af2",
+   "link": "https://www.insidehighered.com/news/government/courts/2026/10/15/legal-advocate-decries-coordinated-assault-noncitizens",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "Longtime Legal Advocate Decries ‘Coordinated Assault’ on Noncitizens’ Rights",
+   "date": "2026-10-15T07:00:00+00:00",
+   "rating": 7.5,
+   "timely": 1,
+   "tier": "top"
+  },
+  {
+   "id": "2c1e24d169c0",
+   "link": "https://www.insidehighered.com/news/students/academics/2026/10/15/more-uk-universities-end-turnitin-contracts",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "More U.K. Universities End Turnitin Contracts as Concerns Mount",
+   "date": "2026-10-15T07:00:00+00:00",
+   "rating": 6.5,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "5977aa0d9079",
+   "link": "https://www.insidehighered.com/opinion/columns/editors-note/2026/10/15/you-cant-build-golden-science-without-global-talent",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "You Can’t Build Golden Science Without Global Talent",
+   "date": "2026-10-15T07:00:00+00:00",
+   "rating": 7.5,
+   "timely": 0,
+   "tier": "reserve"
   }
  ],
- "since_fact": 4,
- "next_post_at": "2026-10-15T09:49:02+00:00",
+ "since_fact": 5,
+ "next_post_at": "2026-10-15T10:20:44+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -276,14 +354,18 @@
   {
    "title": "A planet 320 light-years away confirms what scientists long suspected",
    "outlet": "ScienceDaily"
+  },
+  {
+   "title": "Congressional Democrats Condemn MSI Funding Transfer",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "ScienceDaily",
   "The PIE News",
   "Inside Higher Ed",
-  "ScienceDaily"
+  "ScienceDaily",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
