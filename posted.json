@@ -201,9 +201,13 @@
   "9baa32e9d10b",
   "66c173d4969e",
   "442d91a26a06",
-  "041d31ae5927"
+  "041d31ae5927",
+  "aa4dc7339c6e",
+  "0275a089e2f1",
+  "05d2a610ef35",
+  "d1f6651ddee3"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [],
  "pool": [
   {
@@ -240,8 +244,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 4,
- "next_post_at": "2026-10-15T15:23:55+00:00",
+ "since_fact": 5,
+ "next_post_at": "2026-10-15T16:02:32+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -338,14 +342,18 @@
   {
    "title": "Scientists make stunning discovery that could help explain why life exists",
    "outlet": "ScienceDaily"
+  },
+  {
+   "title": "What is happening with international student numbers in Canada so far this year?",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "Inside Higher Ed",
   "Inside Higher Ed",
-  "ScienceDaily"
+  "ScienceDaily",
+  "ICEF Monitor"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
