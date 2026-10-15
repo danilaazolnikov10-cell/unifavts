@@ -222,7 +222,7 @@
   }
  ],
  "since_fact": 2,
- "next_post_at": "2026-10-15T08:01:56+00:00",
+ "next_post_at": "2026-10-15T08:34:35+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -307,5 +307,9 @@
   "Rockefeller University"
  ],
  "article_day": "2026-10-15",
- "deadlines_week": "2026-42"
+ "deadlines_week": "2026-42",
+ "poll_day": "2026-10-15",
+ "poll_hist": [
+  "p_country"
+ ]
 }
