@@ -200,22 +200,12 @@
   "1bed6ec29c87",
   "9baa32e9d10b",
   "66c173d4969e",
-  "442d91a26a06"
+  "442d91a26a06",
+  "041d31ae5927"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [],
  "pool": [
-  {
-   "id": "566c76b829f6",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261009025602.htm",
-   "outlet": "ScienceDaily",
-   "kind": "science",
-   "title": "Scientists make stunning discovery that could help explain why life exists",
-   "date": "2026-10-11T12:35:58-04:00",
-   "rating": 5.1,
-   "timely": 0,
-   "tier": "reserve"
-  },
   {
    "id": "2cfeb9c44ba5",
    "link": "https://www.sciencedaily.com/releases/2026/10/261005071515.htm",
@@ -250,8 +240,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 3,
- "next_post_at": "2026-10-15T14:40:16+00:00",
+ "since_fact": 4,
+ "next_post_at": "2026-10-15T15:23:55+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -344,14 +334,18 @@
   {
    "title": "New Earnings Test Will Have Limited but Concentrated Impact",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Scientists make stunning discovery that could help explain why life exists",
+   "outlet": "ScienceDaily"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "Википедия",
   "The PIE News",
   "Inside Higher Ed",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "ScienceDaily"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
