@@ -212,25 +212,14 @@
   "228595c8568a",
   "9d5f98fdafa9",
   "eb8ae8da944a",
-  "dc6871739892"
+  "dc6871739892",
+  "c6b6d28e2893"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [],
- "pool": [
-  {
-   "id": "2cfeb9c44ba5",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261005071515.htm",
-   "outlet": "ScienceDaily",
-   "kind": "science",
-   "title": "Drug target could block brain inflammation linked to Alzheimer’s and Parkinson’s",
-   "date": "2026-10-07T08:13:35-04:00",
-   "rating": 5.1,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 1,
- "next_post_at": "2026-10-15T17:44:47+00:00",
+ "pool": [],
+ "since_fact": 2,
+ "next_post_at": "2026-10-15T18:18:50+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -339,14 +328,18 @@
   {
    "title": "More U.K. Universities End Turnitin Contracts as Concerns Mount",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Drug target could block brain inflammation linked to Alzheimer’s and Parkinson’s",
+   "outlet": "ScienceDaily"
   }
  ],
  "last_outlets": [
-  "ScienceDaily",
   "ICEF Monitor",
   "Inside Higher Ed",
   "Википедия",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "ScienceDaily"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
