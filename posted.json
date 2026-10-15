@@ -163,9 +163,13 @@
   "74e7353d2b3a",
   "7e52a142421f",
   "412ce601247e",
-  "b829a2098a41"
+  "b829a2098a41",
+  "afecd153fe7d",
+  "7f11bb5dc8e7",
+  "aa190b9de6af",
+  "b6b492c021e5"
  ],
- "last_kind": "fact",
+ "last_kind": "science",
  "extra_universities": [],
  "pool": [
   {
@@ -202,17 +206,6 @@
    "tier": "reserve"
   },
   {
-   "id": "0bcb97fa7bc5",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261008102714.htm",
-   "outlet": "ScienceDaily",
-   "kind": "science",
-   "title": "The hidden math of Alzheimer's could point to new treatments",
-   "date": "2026-10-11T15:24:25-04:00",
-   "rating": 5.6,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
    "id": "566c76b829f6",
    "link": "https://www.sciencedaily.com/releases/2026/10/261009025602.htm",
    "outlet": "ScienceDaily",
@@ -235,8 +228,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 0,
- "next_post_at": "2026-10-15T04:53:06+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-15T05:07:18+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -293,13 +286,17 @@
   {
    "title": "Student voice: How Malta turned an English course into a new beginning",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "The hidden math of Alzheimer's could point to new treatments",
+   "outlet": "ScienceDaily"
   }
  ],
  "last_outlets": [
-  "NASA",
   "Inside Higher Ed",
   "ScienceDaily",
   "The PIE News",
-  "Википедия"
+  "Википедия",
+  "ScienceDaily"
  ]
 }
