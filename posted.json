@@ -189,9 +189,11 @@
   "717ce755bcad",
   "ad767f55264e",
   "2fe8eae18f46",
-  "f6e9e34a0fe2"
+  "f6e9e34a0fe2",
+  "edca450dcc7f",
+  "8e2f94b88698"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [],
  "pool": [
   {
@@ -213,17 +215,6 @@
    "title": "Drug target could block brain inflammation linked to Alzheimer’s and Parkinson’s",
    "date": "2026-10-07T08:13:35-04:00",
    "rating": 5.1,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
-   "id": "dc2e161a06b9",
-   "link": "https://thepienews.com/international-graduates-deliver-1-7tn-lifetime-boost-to-host-economies/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "International graduates deliver $1.7tn lifetime boost to host economies",
-   "date": "2026-10-15T09:30:31+00:00",
-   "rating": 8.4,
    "timely": 0,
    "tier": "reserve"
   },
@@ -272,8 +263,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 0,
- "next_post_at": "2026-10-15T12:32:35+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-15T13:20:02+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -354,14 +345,18 @@
   {
    "title": "Longtime Legal Advocate Decries ‘Coordinated Assault’ on Noncitizens’ Rights",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "International graduates deliver $1.7tn lifetime boost to host economies",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "ScienceDaily",
   "Inside Higher Ed",
   "Inside Higher Ed",
-  "Википедия"
+  "Википедия",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
