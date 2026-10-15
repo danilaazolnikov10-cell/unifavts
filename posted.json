@@ -191,7 +191,15 @@
   "2fe8eae18f46",
   "f6e9e34a0fe2",
   "edca450dcc7f",
-  "8e2f94b88698"
+  "8e2f94b88698",
+  "cb3f53a11a5b",
+  "0b3a7b398715",
+  "9467dc8083df",
+  "a3f2ccc82757",
+  "13464bb5e6e9",
+  "1bed6ec29c87",
+  "9baa32e9d10b",
+  "66c173d4969e"
  ],
  "last_kind": "admissions",
  "extra_universities": [],
@@ -250,21 +258,10 @@
    "rating": 6.5,
    "timely": 1,
    "tier": "reserve"
-  },
-  {
-   "id": "5977aa0d9079",
-   "link": "https://www.insidehighered.com/opinion/columns/editors-note/2026/10/15/you-cant-build-golden-science-without-global-talent",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "You Can’t Build Golden Science Without Global Talent",
-   "date": "2026-10-15T07:00:00+00:00",
-   "rating": 7.5,
-   "timely": 0,
-   "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-10-15T13:20:02+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-15T13:59:27+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -349,14 +346,18 @@
   {
    "title": "International graduates deliver $1.7tn lifetime boost to host economies",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "You Can’t Build Golden Science Without Global Talent",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "ScienceDaily",
   "Inside Higher Ed",
   "Inside Higher Ed",
   "Википедия",
-  "The PIE News"
+  "The PIE News",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
