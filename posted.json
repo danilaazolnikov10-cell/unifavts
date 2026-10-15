@@ -177,17 +177,6 @@
  "extra_universities": [],
  "pool": [
   {
-   "id": "b01406063fe4",
-   "link": "https://www.insidehighered.com/news/quick-takes/2026/10/14/5-independent-colleges-sign-new-accreditor",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "5 Colleges Sign On as Founding Members of New Accreditor",
-   "date": "2026-10-14T07:00:00+00:00",
-   "rating": 5.0,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
    "id": "dadb072e27ca",
    "link": "https://www.sciencedaily.com/releases/2026/10/261012185015.htm",
    "outlet": "ScienceDaily",
@@ -221,8 +210,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 2,
- "next_post_at": "2026-10-15T08:34:35+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-10-15T09:06:15+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -287,14 +276,18 @@
   {
    "title": "The PIE Live Ireland – live feed",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "5 Colleges Sign On as Founding Members of New Accreditor",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "ScienceDaily",
   "The PIE News",
   "Википедия",
   "ScienceDaily",
-  "The PIE News"
+  "The PIE News",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
