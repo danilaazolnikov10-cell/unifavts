@@ -167,9 +167,13 @@
   "afecd153fe7d",
   "7f11bb5dc8e7",
   "aa190b9de6af",
-  "b6b492c021e5"
+  "b6b492c021e5",
+  "8c9d0e53423c",
+  "d4c726a6c243",
+  "332fe27dd988",
+  "c3cd9021172e"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [],
  "pool": [
   {
@@ -195,17 +199,6 @@
    "tier": "reserve"
   },
   {
-   "id": "cfabefd0ddb1",
-   "link": "https://thepienews.com/the-pie-live-ireland-live-feed/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "The PIE Live Ireland – live feed",
-   "date": "2026-10-13T07:48:55+00:00",
-   "rating": 5.5,
-   "timely": 1,
-   "tier": "reserve"
-  },
-  {
    "id": "566c76b829f6",
    "link": "https://www.sciencedaily.com/releases/2026/10/261009025602.htm",
    "outlet": "ScienceDaily",
@@ -228,8 +221,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-10-15T07:11:25+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-15T08:01:56+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -290,14 +283,18 @@
   {
    "title": "The hidden math of Alzheimer's could point to new treatments",
    "outlet": "ScienceDaily"
+  },
+  {
+   "title": "The PIE Live Ireland – live feed",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "ScienceDaily",
   "The PIE News",
   "Википедия",
-  "ScienceDaily"
+  "ScienceDaily",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
