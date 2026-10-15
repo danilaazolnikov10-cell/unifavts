@@ -1309,6 +1309,357 @@ def apply_post(state, post):
     state["last_kind"] = post["kind"]
 
 
+# ---------- рейтинги вузов: раз в день топ-10 с картинкой-списком ----------
+
+RANKING_ON = _env("RANKING", "1") != "0"             # RANKING=0 выключает посты с рейтингами
+RANKING_HOUR = int(_env("RANKING_HOUR", 19))         # не раньше этого часа по местному времени
+RANKING_DYNAMIC = _env("RANKING_DYNAMIC", "1") != "0"   # RANKING_DYNAMIC=0: только списки из rankings.json
+RANKING_FORCE = _env("RANKING_FORCE", "") in ("1", "true")  # для проверки: опубликовать рейтинг сейчас
+
+
+def load_rankings():
+    p = ROOT / "rankings.json"
+    if not p.exists():
+        return []
+    return json.loads(p.read_text(encoding="utf-8")).get("lists", [])
+
+
+def ranking_due(state, now):
+    local = now.astimezone(TZ)
+    return state.get("ranking_day") != local.date().isoformat() and local.hour >= RANKING_HOUR
+
+
+def pick_ranking(state):
+    """Берём список, который не публиковали дольше всех (ни разу не было: идём по порядку файла)."""
+    lists = load_rankings()
+    hist = state.get("rank_hist", [])
+    last = {l["id"]: max((i for i, h in enumerate(hist) if h == l["id"]), default=-1) for l in lists}
+    return min(lists, key=lambda l: last[l["id"]], default=None)
+
+
+def make_ranking_card(lst):
+    """Картинка 1080x1350: заголовок и список вузов с местами. Всегда своя, чужих прав нет."""
+    try:
+        mods = _pillow()
+        font_path = next((f for f in FONT_PATHS if os.path.exists(f)), None)
+        if not mods or not font_path:
+            return None
+        Image, ImageDraw, ImageFont = mods
+        W, H = 1080, 1350
+        BG1, BG2 = (17, 31, 70), (9, 16, 40)
+        GOLD, CREAM, WHITE, MUTED, ROW = (242, 184, 75), (255, 241, 207), (255, 255, 255), (143, 163, 217), (26, 43, 93)
+        SILVER, BRONZE, GRID = (205, 212, 226), (205, 140, 90), (42, 65, 127)
+        img = Image.new("RGB", (W, H), BG1)
+        d = ImageDraw.Draw(img)
+        for y in range(H):
+            k = y / (H - 1)
+            d.line((0, y, W, y), fill=tuple(int(BG1[i] * (1 - k) + BG2[i] * k) for i in range(3)))
+        font = lambda s: ImageFont.truetype(font_path, s)
+        d.rectangle((70, 64, 150, 72), fill=GOLD)
+        d.text((70, 88), "МИРОВОЙ КАМПУС  ·  РЕЙТИНГИ", font=font(28), fill=GOLD)
+
+        def wrap(text, f, width):
+            lines, cur = [], ""
+            for w in text.split():
+                t = (cur + " " + w).strip()
+                if d.textlength(t, font=f) <= width or not cur:
+                    cur = t
+                else:
+                    lines.append(cur)
+                    cur = w
+            return lines + [cur]
+
+        for size in (68, 60, 54, 48, 44):
+            f = font(size)
+            lines = wrap(lst["title"], f, 940)
+            if len(lines) <= 2:
+                break
+        y = 150
+        for ln in lines:
+            d.text((70, y), ln, font=f, fill=WHITE)
+            y += int(size * 1.18)
+        d.text((70, y + 8), lst.get("subtitle", ""), font=font(28), fill=MUTED)
+        top, bottom = y + 62, H - 105
+        rows = lst["rows"]
+        n, gap = len(rows), 12
+        rh = min(96, (bottom - top - gap * (n - 1)) // n)
+        for i, r in enumerate(rows):
+            y0 = top + i * (rh + gap)
+            d.rounded_rectangle((70, y0, W - 70, y0 + rh), radius=20, fill=ROW)
+            rank = str(r.get("rank") or (i + 1))
+            col = {"1": GOLD, "2": SILVER, "3": BRONZE}.get(rank, GRID)
+            cx, cy, cr = 70 + 14 + rh // 2 - 4, y0 + rh // 2, rh // 2 - 8
+            d.ellipse((cx - cr, cy - cr, cx + cr, cy + cr), fill=col)
+            fr = font(int(cr * (1.0 if len(rank) < 3 else 0.78)))
+            d.text((cx, cy), rank, font=fr, fill=(15, 27, 61) if col != GRID else WHITE, anchor="mm")
+            right = W - 70 - 24
+            extra, prev = r.get("extra"), r.get("prev")
+            if prev and not extra:
+                try:
+                    diff = int(prev) - int(rank)
+                except ValueError:
+                    diff = 0
+                extra = f"▲ {diff}" if diff > 0 else (f"▼ {-diff}" if diff < 0 else "=")
+                ecol = GOLD if diff > 0 else ((240, 120, 120) if diff < 0 else MUTED)
+            else:
+                ecol = CREAM
+            ef = font(max(24, int(rh * 0.34)))
+            ew = d.textlength(extra, font=ef) if extra else 0
+            if extra:
+                d.text((right, cy), extra, font=ef, fill=ecol, anchor="rm")
+            x = cx + cr + 24
+            maxw = right - ew - 20 - x
+            nsize = int(rh * 0.44)
+            while d.textlength(r["name"], font=font(nsize)) > maxw and nsize > 22:
+                nsize -= 2
+            two = rh >= 54 and r.get("sub")
+            d.text((x, cy - (int(rh * 0.16) if two else 0)), r["name"], font=font(nsize), fill=WHITE, anchor="lm")
+            if two:
+                ssize = max(20, int(rh * 0.27))
+                while d.textlength(r["sub"], font=font(ssize)) > maxw and ssize > 16:
+                    ssize -= 1
+                d.text((x, cy + int(rh * 0.27)), r["sub"], font=font(ssize), fill=MUTED, anchor="lm")
+        d.text((70, H - 80), "t.me/world_campus_ru", font=font(30), fill=GOLD)
+        d.text((W - 70, H - 80), "данные: " + re.split(r"[:(]| и ", lst["source"][0])[0].strip(), font=font(24), fill=MUTED, anchor="ra")
+        buf = io.BytesIO()
+        img.save(buf, "JPEG", quality=92)
+        return {"bytes": buf.getvalue(), "credit": ""}
+    except Exception as e:
+        print("  картинка рейтинга не вышла:", e)
+        return None
+
+
+# ---------- бесконечные рейтинги: открытые данные ShanghaiRanking (ARWU и рейтинг по 55 предметам) ----------
+
+ARWU_API = "https://www.shanghairanking.com/api/pub/v1/"
+ARWU_DEFAULT_YEAR = 2026
+SUBJECTS = {  # код: (английское название, русское, эмодзи)
+    "AS0101": ("Mathematics", "Математика", "➗"), "AS0102": ("Physics", "Физика", "⚛️"),
+    "AS0103": ("Chemistry", "Химия", "🧪"), "AS0104": ("Earth Sciences", "Науки о Земле", "🌋"),
+    "AS0105": ("Geography", "География", "🗺"), "AS0106": ("Ecology", "Экология", "🌿"),
+    "AS0107": ("Oceanography", "Океанография", "🌊"), "AS0108": ("Atmospheric Science", "Наука об атмосфере", "⛅"),
+    "AS0201": ("Mechanical Engineering", "Машиностроение", "⚙️"),
+    "AS0202": ("Electrical & Electronic Engineering", "Электротехника и электроника", "🔌"),
+    "AS0205": ("Automation & Control", "Автоматика и управление", "🎛"),
+    "AS0206": ("Telecommunication Engineering", "Телекоммуникации", "📡"),
+    "AS0207": ("Instruments Science & Technology", "Приборостроение", "🔭"),
+    "AS0208": ("Biomedical Engineering", "Биомедицинская инженерия", "🫀"),
+    "AS0210": ("Computer Science & Engineering", "Информатика", "💻"),
+    "AS0211": ("Civil Engineering", "Строительство и архитектура", "🏗"),
+    "AS0212": ("Chemical Engineering", "Химическая технология", "⚗️"),
+    "AS0213": ("Materials Science & Engineering", "Материаловедение", "🔩"),
+    "AS0214": ("Nanoscience & Nanotechnology", "Нанотехнологии", "🔬"),
+    "AS0215": ("Energy Science & Engineering", "Энергетика", "⚡"),
+    "AS0216": ("Environmental Science & Engineering", "Экологическая инженерия", "♻️"),
+    "AS0217": ("Water Resources", "Водные ресурсы", "💧"),
+    "AS0219": ("Food Science & Technology", "Пищевые технологии", "🍎"),
+    "AS0220": ("Biotechnology", "Биотехнологии", "🧫"),
+    "AS0221": ("Aerospace Engineering", "Аэрокосмическая инженерия", "🚀"),
+    "AS0222": ("Marine/Ocean Engineering", "Морская инженерия", "🚢"),
+    "AS0223": ("Transportation Science & Technology", "Транспортные технологии", "🚆"),
+    "AS0224": ("Remote Sensing", "Дистанционное зондирование", "🛰"),
+    "AS0226": ("Mining & Mineral Engineering", "Горное дело", "⛏"),
+    "AS0227": ("Metallurgical Engineering", "Металлургия", "🏭"),
+    "AS0228": ("Textile Science & Engineering", "Текстильная инженерия", "🧵"),
+    "AS0229": ("Artificial Intelligence", "Искусственный интеллект", "🤖"),
+    "AS0230": ("Robotic Science & Engineering", "Робототехника", "🦾"),
+    "AS0301": ("Biological Sciences", "Биология", "🧬"), "AS0302": ("Human Biological Sciences", "Биология человека", "🧬"),
+    "AS0303": ("Agricultural Sciences", "Сельскохозяйственные науки", "🌾"), "AS0304": ("Veterinary Sciences", "Ветеринария", "🐾"),
+    "AS0401": ("Clinical Medicine", "Клиническая медицина", "🩺"), "AS0402": ("Public Health", "Общественное здравоохранение", "🏥"),
+    "AS0403": ("Dentistry & Oral Sciences", "Стоматология", "🦷"), "AS0404": ("Nursing", "Сестринское дело", "💉"),
+    "AS0405": ("Medical Technology", "Медицинские технологии", "🩻"), "AS0406": ("Pharmacy & Pharmaceutical Sciences", "Фармация", "💊"),
+    "AS0501": ("Economics", "Экономика", "💹"), "AS0502": ("Statistics", "Статистика", "📊"), "AS0503": ("Law", "Право", "⚖️"),
+    "AS0504": ("Political Sciences", "Политология", "🏛"), "AS0505": ("Sociology", "Социология", "👥"),
+    "AS0506": ("Education", "Педагогика и образование", "🍎"), "AS0507": ("Communication", "Коммуникации и медиа", "🎙"),
+    "AS0508": ("Psychology", "Психология", "🧠"), "AS0509": ("Business Administration", "Бизнес-администрирование", "💼"),
+    "AS0510": ("Finance", "Финансы", "💰"), "AS0511": ("Management", "Менеджмент", "📈"),
+    "AS0512": ("Public Administration", "Государственное управление", "🏛"),
+    "AS0513": ("Hospitality & Tourism Management", "Гостиничный и туристический менеджмент", "🏨"),
+    "AS0515": ("Library & Information Science", "Библиотечное и информационное дело", "📚"),
+}
+REGIONS = {  # как называет страну ShanghaiRanking: (родительный падеж, именительный)
+    "United States": ("США", "США"), "United Kingdom": ("Великобритании", "Великобритания"), "China": ("Китая", "Китай"),
+    "Mainland China": ("Китая", "Китай"), "Australia": ("Австралии", "Австралия"), "Canada": ("Канады", "Канада"),
+    "Germany": ("Германии", "Германия"), "France": ("Франции", "Франция"), "Japan": ("Японии", "Япония"),
+    "Netherlands": ("Нидерландов", "Нидерланды"), "Switzerland": ("Швейцарии", "Швейцария"), "Italy": ("Италии", "Италия"),
+    "Singapore": ("Сингапура", "Сингапур"), "South Korea": ("Южной Кореи", "Южная Корея"), "Korea": ("Южной Кореи", "Южная Корея"),
+    "Spain": ("Испании", "Испания"), "Sweden": ("Швеции", "Швеция"), "Denmark": ("Дании", "Дания"), "Belgium": ("Бельгии", "Бельгия"),
+    "Russia": ("России", "Россия"), "Hong Kong": ("Гонконга", "Гонконг"), "Israel": ("Израиля", "Израиль"),
+    "Brazil": ("Бразилии", "Бразилия"), "India": ("Индии", "Индия"), "Saudi Arabia": ("Саудовской Аравии", "Саудовская Аравия"),
+    "Finland": ("Финляндии", "Финляндия"), "Norway": ("Норвегии", "Норвегия"), "Austria": ("Австрии", "Австрия"),
+    "Ireland": ("Ирландии", "Ирландия"), "New Zealand": ("Новой Зеландии", "Новая Зеландия"), "Taiwan": ("Тайваня", "Тайвань"),
+    "Turkey": ("Турции", "Турция"), "Iran": ("Ирана", "Иран"), "Poland": ("Польши", "Польша"), "Portugal": ("Португалии", "Португалия"),
+    "Czech Republic": ("Чехии", "Чехия"), "Egypt": ("Египта", "Египет"), "South Africa": ("ЮАР", "ЮАР"), "Malaysia": ("Малайзии", "Малайзия"),
+    "Mexico": ("Мексики", "Мексика"), "Chile": ("Чили", "Чили"), "Argentina": ("Аргентины", "Аргентина"), "Greece": ("Греции", "Греция"),
+    "Pakistan": ("Пакистана", "Пакистан"), "Thailand": ("Таиланда", "Таиланд"), "Estonia": ("Эстонии", "Эстония"),
+}
+SHORT_NAMES = {"Massachusetts Institute of Technology": "MIT", "California Institute of Technology": "Caltech",
+               "University of California, Berkeley": "UC Berkeley", "University of California, Los Angeles": "UCLA",
+               "University of California, San Diego": "UC San Diego", "Swiss Federal Institute of Technology Lausanne": "EPFL",
+               "Swiss Federal Institute of Technology Zurich": "ETH Zurich", "Georgia Institute of Technology": "Georgia Tech"}
+ARWU_NOTE = {"world": ("ℹ️", "ARWU считает научные достижения: Нобелевские премии и медали Филдса, цитируемость, статьи в Nature и Science. Качество преподавания он не оценивает."),
+             "subject": ("ℹ️", "Это научный рейтинг: он оценивает публикации, цитирование, международное сотрудничество и награды, а не качество преподавания.")}
+
+
+def arwu_get(kind, **params):
+    j = json.loads(http_get(f"{ARWU_API}{kind}/rank?" + urllib.parse.urlencode(params)))
+    if j.get("code") != 200:
+        raise RuntimeError(f"ShanghaiRanking: {j.get('msg')}")
+    return j["data"]
+
+
+def arwu_entries(kind, year, code=None):
+    params = {"version": year, **({"subj_code": code} if code else {})}
+    out = [{"name": SHORT_NAMES.get(e["univNameEn"], e["univNameEn"]), "country": e.get("region") or "",
+            "rank": str(e["ranking"]).strip()} for e in (arwu_get(kind, **params).get("rankings") or [])]
+    if not out:
+        raise RuntimeError("пустой список")
+    return out
+
+
+def arwu_year(state, now):
+    """Свежий год берём из перечня предметов самого сайта, раз в неделю."""
+    at = state.get("arwu_year_at")
+    if state.get("arwu_year") and at and (now - dt.datetime.fromisoformat(at)).days < 7:
+        return state["arwu_year"]
+    try:
+        cats = arwu_get("gras", version=2025, subj_code="RS0210")["subjCategory"]
+        years = [int(y) for c in cats for d in c["detail"] for y in str(d["versions"]).split(",") if y.strip().isdigit()]
+        state["arwu_year"], state["arwu_year_at"] = max(years), iso(now)
+    except Exception as e:
+        print("  год рейтинга не определился:", e)
+    return state.get("arwu_year", ARWU_DEFAULT_YEAR)
+
+
+def _nom(c):
+    return REGIONS.get(c, (c, c))[1]
+
+
+def _gen(c):
+    return REGIONS.get(c, (c, c))[0]
+
+
+def _leaders(rows):
+    from collections import Counter
+    c, n = Counter(r["country"] for r in rows).most_common(1)[0]
+    return ("🌍", f"Больше всего вузов в списке у страны «{_nom(c)}»: {n} из {len(rows)}.") if n >= 3 else None
+
+
+def dynamic_ranking(state, now):
+    """Собирает новый список из данных ShanghaiRanking. Каждый вариант (предмет, страна, год) показываем один раз."""
+    year = arwu_year(state, now)
+    hist = set(state.get("rank_hist", []))
+    cache = {}
+
+    def get(kind, y, code=None):
+        k = (kind, y, code)
+        if k not in cache:
+            cache[k] = arwu_entries(kind, y, code)
+        return cache[k]
+
+    base = {"tags": "#рейтинги #ARWU #университеты #наука"}
+    gras_url = lambda code: f"https://www.shanghairanking.com/rankings/gras/{year}/{code}"
+    arwu_src = ("ShanghaiRanking (ARWU)", f"https://www.shanghairanking.com/rankings/arwu/{year}")
+    order = random.choices(["subj", "subjc", "risers", "arwuc", "slice"], weights=[30, 30, 20, 10, 10], k=5)
+    for kind in dict.fromkeys(order):
+        try:
+            if kind == "subj":
+                code = random.choice([c for c in SUBJECTS if f"gras:{year}:{c}" not in hist])
+                en, ru, em = SUBJECTS[code]
+                top = get("gras", year, code)[:10]
+                notes = [("🥇", f"Лидер: {top[0]['name']}, {_nom(top[0]['country'])}.")]
+                notes += [n for n in [_leaders(top)] if n] + [ARWU_NOTE["subject"]]
+                return {**base, "id": f"gras:{year}:{code}", "emoji": em, "title": f"{ru}: топ-10 университетов мира",
+                        "subtitle": f"ShanghaiRanking по предметам {year}",
+                        "source": ("ShanghaiRanking: рейтинг по предметам", gras_url(code)),
+                        "rows": [{"rank": r["rank"], "name": r["name"], "sub": _nom(r["country"])} for r in top], "notes": notes}
+            if kind == "subjc":
+                code = random.choice(list(SUBJECTS))
+                en, ru, em = SUBJECTS[code]
+                allr = get("gras", year, code)
+                regs = {}
+                for r in allr:
+                    regs.setdefault(r["country"], []).append(r)
+                ok = [c for c, v in regs.items() if len(v) >= 6 and c in REGIONS and f"grasc:{year}:{code}:{c}" not in hist]
+                if not ok:
+                    continue
+                c = random.choice(ok)
+                top = regs[c][:10]
+                notes = [("🌍", f"Лучший вуз {_gen(c)} в этом предмете: {top[0]['name']}, {top[0]['rank']} место в мире."), ARWU_NOTE["subject"]]
+                return {**base, "id": f"grasc:{year}:{code}:{c}", "emoji": em, "title": f"{ru}: топ-10 университетов {_gen(c)}",
+                        "subtitle": f"место в списке · место в мире, ShanghaiRanking {year}",
+                        "source": ("ShanghaiRanking: рейтинг по предметам", gras_url(code)),
+                        "rows": [{"name": r["name"], "extra": f"в мире {r['rank']}"} for r in top], "notes": notes}
+            if kind == "risers":
+                code = random.choice([c for c in SUBJECTS if f"rise:{year}:{c}" not in hist])
+                en, ru, em = SUBJECTS[code]
+                old = {r["name"]: r["rank"] for r in get("gras", year - 1, code)}
+                gains = []
+                for r in get("gras", year, code):
+                    if r["rank"].isdigit() and old.get(r["name"], "").isdigit() and int(old[r["name"]]) > int(r["rank"]):
+                        gains.append((int(old[r["name"]]) - int(r["rank"]), r, int(old[r["name"]])))
+                gains.sort(key=lambda g: (-g[0], int(g[1]["rank"])))
+                if len(gains) < 4:
+                    continue
+                gains = gains[:8]
+                g0 = gains[0]
+                notes = [("🚀", f"{g0[1]['name']} поднялся на {g0[0]} мест: с {g0[2]} на {g0[1]['rank']}."), ARWU_NOTE["subject"]]
+                return {**base, "id": f"rise:{year}:{code}", "emoji": "🚀", "title": f"{ru}: кто поднялся быстрее всех за год",
+                        "subtitle": f"изменение места, ShanghaiRanking {year - 1} → {year}",
+                        "source": ("ShanghaiRanking: рейтинг по предметам", gras_url(code)),
+                        "rows": [{"rank": r["rank"], "name": r["name"], "sub": f"{_nom(r['country'])} · было {o}", "prev": o}
+                                 for _, r, o in gains], "notes": notes}
+            if kind == "arwuc":
+                regs = {}
+                for r in get("arwu", year):
+                    regs.setdefault(r["country"], []).append(r)
+                ok = [c for c, v in regs.items() if len(v) >= 8 and c in REGIONS and f"arwuc:{year}:{c}" not in hist]
+                if not ok:
+                    continue
+                c = random.choice(ok)
+                top = regs[c][:10]
+                notes = [("🌍", f"Лучший вуз {_gen(c)}: {top[0]['name']}, {top[0]['rank']} место в мире."), ARWU_NOTE["world"]]
+                return {**base, "id": f"arwuc:{year}:{c}", "emoji": "🎓", "title": f"Топ-10 университетов {_gen(c)} по ARWU {year}",
+                        "subtitle": f"место в списке · место в мире, ARWU {year}", "source": arwu_src,
+                        "rows": [{"name": r["name"], "extra": f"в мире {r['rank']}"} for r in top], "notes": notes}
+            if kind == "slice":
+                start = random.choice([s for s in range(0, 100, 10) if f"arwus:{year}:{s}" not in hist])
+                part = get("arwu", year)[start:start + 10]
+                notes = [_leaders(part), ARWU_NOTE["world"]]
+                return {**base, "id": f"arwus:{year}:{start}", "emoji": "🏆",
+                        "title": f"ARWU {year}: места {start + 1}–{start + 10}" if start else f"Топ-10 университетов мира по ARWU {year}",
+                        "subtitle": "Academic Ranking of World Universities (Шанхайский рейтинг)", "source": arwu_src,
+                        "rows": [{"rank": r["rank"], "name": r["name"], "sub": _nom(r["country"])} for r in part],
+                        "notes": [n for n in notes if n]}
+        except IndexError:  # все варианты этого типа уже показаны
+            continue
+        except Exception as e:
+            print(f"  динамический рейтинг ({kind}) не вышел: {e}")
+    return None
+
+
+def build_ranking_post(state, now=None):
+    lst = None
+    if RANKING_DYNAMIC and random.random() < 0.8:  # 80% новых списков из открытых данных, 20% подборка из rankings.json
+        lst = dynamic_ranking(state, now or utcnow())
+    lst = lst or pick_ranking(state)
+    if not lst:
+        return None
+    print("рейтинг:", lst["id"])
+    paras = [f"{e} {t}" for e, t in lst.get("notes", [])]
+    photo = make_ranking_card(lst)
+    if not photo:  # без картинки список идёт текстом
+        paras.insert(0, "\n".join(f"{r.get('rank') or i + 1}. {r['name']}" for i, r in enumerate(lst["rows"])))
+    text = "\n\n".join([f"{lst['emoji']} {lst['title']}"] + paras)
+    return {"text": text, "source": tuple(lst["source"]), "preview": False, "photo": photo,
+            "kind": "ranking", "key": lst["id"], "tags": lst.get("tags", TOPIC_TAGS["ranking"])}
+
+
+def apply_ranking(state, post, now):
+    state["ranking_day"] = now.astimezone(TZ).date().isoformat()
+    state["rank_hist"] = (state.get("rank_hist", []) + [post["key"]])[-3000:]
+
+
 # ---------- запуск ----------
 
 def load_state():
@@ -1335,6 +1686,15 @@ def main():
         print(f"рано: следующий пост после {due} (сейчас {iso(now)})")
         return
     try:
+        if RANKING_ON and (RANKING_FORCE or ranking_due(state, now)):  # раз в день рейтинг вузов, ИИ для него не нужен
+            rp = build_ranking_post(state, now)
+            if rp:
+                publish(rp)
+                apply_ranking(state, rp, now)
+                delay = next_delay(now)
+                state["next_post_at"] = iso(now + delay)
+                print(f"опубликован рейтинг ({rp['key']}), следующий пост через {delay.total_seconds() / 60:.0f} мин")
+                return
         init_models()
         refresh_pool(state, now)
         post = pick_post(state, now)
