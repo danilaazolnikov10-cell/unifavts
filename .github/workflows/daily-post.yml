@@ -32,6 +32,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           FORCE: ${{ github.event_name == 'workflow_dispatch' }}
+          VARS_JSON: ${{toJSON(vars)}}
 
       - name: Save state
         if: always()
