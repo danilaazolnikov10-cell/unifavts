@@ -850,13 +850,26 @@ def _pillow():
     try:
         from PIL import Image, ImageDraw, ImageFont
     except ImportError:
-        import subprocess
+        import subprocess, site, importlib
         print("  ставлю Pillow")
-        subprocess.run([sys.executable, "-m", "pip", "install", "--quiet", "--user",
-                        "--break-system-packages", "pillow"], check=False)
+        for extra in (["--user"], []):
+            r = subprocess.run([sys.executable, "-m", "pip", "install", "--quiet", *extra,
+                                "--break-system-packages", "pillow"], capture_output=True, text=True)
+            if r.returncode == 0:
+                break
+            print("  pip не справился:", (r.stderr or r.stdout).strip()[-300:])
+        # папка пользовательских пакетов могла появиться только что: без этого import её не видит
+        try:
+            p = site.getusersitepackages()
+            if p not in sys.path:
+                sys.path.append(p)
+        except Exception:
+            pass
+        importlib.invalidate_caches()
         try:
             from PIL import Image, ImageDraw, ImageFont
-        except ImportError:
+        except ImportError as e:
+            print("  Pillow так и не появился:", e)
             return None
     return Image, ImageDraw, ImageFont
 
@@ -1343,6 +1356,7 @@ def make_ranking_card(lst):
         mods = _pillow()
         font_path = next((f for f in FONT_PATHS if os.path.exists(f)), None)
         if not mods or not font_path:
+            print("  нет Pillow или шрифта font.ttf:", bool(mods), font_path)
             return None
         Image, ImageDraw, ImageFont = mods
         W, H = 1080, 1350
