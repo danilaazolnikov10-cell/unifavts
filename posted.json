@@ -1,7 +1,8 @@
 {
  "posted": [
   "University of Copenhagen",
-  "Karolinska Institute"
+  "Karolinska Institute",
+  "Johns Hopkins University"
  ],
  "seen": [
   "741cd072e273",
@@ -164,7 +165,7 @@
   "412ce601247e",
   "b829a2098a41"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [],
  "pool": [
   {
@@ -234,8 +235,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 6,
- "next_post_at": "2026-10-15T04:16:57+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-15T04:53:06+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -295,10 +296,10 @@
   }
  ],
  "last_outlets": [
-  "ScienceDaily",
   "NASA",
   "Inside Higher Ed",
   "ScienceDaily",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ]
 }
