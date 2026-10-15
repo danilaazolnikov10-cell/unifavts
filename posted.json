@@ -164,20 +164,9 @@
   "412ce601247e",
   "b829a2098a41"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [],
  "pool": [
-  {
-   "id": "15aa39fc584b",
-   "link": "https://thepienews.com/student-voice-how-malta-turned-an-english-course-into-a-new-beginning/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "Student voice: How Malta turned an English course into a new beginning",
-   "date": "2026-10-14T09:14:58+00:00",
-   "rating": 5.9,
-   "timely": 0,
-   "tier": "reserve"
-  },
   {
    "id": "b01406063fe4",
    "link": "https://www.insidehighered.com/news/quick-takes/2026/10/14/5-independent-colleges-sign-new-accreditor",
@@ -245,8 +234,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 5,
- "next_post_at": "2026-10-15T03:16:30+00:00",
+ "since_fact": 6,
+ "next_post_at": "2026-10-15T04:16:57+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -299,13 +288,17 @@
   {
    "title": "The eye has a hidden cleanup system scientists never knew existed",
    "outlet": "ScienceDaily"
+  },
+  {
+   "title": "Student voice: How Malta turned an English course into a new beginning",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "ScienceDaily",
   "NASA",
   "Inside Higher Ed",
-  "ScienceDaily"
+  "ScienceDaily",
+  "The PIE News"
  ]
 }
