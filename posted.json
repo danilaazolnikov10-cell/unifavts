@@ -205,7 +205,8 @@
   "aa4dc7339c6e",
   "0275a089e2f1",
   "05d2a610ef35",
-  "d1f6651ddee3"
+  "d1f6651ddee3",
+  "69c31d25c65c"
  ],
  "last_kind": "admissions",
  "extra_universities": [],
@@ -222,17 +223,6 @@
    "tier": "reserve"
   },
   {
-   "id": "10949feef18c",
-   "link": "https://www.insidehighered.com/news/student-success/health-wellness/2026/10/15/rebuilding-student-safety-net",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "Rebuilding the Student Safety Net",
-   "date": "2026-10-15T07:00:00+00:00",
-   "rating": 6.5,
-   "timely": 1,
-   "tier": "reserve"
-  },
-  {
    "id": "2c1e24d169c0",
    "link": "https://www.insidehighered.com/news/students/academics/2026/10/15/more-uk-universities-end-turnitin-contracts",
    "outlet": "Inside Higher Ed",
@@ -244,8 +234,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 5,
- "next_post_at": "2026-10-15T16:02:32+00:00",
+ "since_fact": 6,
+ "next_post_at": "2026-10-15T16:29:49+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -346,14 +336,18 @@
   {
    "title": "What is happening with international student numbers in Canada so far this year?",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "Rebuilding the Student Safety Net",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Inside Higher Ed",
   "Inside Higher Ed",
   "ScienceDaily",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
