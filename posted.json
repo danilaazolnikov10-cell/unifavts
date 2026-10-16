@@ -12,7 +12,8 @@
   "University of Toronto",
   "Massachusetts Institute of Technology",
   "National University of Singapore",
-  "Tsinghua University"
+  "Tsinghua University",
+  "Heidelberg University"
  ],
  "seen": [
   "741cd072e273",
@@ -255,11 +256,11 @@
   "36209e2ea5ff",
   "fb76fc04de01"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
- "since_fact": 5,
- "next_post_at": "2026-10-16T11:37:12+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-16T12:11:38+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -399,11 +400,11 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Inside Higher Ed",
   "ScienceAlert",
   "MIT Technology Review",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
