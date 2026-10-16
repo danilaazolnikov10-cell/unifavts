@@ -246,13 +246,42 @@
   "988c011f38e5",
   "c7a9590118b3",
   "ef0f2be2f86b",
-  "9e0e06d440a8"
+  "9e0e06d440a8",
+  "f7cacb8a4a99",
+  "f953650949f1",
+  "58898211baf8",
+  "284c47b12cd5",
+  "bb62f8b7f627",
+  "36209e2ea5ff"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [],
- "pool": [],
- "since_fact": 2,
- "next_post_at": "2026-10-16T09:28:25+00:00",
+ "pool": [
+  {
+   "id": "f953650949f1",
+   "link": "https://thepienews.com/remote-or-in-person-assessments-must-be-secure-fair-and-able-to-stand-up-to-scrutiny/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Remote or in person, assessments must be secure, fair and able to stand up to scrutiny",
+   "date": "2026-10-16T09:51:24+00:00",
+   "rating": 6.9,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "bb62f8b7f627",
+   "link": "https://www.technologyreview.com/2026/10/16/1145840/prima-implant-restores-sight-macular-degeneration-patients/",
+   "outlet": "MIT Technology Review",
+   "kind": "science",
+   "title": "This implant can restore sight for patients with macular degeneration",
+   "date": "2026-10-16T09:00:00+00:00",
+   "rating": 7.6,
+   "timely": 0,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 3,
+ "next_post_at": "2026-10-16T10:35:05+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -377,14 +406,18 @@
   {
    "title": "Calculus Is an Admissions Barrier—Even for Students Who Weren’t Offered It",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Google's Quantum Computer Just Achieved a Major Breakthrough With 'Magic States'",
+   "outlet": "ScienceAlert"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "The PIE News",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "ScienceAlert"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
