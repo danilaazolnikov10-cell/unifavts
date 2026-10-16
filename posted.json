@@ -7,7 +7,8 @@
   "Stanford University",
   "King's College London",
   "McGill University",
-  "London School of Economics"
+  "London School of Economics",
+  "University of Tokyo"
  ],
  "seen": [
   "741cd072e273",
@@ -224,13 +225,15 @@
   "6ee0595437ae",
   "ffd1ce68ded8",
   "2d98128ea808",
-  "55fd5b8e8ffd"
+  "55fd5b8e8ffd",
+  "c6db097395c4",
+  "17ba59550776"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-16T00:47:32+00:00",
+ "next_post_at": "2026-10-16T02:25:37+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -350,10 +353,10 @@
   }
  ],
  "last_outlets": [
-  "ScienceDaily",
   "Википедия",
   "Википедия",
   "ICEF Monitor",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
