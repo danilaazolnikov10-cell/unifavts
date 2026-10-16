@@ -14,7 +14,8 @@
   "National University of Singapore",
   "Tsinghua University",
   "Heidelberg University",
-  "ETH Zurich"
+  "ETH Zurich",
+  "Imperial College London"
  ],
  "seen": [
   "741cd072e273",
@@ -256,13 +257,26 @@
   "bb62f8b7f627",
   "36209e2ea5ff",
   "fb76fc04de01",
-  "a4675c420313"
+  "a4675c420313",
+  "05f4784c063b",
+  "3865c7b0bd0c",
+  "d8a9172a471d",
+  "12f0e4c20798",
+  "f1c9f97326da",
+  "cb5029878b9e",
+  "6d9b7bdd4bae",
+  "c58481112065",
+  "a5c3bd2b4a8c",
+  "2c6709586e42",
+  "2c668c47cecd",
+  "f61352341d06",
+  "3dc702219a72"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-16T12:39:07+00:00",
+ "next_post_at": "2026-10-16T13:31:36+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -402,9 +416,9 @@
   }
  ],
  "last_outlets": [
-  "ScienceAlert",
   "MIT Technology Review",
   "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
