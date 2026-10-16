@@ -267,21 +267,10 @@
    "rating": 6.9,
    "timely": 0,
    "tier": "reserve"
-  },
-  {
-   "id": "bb62f8b7f627",
-   "link": "https://www.technologyreview.com/2026/10/16/1145840/prima-implant-restores-sight-macular-degeneration-patients/",
-   "outlet": "MIT Technology Review",
-   "kind": "science",
-   "title": "This implant can restore sight for patients with macular degeneration",
-   "date": "2026-10-16T09:00:00+00:00",
-   "rating": 7.6,
-   "timely": 0,
-   "tier": "reserve"
   }
  ],
- "since_fact": 3,
- "next_post_at": "2026-10-16T10:35:05+00:00",
+ "since_fact": 4,
+ "next_post_at": "2026-10-16T11:05:30+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -410,14 +399,18 @@
   {
    "title": "Google's Quantum Computer Just Achieved a Major Breakthrough With 'Magic States'",
    "outlet": "ScienceAlert"
+  },
+  {
+   "title": "This implant can restore sight for patients with macular degeneration",
+   "outlet": "MIT Technology Review"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "The PIE News",
   "Inside Higher Ed",
-  "ScienceAlert"
+  "ScienceAlert",
+  "MIT Technology Review"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
