@@ -252,25 +252,14 @@
   "58898211baf8",
   "284c47b12cd5",
   "bb62f8b7f627",
-  "36209e2ea5ff"
+  "36209e2ea5ff",
+  "fb76fc04de01"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [],
- "pool": [
-  {
-   "id": "f953650949f1",
-   "link": "https://thepienews.com/remote-or-in-person-assessments-must-be-secure-fair-and-able-to-stand-up-to-scrutiny/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "Remote or in person, assessments must be secure, fair and able to stand up to scrutiny",
-   "date": "2026-10-16T09:51:24+00:00",
-   "rating": 6.9,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 4,
- "next_post_at": "2026-10-16T11:05:30+00:00",
+ "pool": [],
+ "since_fact": 5,
+ "next_post_at": "2026-10-16T11:37:12+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -403,14 +392,18 @@
   {
    "title": "This implant can restore sight for patients with macular degeneration",
    "outlet": "MIT Technology Review"
+  },
+  {
+   "title": "Remote or in person, assessments must be secure, fair and able to stand up to scrutiny",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "Inside Higher Ed",
   "ScienceAlert",
-  "MIT Technology Review"
+  "MIT Technology Review",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
