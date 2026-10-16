@@ -18,7 +18,8 @@
   "Imperial College London",
   "Moscow State University",
   "Brown University",
-  "Australian National University"
+  "Australian National University",
+  "Indian Institute of Technology Bombay"
  ],
  "seen": [
   "741cd072e273",
@@ -280,13 +281,14 @@
   "bd0ee1153eb5",
   "28e4cc516cad",
   "ba4c95679c6f",
-  "2238cc22c97a"
+  "2238cc22c97a",
+  "1484a996e772"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-16T16:35:20+00:00",
+ "next_post_at": "2026-10-16T17:32:30+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
