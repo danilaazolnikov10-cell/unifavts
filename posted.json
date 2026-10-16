@@ -241,7 +241,7 @@
  "extra_universities": [],
  "pool": [],
  "since_fact": 1,
- "next_post_at": "2026-10-16T08:04:08+00:00",
+ "next_post_at": "2026-10-16T08:43:33+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -384,9 +384,10 @@
  ],
  "article_day": "2026-10-16",
  "deadlines_week": "2026-42",
- "poll_day": "2026-10-15",
+ "poll_day": "2026-10-16",
  "poll_hist": [
-  "p_country"
+  "p_country",
+  "p_main"
  ],
  "tips_day": "2026-10-15",
  "tips_hist": [
