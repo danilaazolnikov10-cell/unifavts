@@ -234,13 +234,14 @@
   "17ba59550776",
   "a81caaf1adec",
   "97599037ffe3",
-  "2e25e9d5212e"
+  "2e25e9d5212e",
+  "6df65c80f192"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-16T07:22:24+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-16T08:04:08+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -357,6 +358,10 @@
   {
    "title": "UK: Study visa application withdrawals surge amidst new BCA compliance requirements",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "Liverpool’s mayor opens Bengaluru campus",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
@@ -364,7 +369,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
