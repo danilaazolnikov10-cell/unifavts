@@ -22,7 +22,8 @@
   "Indian Institute of Technology Bombay",
   "Columbia University",
   "Princeton University",
-  "California Institute of Technology"
+  "California Institute of Technology",
+  "New York University"
  ],
  "seen": [
   "741cd072e273",
@@ -285,13 +286,16 @@
   "28e4cc516cad",
   "ba4c95679c6f",
   "2238cc22c97a",
-  "1484a996e772"
+  "1484a996e772",
+  "628aec087c4d",
+  "987f46b00136",
+  "85ddbdc7a76d"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-16T20:52:24+00:00",
+ "next_post_at": "2026-10-16T22:28:36+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
