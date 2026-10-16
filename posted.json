@@ -235,13 +235,24 @@
   "a81caaf1adec",
   "97599037ffe3",
   "2e25e9d5212e",
-  "6df65c80f192"
+  "6df65c80f192",
+  "bdad458aadf3",
+  "09c716aaa497",
+  "b37c29de9a91",
+  "e2559460b79f",
+  "c2b15f02fca0",
+  "36b0dc294c35",
+  "78a382bf6413",
+  "988c011f38e5",
+  "c7a9590118b3",
+  "ef0f2be2f86b",
+  "9e0e06d440a8"
  ],
  "last_kind": "admissions",
  "extra_universities": [],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-16T08:43:33+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-16T09:28:25+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -362,14 +373,18 @@
   {
    "title": "Liverpool’s mayor opens Bengaluru campus",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Calculus Is an Admissions Barrier—Even for Students Who Weren’t Offered It",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "The PIE News"
+  "The PIE News",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
