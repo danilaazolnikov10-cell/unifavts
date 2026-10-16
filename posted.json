@@ -15,7 +15,8 @@
   "Tsinghua University",
   "Heidelberg University",
   "ETH Zurich",
-  "Imperial College London"
+  "Imperial College London",
+  "Moscow State University"
  ],
  "seen": [
   "741cd072e273",
@@ -270,13 +271,15 @@
   "2c6709586e42",
   "2c668c47cecd",
   "f61352341d06",
-  "3dc702219a72"
+  "3dc702219a72",
+  "8d4656f002b6",
+  "b1fc4be8b8b4"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-16T13:31:36+00:00",
+ "next_post_at": "2026-10-16T14:22:11+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -416,8 +419,8 @@
   }
  ],
  "last_outlets": [
-  "MIT Technology Review",
   "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия"
