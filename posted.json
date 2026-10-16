@@ -17,7 +17,8 @@
   "ETH Zurich",
   "Imperial College London",
   "Moscow State University",
-  "Brown University"
+  "Brown University",
+  "Australian National University"
  ],
  "seen": [
   "741cd072e273",
@@ -276,13 +277,16 @@
   "8d4656f002b6",
   "b1fc4be8b8b4",
   "f1d3f2b84f64",
-  "bd0ee1153eb5"
+  "bd0ee1153eb5",
+  "28e4cc516cad",
+  "ba4c95679c6f",
+  "2238cc22c97a"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-16T15:53:12+00:00",
+ "next_post_at": "2026-10-16T16:35:20+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
