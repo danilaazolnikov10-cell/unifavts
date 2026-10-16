@@ -16,7 +16,8 @@
   "Heidelberg University",
   "ETH Zurich",
   "Imperial College London",
-  "Moscow State University"
+  "Moscow State University",
+  "Brown University"
  ],
  "seen": [
   "741cd072e273",
@@ -273,13 +274,15 @@
   "f61352341d06",
   "3dc702219a72",
   "8d4656f002b6",
-  "b1fc4be8b8b4"
+  "b1fc4be8b8b4",
+  "f1d3f2b84f64",
+  "bd0ee1153eb5"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-16T14:22:11+00:00",
+ "next_post_at": "2026-10-16T15:21:35+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -419,7 +422,7 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия",
