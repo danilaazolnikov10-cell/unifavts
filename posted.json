@@ -327,10 +327,21 @@
   "44aa4aa6cc2b"
  ],
  "last_kind": "fact",
- "extra_universities": [],
+ "extra_universities": [
+  "University of Sydney",
+  "University of Auckland",
+  "University of São Paulo",
+  "University of Buenos Aires",
+  "University of the Witwatersrand",
+  "University of Nairobi",
+  "University of Lagos",
+  "Cairo University",
+  "Istanbul University",
+  "University of Warsaw"
+ ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-17T15:58:44+00:00",
+ "next_post_at": "2026-10-17T16:33:07+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
