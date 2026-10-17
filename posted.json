@@ -317,7 +317,7 @@
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-17T11:29:08+00:00",
+ "next_post_at": "2026-10-17T12:18:43+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -484,8 +484,9 @@
   "p_main",
   "quiz:Northwestern University|Seoul National University|University of Oxford"
  ],
- "tips_day": "2026-10-15",
+ "tips_day": "2026-10-17",
  "tips_hist": [
-  "t_sat"
+  "t_sat",
+  "t_ed"
  ]
 }
