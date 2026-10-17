@@ -28,7 +28,8 @@
   "Dartmouth College",
   "University of Cambridge",
   "University of Michigan",
-  "Peking University"
+  "Peking University",
+  "University of Hong Kong"
  ],
  "seen": [
   "741cd072e273",
@@ -300,13 +301,14 @@
   "d6de062c66c4",
   "5490e5d96385",
   "2fb1c228b65c",
-  "c0413a955d48"
+  "c0413a955d48",
+  "b5a2d3e07221"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-17T05:31:46+00:00",
+ "next_post_at": "2026-10-17T06:23:02+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
