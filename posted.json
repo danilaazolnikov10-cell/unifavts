@@ -34,7 +34,8 @@
   "University of Pennsylvania",
   "Hong Kong University of Science and Technology",
   "University of Cape Town",
-  "EPFL"
+  "EPFL",
+  "Harvard University"
  ],
  "seen": [
   "741cd072e273",
@@ -308,13 +309,14 @@
   "2fb1c228b65c",
   "c0413a955d48",
   "b5a2d3e07221",
-  "542e08cabf6e"
+  "542e08cabf6e",
+  "2e3e0ec411de"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-17T10:03:33+00:00",
+ "next_post_at": "2026-10-17T10:59:10+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
