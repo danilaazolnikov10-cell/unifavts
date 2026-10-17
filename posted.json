@@ -31,7 +31,8 @@
   "Peking University",
   "University of Hong Kong",
   "University of Mauritius",
-  "University of Pennsylvania"
+  "University of Pennsylvania",
+  "Hong Kong University of Science and Technology"
  ],
  "seen": [
   "741cd072e273",
@@ -304,13 +305,14 @@
   "5490e5d96385",
   "2fb1c228b65c",
   "c0413a955d48",
-  "b5a2d3e07221"
+  "b5a2d3e07221",
+  "542e08cabf6e"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-17T08:29:13+00:00",
+ "next_post_at": "2026-10-17T08:58:35+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
