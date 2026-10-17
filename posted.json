@@ -44,7 +44,8 @@
   "University of Lagos",
   "University of São Paulo",
   "University of Edinburgh",
-  "University of Warsaw"
+  "University of Warsaw",
+  "University of Nairobi"
  ],
  "seen": [
   "741cd072e273",
@@ -329,7 +330,9 @@
   "585742c76008",
   "ac7249d818d3",
   "44aa4aa6cc2b",
-  "6cb427255753"
+  "6cb427255753",
+  "d65049dbad7c",
+  "f24b075cb502"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -346,7 +349,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-17T20:34:18+00:00",
+ "next_post_at": "2026-10-17T22:17:14+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
