@@ -25,7 +25,8 @@
   "California Institute of Technology",
   "New York University",
   "Yale University",
-  "Dartmouth College"
+  "Dartmouth College",
+  "University of Cambridge"
  ],
  "seen": [
   "741cd072e273",
@@ -295,13 +296,14 @@
   "b8efb3d293fa",
   "0c0161a79ac8",
   "d6de062c66c4",
-  "5490e5d96385"
+  "5490e5d96385",
+  "2fb1c228b65c"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-17T01:13:10+00:00",
+ "next_post_at": "2026-10-17T03:02:34+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
