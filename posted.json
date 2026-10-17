@@ -39,7 +39,8 @@
   "Weizmann Institute of Science",
   "University of California, Berkeley",
   "Seoul National University",
-  "Carnegie Mellon University"
+  "Carnegie Mellon University",
+  "Sorbonne University"
  ],
  "seen": [
   "741cd072e273",
@@ -315,13 +316,21 @@
   "b5a2d3e07221",
   "542e08cabf6e",
   "2e3e0ec411de",
-  "b80e01915ed5"
+  "b80e01915ed5",
+  "75d120dddabf",
+  "b14c5ae307c9",
+  "f1b32b8e788c",
+  "422a12716d4a",
+  "007d349c040f",
+  "585742c76008",
+  "ac7249d818d3",
+  "44aa4aa6cc2b"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-17T14:06:17+00:00",
+ "next_post_at": "2026-10-17T15:03:38+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
