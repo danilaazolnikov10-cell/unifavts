@@ -36,7 +36,8 @@
   "University of Cape Town",
   "EPFL",
   "Harvard University",
-  "Weizmann Institute of Science"
+  "Weizmann Institute of Science",
+  "University of California, Berkeley"
  ],
  "seen": [
   "741cd072e273",
@@ -311,13 +312,14 @@
   "c0413a955d48",
   "b5a2d3e07221",
   "542e08cabf6e",
-  "2e3e0ec411de"
+  "2e3e0ec411de",
+  "b80e01915ed5"
  ],
  "last_kind": "fact",
  "extra_universities": [],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-17T12:18:43+00:00",
+ "next_post_at": "2026-10-17T12:55:50+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
