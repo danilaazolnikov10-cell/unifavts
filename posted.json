@@ -368,7 +368,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-18T07:50:58+00:00",
+ "next_post_at": "2026-10-18T08:31:41+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -531,11 +531,12 @@
  ],
  "article_day": "2026-10-18",
  "deadlines_week": "2026-42",
- "poll_day": "2026-10-17",
+ "poll_day": "2026-10-18",
  "poll_hist": [
   "p_country",
   "p_main",
-  "quiz:Northwestern University|Seoul National University|University of Oxford"
+  "quiz:Northwestern University|Seoul National University|University of Oxford",
+  "quiz:Cornell University|Technical University of Munich|Uppsala University"
  ],
  "tips_day": "2026-10-17",
  "tips_hist": [
