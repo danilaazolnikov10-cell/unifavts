@@ -53,7 +53,8 @@
   "University of Sydney",
   "Duke University",
   "Istanbul University",
-  "University of Basel"
+  "University of Basel",
+  "University of Helsinki"
  ],
  "seen": [
   "741cd072e273",
@@ -345,7 +346,8 @@
   "2ecb58a68de5",
   "d4e2b83a8987",
   "a37fe594cbf5",
-  "12d9021b581b"
+  "12d9021b581b",
+  "5f310ab5b6db"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -372,7 +374,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-18T09:40:10+00:00",
+ "next_post_at": "2026-10-18T10:26:36+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
