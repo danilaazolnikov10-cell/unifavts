@@ -59,7 +59,8 @@
   "University of Iceland",
   "University of Buenos Aires",
   "University of Oxford",
-  "University of Lausanne"
+  "University of Lausanne",
+  "University of Oslo"
  ],
  "seen": [
   "741cd072e273",
@@ -353,7 +354,19 @@
   "a37fe594cbf5",
   "12d9021b581b",
   "5f310ab5b6db",
-  "7d500ab9983c"
+  "7d500ab9983c",
+  "1b3b8bef7326",
+  "ea0d41638fc3",
+  "2c964add81f6",
+  "a4e6473040ab",
+  "3229c3fdb6fc",
+  "329bc89d4224",
+  "1b62021bb21a",
+  "21bf34e70db5",
+  "49f5243a1b9a",
+  "d43998301202",
+  "95087c5b5d79",
+  "f54a07872a89"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -380,7 +393,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-18T14:02:56+00:00",
+ "next_post_at": "2026-10-18T15:03:49+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
