@@ -51,7 +51,8 @@
   "Northwestern University",
   "University of Auckland",
   "University of Sydney",
-  "Duke University"
+  "Duke University",
+  "Istanbul University"
  ],
  "seen": [
   "741cd072e273",
@@ -341,7 +342,8 @@
   "f24b075cb502",
   "40a59c518c90",
   "2ecb58a68de5",
-  "d4e2b83a8987"
+  "d4e2b83a8987",
+  "a37fe594cbf5"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -368,7 +370,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-18T08:31:41+00:00",
+ "next_post_at": "2026-10-18T09:03:37+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
