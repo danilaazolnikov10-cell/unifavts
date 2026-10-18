@@ -46,7 +46,8 @@
   "University of Edinburgh",
   "University of Warsaw",
   "University of Nairobi",
-  "Cornell University"
+  "Cornell University",
+  "University of Melbourne"
  ],
  "seen": [
   "741cd072e273",
@@ -333,7 +334,8 @@
   "44aa4aa6cc2b",
   "6cb427255753",
   "d65049dbad7c",
-  "f24b075cb502"
+  "f24b075cb502",
+  "40a59c518c90"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -350,7 +352,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-17T23:57:29+00:00",
+ "next_post_at": "2026-10-18T02:05:53+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
