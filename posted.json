@@ -366,7 +366,8 @@
   "49f5243a1b9a",
   "d43998301202",
   "95087c5b5d79",
-  "f54a07872a89"
+  "f54a07872a89",
+  "0b76326823d3"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -389,11 +390,21 @@
   "University of Stockholm",
   "Lund University",
   "Uppsala University",
-  "University of Iceland"
+  "University of Iceland",
+  "University of Queensland",
+  "University of Pretoria",
+  "University of Chile",
+  "University of Ghana",
+  "University of Ibadan",
+  "University of the Philippines Diliman",
+  "University of Malaya",
+  "University of Canterbury",
+  "University of Tromsø – The Arctic University of Norway",
+  "University of Turku"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-18T15:55:04+00:00",
+ "next_post_at": "2026-10-18T16:34:14+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
