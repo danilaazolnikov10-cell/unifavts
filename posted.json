@@ -64,7 +64,8 @@
   "University of Ghana",
   "University of Malaya",
   "University of the Philippines Diliman",
-  "University of Canterbury"
+  "University of Canterbury",
+  "University of Pretoria"
  ],
  "seen": [
   "741cd072e273",
@@ -371,7 +372,8 @@
   "d43998301202",
   "95087c5b5d79",
   "f54a07872a89",
-  "0b76326823d3"
+  "0b76326823d3",
+  "8770db12fdbc"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -408,7 +410,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-18T20:41:51+00:00",
+ "next_post_at": "2026-10-18T22:15:52+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
