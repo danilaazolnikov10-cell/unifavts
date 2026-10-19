@@ -67,7 +67,8 @@
   "University of Canterbury",
   "University of Pretoria",
   "University of Tromsø – The Arctic University of Norway",
-  "Lund University"
+  "Lund University",
+  "Cairo University"
  ],
  "seen": [
   "741cd072e273",
@@ -376,7 +377,8 @@
   "f54a07872a89",
   "0b76326823d3",
   "8770db12fdbc",
-  "889ad55e7d14"
+  "889ad55e7d14",
+  "5b5976284130"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -413,7 +415,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-19T02:17:41+00:00",
+ "next_post_at": "2026-10-19T04:06:23+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
