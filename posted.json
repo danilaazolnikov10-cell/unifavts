@@ -78,7 +78,8 @@
   "Technical University of Munich",
   "University of Ljubljana",
   "University of Groningen",
-  "Uppsala University"
+  "Uppsala University",
+  "University of Fribourg"
  ],
  "seen": [
   "741cd072e273",
@@ -429,7 +430,9 @@
   "ae585e432421",
   "55e549201448",
   "e96f658071c7",
-  "07b9db5b3d38"
+  "07b9db5b3d38",
+  "27d37490bbc8",
+  "ed6a8c89d801"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -483,7 +486,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-19T17:13:17+00:00",
+ "next_post_at": "2026-10-19T17:43:53+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -635,10 +638,10 @@
   }
  ],
  "last_outlets": [
-  "Википедия",
   "ICEF Monitor",
   "Википедия",
   "The PIE News",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
