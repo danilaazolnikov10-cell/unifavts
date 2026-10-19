@@ -70,7 +70,8 @@
   "Lund University",
   "Cairo University",
   "University of Queensland",
-  "University of Stockholm"
+  "University of Stockholm",
+  "University of Chile"
  ],
  "seen": [
   "741cd072e273",
@@ -382,7 +383,8 @@
   "889ad55e7d14",
   "5b5976284130",
   "1f57bc99b3eb",
-  "75582098f887"
+  "75582098f887",
+  "ceefb5f1dbb4"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -415,11 +417,18 @@
   "University of Malaya",
   "University of Canterbury",
   "University of Tromsø – The Arctic University of Norway",
-  "University of Turku"
+  "University of Turku",
+  "University of Adelaide",
+  "University of Groningen",
+  "University of Leiden",
+  "University of Barcelona",
+  "University of Porto",
+  "University of Ljubljana",
+  "University of Belgrade"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-19T06:46:13+00:00",
+ "next_post_at": "2026-10-19T07:26:53+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
