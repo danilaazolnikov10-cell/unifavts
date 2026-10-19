@@ -80,7 +80,8 @@
   "University of Groningen",
   "Uppsala University",
   "University of Fribourg",
-  "University of Adelaide"
+  "University of Adelaide",
+  "University of the Witwatersrand"
  ],
  "seen": [
   "741cd072e273",
@@ -433,7 +434,12 @@
   "e96f658071c7",
   "07b9db5b3d38",
   "27d37490bbc8",
-  "ed6a8c89d801"
+  "ed6a8c89d801",
+  "fbbcdbe57add",
+  "66ed15b5ccaa",
+  "ff1f34b4a523",
+  "e5a6a9cb3da6",
+  "7216fffbb8a1"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -487,7 +493,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-19T18:18:26+00:00",
+ "next_post_at": "2026-10-19T20:36:09+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -639,8 +645,8 @@
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия"
