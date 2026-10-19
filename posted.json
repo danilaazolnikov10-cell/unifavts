@@ -81,7 +81,8 @@
   "Uppsala University",
   "University of Fribourg",
   "University of Adelaide",
-  "University of the Witwatersrand"
+  "University of the Witwatersrand",
+  "University of Porto"
  ],
  "seen": [
   "741cd072e273",
@@ -439,7 +440,10 @@
   "66ed15b5ccaa",
   "ff1f34b4a523",
   "e5a6a9cb3da6",
-  "7216fffbb8a1"
+  "7216fffbb8a1",
+  "64ba2075b791",
+  "156c20c280d8",
+  "c4df2f137fe1"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -493,7 +497,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-19T20:36:09+00:00",
+ "next_post_at": "2026-10-19T22:27:35+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -645,7 +649,7 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия",
