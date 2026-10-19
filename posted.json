@@ -72,7 +72,8 @@
   "University of Queensland",
   "University of Stockholm",
   "University of Chile",
-  "University of Belgrade"
+  "University of Belgrade",
+  "University of Leiden"
  ],
  "seen": [
   "741cd072e273",
@@ -385,7 +386,19 @@
   "5b5976284130",
   "1f57bc99b3eb",
   "75582098f887",
-  "ceefb5f1dbb4"
+  "ceefb5f1dbb4",
+  "80495a872344",
+  "86d0f828f92b",
+  "21df76e88fd7",
+  "d49c6543b431",
+  "792eb3266465",
+  "65009821b215",
+  "cc6ac7c3a7a0",
+  "6433c838a230",
+  "c8405e646fdd",
+  "d67d0e978474",
+  "fb1a9ac8f281",
+  "e70071c675fe"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -429,7 +442,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-19T09:00:56+00:00",
+ "next_post_at": "2026-10-19T09:34:33+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
