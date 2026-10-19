@@ -408,9 +408,22 @@
   "8cf420adb947",
   "02a380a09a05",
   "f855dbfae68b",
-  "670b28fa0a47"
+  "670b28fa0a47",
+  "6938f5510a09",
+  "2e20f4aeb9c5",
+  "1bfc319bd564",
+  "66790f1f619b",
+  "7030648e459f",
+  "dde53cc6739e",
+  "97728a5298f9",
+  "401d47a382ee",
+  "e91966e8cc45",
+  "fb6b746a0c5a",
+  "96edaa29553b",
+  "73d65e2aa989",
+  "77535fd8583b"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -451,8 +464,8 @@
   "University of Belgrade"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-19T13:18:24+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-19T14:04:41+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -593,14 +606,18 @@
   {
    "title": "Unis urged to build deeper international partnerships amid geopolitical uncertainty",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "What if international student recruitment started with graduate success?",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "ICEF Monitor"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
