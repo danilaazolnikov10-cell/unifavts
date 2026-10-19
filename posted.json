@@ -68,7 +68,8 @@
   "University of Pretoria",
   "University of Tromsø – The Arctic University of Norway",
   "Lund University",
-  "Cairo University"
+  "Cairo University",
+  "University of Queensland"
  ],
  "seen": [
   "741cd072e273",
@@ -378,7 +379,9 @@
   "0b76326823d3",
   "8770db12fdbc",
   "889ad55e7d14",
-  "5b5976284130"
+  "5b5976284130",
+  "1f57bc99b3eb",
+  "75582098f887"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -415,7 +418,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-19T04:54:14+00:00",
+ "next_post_at": "2026-10-19T05:25:51+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
