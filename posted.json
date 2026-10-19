@@ -422,9 +422,14 @@
   "fb6b746a0c5a",
   "96edaa29553b",
   "73d65e2aa989",
-  "77535fd8583b"
+  "77535fd8583b",
+  "a09ad7f6aaf6",
+  "d943a8df40ea",
+  "ae585e432421",
+  "55e549201448",
+  "e96f658071c7"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -475,8 +480,8 @@
   "University of Fribourg"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-19T16:04:26+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-19T16:39:01+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -621,14 +626,18 @@
   {
    "title": "What if international student recruitment started with graduate success?",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "Telangana courts international campuses for ‘Future City’",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "ICEF Monitor",
-  "Википедия"
+  "Википедия",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
