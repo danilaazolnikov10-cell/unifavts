@@ -77,7 +77,8 @@
   "University of Barcelona",
   "Technical University of Munich",
   "University of Ljubljana",
-  "University of Groningen"
+  "University of Groningen",
+  "Uppsala University"
  ],
  "seen": [
   "741cd072e273",
@@ -427,9 +428,10 @@
   "d943a8df40ea",
   "ae585e432421",
   "55e549201448",
-  "e96f658071c7"
+  "e96f658071c7",
+  "07b9db5b3d38"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -480,8 +482,8 @@
   "University of Fribourg"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-19T16:39:01+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-19T17:13:17+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -634,10 +636,10 @@
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "ICEF Monitor",
   "Википедия",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
