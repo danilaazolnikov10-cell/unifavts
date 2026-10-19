@@ -398,9 +398,12 @@
   "c8405e646fdd",
   "d67d0e978474",
   "fb1a9ac8f281",
-  "e70071c675fe"
+  "e70071c675fe",
+  "ae0db9a1673c",
+  "b32798372587",
+  "19f98acef210"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -441,8 +444,8 @@
   "University of Belgrade"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-19T09:34:33+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-19T10:11:18+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -579,6 +582,10 @@
   {
    "title": "Remote or in person, assessments must be secure, fair and able to stand up to scrutiny",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Unis urged to build deeper international partnerships amid geopolitical uncertainty",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
@@ -586,7 +593,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
