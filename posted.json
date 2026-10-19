@@ -75,7 +75,8 @@
   "University of Belgrade",
   "University of Leiden",
   "University of Barcelona",
-  "Technical University of Munich"
+  "Technical University of Munich",
+  "University of Ljubljana"
  ],
  "seen": [
   "741cd072e273",
@@ -405,7 +406,9 @@
   "b32798372587",
   "19f98acef210",
   "8cf420adb947",
-  "02a380a09a05"
+  "02a380a09a05",
+  "f855dbfae68b",
+  "670b28fa0a47"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -449,7 +452,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-19T12:37:27+00:00",
+ "next_post_at": "2026-10-19T13:18:24+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -594,8 +597,8 @@
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
