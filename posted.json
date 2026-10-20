@@ -89,7 +89,8 @@
   "Makerere University",
   "National University of La Plata",
   "University of Campinas",
-  "University of Alberta"
+  "University of Alberta",
+  "Kenyatta University"
  ],
  "seen": [
   "741cd072e273",
@@ -457,7 +458,20 @@
   "0a03ff04e98f",
   "a3516bf0dea7",
   "f2f97ce45afc",
-  "c2b9d0bd68dc"
+  "c2b9d0bd68dc",
+  "9d22bd091172",
+  "b8602210e047",
+  "f191f23b7241",
+  "aef6a797af70",
+  "4b8c855a28e7",
+  "8d7739005bb9",
+  "c5d6a0647450",
+  "9bbca41433f4",
+  "dfc6795ec508",
+  "c2aac0f54f0e",
+  "9a57589d4630",
+  "9045870f3a3a",
+  "6e198b8ef57e"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -529,7 +543,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-20T08:42:21+00:00",
+ "next_post_at": "2026-10-20T09:50:22+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
