@@ -501,9 +501,12 @@
   "80f80d6b3603",
   "d14f6681eb78",
   "c7a71b06cc88",
-  "510a13f714c8"
+  "510a13f714c8",
+  "419686aeb995",
+  "5297143c33a8",
+  "29c1268b76f8"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -572,8 +575,8 @@
   "University of the Western Cape"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-20T14:42:59+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-20T15:26:02+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -734,14 +737,18 @@
   {
    "title": "70% of visa refusals for UK study visas come from seven countries",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Unis must adapt partnerships as China reshapes market",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "The PIE News",
-  "The PIE News",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
