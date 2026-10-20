@@ -508,7 +508,8 @@
   "f1b3456c3ac7",
   "969a3678556f",
   "913203c4de74",
-  "c5c47b11231b"
+  "c5c47b11231b",
+  "c10011949c3b"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -579,8 +580,8 @@
   "University of the Western Cape"
  ],
  "pool": [],
- "since_fact": 2,
- "next_post_at": "2026-10-20T16:27:15+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-10-20T17:07:45+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -749,12 +750,16 @@
   {
    "title": "US: OPT fee proposal exposes divide in Indian applicants",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "The PIE Live Germany marks Deutschland’s rise as a ‘top four’ study destination",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
+  "The PIE News",
   "The PIE News",
   "The PIE News"
  ],
