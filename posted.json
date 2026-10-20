@@ -91,7 +91,8 @@
   "University of Campinas",
   "University of Alberta",
   "Kenyatta University",
-  "University of Johannesburg"
+  "University of Johannesburg",
+  "Obafemi Awolowo University"
  ],
  "seen": [
   "741cd072e273",
@@ -477,7 +478,8 @@
   "e1f5603a6caa",
   "506646dbe51b",
   "6e907a01c3bc",
-  "44580d82ad6a"
+  "44580d82ad6a",
+  "b582759bb914"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -549,7 +551,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-20T10:54:03+00:00",
+ "next_post_at": "2026-10-20T11:21:59+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -707,8 +709,8 @@
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "The PIE News",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
