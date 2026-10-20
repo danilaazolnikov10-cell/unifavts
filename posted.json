@@ -471,9 +471,12 @@
   "c2aac0f54f0e",
   "9a57589d4630",
   "9045870f3a3a",
-  "6e198b8ef57e"
+  "6e198b8ef57e",
+  "93cc4610b1b5",
+  "e1f5603a6caa",
+  "506646dbe51b"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -542,8 +545,8 @@
   "University of the Western Cape"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-20T09:50:22+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-20T10:22:11+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -692,6 +695,10 @@
   {
    "title": "Telangana courts international campuses for ‘Future City’",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "When UK compliance changes, who carries the cost of late communication?",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
@@ -699,7 +706,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
