@@ -93,7 +93,8 @@
   "Kenyatta University",
   "University of Johannesburg",
   "Obafemi Awolowo University",
-  "University of Granada"
+  "University of Granada",
+  "University of Seville"
  ],
  "seen": [
   "741cd072e273",
@@ -485,7 +486,20 @@
   "e208bb1c248b",
   "a9b686c0a619",
   "6d8a3cec26ca",
-  "7d296a29338c"
+  "7d296a29338c",
+  "c57e04f6a039",
+  "cc9c6fd3410a",
+  "44ada3f7a804",
+  "bff141e12ac1",
+  "24a4900bf854",
+  "22a8cdfc9c20",
+  "d18b25ed79e1",
+  "b4b35b52ae74",
+  "2a9a6d67ce66",
+  "25cdf5deac1a",
+  "80f80d6b3603",
+  "d14f6681eb78",
+  "c7a71b06cc88"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -557,7 +571,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-20T13:18:48+00:00",
+ "next_post_at": "2026-10-20T14:03:47+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -722,9 +736,9 @@
  ],
  "last_outlets": [
   "Википедия",
+  "The PIE News",
+  "The PIE News",
   "Википедия",
-  "The PIE News",
-  "The PIE News",
   "Википедия"
  ],
  "arwu_year": 2026,
