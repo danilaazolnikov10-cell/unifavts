@@ -504,7 +504,11 @@
   "510a13f714c8",
   "419686aeb995",
   "5297143c33a8",
-  "29c1268b76f8"
+  "29c1268b76f8",
+  "f1b3456c3ac7",
+  "969a3678556f",
+  "913203c4de74",
+  "c5c47b11231b"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -575,8 +579,8 @@
   "University of the Western Cape"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-20T16:03:01+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-20T16:27:15+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -741,13 +745,17 @@
   {
    "title": "Unis must adapt partnerships as China reshapes market",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "US: OPT fee proposal exposes divide in Indian applicants",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
+  "Википедия",
+  "Википедия",
+  "Википедия",
   "The PIE News",
-  "Википедия",
-  "Википедия",
-  "Википедия",
   "The PIE News"
  ],
  "arwu_year": 2026,
