@@ -90,7 +90,8 @@
   "National University of La Plata",
   "University of Campinas",
   "University of Alberta",
-  "Kenyatta University"
+  "Kenyatta University",
+  "University of Johannesburg"
  ],
  "seen": [
   "741cd072e273",
@@ -474,9 +475,11 @@
   "6e198b8ef57e",
   "93cc4610b1b5",
   "e1f5603a6caa",
-  "506646dbe51b"
+  "506646dbe51b",
+  "6e907a01c3bc",
+  "44580d82ad6a"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -545,8 +548,8 @@
   "University of the Western Cape"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-20T10:22:11+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-20T10:54:03+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -705,8 +708,8 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
