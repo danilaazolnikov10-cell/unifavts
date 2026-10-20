@@ -85,7 +85,8 @@
   "University of Porto",
   "Stellenbosch University",
   "Jagiellonian University",
-  "University of Turku"
+  "University of Turku",
+  "Makerere University"
  ],
  "seen": [
   "741cd072e273",
@@ -449,7 +450,11 @@
   "c4df2f137fe1",
   "0e7ae76b4630",
   "2670495223de",
-  "ce6725e0d98d"
+  "ce6725e0d98d",
+  "0a03ff04e98f",
+  "a3516bf0dea7",
+  "f2f97ce45afc",
+  "c2b9d0bd68dc"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -503,7 +508,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-20T04:41:46+00:00",
+ "next_post_at": "2026-10-20T05:22:55+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
