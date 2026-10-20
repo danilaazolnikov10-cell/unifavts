@@ -83,7 +83,8 @@
   "University of Adelaide",
   "University of the Witwatersrand",
   "University of Porto",
-  "Stellenbosch University"
+  "Stellenbosch University",
+  "Jagiellonian University"
  ],
  "seen": [
   "741cd072e273",
@@ -445,7 +446,8 @@
   "64ba2075b791",
   "156c20c280d8",
   "c4df2f137fe1",
-  "0e7ae76b4630"
+  "0e7ae76b4630",
+  "2670495223de"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -499,7 +501,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-20T00:05:33+00:00",
+ "next_post_at": "2026-10-20T01:49:00+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
