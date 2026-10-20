@@ -481,7 +481,8 @@
   "44580d82ad6a",
   "b582759bb914",
   "086bf565e8b2",
-  "e208bb1c248b"
+  "e208bb1c248b",
+  "a9b686c0a619"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -552,8 +553,8 @@
   "University of the Western Cape"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-20T11:54:06+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-20T12:40:06+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -710,13 +711,17 @@
   {
    "title": "Talent Beyond Borders: changing the narrative around international students – from tuition to talent",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "70% of visa refusals for UK study visas come from seven countries",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "Википедия",
   "Википедия",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
