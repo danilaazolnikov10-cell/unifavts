@@ -87,7 +87,8 @@
   "Jagiellonian University",
   "University of Turku",
   "Makerere University",
-  "National University of La Plata"
+  "National University of La Plata",
+  "University of Campinas"
  ],
  "seen": [
   "741cd072e273",
@@ -505,11 +506,12 @@
   "Boğaziçi University",
   "Jagiellonian University",
   "University of Bern",
-  "University of Fribourg"
+  "University of Fribourg",
+  "University of Alberta"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-20T05:50:44+00:00",
+ "next_post_at": "2026-10-20T06:34:30+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
