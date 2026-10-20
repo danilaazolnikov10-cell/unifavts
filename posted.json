@@ -95,7 +95,8 @@
   "Obafemi Awolowo University",
   "University of Granada",
   "University of Seville",
-  "Ain Shams University"
+  "Ain Shams University",
+  "University of Tartu"
  ],
  "seen": [
   "741cd072e273",
@@ -511,7 +512,7 @@
   "c5c47b11231b",
   "c10011949c3b"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -580,8 +581,8 @@
   "University of the Western Cape"
  ],
  "pool": [],
- "since_fact": 3,
- "next_post_at": "2026-10-20T17:07:45+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-20T17:43:03+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -758,10 +759,10 @@
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "The PIE News",
   "The PIE News",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
