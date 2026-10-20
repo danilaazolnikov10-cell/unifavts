@@ -97,7 +97,8 @@
   "University of Seville",
   "Ain Shams University",
   "University of Tartu",
-  "University of Ibadan"
+  "University of Ibadan",
+  "Boğaziçi University"
  ],
  "seen": [
   "741cd072e273",
@@ -511,7 +512,8 @@
   "969a3678556f",
   "913203c4de74",
   "c5c47b11231b",
-  "c10011949c3b"
+  "c10011949c3b",
+  "d76e80717001"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -583,7 +585,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-20T18:12:44+00:00",
+ "next_post_at": "2026-10-20T18:46:53+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -761,7 +763,7 @@
  "last_outlets": [
   "The PIE News",
   "The PIE News",
-  "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
