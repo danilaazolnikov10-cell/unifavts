@@ -84,7 +84,8 @@
   "University of the Witwatersrand",
   "University of Porto",
   "Stellenbosch University",
-  "Jagiellonian University"
+  "Jagiellonian University",
+  "University of Turku"
  ],
  "seen": [
   "741cd072e273",
@@ -447,7 +448,8 @@
   "156c20c280d8",
   "c4df2f137fe1",
   "0e7ae76b4630",
-  "2670495223de"
+  "2670495223de",
+  "ce6725e0d98d"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -501,7 +503,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-20T01:49:00+00:00",
+ "next_post_at": "2026-10-20T03:35:37+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
