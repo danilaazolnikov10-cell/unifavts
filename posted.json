@@ -99,7 +99,8 @@
   "University of Tartu",
   "University of Ibadan",
   "Boğaziçi University",
-  "University of Zagreb"
+  "University of Zagreb",
+  "University of St. Gallen"
  ],
  "seen": [
   "741cd072e273",
@@ -514,7 +515,10 @@
   "913203c4de74",
   "c5c47b11231b",
   "c10011949c3b",
-  "d76e80717001"
+  "d76e80717001",
+  "48e99f4fba62",
+  "297fc764636a",
+  "0b86e21a6281"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -586,7 +590,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-20T20:47:22+00:00",
+ "next_post_at": "2026-10-20T22:39:11+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -762,7 +766,7 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия",
