@@ -649,7 +649,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-21T10:53:42+00:00",
+ "next_post_at": "2026-10-21T11:43:24+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -876,10 +876,11 @@
   "p_sat",
   "quiz:Northwestern University|Tsinghua University|Weizmann Institute of Science"
  ],
- "tips_day": "2026-10-19",
+ "tips_day": "2026-10-21",
  "tips_hist": [
   "t_sat",
   "t_ed",
-  "t_commonapp"
+  "t_commonapp",
+  "t_application"
  ]
 }
