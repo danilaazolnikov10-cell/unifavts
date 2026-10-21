@@ -115,7 +115,8 @@
   "University of Vienna",
   "Ahmadu Bello University",
   "University of Innsbruck",
-  "University of Coimbra"
+  "University of Coimbra",
+  "University of British Columbia"
  ],
  "seen": [
   "741cd072e273",
@@ -600,7 +601,10 @@
   "2f4faef021e8",
   "e2800801f178",
   "2b4b1af52c36",
-  "5a5a80893552"
+  "5a5a80893552",
+  "cf37dcb56b3d",
+  "dd59b9361994",
+  "23240520ab19"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -682,7 +686,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-21T21:07:41+00:00",
+ "next_post_at": "2026-10-21T22:45:54+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -882,7 +886,7 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия",
