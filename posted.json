@@ -536,9 +536,10 @@
   "ea0b58e3e4b1",
   "199957d9ed37",
   "683d23b9edb1",
-  "eaf16ab6dd0a"
+  "eaf16ab6dd0a",
+  "085c8f7907b5"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -607,8 +608,8 @@
   "University of the Western Cape"
  ],
  "pool": [],
- "since_fact": 2,
- "next_post_at": "2026-10-21T02:29:25+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-10-21T03:30:45+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -789,14 +790,18 @@
   {
    "title": "Is the lower tuition offered by branch campuses enough to attract Indian students?",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "A Strange New Time Crystal Emerges From Synchronized Vibrations",
+   "outlet": "ScienceAlert"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "MIT Technology Review",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "ScienceAlert"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
