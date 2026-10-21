@@ -112,7 +112,8 @@
   "University of Washington",
   "University of Amsterdam",
   "University of Bern",
-  "University of Vienna"
+  "University of Vienna",
+  "Ahmadu Bello University"
  ],
  "seen": [
   "741cd072e273",
@@ -595,7 +596,8 @@
   "b5a865515bc8",
   "de3f763844c5",
   "2f4faef021e8",
-  "e2800801f178"
+  "e2800801f178",
+  "2b4b1af52c36"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -677,7 +679,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-21T17:38:51+00:00",
+ "next_post_at": "2026-10-21T18:32:13+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -878,9 +880,9 @@
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "ICEF Monitor",
   "The PIE News",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
