@@ -566,7 +566,8 @@
   "1cac1afee099",
   "f38307b3a9ad",
   "7e687ee1014d",
-  "abbd9f262d0f"
+  "abbd9f262d0f",
+  "f18d067ad097"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -634,11 +635,21 @@
   "Ain Shams University",
   "Istanbul Technical University",
   "Federal University of Rio de Janeiro",
-  "University of the Western Cape"
+  "University of the Western Cape",
+  "University of California, Los Angeles",
+  "University of Illinois Urbana-Champaign",
+  "University of Texas at Austin",
+  "University of Washington",
+  "University of British Columbia",
+  "University of Amsterdam",
+  "University of Cologne",
+  "University of Stuttgart",
+  "University of Vienna",
+  "University of Innsbruck"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-21T10:30:22+00:00",
+ "next_post_at": "2026-10-21T10:53:42+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
