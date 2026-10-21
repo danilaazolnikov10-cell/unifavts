@@ -532,9 +532,13 @@
   "610c960cac48",
   "a3f425f7ded3",
   "1b8edb593f42",
-  "eaf5d6ee8da9"
+  "eaf5d6ee8da9",
+  "ea0b58e3e4b1",
+  "199957d9ed37",
+  "683d23b9edb1",
+  "eaf16ab6dd0a"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -602,21 +606,9 @@
   "Federal University of Rio de Janeiro",
   "University of the Western Cape"
  ],
- "pool": [
-  {
-   "id": "71f3f1e8108a",
-   "link": "https://monitor.icef.com/2026/10/is-the-lower-tuition-offered-by-branch-campuses-enough-to-attract-indian-students/",
-   "outlet": "ICEF Monitor",
-   "kind": "admissions",
-   "title": "Is the lower tuition offered by branch campuses enough to attract Indian students?",
-   "date": "2026-10-20T22:45:43+00:00",
-   "rating": 6.3,
-   "timely": 1,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 1,
- "next_post_at": "2026-10-21T00:46:01+00:00",
+ "pool": [],
+ "since_fact": 2,
+ "next_post_at": "2026-10-21T02:29:25+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -793,14 +785,18 @@
   {
    "title": "Robotic therapy for stroke patients",
    "outlet": "MIT Technology Review"
+  },
+  {
+   "title": "Is the lower tuition offered by branch campuses enough to attract Indian students?",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "MIT Technology Review"
+  "MIT Technology Review",
+  "ICEF Monitor"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
