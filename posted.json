@@ -111,7 +111,8 @@
   "University of Valencia",
   "University of Washington",
   "University of Amsterdam",
-  "University of Bern"
+  "University of Bern",
+  "University of Vienna"
  ],
  "seen": [
   "741cd072e273",
@@ -590,9 +591,13 @@
   "fc1c5eab93f6",
   "d0836814e2e5",
   "c0c6d33c7068",
-  "acdf507fafd5"
+  "acdf507fafd5",
+  "b5a865515bc8",
+  "de3f763844c5",
+  "2f4faef021e8",
+  "e2800801f178"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -671,8 +676,8 @@
   "University of Innsbruck"
  ],
  "pool": [],
- "since_fact": 2,
- "next_post_at": "2026-10-21T16:56:26+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-21T17:38:51+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -874,9 +879,9 @@
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "ICEF Monitor",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
