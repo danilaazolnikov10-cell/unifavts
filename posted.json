@@ -583,9 +583,14 @@
   "5494d50f523e",
   "fe101e0ff9da",
   "009a0da4c942",
-  "560c33e91bda"
+  "560c33e91bda",
+  "edc13139eba8",
+  "c42631c6d073",
+  "ec019517f3cb",
+  "fc1c5eab93f6",
+  "d0836814e2e5"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -664,8 +669,8 @@
   "University of Innsbruck"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-21T15:40:14+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-21T16:23:29+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -854,14 +859,18 @@
   {
    "title": "New Zealand to help more schools recruit international students",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "One test, five markets: What do Australia’s student visa changes mean for South Asian recruitment?",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "ICEF Monitor"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
