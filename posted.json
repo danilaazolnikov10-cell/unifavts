@@ -106,7 +106,8 @@
   "University of Chicago",
   "Federal University of Rio de Janeiro",
   "University of Sarajevo",
-  "University of Geneva"
+  "University of Geneva",
+  "University of the Western Cape"
  ],
  "seen": [
   "741cd072e273",
@@ -556,7 +557,14 @@
   "d3e54a054cec",
   "6c35220c4bd5",
   "cabe8fa301d8",
-  "e0e078956965"
+  "e0e078956965",
+  "caf65a67c881",
+  "fa40bfe52185",
+  "37c8fc6fae8d",
+  "9f91db172194",
+  "1cac1afee099",
+  "f38307b3a9ad",
+  "7e687ee1014d"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -628,7 +636,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-21T09:11:59+00:00",
+ "next_post_at": "2026-10-21T09:54:35+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
