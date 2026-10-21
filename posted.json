@@ -105,7 +105,8 @@
   "University of Lisbon",
   "University of Chicago",
   "Federal University of Rio de Janeiro",
-  "University of Sarajevo"
+  "University of Sarajevo",
+  "University of Geneva"
  ],
  "seen": [
   "741cd072e273",
@@ -545,7 +546,17 @@
   "085c8f7907b5",
   "9420c8fb921a",
   "6c0c8a7191e5",
-  "c675474b2522"
+  "c675474b2522",
+  "6fc1b77deaca",
+  "feeac5cdf479",
+  "eef81d94e052",
+  "5a3191bfedc0",
+  "29e4199b80e8",
+  "b31a94b5cf4f",
+  "d3e54a054cec",
+  "6c35220c4bd5",
+  "cabe8fa301d8",
+  "e0e078956965"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -617,7 +628,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-21T08:40:56+00:00",
+ "next_post_at": "2026-10-21T09:11:59+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
