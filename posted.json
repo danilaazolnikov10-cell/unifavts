@@ -102,7 +102,8 @@
   "University of Zagreb",
   "University of St. Gallen",
   "American University in Cairo",
-  "University of Lisbon"
+  "University of Lisbon",
+  "University of Chicago"
  ],
  "seen": [
   "741cd072e273",
@@ -541,7 +542,8 @@
   "eaf16ab6dd0a",
   "085c8f7907b5",
   "9420c8fb921a",
-  "6c0c8a7191e5"
+  "6c0c8a7191e5",
+  "c675474b2522"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -613,7 +615,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-21T05:29:20+00:00",
+ "next_post_at": "2026-10-21T06:25:18+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -801,9 +803,9 @@
   }
  ],
  "last_outlets": [
-  "MIT Technology Review",
   "ICEF Monitor",
   "ScienceAlert",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
