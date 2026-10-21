@@ -109,7 +109,8 @@
   "University of Geneva",
   "University of the Western Cape",
   "University of Valencia",
-  "University of Washington"
+  "University of Washington",
+  "University of Amsterdam"
  ],
  "seen": [
   "741cd072e273",
@@ -573,7 +574,14 @@
   "0d5cfd349347",
   "97848d120e64",
   "072358b4428d",
-  "26ff3c995518"
+  "26ff3c995518",
+  "a4112597a1ce",
+  "6d6608a18314",
+  "51727b1f3d02",
+  "f7b75b8aec31",
+  "5494d50f523e",
+  "fe101e0ff9da",
+  "009a0da4c942"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -655,7 +663,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-21T13:51:07+00:00",
+ "next_post_at": "2026-10-21T14:28:04+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -849,8 +857,8 @@
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "The PIE News",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
