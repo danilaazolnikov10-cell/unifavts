@@ -588,7 +588,9 @@
   "c42631c6d073",
   "ec019517f3cb",
   "fc1c5eab93f6",
-  "d0836814e2e5"
+  "d0836814e2e5",
+  "c0c6d33c7068",
+  "acdf507fafd5"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -669,8 +671,8 @@
   "University of Innsbruck"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-21T16:23:29+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-21T16:56:26+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -863,14 +865,18 @@
   {
    "title": "One test, five markets: What do Australia’s student visa changes mean for South Asian recruitment?",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "Myanmar students flock to Germany, Malaysia as market diversifies",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Википедия",
   "Википедия",
   "Википедия",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
