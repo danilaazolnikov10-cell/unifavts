@@ -124,7 +124,8 @@
   "University of Salamanca",
   "University of Texas at Austin",
   "University of Stuttgart",
-  "University of Malta"
+  "University of Malta",
+  "University of Cyprus"
  ],
  "seen": [
   "741cd072e273",
@@ -637,7 +638,8 @@
   "ed625973882b",
   "a05a70d729cb",
   "6a85074051ec",
-  "17209c2cce30"
+  "17209c2cce30",
+  "4ae3965b9e40"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -722,7 +724,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-22T11:03:59+00:00",
+ "next_post_at": "2026-10-22T11:50:17+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -932,8 +934,8 @@
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "Inside Higher Ed",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
