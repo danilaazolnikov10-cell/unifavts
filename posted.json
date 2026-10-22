@@ -117,7 +117,8 @@
   "University of Innsbruck",
   "University of Coimbra",
   "University of British Columbia",
-  "Istanbul Technical University"
+  "Istanbul Technical University",
+  "University of California, Los Angeles"
  ],
  "seen": [
   "741cd072e273",
@@ -608,7 +609,9 @@
   "23240520ab19",
   "aee6f8f41538",
   "ce0eca60ae8d",
-  "7c68da65d8b5"
+  "7c68da65d8b5",
+  "a54d1aa6de41",
+  "91f7066d19b0"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -690,7 +693,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-22T00:48:31+00:00",
+ "next_post_at": "2026-10-22T02:01:25+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
