@@ -653,9 +653,12 @@
   "bb13da70284d",
   "1ade8dbca097",
   "bfb51e6eac2f",
-  "004db241b9b5"
+  "004db241b9b5",
+  "49013395bb8a",
+  "e6824e242188",
+  "9ddb27ab3a6b"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -737,8 +740,8 @@
   "University of Cyprus"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-22T15:52:32+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-22T16:21:08+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -943,14 +946,18 @@
   {
    "title": "3 Questions With Travis Ulrich, Senior Vice President at Terra Dotta",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Refugee student route aims to bring 40 students to UK universities in 2027",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
