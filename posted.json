@@ -622,9 +622,20 @@
   "2d35605baeb3",
   "35e42ab2e634",
   "1b13a3bedd00",
-  "1597d0c89aca"
+  "1597d0c89aca",
+  "436cc471e0a6",
+  "587ebdb48d69",
+  "6d52aa5d2fb7",
+  "b52c53431889",
+  "3acacc4892f4",
+  "3038242d7280",
+  "840ae42d8c0b",
+  "bdc8c5fe7b9a",
+  "5c33519be7f0",
+  "244eca16a6a5",
+  "ed625973882b"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -703,8 +714,8 @@
   "University of Innsbruck"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-22T09:35:17+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-22T10:36:45+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -905,6 +916,10 @@
   {
    "title": "New Fossil Confirms a Human Ancestor Appeared 200,000 Years Earlier Than Expected",
    "outlet": "ScienceAlert"
+  },
+  {
+   "title": "3 Questions With Travis Ulrich, Senior Vice President at Terra Dotta",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
@@ -912,7 +927,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
