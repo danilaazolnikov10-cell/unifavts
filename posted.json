@@ -118,7 +118,8 @@
   "University of Coimbra",
   "University of British Columbia",
   "Istanbul Technical University",
-  "University of California, Los Angeles"
+  "University of California, Los Angeles",
+  "University of Illinois Urbana-Champaign"
  ],
  "seen": [
   "741cd072e273",
@@ -614,7 +615,7 @@
   "91f7066d19b0",
   "437c9df2e23d"
  ],
- "last_kind": "science",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -693,8 +694,8 @@
   "University of Innsbruck"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-22T03:43:20+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-22T04:18:22+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -901,8 +902,8 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "ScienceAlert"
+  "ScienceAlert",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
