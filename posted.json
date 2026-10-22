@@ -123,7 +123,8 @@
   "University of Cologne",
   "University of Salamanca",
   "University of Texas at Austin",
-  "University of Stuttgart"
+  "University of Stuttgart",
+  "University of Malta"
  ],
  "seen": [
   "741cd072e273",
@@ -633,9 +634,12 @@
   "bdc8c5fe7b9a",
   "5c33519be7f0",
   "244eca16a6a5",
-  "ed625973882b"
+  "ed625973882b",
+  "a05a70d729cb",
+  "6a85074051ec",
+  "17209c2cce30"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -711,11 +715,14 @@
   "University of Cologne",
   "University of Stuttgart",
   "University of Vienna",
-  "University of Innsbruck"
+  "University of Innsbruck",
+  "Reykjavik University",
+  "University of Malta",
+  "University of Cyprus"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-22T10:36:45+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-22T11:03:59+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -926,8 +933,8 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
