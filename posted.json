@@ -611,9 +611,10 @@
   "ce0eca60ae8d",
   "7c68da65d8b5",
   "a54d1aa6de41",
-  "91f7066d19b0"
+  "91f7066d19b0",
+  "437c9df2e23d"
  ],
- "last_kind": "fact",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -692,8 +693,8 @@
   "University of Innsbruck"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-22T02:01:25+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-22T03:43:20+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -890,6 +891,10 @@
   {
    "title": "Myanmar students flock to Germany, Malaysia as market diversifies",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "New Fossil Confirms a Human Ancestor Appeared 200,000 Years Earlier Than Expected",
+   "outlet": "ScienceAlert"
   }
  ],
  "last_outlets": [
@@ -897,7 +902,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "ScienceAlert"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-15T04:48:51+00:00",
