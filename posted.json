@@ -119,7 +119,8 @@
   "University of British Columbia",
   "Istanbul Technical University",
   "University of California, Los Angeles",
-  "University of Illinois Urbana-Champaign"
+  "University of Illinois Urbana-Champaign",
+  "University of Cologne"
  ],
  "seen": [
   "741cd072e273",
@@ -613,7 +614,10 @@
   "7c68da65d8b5",
   "a54d1aa6de41",
   "91f7066d19b0",
-  "437c9df2e23d"
+  "437c9df2e23d",
+  "fe1dcc643c5c",
+  "2d35605baeb3",
+  "35e42ab2e634"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -695,7 +699,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-22T04:56:17+00:00",
+ "next_post_at": "2026-10-22T05:29:54+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -901,8 +905,8 @@
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "ScienceAlert",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
