@@ -696,7 +696,15 @@
   "d8d0ea453e65",
   "10d12ef78849",
   "d68e93ad10a8",
-  "fb70dde18bf0"
+  "fb70dde18bf0",
+  "1cf060f9c4aa",
+  "a8356cca49e4",
+  "8819039b0500",
+  "b9c93f25e551",
+  "66a6a29ab678",
+  "1d405c51e5fd",
+  "fd7b9c95b1c2",
+  "6add30750725"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -816,8 +824,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-10-23T11:27:06+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-23T12:14:51+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1034,14 +1042,18 @@
   {
    "title": "Who Is Left Out if We Stop Writing?",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Enroly: UK CAS issuance falls 24% as visa refusals jump 44%",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
