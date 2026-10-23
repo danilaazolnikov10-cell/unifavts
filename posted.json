@@ -127,7 +127,8 @@
   "University of Malta",
   "University of Cyprus",
   "Reykjavik University",
-  "University of Bologna"
+  "University of Bologna",
+  "University of Rwanda"
  ],
  "seen": [
   "741cd072e273",
@@ -666,9 +667,11 @@
   "2aedd54f3eb3",
   "d89c4bad1501",
   "082aedb29f06",
-  "afa3a6105617"
+  "afa3a6105617",
+  "1e22b14800c7",
+  "ca9d489812b8"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -755,8 +758,8 @@
   "University of Rwanda"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-23T00:09:34+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-23T01:46:16+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -971,8 +974,8 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
