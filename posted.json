@@ -139,7 +139,8 @@
   "University of Calgary",
   "Kyoto University",
   "Osaka University",
-  "University of Namibia"
+  "University of Namibia",
+  "University of Leipzig"
  ],
  "seen": [
   "741cd072e273",
@@ -716,7 +717,8 @@
   "0253876276ed",
   "77b045b3889b",
   "840e0b30044c",
-  "1b5311456ec5"
+  "1b5311456ec5",
+  "58812ea796c9"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -825,7 +827,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-23T17:30:56+00:00",
+ "next_post_at": "2026-10-23T18:33:05+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
