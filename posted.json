@@ -133,7 +133,8 @@
   "University of Bonn",
   "University of Khartoum",
   "University of Würzburg",
-  "University of Malawi"
+  "University of Malawi",
+  "University of Hamburg"
  ],
  "seen": [
   "741cd072e273",
@@ -682,7 +683,9 @@
   "008f2a457f2f",
   "cdc12eccab21",
   "e0826a3e6ad9",
-  "4d10eff37d73"
+  "4d10eff37d73",
+  "b62823683257",
+  "92de4d41747a"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -791,7 +794,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-23T08:56:37+00:00",
+ "next_post_at": "2026-10-23T09:54:17+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1007,7 +1010,7 @@
   }
  ],
  "last_outlets": [
-  "ScienceDaily",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия",
