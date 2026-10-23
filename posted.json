@@ -704,7 +704,8 @@
   "66a6a29ab678",
   "1d405c51e5fd",
   "fd7b9c95b1c2",
-  "6add30750725"
+  "6add30750725",
+  "795b54b85a06"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -811,21 +812,9 @@
   "Osaka University",
   "Tohoku University"
  ],
- "pool": [
-  {
-   "id": "cbeb8b4a5d8b",
-   "link": "https://www.insidehighered.com/news/institutions/specialized-colleges/2026/10/23/5-things-know-about-work-colleges",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "5 Things to Know About Work Colleges",
-   "date": "2026-10-23T07:00:00+00:00",
-   "rating": 6.0,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 2,
- "next_post_at": "2026-10-23T12:14:51+00:00",
+ "pool": [],
+ "since_fact": 3,
+ "next_post_at": "2026-10-23T13:20:40+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1046,14 +1035,18 @@
   {
    "title": "Enroly: UK CAS issuance falls 24% as visa refusals jump 44%",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "5 Things to Know About Work Colleges",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "Inside Higher Ed",
-  "The PIE News"
+  "The PIE News",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
