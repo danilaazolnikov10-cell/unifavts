@@ -675,7 +675,9 @@
   "732bcc8708cd",
   "3ffdcc298c91",
   "5b8b239b341c",
-  "008f2a457f2f"
+  "008f2a457f2f",
+  "cdc12eccab21",
+  "e0826a3e6ad9"
  ],
  "last_kind": "science",
  "extra_universities": [
@@ -761,11 +763,21 @@
   "University of Malawi",
   "University of the West Indies",
   "University of Dar es Salaam",
-  "University of Rwanda"
+  "University of Rwanda",
+  "University of Göttingen",
+  "University of Freiburg",
+  "University of Bonn",
+  "University of Hamburg",
+  "University of Leipzig",
+  "University of Würzburg",
+  "University of Khartoum",
+  "Addis Ababa University",
+  "Korea University",
+  "Yonsei University"
  ],
  "pool": [],
  "since_fact": 1,
- "next_post_at": "2026-10-23T04:45:30+00:00",
+ "next_post_at": "2026-10-23T05:07:38+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
