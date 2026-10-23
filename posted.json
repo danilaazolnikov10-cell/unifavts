@@ -685,9 +685,20 @@
   "e0826a3e6ad9",
   "4d10eff37d73",
   "b62823683257",
-  "92de4d41747a"
+  "92de4d41747a",
+  "765ba2e8859e",
+  "a5e5c6fe9e9e",
+  "041c62ac68f6",
+  "b0093c5216fc",
+  "e0d68a58791a",
+  "1baa7c7d2ce0",
+  "cbeb8b4a5d8b",
+  "d8d0ea453e65",
+  "10d12ef78849",
+  "d68e93ad10a8",
+  "fb70dde18bf0"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -792,9 +803,21 @@
   "Osaka University",
   "Tohoku University"
  ],
- "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-23T09:54:17+00:00",
+ "pool": [
+  {
+   "id": "cbeb8b4a5d8b",
+   "link": "https://www.insidehighered.com/news/institutions/specialized-colleges/2026/10/23/5-things-know-about-work-colleges",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "5 Things to Know About Work Colleges",
+   "date": "2026-10-23T07:00:00+00:00",
+   "rating": 6.0,
+   "timely": 0,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 1,
+ "next_post_at": "2026-10-23T10:28:44+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1007,6 +1030,10 @@
   {
    "title": "Cambridge scientists create a $10 chip that could put a medical lab on your wrist",
    "outlet": "ScienceDaily"
+  },
+  {
+   "title": "Who Is Left Out if We Stop Writing?",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
@@ -1014,7 +1041,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
