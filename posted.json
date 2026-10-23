@@ -134,7 +134,8 @@
   "University of Khartoum",
   "University of Würzburg",
   "University of Malawi",
-  "University of Hamburg"
+  "University of Hamburg",
+  "University of Göttingen"
  ],
  "seen": [
   "741cd072e273",
@@ -705,9 +706,11 @@
   "1d405c51e5fd",
   "fd7b9c95b1c2",
   "6add30750725",
-  "795b54b85a06"
+  "795b54b85a06",
+  "3e280070c952",
+  "73e07e36d00c"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -813,8 +816,8 @@
   "Tohoku University"
  ],
  "pool": [],
- "since_fact": 3,
- "next_post_at": "2026-10-23T13:20:40+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-23T13:49:49+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1043,10 +1046,10 @@
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "Inside Higher Ed",
   "The PIE News",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
