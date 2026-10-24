@@ -144,7 +144,8 @@
   "University of KwaZulu-Natal",
   "University of the Philippines Manila",
   "Tohoku University",
-  "Addis Ababa University"
+  "Addis Ababa University",
+  "University of Oulu"
  ],
  "seen": [
   "741cd072e273",
@@ -732,7 +733,8 @@
   "31e9312f4ecd",
   "8d626f70bfcd",
   "bf6b62894a03",
-  "efe72e0d23bb"
+  "efe72e0d23bb",
+  "871affb1b45a"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -841,7 +843,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-24T02:17:57+00:00",
+ "next_post_at": "2026-10-24T03:53:06+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
