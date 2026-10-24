@@ -143,7 +143,8 @@
   "University of Leipzig",
   "University of KwaZulu-Natal",
   "University of the Philippines Manila",
-  "Tohoku University"
+  "Tohoku University",
+  "Addis Ababa University"
  ],
  "seen": [
   "741cd072e273",
@@ -730,7 +731,8 @@
   "c2f4b871ea70",
   "31e9312f4ecd",
   "8d626f70bfcd",
-  "bf6b62894a03"
+  "bf6b62894a03",
+  "efe72e0d23bb"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -839,7 +841,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-24T00:20:03+00:00",
+ "next_post_at": "2026-10-24T02:17:57+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
