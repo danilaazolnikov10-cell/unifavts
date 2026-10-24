@@ -151,7 +151,8 @@
   "University of Botswana",
   "Yonsei University",
   "Korea University",
-  "University of Dar es Salaam"
+  "University of Dar es Salaam",
+  "University of the Faroe Islands"
  ],
  "seen": [
   "741cd072e273",
@@ -745,7 +746,16 @@
   "7bdce4c81281",
   "08e134b3005f",
   "93b3f75cf49b",
-  "aa6aee141778"
+  "aa6aee141778",
+  "955bb774840e",
+  "52e06179059e",
+  "f72a1962627e",
+  "fb16112888ab",
+  "a074e23fb0ed",
+  "9b4338d5f72e",
+  "fa4873ddcf4f",
+  "dcb7d5ebe5a8",
+  "d96f38101863"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -850,11 +860,14 @@
   "University of Botswana",
   "Kyoto University",
   "Osaka University",
-  "Tohoku University"
+  "Tohoku University",
+  "Universidad de los Andes (Colombia)",
+  "University of the Faroe Islands",
+  "University of Reykjavik"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-24T13:22:01+00:00",
+ "next_post_at": "2026-10-24T14:03:55+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
