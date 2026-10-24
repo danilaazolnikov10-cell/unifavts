@@ -154,7 +154,8 @@
   "University of Dar es Salaam",
   "University of the Faroe Islands",
   "Universidad de los Andes (Colombia)",
-  "University of Reykjavik"
+  "University of Reykjavik",
+  "University of Santiago de Compostela"
  ],
  "seen": [
   "741cd072e273",
@@ -757,7 +758,8 @@
   "9b4338d5f72e",
   "fa4873ddcf4f",
   "dcb7d5ebe5a8",
-  "d96f38101863"
+  "d96f38101863",
+  "715c841e1d6f"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -878,7 +880,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-24T18:50:39+00:00",
+ "next_post_at": "2026-10-24T20:44:07+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
