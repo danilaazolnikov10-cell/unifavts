@@ -155,7 +155,8 @@
   "University of the Faroe Islands",
   "Universidad de los Andes (Colombia)",
   "University of Reykjavik",
-  "University of Santiago de Compostela"
+  "University of Santiago de Compostela",
+  "University of Lille"
  ],
  "seen": [
   "741cd072e273",
@@ -759,7 +760,8 @@
   "fa4873ddcf4f",
   "dcb7d5ebe5a8",
   "d96f38101863",
-  "715c841e1d6f"
+  "715c841e1d6f",
+  "b6f597e53c6c"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -880,7 +882,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-24T20:44:07+00:00",
+ "next_post_at": "2026-10-24T22:09:23+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
