@@ -159,7 +159,8 @@
   "University of Lille",
   "Kyushu University",
   "University of Salzburg",
-  "University of Maribor"
+  "University of Maribor",
+  "University of the Free State"
  ],
  "seen": [
   "741cd072e273",
@@ -766,7 +767,8 @@
   "715c841e1d6f",
   "b6f597e53c6c",
   "23ad522c3c32",
-  "eeb1fade18b5"
+  "eeb1fade18b5",
+  "0eb7287594a3"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -897,7 +899,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-25T02:36:50+00:00",
+ "next_post_at": "2026-10-25T03:49:31+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
