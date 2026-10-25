@@ -169,7 +169,8 @@
   "University of New South Wales",
   "Tallinn University of Technology",
   "National University of Malaysia",
-  "Chinese University of Hong Kong"
+  "Chinese University of Hong Kong",
+  "National Autonomous University of Mexico"
  ],
  "seen": [
   "741cd072e273",
@@ -781,7 +782,15 @@
   "5e6ef88eaedd",
   "e8892bef5fd1",
   "734aca26b6d4",
-  "9479aea0e4d0"
+  "9479aea0e4d0",
+  "bee12aa6ed27",
+  "131a04442c5f",
+  "f088c770504f",
+  "81c79aace3ea",
+  "b35a47d15ee2",
+  "d392d2c5952a",
+  "57873e1aad61",
+  "c51e9f528e3f"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -921,7 +930,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-25T12:08:09+00:00",
+ "next_post_at": "2026-10-25T13:05:59+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
