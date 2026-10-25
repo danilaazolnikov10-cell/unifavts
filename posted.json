@@ -177,7 +177,8 @@
   "University of Vigo",
   "University of Macau",
   "University of Novi Sad",
-  "Pohang University of Science and Technology"
+  "Pohang University of Science and Technology",
+  "University of Zimbabwe"
  ],
  "seen": [
   "741cd072e273",
@@ -799,7 +800,8 @@
   "57873e1aad61",
   "c51e9f528e3f",
   "bfe61cf84625",
-  "0fb2a4993150"
+  "0fb2a4993150",
+  "875018769e66"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -939,7 +941,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-25T20:33:47+00:00",
+ "next_post_at": "2026-10-25T22:03:37+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
