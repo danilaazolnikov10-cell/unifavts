@@ -173,7 +173,8 @@
   "National Autonomous University of Mexico",
   "University of Patras",
   "University of Zaragoza",
-  "University of Latvia"
+  "University of Latvia",
+  "University of Vigo"
  ],
  "seen": [
   "741cd072e273",
@@ -793,7 +794,9 @@
   "b35a47d15ee2",
   "d392d2c5952a",
   "57873e1aad61",
-  "c51e9f528e3f"
+  "c51e9f528e3f",
+  "bfe61cf84625",
+  "0fb2a4993150"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -933,7 +936,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-25T16:14:16+00:00",
+ "next_post_at": "2026-10-25T17:17:38+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
