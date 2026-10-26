@@ -950,7 +950,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-26T07:49:03+00:00",
+ "next_post_at": "2026-10-26T08:56:44+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1218,7 +1218,7 @@
  ],
  "article_day": "2026-10-26",
  "deadlines_week": "2026-44",
- "poll_day": "2026-10-25",
+ "poll_day": "2026-10-26",
  "poll_hist": [
   "p_country",
   "p_main",
@@ -1230,7 +1230,8 @@
   "p_major",
   "quiz:Aarhus University|Harvard University|The University of Hong Kong",
   "quiz:Karolinska Institute|New York University|University of Geneva",
-  "quiz:Cornell University|The University of Hong Kong|Washington University in St Louis"
+  "quiz:Cornell University|The University of Hong Kong|Washington University in St Louis",
+  "quiz:Harbin Institute of Technology|The University of New South Wales|University of Toronto"
  ],
  "tips_day": "2026-10-25",
  "tips_hist": [
