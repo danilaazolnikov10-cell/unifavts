@@ -183,7 +183,8 @@
   "National University of Lesotho",
   "University of the Philippines Visayas",
   "University of Split",
-  "University of Colombo"
+  "University of Colombo",
+  "University of the Philippines Los Baños"
  ],
  "seen": [
   "741cd072e273",
@@ -814,7 +815,19 @@
   "9772044e9b73",
   "a1745d7896fc",
   "1b207f145055",
-  "6875722491fb"
+  "6875722491fb",
+  "9e8bf4c4062b",
+  "f8cbc0c34aa8",
+  "f3a510045d10",
+  "050d14e274e5",
+  "5c8e018dad27",
+  "cb39c0bb3fed",
+  "862e46a2163c",
+  "5ec896878700",
+  "02826feaa97c",
+  "bc50198bcbbd",
+  "6dd48dd45b8d",
+  "6a146ed4b81b"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -961,7 +974,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-26T09:47:48+00:00",
+ "next_post_at": "2026-10-26T10:33:57+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
