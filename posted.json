@@ -186,7 +186,8 @@
   "University of Colombo",
   "University of the Philippines Los Baños",
   "University of the South Pacific",
-  "University of the Philippines Cebu"
+  "University of the Philippines Cebu",
+  "University of the Philippines Baguio"
  ],
  "seen": [
   "741cd072e273",
@@ -852,9 +853,10 @@
   "e1f8bd546f9f",
   "7f50e53d0030",
   "9c64456970ca",
-  "c6549f35a055"
+  "c6549f35a055",
+  "d851a458f766"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -998,8 +1000,8 @@
   "University of the Philippines Cebu"
  ],
  "pool": [],
- "since_fact": 3,
- "next_post_at": "2026-10-26T19:07:38+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-26T21:14:37+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1247,11 +1249,11 @@
   }
  ],
  "last_outlets": [
-  "Science News",
   "Википедия",
   "The PIE News",
   "The PIE News",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
