@@ -849,7 +849,8 @@
   "c071b14c9efc",
   "31859a849501",
   "00838f54463a",
-  "e1f8bd546f9f"
+  "e1f8bd546f9f",
+  "7f50e53d0030"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1007,8 +1008,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-10-26T17:46:15+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-26T18:32:18+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1245,13 +1246,17 @@
   {
    "title": "English, AI and employability: the triple test facing international students",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Too big to brake: why Bangladesh and Pakistan escaped the visa brake, and what comes next",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "Science News",
   "Википедия",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
