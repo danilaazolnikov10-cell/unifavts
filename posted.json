@@ -180,7 +180,8 @@
   "Pohang University of Science and Technology",
   "University of Zimbabwe",
   "University of Lleida",
-  "National University of Lesotho"
+  "National University of Lesotho",
+  "University of the Philippines Visayas"
  ],
  "seen": [
   "741cd072e273",
@@ -803,7 +804,9 @@
   "c51e9f528e3f",
   "bfe61cf84625",
   "0fb2a4993150",
-  "875018769e66"
+  "875018769e66",
+  "a3f63ef7de5a",
+  "a6d752146199"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -943,7 +946,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-26T01:38:55+00:00",
+ "next_post_at": "2026-10-26T03:56:47+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
