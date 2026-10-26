@@ -846,9 +846,12 @@
   "b43ae5b52b3b",
   "5fc3836382d6",
   "cf426b55093f",
-  "c071b14c9efc"
+  "c071b14c9efc",
+  "31859a849501",
+  "00838f54463a",
+  "e1f8bd546f9f"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -991,9 +994,21 @@
   "University of the Philippines Baguio",
   "University of the Philippines Cebu"
  ],
- "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-26T16:59:20+00:00",
+ "pool": [
+  {
+   "id": "e1f8bd546f9f",
+   "link": "https://thepienews.com/grads-face-career-readiness-disconnect-as-skills-take-centre-stage/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Grads face career readiness “disconnect” as skills take centre stage",
+   "date": "2026-10-26T16:50:33+00:00",
+   "rating": 6.5,
+   "timely": 0,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 1,
+ "next_post_at": "2026-10-26T17:46:15+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1226,14 +1241,18 @@
   {
    "title": "Claude helped plan risky bird flu research. What did the AI add?",
    "outlet": "Science News"
+  },
+  {
+   "title": "English, AI and employability: the triple test facing international students",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "The PIE News",
   "Science News",
-  "Википедия"
+  "Википедия",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
