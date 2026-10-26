@@ -187,7 +187,8 @@
   "University of the Philippines Los Baños",
   "University of the South Pacific",
   "University of the Philippines Cebu",
-  "University of the Philippines Baguio"
+  "University of the Philippines Baguio",
+  "University of the Philippines Mindanao"
  ],
  "seen": [
   "741cd072e273",
@@ -854,7 +855,14 @@
   "7f50e53d0030",
   "9c64456970ca",
   "c6549f35a055",
-  "d851a458f766"
+  "d851a458f766",
+  "21c732ce5537",
+  "d481264fb552",
+  "653a518b11e8",
+  "a827506fd0dd",
+  "06b7a7b4b847",
+  "b87ad4464197",
+  "f4efc119ed8c"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1001,7 +1009,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-26T21:14:37+00:00",
+ "next_post_at": "2026-10-26T23:00:56+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1249,10 +1257,10 @@
   }
  ],
  "last_outlets": [
+  "The PIE News",
+  "The PIE News",
+  "The PIE News",
   "Википедия",
-  "The PIE News",
-  "The PIE News",
-  "The PIE News",
   "Википедия"
  ],
  "arwu_year": 2026,
