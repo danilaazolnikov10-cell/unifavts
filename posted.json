@@ -830,9 +830,20 @@
   "6dd48dd45b8d",
   "6a146ed4b81b",
   "cfa592ac0423",
-  "6dd306c160d0"
+  "6dd306c160d0",
+  "cd81d7de0f9b",
+  "6c1c0d2c1e97",
+  "a5ef8152d41f",
+  "2b5e3b374d0e",
+  "495f108a3b90",
+  "df185ef24106",
+  "45a80ca2149f",
+  "3272e9319f08",
+  "578d742fe2d4",
+  "69d5a0023539",
+  "1867de242b8f"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -976,8 +987,8 @@
   "University of the Philippines Cebu"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-26T11:53:34+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-26T14:26:56+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1206,14 +1217,18 @@
   {
    "title": "Proposed new OPT fee would decimate the international talent pipeline",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Claude helped plan risky bird flu research. What did the AI add?",
+   "outlet": "Science News"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "The PIE News"
+  "The PIE News",
+  "Science News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
