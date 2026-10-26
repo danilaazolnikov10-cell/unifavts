@@ -850,7 +850,9 @@
   "31859a849501",
   "00838f54463a",
   "e1f8bd546f9f",
-  "7f50e53d0030"
+  "7f50e53d0030",
+  "9c64456970ca",
+  "c6549f35a055"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -995,21 +997,9 @@
   "University of the Philippines Baguio",
   "University of the Philippines Cebu"
  ],
- "pool": [
-  {
-   "id": "e1f8bd546f9f",
-   "link": "https://thepienews.com/grads-face-career-readiness-disconnect-as-skills-take-centre-stage/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "Grads face career readiness “disconnect” as skills take centre stage",
-   "date": "2026-10-26T16:50:33+00:00",
-   "rating": 6.5,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 2,
- "next_post_at": "2026-10-26T18:32:18+00:00",
+ "pool": [],
+ "since_fact": 3,
+ "next_post_at": "2026-10-26T19:07:38+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1250,12 +1240,16 @@
   {
    "title": "Too big to brake: why Bangladesh and Pakistan escaped the visa brake, and what comes next",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Grads face career readiness “disconnect” as skills take centre stage",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Science News",
   "Википедия",
+  "The PIE News",
   "The PIE News",
   "The PIE News"
  ],
