@@ -182,7 +182,8 @@
   "University of Lleida",
   "National University of Lesotho",
   "University of the Philippines Visayas",
-  "University of Split"
+  "University of Split",
+  "University of Colombo"
  ],
  "seen": [
   "741cd072e273",
@@ -810,7 +811,10 @@
   "a6d752146199",
   "6ee31fb5f98f",
   "1a80a05275bb",
-  "9772044e9b73"
+  "9772044e9b73",
+  "a1745d7896fc",
+  "1b207f145055",
+  "6875722491fb"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -946,11 +950,18 @@
   "University of the Philippines Visayas",
   "University of Zimbabwe",
   "National University of Lesotho",
-  "National Autonomous University of Mexico"
+  "National Autonomous University of Mexico",
+  "University of the South Pacific",
+  "University of Colombo",
+  "University of the Philippines Los Baños",
+  "University of the Philippines Open University",
+  "University of the Philippines Mindanao",
+  "University of the Philippines Baguio",
+  "University of the Philippines Cebu"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-26T08:56:44+00:00",
+ "next_post_at": "2026-10-26T09:47:48+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
