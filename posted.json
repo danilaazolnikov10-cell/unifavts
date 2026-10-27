@@ -917,9 +917,11 @@
   "80509df43292",
   "f1f753c32fd6",
   "6bcdb4cfbf7e",
-  "a8e684ce560e"
+  "a8e684ce560e",
+  "11f7268e5382",
+  "38a9003025dd"
  ],
- "last_kind": "fact",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1074,8 +1076,8 @@
   "University of Addis Ababa"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-27T18:22:13+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-27T19:14:43+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1336,14 +1338,18 @@
   {
    "title": "AIEC at 40: Australian international education looks to its next chapter",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "How brain implants turn thoughts into speech",
+   "outlet": "Science News"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "Science News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
