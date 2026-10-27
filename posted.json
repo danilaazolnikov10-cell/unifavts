@@ -891,9 +891,12 @@
   "fbc379b299ea",
   "8cf7a789781e",
   "2443f5a28296",
-  "e8e3eb23603f"
+  "e8e3eb23603f",
+  "9dbb9e5222c0",
+  "39134eb250c1",
+  "dff472d55d65"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1048,8 +1051,8 @@
   "University of Addis Ababa"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-27T11:30:38+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-27T12:11:42+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1302,6 +1305,10 @@
   {
    "title": "When community colleges close, rural students get shut out of the liberal arts",
    "outlet": "The Hechinger Report"
+  },
+  {
+   "title": "Willkommen! Why international students are choosing Germany",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
@@ -1309,7 +1316,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
