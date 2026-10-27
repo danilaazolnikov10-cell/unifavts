@@ -193,7 +193,8 @@
   "University of the Virgin Islands",
   "University of Wollongong",
   "University of Addis Ababa",
-  "University of the Highlands and Islands"
+  "University of the Highlands and Islands",
+  "University of Burundi"
  ],
  "seen": [
   "741cd072e273",
@@ -875,7 +876,17 @@
   "be47fb73ff3f",
   "71c246cb8a67",
   "bdcea22402e1",
-  "ba39248fe626"
+  "ba39248fe626",
+  "5262bbabf880",
+  "a0ab185837a9",
+  "0ceef624ea18",
+  "bf671d8bf351",
+  "960dfae89517",
+  "c412d79ef86e",
+  "14305895ac67",
+  "c2ac92aedfd0",
+  "748c8e84ab3e",
+  "fbc379b299ea"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1033,7 +1044,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-27T08:43:57+00:00",
+ "next_post_at": "2026-10-27T09:28:23+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1289,8 +1300,8 @@
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The Hechinger Report",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия"
