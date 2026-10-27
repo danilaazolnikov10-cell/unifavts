@@ -866,9 +866,10 @@
   "f4efc119ed8c",
   "74f77551ec18",
   "d07975ca655b",
-  "abf236ae8eb6"
+  "abf236ae8eb6",
+  "d77ff4d479dc"
  ],
- "last_kind": "fact",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1020,8 +1021,8 @@
   "University of the Highlands and Islands"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-27T01:44:59+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-27T03:50:54+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1266,14 +1267,18 @@
   {
    "title": "Grads face career readiness “disconnect” as skills take centre stage",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "One Dose of Experimental Antibody Kept HIV-Like Virus in Remission For 4 Years in a Monkey",
+   "outlet": "ScienceAlert"
   }
  ],
  "last_outlets": [
   "The PIE News",
-  "The PIE News",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "ScienceAlert"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
