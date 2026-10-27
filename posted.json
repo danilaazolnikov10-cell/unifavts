@@ -192,7 +192,8 @@
   "University of the Philippines Open University",
   "University of the Virgin Islands",
   "University of Wollongong",
-  "University of Addis Ababa"
+  "University of Addis Ababa",
+  "University of the Highlands and Islands"
  ],
  "seen": [
   "741cd072e273",
@@ -873,7 +874,8 @@
   "d77ff4d479dc",
   "be47fb73ff3f",
   "71c246cb8a67",
-  "bdcea22402e1"
+  "bdcea22402e1",
+  "ba39248fe626"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1031,7 +1033,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-27T07:05:00+00:00",
+ "next_post_at": "2026-10-27T08:01:22+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1287,9 +1289,9 @@
   }
  ],
  "last_outlets": [
-  "ScienceAlert",
   "Википедия",
   "The Hechinger Report",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
