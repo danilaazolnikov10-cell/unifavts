@@ -194,7 +194,8 @@
   "University of Wollongong",
   "University of Addis Ababa",
   "University of the Highlands and Islands",
-  "University of Burundi"
+  "University of Burundi",
+  "University of the Andes (Colombia)"
  ],
  "seen": [
   "741cd072e273",
@@ -886,7 +887,9 @@
   "14305895ac67",
   "c2ac92aedfd0",
   "748c8e84ab3e",
-  "fbc379b299ea"
+  "fbc379b299ea",
+  "8cf7a789781e",
+  "2443f5a28296"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1044,7 +1047,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-27T09:28:23+00:00",
+ "next_post_at": "2026-10-27T10:19:24+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1300,7 +1303,7 @@
   }
  ],
  "last_outlets": [
-  "The Hechinger Report",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия",
