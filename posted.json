@@ -198,7 +198,8 @@
   "University of the Andes (Colombia)",
   "University of Tasmania",
   "University of the Arctic",
-  "University of Western Australia"
+  "University of Western Australia",
+  "University of Otago"
  ],
  "seen": [
   "741cd072e273",
@@ -909,7 +910,10 @@
   "bd747f251758",
   "2e30a57fb4ad",
   "766b15ea6bb2",
-  "2a6498a37789"
+  "2a6498a37789",
+  "64f47a7c7987",
+  "f453cc4885c7",
+  "80509df43292"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1067,7 +1071,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-27T15:43:01+00:00",
+ "next_post_at": "2026-10-27T16:16:41+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1331,10 +1335,10 @@
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "Википедия",
   "The PIE News",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
