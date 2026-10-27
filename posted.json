@@ -195,7 +195,8 @@
   "University of Addis Ababa",
   "University of the Highlands and Islands",
   "University of Burundi",
-  "University of the Andes (Colombia)"
+  "University of the Andes (Colombia)",
+  "University of Tasmania"
  ],
  "seen": [
   "741cd072e273",
@@ -889,7 +890,8 @@
   "748c8e84ab3e",
   "fbc379b299ea",
   "8cf7a789781e",
-  "2443f5a28296"
+  "2443f5a28296",
+  "e8e3eb23603f"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1047,7 +1049,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-27T10:19:24+00:00",
+ "next_post_at": "2026-10-27T10:56:48+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
