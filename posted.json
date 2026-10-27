@@ -189,7 +189,8 @@
   "University of the Philippines Cebu",
   "University of the Philippines Baguio",
   "University of the Philippines Mindanao",
-  "University of the Philippines Open University"
+  "University of the Philippines Open University",
+  "University of the Virgin Islands"
  ],
  "seen": [
   "741cd072e273",
@@ -869,7 +870,7 @@
   "abf236ae8eb6",
   "d77ff4d479dc"
  ],
- "last_kind": "science",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1018,11 +1019,12 @@
   "University of Western Australia",
   "University of the Virgin Islands",
   "University of the Arctic",
-  "University of the Highlands and Islands"
+  "University of the Highlands and Islands",
+  "University of the Andes (Colombia)"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-27T04:33:18+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-27T05:13:09+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1274,11 +1276,11 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Википедия",
   "Википедия",
   "Википедия",
-  "ScienceAlert"
+  "ScienceAlert",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
