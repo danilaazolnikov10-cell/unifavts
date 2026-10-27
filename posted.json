@@ -868,9 +868,12 @@
   "74f77551ec18",
   "d07975ca655b",
   "abf236ae8eb6",
-  "d77ff4d479dc"
+  "d77ff4d479dc",
+  "be47fb73ff3f",
+  "71c246cb8a67",
+  "bdcea22402e1"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1023,8 +1026,8 @@
   "University of the Andes (Colombia)"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-27T05:13:09+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-27T05:44:48+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1273,14 +1276,18 @@
   {
    "title": "One Dose of Experimental Antibody Kept HIV-Like Virus in Remission For 4 Years in a Monkey",
    "outlet": "ScienceAlert"
+  },
+  {
+   "title": "When community colleges close, rural students get shut out of the liberal arts",
+   "outlet": "The Hechinger Report"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "ScienceAlert",
-  "Википедия"
+  "Википедия",
+  "The Hechinger Report"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
