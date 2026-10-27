@@ -190,7 +190,8 @@
   "University of the Philippines Baguio",
   "University of the Philippines Mindanao",
   "University of the Philippines Open University",
-  "University of the Virgin Islands"
+  "University of the Virgin Islands",
+  "University of Wollongong"
  ],
  "seen": [
   "741cd072e273",
@@ -873,7 +874,7 @@
   "71c246cb8a67",
   "bdcea22402e1"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1023,11 +1024,13 @@
   "University of the Virgin Islands",
   "University of the Arctic",
   "University of the Highlands and Islands",
-  "University of the Andes (Colombia)"
+  "University of the Andes (Colombia)",
+  "University of Burundi",
+  "University of Addis Ababa"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-27T05:44:48+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-27T06:28:50+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1284,10 +1287,10 @@
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "ScienceAlert",
   "Википедия",
-  "The Hechinger Report"
+  "The Hechinger Report",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
