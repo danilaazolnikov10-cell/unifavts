@@ -196,7 +196,8 @@
   "University of the Highlands and Islands",
   "University of Burundi",
   "University of the Andes (Colombia)",
-  "University of Tasmania"
+  "University of Tasmania",
+  "University of the Arctic"
  ],
  "seen": [
   "741cd072e273",
@@ -894,9 +895,18 @@
   "e8e3eb23603f",
   "9dbb9e5222c0",
   "39134eb250c1",
-  "dff472d55d65"
+  "dff472d55d65",
+  "2f3094c64e2f",
+  "a699114a3c95",
+  "76803fdd79e7",
+  "228e36fcf702",
+  "7bd06039e1fc",
+  "d869f7661fed",
+  "6338e001bb01",
+  "a0fb8a4a9a73",
+  "ef7c81aed974"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1051,8 +1061,8 @@
   "University of Addis Ababa"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-27T12:11:42+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-27T12:50:44+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1315,8 +1325,8 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
