@@ -1022,7 +1022,7 @@
  ],
  "pool": [],
  "since_fact": 1,
- "next_post_at": "2026-10-27T03:50:54+00:00",
+ "next_post_at": "2026-10-27T04:33:18+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1311,9 +1311,10 @@
   "The University of Manchester",
   "Nanyang Technological University",
   "University of Groningen",
-  "University of Basel"
+  "University of Basel",
+  "EPFL"
  ],
- "article_day": "2026-10-26",
+ "article_day": "2026-10-27",
  "deadlines_week": "2026-44",
  "poll_day": "2026-10-26",
  "poll_hist": [
