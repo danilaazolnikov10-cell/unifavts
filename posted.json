@@ -904,9 +904,13 @@
   "d869f7661fed",
   "6338e001bb01",
   "a0fb8a4a9a73",
-  "ef7c81aed974"
+  "ef7c81aed974",
+  "bd747f251758",
+  "2e30a57fb4ad",
+  "766b15ea6bb2",
+  "2a6498a37789"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1061,8 +1065,8 @@
   "University of Addis Ababa"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-27T12:50:44+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-27T13:54:35+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1319,14 +1323,18 @@
   {
    "title": "Willkommen! Why international students are choosing Germany",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "AIEC at 40: Australian international education looks to its next chapter",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "The PIE News",
-  "Википедия"
+  "Википедия",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
