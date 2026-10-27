@@ -199,7 +199,8 @@
   "University of Tasmania",
   "University of the Arctic",
   "University of Western Australia",
-  "University of Otago"
+  "University of Otago",
+  "University of Waikato"
  ],
  "seen": [
   "741cd072e273",
@@ -913,7 +914,8 @@
   "2a6498a37789",
   "64f47a7c7987",
   "f453cc4885c7",
-  "80509df43292"
+  "80509df43292",
+  "f1f753c32fd6"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1071,7 +1073,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-27T16:16:41+00:00",
+ "next_post_at": "2026-10-27T17:08:29+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1335,9 +1337,9 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Википедия",
   "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
