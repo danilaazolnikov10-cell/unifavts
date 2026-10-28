@@ -202,7 +202,8 @@
   "University of Otago",
   "University of Waikato",
   "University of Santiago de Chile",
-  "University of Seoul"
+  "University of Seoul",
+  "University of Strasbourg"
  ],
  "seen": [
   "741cd072e273",
@@ -1104,7 +1105,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-28T09:01:53+00:00",
+ "next_post_at": "2026-10-28T09:57:44+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1384,10 +1385,10 @@
   }
  ],
  "last_outlets": [
-  "Википедия",
   "ICEF Monitor",
   "ICEF Monitor",
   "ScienceAlert",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
