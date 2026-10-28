@@ -207,7 +207,8 @@
   "University of Montpellier",
   "University of Nantes",
   "University of Lyon",
-  "University of Bordeaux"
+  "University of Bordeaux",
+  "University of Rennes"
  ],
  "seen": [
   "741cd072e273",
@@ -973,9 +974,10 @@
   "2d08523f651d",
   "d72684dc43e2",
   "282c5385b746",
-  "358f135c7463"
+  "358f135c7463",
+  "6b410a9fdd53"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1140,8 +1142,8 @@
   "University of Dhaka"
  ],
  "pool": [],
- "since_fact": 4,
- "next_post_at": "2026-10-28T18:31:16+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-28T19:21:18+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1441,11 +1443,11 @@
   }
  ],
  "last_outlets": [
-  "Википедия",
   "ICEF Monitor",
   "The PIE News",
   "The PIE News",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
