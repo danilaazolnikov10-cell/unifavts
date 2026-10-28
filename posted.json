@@ -969,7 +969,9 @@
   "d518830cd5d6",
   "17b6e5fd169a",
   "b89cb89a8669",
-  "7a725df1e4ac"
+  "7a725df1e4ac",
+  "2d08523f651d",
+  "d72684dc43e2"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1137,19 +1139,19 @@
  ],
  "pool": [
   {
-   "id": "b89cb89a8669",
-   "link": "https://thepienews.com/breaking-uk-to-extend-graduate-visa-to-two-years-for-graduates-of-high-compliance-universities/",
+   "id": "2d08523f651d",
+   "link": "https://thepienews.com/australia-loses-ground-to-uk-and-us-in-international-student-race/",
    "outlet": "The PIE News",
    "kind": "admissions",
-   "title": "Breaking: UK to extend graduate visa to two years for graduates of “high-compliance universities”",
-   "date": "2026-10-28T15:08:45+00:00",
-   "rating": 8.9,
+   "title": "Australia loses ground to UK and US in international student race",
+   "date": "2026-10-28T16:44:30+00:00",
+   "rating": 7.3,
    "timely": 1,
    "tier": "top"
   }
  ],
- "since_fact": 2,
- "next_post_at": "2026-10-28T16:56:07+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-10-28T17:41:20+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1438,13 +1440,17 @@
   {
    "title": "UK unis to take £1,010m hit over international student levy",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Breaking: UK to extend graduate visa to two years for graduates of “high-compliance universities”",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "ICEF Monitor",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
