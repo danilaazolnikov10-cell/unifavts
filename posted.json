@@ -203,7 +203,8 @@
   "University of Waikato",
   "University of Santiago de Chile",
   "University of Seoul",
-  "University of Strasbourg"
+  "University of Strasbourg",
+  "University of Montpellier"
  ],
  "seen": [
   "741cd072e273",
@@ -949,9 +950,11 @@
   "85b62c0a6f3c",
   "bbd398513ffe",
   "86279449da75",
-  "fe817fb47eed"
+  "fe817fb47eed",
+  "ea1fbb08df7a",
+  "31ac2a0fade8"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1116,8 +1119,8 @@
   "University of Dhaka"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-28T10:41:35+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-28T11:39:04+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1401,11 +1404,11 @@
   }
  ],
  "last_outlets": [
-  "ICEF Monitor",
   "ScienceAlert",
   "Википедия",
   "Википедия",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
