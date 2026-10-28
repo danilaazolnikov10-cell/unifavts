@@ -200,7 +200,8 @@
   "University of the Arctic",
   "University of Western Australia",
   "University of Otago",
-  "University of Waikato"
+  "University of Waikato",
+  "University of Santiago de Chile"
  ],
  "seen": [
   "741cd072e273",
@@ -924,9 +925,10 @@
   "c7578dc194b1",
   "b772c6fb7983",
   "98146d3e70fe",
-  "48953dd215ce"
+  "48953dd215ce",
+  "964d9a94f037"
  ],
- "last_kind": "science",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1078,11 +1080,13 @@
   "University of the Highlands and Islands",
   "University of the Andes (Colombia)",
   "University of Burundi",
-  "University of Addis Ababa"
+  "University of Addis Ababa",
+  "University of Santiago de Chile",
+  "University of Seoul"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-28T00:03:53+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-28T02:08:12+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1350,11 +1354,11 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Википедия",
   "Википедия",
   "Википедия",
-  "Science News"
+  "Science News",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
