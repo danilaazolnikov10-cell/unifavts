@@ -205,7 +205,8 @@
   "University of Seoul",
   "University of Strasbourg",
   "University of Montpellier",
-  "University of Nantes"
+  "University of Nantes",
+  "University of Lyon"
  ],
  "seen": [
   "741cd072e273",
@@ -953,7 +954,9 @@
   "86279449da75",
   "fe817fb47eed",
   "ea1fbb08df7a",
-  "31ac2a0fade8"
+  "31ac2a0fade8",
+  "741a865a00c3",
+  "056614830d95"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1121,7 +1124,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-28T12:19:13+00:00",
+ "next_post_at": "2026-10-28T12:47:12+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1406,8 +1409,8 @@
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "Inside Higher Ed",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
