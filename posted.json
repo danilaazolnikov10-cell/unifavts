@@ -929,9 +929,14 @@
   "964d9a94f037",
   "73dc68892335",
   "7793312ddf33",
-  "aba361b4cc22"
+  "aba361b4cc22",
+  "42d7a3e217ca",
+  "bba4470f1d39",
+  "2718276f993b",
+  "35c53b47cfa6",
+  "3801be1b1e84"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1087,21 +1092,9 @@
   "University of Santiago de Chile",
   "University of Seoul"
  ],
- "pool": [
-  {
-   "id": "aba361b4cc22",
-   "link": "https://www.sciencealert.com/heat-deaths-reach-record-high-146-experts-call-to-declare-climate-change-a-global-health-emergency",
-   "outlet": "ScienceAlert",
-   "kind": "science",
-   "title": "Heat Deaths Reach Record High: 146 Experts Call to Declare Climate Change a Global Health Emergency",
-   "date": "2026-10-28T01:13:27+00:00",
-   "rating": 6.0,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 2,
- "next_post_at": "2026-10-28T05:02:48+00:00",
+ "pool": [],
+ "since_fact": 3,
+ "next_post_at": "2026-10-28T05:46:02+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1374,14 +1367,18 @@
   {
    "title": "South Korea introduces new incentives for foreign students to develop Korean language skills",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "Heat Deaths Reach Record High: 146 Experts Call to Declare Climate Change a Global Health Emergency",
+   "outlet": "ScienceAlert"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "Science News",
   "Википедия",
   "ICEF Monitor",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "ScienceAlert"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
