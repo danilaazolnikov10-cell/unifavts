@@ -926,9 +926,12 @@
   "b772c6fb7983",
   "98146d3e70fe",
   "48953dd215ce",
-  "964d9a94f037"
+  "964d9a94f037",
+  "73dc68892335",
+  "7793312ddf33",
+  "aba361b4cc22"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1084,9 +1087,32 @@
   "University of Santiago de Chile",
   "University of Seoul"
  ],
- "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-28T02:08:12+00:00",
+ "pool": [
+  {
+   "id": "73dc68892335",
+   "link": "https://monitor.icef.com/2026/10/south-korea-introduces-new-incentives-for-foreign-students-to-develop-korean-language-skills/",
+   "outlet": "ICEF Monitor",
+   "kind": "admissions",
+   "title": "South Korea introduces new incentives for foreign students to develop Korean language skills",
+   "date": "2026-10-28T01:32:29+00:00",
+   "rating": 7.6,
+   "timely": 1,
+   "tier": "top"
+  },
+  {
+   "id": "aba361b4cc22",
+   "link": "https://www.sciencealert.com/heat-deaths-reach-record-high-146-experts-call-to-declare-climate-change-a-global-health-emergency",
+   "outlet": "ScienceAlert",
+   "kind": "science",
+   "title": "Heat Deaths Reach Record High: 146 Experts Call to Declare Climate Change a Global Health Emergency",
+   "date": "2026-10-28T01:13:27+00:00",
+   "rating": 6.0,
+   "timely": 0,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 1,
+ "next_post_at": "2026-10-28T03:21:52+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1351,14 +1377,18 @@
   {
    "title": "How brain implants turn thoughts into speech",
    "outlet": "Science News"
+  },
+  {
+   "title": "Analysis predicts only moderate university fee increases for international students in Australia for 2027",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "Science News",
-  "Википедия"
+  "Википедия",
+  "ICEF Monitor"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
