@@ -963,7 +963,13 @@
   "ce917f69af25",
   "d8f6ffd452dd",
   "53df4a8cbbd9",
-  "76f59abfa914"
+  "76f59abfa914",
+  "b6db81b56dee",
+  "b348f790cf9e",
+  "d518830cd5d6",
+  "17b6e5fd169a",
+  "b89cb89a8669",
+  "7a725df1e4ac"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1129,9 +1135,21 @@
   "Aix-Marseille University",
   "University of Dhaka"
  ],
- "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-28T15:46:04+00:00",
+ "pool": [
+  {
+   "id": "b89cb89a8669",
+   "link": "https://thepienews.com/breaking-uk-to-extend-graduate-visa-to-two-years-for-graduates-of-high-compliance-universities/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Breaking: UK to extend graduate visa to two years for graduates of “high-compliance universities”",
+   "date": "2026-10-28T15:08:45+00:00",
+   "rating": 8.9,
+   "timely": 1,
+   "tier": "top"
+  }
+ ],
+ "since_fact": 2,
+ "next_post_at": "2026-10-28T16:56:07+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1416,14 +1434,18 @@
   {
    "title": "New research shows that policies, visa prospects, and AI are increasingly on the minds of international students choosing where to study",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "UK unis to take £1,010m hit over international student levy",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
