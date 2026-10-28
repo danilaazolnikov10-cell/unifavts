@@ -962,9 +962,10 @@
   "2f0061a0ccd0",
   "ce917f69af25",
   "d8f6ffd452dd",
-  "53df4a8cbbd9"
+  "53df4a8cbbd9",
+  "76f59abfa914"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1129,8 +1130,8 @@
   "University of Dhaka"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-28T14:07:26+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-28T15:01:50+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1411,14 +1412,18 @@
   {
    "title": "Pomona to Absorb Claremont Graduate University",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "New research shows that policies, visa prospects, and AI are increasingly on the minds of international students choosing where to study",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "ICEF Monitor"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
