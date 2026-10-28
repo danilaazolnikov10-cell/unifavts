@@ -1089,17 +1089,6 @@
  ],
  "pool": [
   {
-   "id": "73dc68892335",
-   "link": "https://monitor.icef.com/2026/10/south-korea-introduces-new-incentives-for-foreign-students-to-develop-korean-language-skills/",
-   "outlet": "ICEF Monitor",
-   "kind": "admissions",
-   "title": "South Korea introduces new incentives for foreign students to develop Korean language skills",
-   "date": "2026-10-28T01:32:29+00:00",
-   "rating": 7.6,
-   "timely": 1,
-   "tier": "top"
-  },
-  {
    "id": "aba361b4cc22",
    "link": "https://www.sciencealert.com/heat-deaths-reach-record-high-146-experts-call-to-declare-climate-change-a-global-health-emergency",
    "outlet": "ScienceAlert",
@@ -1111,8 +1100,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-10-28T03:21:52+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-28T04:13:06+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1381,13 +1370,17 @@
   {
    "title": "Analysis predicts only moderate university fee increases for international students in Australia for 2027",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "South Korea introduces new incentives for foreign students to develop Korean language skills",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "Science News",
   "Википедия",
+  "ICEF Monitor",
   "ICEF Monitor"
  ],
  "arwu_year": 2026,
