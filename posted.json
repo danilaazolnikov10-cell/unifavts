@@ -971,7 +971,9 @@
   "b89cb89a8669",
   "7a725df1e4ac",
   "2d08523f651d",
-  "d72684dc43e2"
+  "d72684dc43e2",
+  "282c5385b746",
+  "358f135c7463"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1137,21 +1139,9 @@
   "Aix-Marseille University",
   "University of Dhaka"
  ],
- "pool": [
-  {
-   "id": "2d08523f651d",
-   "link": "https://thepienews.com/australia-loses-ground-to-uk-and-us-in-international-student-race/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "Australia loses ground to UK and US in international student race",
-   "date": "2026-10-28T16:44:30+00:00",
-   "rating": 7.3,
-   "timely": 1,
-   "tier": "top"
-  }
- ],
- "since_fact": 3,
- "next_post_at": "2026-10-28T17:41:20+00:00",
+ "pool": [],
+ "since_fact": 4,
+ "next_post_at": "2026-10-28T18:31:16+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1444,12 +1434,16 @@
   {
    "title": "Breaking: UK to extend graduate visa to two years for graduates of “high-compliance universities”",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Australia loses ground to UK and US in international student race",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "ICEF Monitor",
+  "The PIE News",
   "The PIE News",
   "The PIE News"
  ],
