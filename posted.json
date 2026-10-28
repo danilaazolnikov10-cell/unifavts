@@ -209,7 +209,8 @@
   "University of Lyon",
   "University of Bordeaux",
   "University of Rennes",
-  "University of Maastricht"
+  "University of Maastricht",
+  "University of Luxembourg"
  ],
  "seen": [
   "741cd072e273",
@@ -977,7 +978,11 @@
   "282c5385b746",
   "358f135c7463",
   "6b410a9fdd53",
-  "a70a0f7a37cd"
+  "a70a0f7a37cd",
+  "79b5f765e11d",
+  "af53f1e2976f",
+  "08eb4ff13ae8",
+  "5d25973f5352"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1155,7 +1160,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-28T22:06:22+00:00",
+ "next_post_at": "2026-10-28T23:53:01+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1457,7 +1462,7 @@
  "last_outlets": [
   "The PIE News",
   "The PIE News",
-  "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
