@@ -201,7 +201,8 @@
   "University of Western Australia",
   "University of Otago",
   "University of Waikato",
-  "University of Santiago de Chile"
+  "University of Santiago de Chile",
+  "University of Seoul"
  ],
  "seen": [
   "741cd072e273",
@@ -934,9 +935,10 @@
   "bba4470f1d39",
   "2718276f993b",
   "35c53b47cfa6",
-  "3801be1b1e84"
+  "3801be1b1e84",
+  "61bae4d50665"
  ],
- "last_kind": "science",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1093,8 +1095,8 @@
   "University of Seoul"
  ],
  "pool": [],
- "since_fact": 3,
- "next_post_at": "2026-10-28T05:46:02+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-10-28T06:21:37+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1374,11 +1376,11 @@
   }
  ],
  "last_outlets": [
-  "Science News",
   "Википедия",
   "ICEF Monitor",
   "ICEF Monitor",
-  "ScienceAlert"
+  "ScienceAlert",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
