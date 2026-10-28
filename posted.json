@@ -937,9 +937,21 @@
   "2718276f993b",
   "35c53b47cfa6",
   "3801be1b1e84",
-  "61bae4d50665"
+  "61bae4d50665",
+  "5342e6126627",
+  "4a79d84e9fe6",
+  "0b4fd4925ee8",
+  "3f53a8b0c61d",
+  "f4c9085e4c79",
+  "743fd854bf6e",
+  "8ddb3cae3d41",
+  "86771096418b",
+  "85b62c0a6f3c",
+  "bbd398513ffe",
+  "86279449da75",
+  "fe817fb47eed"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1104,8 +1116,8 @@
   "University of Dhaka"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-28T09:57:44+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-28T10:41:35+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1382,14 +1394,18 @@
   {
    "title": "Heat Deaths Reach Record High: 146 Experts Call to Declare Climate Change a Global Health Emergency",
    "outlet": "ScienceAlert"
+  },
+  {
+   "title": "Pomona to Absorb Claremont Graduate University",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "ICEF Monitor",
-  "ICEF Monitor",
   "ScienceAlert",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
