@@ -1017,9 +1017,10 @@
   "429d9c3b2f6a",
   "c613d1a313ec",
   "0b1bf6598605",
-  "f863128399a5"
+  "f863128399a5",
+  "61f0f30b9289"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1217,21 +1218,10 @@
    "rating": 6.0,
    "timely": 0,
    "tier": "reserve"
-  },
-  {
-   "id": "f863128399a5",
-   "link": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
-   "outlet": "MIT Technology Review",
-   "kind": "science",
-   "title": "We urgently need to monitor AI agents’ actions in real time",
-   "date": "2026-10-29T10:11:12+00:00",
-   "rating": 7.5,
-   "timely": 1,
-   "tier": "top"
   }
  ],
- "since_fact": 2,
- "next_post_at": "2026-10-29T12:15:54+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-10-29T13:00:16+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1536,14 +1526,18 @@
   {
    "title": "English UK launches student protection review after provider closures",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "We urgently need to monitor AI agents’ actions in real time",
+   "outlet": "MIT Technology Review"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "MIT Technology Review",
-  "The PIE News"
+  "The PIE News",
+  "MIT Technology Review"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
