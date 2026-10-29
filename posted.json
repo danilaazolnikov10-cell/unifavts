@@ -1205,21 +1205,9 @@
   "University of Stellenbosch",
   "University of Cairo"
  ],
- "pool": [
-  {
-   "id": "72ce5b0cf533",
-   "link": "https://www.insidehighered.com/news/quick-takes/2026/10/29/key-politics-research-danger-innovation",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "The Key Podcast: Politics in Research Funding a ‘Danger’ to U.S. Innovation",
-   "date": "2026-10-29T07:00:00+00:00",
-   "rating": 6.0,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 4,
- "next_post_at": "2026-10-29T13:58:33+00:00",
+ "pool": [],
+ "since_fact": 5,
+ "next_post_at": "2026-10-29T14:52:58+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1532,13 +1520,17 @@
   {
    "title": "Students Push Colleges to ‘De-Flock’",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "The Key Podcast: Politics in Research Funding a ‘Danger’ to U.S. Innovation",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "MIT Technology Review",
   "The PIE News",
   "MIT Technology Review",
+  "Inside Higher Ed",
   "Inside Higher Ed"
  ],
  "arwu_year": 2026,
