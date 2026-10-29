@@ -218,7 +218,8 @@
   "University of Liège",
   "University of Antwerp",
   "Aix-Marseille University",
-  "University of Ghent"
+  "University of Ghent",
+  "University of Klagenfurt"
  ],
  "seen": [
   "741cd072e273",
@@ -1035,7 +1036,8 @@
   "ca098cb80c0f",
   "20f424e51564",
   "cffff9684ff5",
-  "0044251aee6c"
+  "0044251aee6c",
+  "66d4805c0c7a"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1215,7 +1217,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-29T16:52:10+00:00",
+ "next_post_at": "2026-10-29T17:49:30+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1535,10 +1537,10 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "MIT Technology Review",
   "Inside Higher Ed",
   "Inside Higher Ed",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
