@@ -1018,9 +1018,18 @@
   "c613d1a313ec",
   "0b1bf6598605",
   "f863128399a5",
-  "61f0f30b9289"
+  "61f0f30b9289",
+  "9aedaf8680a5",
+  "980221234b03",
+  "2891d0ce69d5",
+  "4d91e1b6a638",
+  "82355b31bc9b",
+  "42caefdb6fd6",
+  "bda9ea8203f5",
+  "2cbcb8fa39ef",
+  "07d6881f3015"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1198,17 +1207,6 @@
  ],
  "pool": [
   {
-   "id": "7438e6ceaf2e",
-   "link": "https://www.insidehighered.com/news/students/safety/2026/10/29/students-push-colleges-de-flock",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "Students Push Colleges to ‘De-Flock’",
-   "date": "2026-10-29T07:00:00+00:00",
-   "rating": 6.5,
-   "timely": 1,
-   "tier": "reserve"
-  },
-  {
    "id": "72ce5b0cf533",
    "link": "https://www.insidehighered.com/news/quick-takes/2026/10/29/key-politics-research-danger-innovation",
    "outlet": "Inside Higher Ed",
@@ -1220,8 +1218,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 3,
- "next_post_at": "2026-10-29T13:00:16+00:00",
+ "since_fact": 4,
+ "next_post_at": "2026-10-29T13:58:33+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1530,14 +1528,18 @@
   {
    "title": "We urgently need to monitor AI agents’ actions in real time",
    "outlet": "MIT Technology Review"
+  },
+  {
+   "title": "Students Push Colleges to ‘De-Flock’",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "MIT Technology Review",
   "The PIE News",
-  "MIT Technology Review"
+  "MIT Technology Review",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
