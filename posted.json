@@ -211,7 +211,8 @@
   "University of Rennes",
   "University of Maastricht",
   "University of Luxembourg",
-  "University of Dhaka"
+  "University of Dhaka",
+  "University of Utrecht"
  ],
  "seen": [
   "741cd072e273",
@@ -985,7 +986,8 @@
   "08eb4ff13ae8",
   "5d25973f5352",
   "6379193860dd",
-  "27ee2a2b6774"
+  "27ee2a2b6774",
+  "b3f0e7781391"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1159,11 +1161,12 @@
   "University of Namur",
   "University of Luxembourg",
   "University of Klagenfurt",
-  "University of Linz"
+  "University of Linz",
+  "University of Stellenbosch"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-29T02:06:19+00:00",
+ "next_post_at": "2026-10-29T04:02:53+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1463,7 +1466,7 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия",
