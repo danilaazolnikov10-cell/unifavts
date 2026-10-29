@@ -1002,9 +1002,21 @@
   "f3204a497e37",
   "58cabeea199f",
   "3d071c167468",
-  "3415e032f6c1"
+  "3415e032f6c1",
+  "ee403acd35d6",
+  "802ab554a0b3",
+  "b402f6659be4",
+  "7438e6ceaf2e",
+  "bdab7cbb2e46",
+  "b756ea902130",
+  "062647fe1a78",
+  "17eef5136b4c",
+  "72ce5b0cf533",
+  "6e36ef8cbf76",
+  "768565436913",
+  "429d9c3b2f6a"
  ],
- "last_kind": "fact",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1180,9 +1192,32 @@
   "University of Stellenbosch",
   "University of Cairo"
  ],
- "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-29T09:48:52+00:00",
+ "pool": [
+  {
+   "id": "7438e6ceaf2e",
+   "link": "https://www.insidehighered.com/news/students/safety/2026/10/29/students-push-colleges-de-flock",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "Students Push Colleges to ‘De-Flock’",
+   "date": "2026-10-29T07:00:00+00:00",
+   "rating": 6.5,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "72ce5b0cf533",
+   "link": "https://www.insidehighered.com/news/quick-takes/2026/10/29/key-politics-research-danger-innovation",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "The Key Podcast: Politics in Research Funding a ‘Danger’ to U.S. Innovation",
+   "date": "2026-10-29T07:00:00+00:00",
+   "rating": 6.0,
+   "timely": 0,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 1,
+ "next_post_at": "2026-10-29T10:40:50+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1479,6 +1514,10 @@
   {
    "title": "Australia loses ground to UK and US in international student race",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Our climate models have a big, dangerous blind spot",
+   "outlet": "MIT Technology Review"
   }
  ],
  "last_outlets": [
@@ -1486,7 +1525,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "MIT Technology Review"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-22T15:20:02+00:00",
