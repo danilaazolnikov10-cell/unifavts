@@ -1037,9 +1037,14 @@
   "20f424e51564",
   "cffff9684ff5",
   "0044251aee6c",
-  "66d4805c0c7a"
+  "66d4805c0c7a",
+  "e578a086dadc",
+  "bc4faab6a62a",
+  "f84f2f0967a7",
+  "88219eaca6b4",
+  "5e06bb41b756"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1216,8 +1221,8 @@
   "University of Cairo"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-29T17:49:30+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-29T18:29:10+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1534,14 +1539,18 @@
   {
    "title": "The Key Podcast: Politics in Research Funding a ‘Danger’ to U.S. Innovation",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Brazil’s study abroad ambitions widen, but information gap holds back demand",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "MIT Technology Review",
   "Inside Higher Ed",
   "Inside Higher Ed",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
