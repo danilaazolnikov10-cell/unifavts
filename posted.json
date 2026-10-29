@@ -216,7 +216,8 @@
   "University of Linz",
   "University of Namur",
   "University of Liège",
-  "University of Antwerp"
+  "University of Antwerp",
+  "Aix-Marseille University"
  ],
  "seen": [
   "741cd072e273",
@@ -1000,7 +1001,8 @@
   "bbddd73f5d3c",
   "f3204a497e37",
   "58cabeea199f",
-  "3d071c167468"
+  "3d071c167468",
+  "3415e032f6c1"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1180,7 +1182,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-29T08:53:37+00:00",
+ "next_post_at": "2026-10-29T09:48:52+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
