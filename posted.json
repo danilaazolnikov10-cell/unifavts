@@ -213,7 +213,8 @@
   "University of Luxembourg",
   "University of Dhaka",
   "University of Utrecht",
-  "University of Linz"
+  "University of Linz",
+  "University of Namur"
  ],
  "seen": [
   "741cd072e273",
@@ -995,7 +996,9 @@
   "1f2b2a3c94be",
   "80d7026d11d7",
   "bbddd73f5d3c",
-  "f3204a497e37"
+  "f3204a497e37",
+  "58cabeea199f",
+  "3d071c167468"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1174,7 +1177,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-29T05:28:35+00:00",
+ "next_post_at": "2026-10-29T05:59:02+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
