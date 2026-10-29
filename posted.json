@@ -221,7 +221,8 @@
   "University of Ghent",
   "University of Klagenfurt",
   "University of Cairo",
-  "University of Stellenbosch"
+  "University of Stellenbosch",
+  "University of Tampere"
  ],
  "seen": [
   "741cd072e273",
@@ -1046,7 +1047,9 @@
   "88219eaca6b4",
   "5e06bb41b756",
   "bcca19aecc12",
-  "5a66ae7188d6"
+  "5a66ae7188d6",
+  "10d61a0552f7",
+  "84fa0eecb4c9"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1226,7 +1229,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-29T20:59:52+00:00",
+ "next_post_at": "2026-10-29T23:03:58+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1551,8 +1554,8 @@
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
