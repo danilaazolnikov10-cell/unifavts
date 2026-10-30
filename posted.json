@@ -1095,9 +1095,11 @@
   "40470b591a98",
   "98a97d692a86",
   "f1ef52488deb",
-  "2254c23f5d00"
+  "2254c23f5d00",
+  "011ce0dac3d9",
+  "a2f8b0e9bf75"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1279,8 +1281,8 @@
   "Sungkyunkwan University"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-30T16:50:12+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-30T17:37:01+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1625,14 +1627,18 @@
   {
    "title": "Australia consults on student visa overhaul as refusals hit key markets",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Irish court overturns Gazan student visa refusal over “significant errors”",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Inside Higher Ed",
-  "Inside Higher Ed",
   "The PIE News",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
