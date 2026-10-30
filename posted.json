@@ -1085,7 +1085,10 @@
   "c7ea81d1e8ff",
   "6ecb55afecad",
   "887f5088399a",
-  "bbc6809322e7"
+  "bbc6809322e7",
+  "959a99bbdc88",
+  "e31066355db0",
+  "8b02dfe7a53f"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1269,8 +1272,8 @@
   "Sungkyunkwan University"
  ],
  "pool": [],
- "since_fact": 5,
- "next_post_at": "2026-10-30T12:48:06+00:00",
+ "since_fact": 6,
+ "next_post_at": "2026-10-30T14:03:48+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1611,14 +1614,18 @@
   {
    "title": "LaGuardia Creates Hub for Immigrant Students",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Australia consults on student visa overhaul as refusals hit key markets",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Inside Higher Ed",
   "Inside Higher Ed",
   "Inside Higher Ed",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
