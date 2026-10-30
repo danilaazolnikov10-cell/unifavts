@@ -1244,7 +1244,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-30T07:41:00+00:00",
+ "next_post_at": "2026-10-30T08:46:30+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1618,7 +1618,7 @@
  ],
  "article_day": "2026-10-30",
  "deadlines_week": "2026-44",
- "poll_day": "2026-10-29",
+ "poll_day": "2026-10-30",
  "poll_hist": [
   "p_country",
   "p_main",
@@ -1634,7 +1634,8 @@
   "quiz:Harbin Institute of Technology|The University of New South Wales|University of Toronto",
   "p_hard",
   "p_want",
-  "quiz:Imperial College London|Purdue University, West Lafayette|Xi'an Jiaotong University"
+  "quiz:Imperial College London|Purdue University, West Lafayette|Xi'an Jiaotong University",
+  "p_video"
  ],
  "tips_day": "2026-10-29",
  "tips_hist": [
