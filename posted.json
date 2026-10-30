@@ -1269,21 +1269,10 @@
    "rating": 6.6,
    "timely": 1,
    "tier": "reserve"
-  },
-  {
-   "id": "d047a1fe8535",
-   "link": "https://www.insidehighered.com/news/quick-takes/2026/10/30/suit-ed-refuses-discharge-eligible-student-debt",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "ED Refuses to Discharge Eligible Student Debt, Lawsuit Claims",
-   "date": "2026-10-30T07:00:00+00:00",
-   "rating": 7.6,
-   "timely": 1,
-   "tier": "top"
   }
  ],
- "since_fact": 3,
- "next_post_at": "2026-10-30T11:35:23+00:00",
+ "since_fact": 4,
+ "next_post_at": "2026-10-30T12:16:18+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1616,12 +1605,16 @@
   {
    "title": "DOJ Makes Arrests in FAFSA ‘Ghost Student’ Scheme",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "ED Refuses to Discharge Eligible Student Debt, Lawsuit Claims",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "The PIE News",
+  "Inside Higher Ed",
   "Inside Higher Ed",
   "Inside Higher Ed"
  ],
