@@ -1073,7 +1073,9 @@
   "ca0f305e6619",
   "220aeb48dd2d",
   "d645a320cc74",
-  "6cb5534a924f"
+  "6cb5534a924f",
+  "817f9c546797",
+  "b490500e7e88"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1258,17 +1260,6 @@
  ],
  "pool": [
   {
-   "id": "bd99f09afe1c",
-   "link": "https://www.insidehighered.com/news/government/student-aid-policy/2026/10/30/doj-makes-arrests-fafsa-ghost-student-scheme",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "DOJ Makes Arrests in FAFSA ‘Ghost Student’ Scheme",
-   "date": "2026-10-30T07:00:00+00:00",
-   "rating": 7.6,
-   "timely": 1,
-   "tier": "top"
-  },
-  {
    "id": "84a216ec7db3",
    "link": "https://www.insidehighered.com/news/student-success/college-experience/2026/10/30/laguardia-creates-hub-immigrant-students",
    "outlet": "Inside Higher Ed",
@@ -1291,8 +1282,8 @@
    "tier": "top"
   }
  ],
- "since_fact": 2,
- "next_post_at": "2026-10-30T10:40:41+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-10-30T11:35:23+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1621,13 +1612,17 @@
   {
    "title": "Trump Finalizes Accreditation Overhaul, Raising Concerns of Politicized Oversight",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "DOJ Makes Arrests in FAFSA ‘Ghost Student’ Scheme",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "The PIE News",
+  "Inside Higher Ed",
   "Inside Higher Ed"
  ],
  "arwu_year": 2026,
