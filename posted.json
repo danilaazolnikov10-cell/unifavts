@@ -1097,7 +1097,9 @@
   "f1ef52488deb",
   "2254c23f5d00",
   "011ce0dac3d9",
-  "a2f8b0e9bf75"
+  "a2f8b0e9bf75",
+  "744106f25c0b",
+  "1a96c1663a23"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1281,8 +1283,8 @@
   "Sungkyunkwan University"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-30T17:37:01+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-10-30T18:21:04+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1631,13 +1633,17 @@
   {
    "title": "Irish court overturns Gazan student visa refusal over “significant errors”",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Times Higher Education to wind down BMI by end of 2026",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "The PIE News",
   "Википедия",
   "Википедия",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
