@@ -1059,9 +1059,11 @@
   "92feff1a759f",
   "9f30b6fcc745",
   "a8e8c3d040c3",
-  "68d2bbf598bd"
+  "68d2bbf598bd",
+  "bbc846977e88",
+  "a976974afd5b"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1243,8 +1245,8 @@
   "Sungkyunkwan University"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-10-30T08:46:30+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-10-30T09:50:26+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1565,14 +1567,18 @@
   {
    "title": "Brazil’s study abroad ambitions widen, but information gap holds back demand",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "The PIE Live Germany – live feed",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
