@@ -223,7 +223,8 @@
   "University of Cairo",
   "University of Stellenbosch",
   "University of Tampere",
-  "Sungkyunkwan University"
+  "Sungkyunkwan University",
+  "University of Zambia"
  ],
  "seen": [
   "741cd072e273",
@@ -1089,7 +1090,12 @@
   "bbc6809322e7",
   "959a99bbdc88",
   "e31066355db0",
-  "8b02dfe7a53f"
+  "8b02dfe7a53f",
+  "d20dd0f99f28",
+  "40470b591a98",
+  "98a97d692a86",
+  "f1ef52488deb",
+  "2254c23f5d00"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1274,7 +1280,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-30T15:51:39+00:00",
+ "next_post_at": "2026-10-30T16:50:12+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1624,8 +1630,8 @@
  "last_outlets": [
   "Inside Higher Ed",
   "Inside Higher Ed",
-  "Inside Higher Ed",
   "The PIE News",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
