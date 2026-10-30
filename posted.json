@@ -1075,7 +1075,17 @@
   "d645a320cc74",
   "6cb5534a924f",
   "817f9c546797",
-  "b490500e7e88"
+  "b490500e7e88",
+  "05f3b32801c2",
+  "99c61f8e8d72",
+  "a6bfd940a4a6",
+  "34936df5c82f",
+  "6bfc82dbf2af",
+  "3d2f5798fc55",
+  "c7ea81d1e8ff",
+  "6ecb55afecad",
+  "887f5088399a",
+  "bbc6809322e7"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1258,21 +1268,9 @@
   "University of Sri Jayewardenepura",
   "Sungkyunkwan University"
  ],
- "pool": [
-  {
-   "id": "84a216ec7db3",
-   "link": "https://www.insidehighered.com/news/student-success/college-experience/2026/10/30/laguardia-creates-hub-immigrant-students",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "LaGuardia Creates Hub for Immigrant Students",
-   "date": "2026-10-30T07:00:00+00:00",
-   "rating": 6.6,
-   "timely": 1,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 4,
- "next_post_at": "2026-10-30T12:16:18+00:00",
+ "pool": [],
+ "since_fact": 5,
+ "next_post_at": "2026-10-30T12:48:06+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1609,11 +1607,15 @@
   {
    "title": "ED Refuses to Discharge Eligible Student Debt, Lawsuit Claims",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "LaGuardia Creates Hub for Immigrant Students",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
+  "Inside Higher Ed",
   "Inside Higher Ed",
   "Inside Higher Ed",
   "Inside Higher Ed"
