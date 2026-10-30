@@ -1061,7 +1061,19 @@
   "a8e8c3d040c3",
   "68d2bbf598bd",
   "bbc846977e88",
-  "a976974afd5b"
+  "a976974afd5b",
+  "ec7b877f5cde",
+  "a691fa5385c0",
+  "edf52903438c",
+  "bd99f09afe1c",
+  "84a216ec7db3",
+  "67e0003fc4ec",
+  "d047a1fe8535",
+  "75cb9dcc6b63",
+  "ca0f305e6619",
+  "220aeb48dd2d",
+  "d645a320cc74",
+  "6cb5534a924f"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1244,9 +1256,43 @@
   "University of Sri Jayewardenepura",
   "Sungkyunkwan University"
  ],
- "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-10-30T09:50:26+00:00",
+ "pool": [
+  {
+   "id": "bd99f09afe1c",
+   "link": "https://www.insidehighered.com/news/government/student-aid-policy/2026/10/30/doj-makes-arrests-fafsa-ghost-student-scheme",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "DOJ Makes Arrests in FAFSA ‘Ghost Student’ Scheme",
+   "date": "2026-10-30T07:00:00+00:00",
+   "rating": 7.6,
+   "timely": 1,
+   "tier": "top"
+  },
+  {
+   "id": "84a216ec7db3",
+   "link": "https://www.insidehighered.com/news/student-success/college-experience/2026/10/30/laguardia-creates-hub-immigrant-students",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "LaGuardia Creates Hub for Immigrant Students",
+   "date": "2026-10-30T07:00:00+00:00",
+   "rating": 6.6,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "d047a1fe8535",
+   "link": "https://www.insidehighered.com/news/quick-takes/2026/10/30/suit-ed-refuses-discharge-eligible-student-debt",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "ED Refuses to Discharge Eligible Student Debt, Lawsuit Claims",
+   "date": "2026-10-30T07:00:00+00:00",
+   "rating": 7.6,
+   "timely": 1,
+   "tier": "top"
+  }
+ ],
+ "since_fact": 2,
+ "next_post_at": "2026-10-30T10:40:41+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1571,14 +1617,18 @@
   {
    "title": "The PIE Live Germany – live feed",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Trump Finalizes Accreditation Overhaul, Raising Concerns of Politicized Oversight",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
+  "Википедия",
+  "Википедия",
+  "Википедия",
   "The PIE News",
-  "Википедия",
-  "Википедия",
-  "Википедия",
-  "The PIE News"
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
