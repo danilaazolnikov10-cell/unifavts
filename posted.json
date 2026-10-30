@@ -226,7 +226,8 @@
   "Sungkyunkwan University",
   "University of Zambia",
   "University of Costa Rica",
-  "Universidad de Los Andes (Venezuela)"
+  "Universidad de Los Andes (Venezuela)",
+  "University of Sri Jayewardenepura"
  ],
  "seen": [
   "741cd072e273",
@@ -1101,7 +1102,10 @@
   "011ce0dac3d9",
   "a2f8b0e9bf75",
   "744106f25c0b",
-  "1a96c1663a23"
+  "1a96c1663a23",
+  "8396fa5ed183",
+  "d5af49b42524",
+  "eb1ac2decf06"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1286,7 +1290,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-30T21:03:39+00:00",
+ "next_post_at": "2026-10-30T22:29:06+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1642,9 +1646,9 @@
   }
  ],
  "last_outlets": [
+  "The PIE News",
+  "The PIE News",
   "Википедия",
-  "The PIE News",
-  "The PIE News",
   "Википедия",
   "Википедия"
  ],
