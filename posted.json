@@ -229,7 +229,8 @@
   "Universidad de Los Andes (Venezuela)",
   "University of Sri Jayewardenepura",
   "University of Rijeka",
-  "University of Banja Luka"
+  "University of Banja Luka",
+  "University of Peradeniya"
  ],
  "seen": [
   "741cd072e273",
@@ -1111,7 +1112,8 @@
   "2080bba7e9d8",
   "39d0efc886b9",
   "48fed499308f",
-  "baa34c9836b9"
+  "baa34c9836b9",
+  "173b057f0230"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1304,7 +1306,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-31T04:59:05+00:00",
+ "next_post_at": "2026-10-31T05:49:29+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
