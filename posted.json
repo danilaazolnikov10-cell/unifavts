@@ -1309,7 +1309,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-31T08:12:27+00:00",
+ "next_post_at": "2026-10-31T09:00:28+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1717,7 +1717,7 @@
  ],
  "article_day": "2026-10-31",
  "deadlines_week": "2026-44",
- "poll_day": "2026-10-30",
+ "poll_day": "2026-10-31",
  "poll_hist": [
   "p_country",
   "p_main",
@@ -1734,7 +1734,8 @@
   "p_hard",
   "p_want",
   "quiz:Imperial College London|Purdue University, West Lafayette|Xi'an Jiaotong University",
-  "p_video"
+  "p_video",
+  "p_city"
  ],
  "tips_day": "2026-10-29",
  "tips_hist": [
