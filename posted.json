@@ -233,7 +233,8 @@
   "University of Peradeniya",
   "University of the Basque Country",
   "University of Twente",
-  "University of Montenegro"
+  "University of Montenegro",
+  "University of Indonesia"
  ],
  "seen": [
   "741cd072e273",
@@ -1116,7 +1117,8 @@
   "39d0efc886b9",
   "48fed499308f",
   "baa34c9836b9",
-  "173b057f0230"
+  "173b057f0230",
+  "4ddaff21680b"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1309,7 +1311,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-31T09:00:28+00:00",
+ "next_post_at": "2026-10-31T09:33:08+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
