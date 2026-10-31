@@ -239,7 +239,8 @@
   "University of Tsukuba",
   "University of Lapland",
   "Aarhus University",
-  "University of Münster"
+  "University of Münster",
+  "University of Sheffield"
  ],
  "seen": [
   "741cd072e273",
@@ -1132,7 +1133,8 @@
   "372240137276",
   "c797c1ad49fd",
   "0de00bcc7191",
-  "0e2d1919acc2"
+  "0e2d1919acc2",
+  "d87d57fa12ae"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1341,7 +1343,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-31T18:38:30+00:00",
+ "next_post_at": "2026-10-31T20:51:39+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
