@@ -241,7 +241,8 @@
   "Aarhus University",
   "University of Münster",
   "University of Sheffield",
-  "University of Bristol"
+  "University of Bristol",
+  "University of Natural Resources and Life Sciences, Vienna"
  ],
  "seen": [
   "741cd072e273",
@@ -1136,7 +1137,8 @@
   "0de00bcc7191",
   "0e2d1919acc2",
   "d87d57fa12ae",
-  "d8e849d05831"
+  "d8e849d05831",
+  "7fe00c2be558"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1345,7 +1347,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-31T22:44:46+00:00",
+ "next_post_at": "2026-11-01T01:02:14+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
