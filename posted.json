@@ -1313,7 +1313,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-31T10:36:53+00:00",
+ "next_post_at": "2026-10-31T11:26:48+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1741,7 +1741,7 @@
   "p_video",
   "p_city"
  ],
- "tips_day": "2026-10-29",
+ "tips_day": "2026-10-31",
  "tips_hist": [
   "t_sat",
   "t_ed",
@@ -1750,6 +1750,7 @@
   "t_olymp",
   "t_english",
   "t_needblind",
-  "t_gpa"
+  "t_gpa",
+  "t_ucas"
  ]
 }
