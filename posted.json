@@ -240,7 +240,8 @@
   "University of Lapland",
   "Aarhus University",
   "University of Münster",
-  "University of Sheffield"
+  "University of Sheffield",
+  "University of Bristol"
  ],
  "seen": [
   "741cd072e273",
@@ -1134,7 +1135,8 @@
   "c797c1ad49fd",
   "0de00bcc7191",
   "0e2d1919acc2",
-  "d87d57fa12ae"
+  "d87d57fa12ae",
+  "d8e849d05831"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1343,7 +1345,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-10-31T20:51:39+00:00",
+ "next_post_at": "2026-10-31T22:44:46+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
