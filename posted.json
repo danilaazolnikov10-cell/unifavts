@@ -260,7 +260,8 @@
   "University of Aberdeen",
   "University of Surrey",
   "University of Nottingham",
-  "University of Bath"
+  "University of Bath",
+  "University of Reading"
  ],
  "seen": [
   "741cd072e273",
@@ -1170,7 +1171,8 @@
   "e74c395aaaaf",
   "82aef178822d",
   "29fcf81fabb3",
-  "ce4d5e651e38"
+  "ce4d5e651e38",
+  "15ba1c90b8d0"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1397,7 +1399,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-01T20:45:17+00:00",
+ "next_post_at": "2026-11-01T23:03:12+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
