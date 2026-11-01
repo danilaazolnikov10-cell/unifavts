@@ -252,7 +252,8 @@
   "University of La Réunion",
   "University of Manchester",
   "University of Southampton",
-  "Nagoya University"
+  "Nagoya University",
+  "University of Angers"
  ],
  "seen": [
   "741cd072e273",
@@ -1156,7 +1157,12 @@
   "65b36c660245",
   "070710518417",
   "9333938d580b",
-  "284c7157c026"
+  "284c7157c026",
+  "b8005878e993",
+  "858d08893264",
+  "e74c395aaaaf",
+  "82aef178822d",
+  "29fcf81fabb3"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1373,7 +1379,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-01T13:09:55+00:00",
+ "next_post_at": "2026-11-01T13:51:30+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
