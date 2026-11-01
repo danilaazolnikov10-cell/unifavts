@@ -1138,7 +1138,8 @@
   "0e2d1919acc2",
   "d87d57fa12ae",
   "d8e849d05831",
-  "7fe00c2be558"
+  "7fe00c2be558",
+  "49a0392cf9f0"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1343,11 +1344,19 @@
   "University of Tübingen",
   "University of Münster",
   "University of Erlangen–Nuremberg",
-  "University of Natural Resources and Life Sciences, Vienna"
+  "University of Natural Resources and Life Sciences, Vienna",
+  "University of Angers",
+  "University of Toulon",
+  "University of La Réunion",
+  "National University of Córdoba",
+  "University of Havana",
+  "University of Karachi",
+  "University of Lahore",
+  "University of Papua New Guinea"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-01T01:02:14+00:00",
+ "next_post_at": "2026-11-01T02:02:52+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
