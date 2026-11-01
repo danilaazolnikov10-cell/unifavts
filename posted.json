@@ -1358,7 +1358,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-01T04:11:58+00:00",
+ "next_post_at": "2026-11-01T04:55:18+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1763,9 +1763,10 @@
   "New York University",
   "McGill University",
   "Tianjin University",
-  "UC Berkeley"
+  "UC Berkeley",
+  "University of Zurich"
  ],
- "article_day": "2026-10-31",
+ "article_day": "2026-11-01",
  "deadlines_week": "2026-44",
  "poll_day": "2026-10-31",
  "poll_hist": [
