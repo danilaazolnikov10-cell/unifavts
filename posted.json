@@ -242,7 +242,8 @@
   "University of Münster",
   "University of Sheffield",
   "University of Bristol",
-  "University of Natural Resources and Life Sciences, Vienna"
+  "University of Natural Resources and Life Sciences, Vienna",
+  "University of Toulon"
  ],
  "seen": [
   "741cd072e273",
@@ -1139,7 +1140,8 @@
   "d87d57fa12ae",
   "d8e849d05831",
   "7fe00c2be558",
-  "49a0392cf9f0"
+  "49a0392cf9f0",
+  "f1220fe4c5ed"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1356,7 +1358,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-01T02:02:52+00:00",
+ "next_post_at": "2026-11-01T04:11:58+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
