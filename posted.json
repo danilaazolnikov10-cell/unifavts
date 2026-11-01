@@ -247,7 +247,8 @@
   "University of Havana",
   "National University of Córdoba",
   "University of Karachi",
-  "University of Papua New Guinea"
+  "University of Papua New Guinea",
+  "University of Stavanger"
  ],
  "seen": [
   "741cd072e273",
@@ -1148,7 +1149,8 @@
   "f1220fe4c5ed",
   "75a6b776b7a0",
   "efe8a88fa21e",
-  "65b36c660245"
+  "65b36c660245",
+  "070710518417"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1365,7 +1367,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-01T09:13:58+00:00",
+ "next_post_at": "2026-11-01T09:55:47+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
