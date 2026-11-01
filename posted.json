@@ -254,7 +254,8 @@
   "University of Southampton",
   "Nagoya University",
   "University of Angers",
-  "University of Bergen"
+  "University of Bergen",
+  "University of Exeter"
  ],
  "seen": [
   "741cd072e273",
@@ -1163,7 +1164,8 @@
   "858d08893264",
   "e74c395aaaaf",
   "82aef178822d",
-  "29fcf81fabb3"
+  "29fcf81fabb3",
+  "ce4d5e651e38"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1390,7 +1392,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-01T15:53:21+00:00",
+ "next_post_at": "2026-11-01T16:26:46+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
