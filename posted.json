@@ -1218,7 +1218,11 @@
   "6a16b7040a04",
   "b18fd62b6771",
   "340053f855d8",
-  "6cc0d822ff77"
+  "6cc0d822ff77",
+  "7a17628b8eb6",
+  "3c130a4de2a9",
+  "4f4a88ead622",
+  "0ad9e89a8ab0"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1444,8 +1448,8 @@
   "University of Aberdeen"
  ],
  "pool": [],
- "since_fact": 4,
- "next_post_at": "2026-11-02T17:22:07+00:00",
+ "since_fact": 5,
+ "next_post_at": "2026-11-02T18:12:16+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1818,13 +1822,17 @@
   {
    "title": "New Zealand student experience hits record high, but work opportunities lag",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "UK to raise HPI visa cap as eligibility expands to top 150 universities",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The Hechinger Report",
   "The PIE News",
   "The Hechinger Report",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
