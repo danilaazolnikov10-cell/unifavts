@@ -1199,9 +1199,13 @@
   "25d416c40eaa",
   "c4610928b3ac",
   "781b9e55aeee",
-  "33f3eece7a13"
+  "33f3eece7a13",
+  "8c01c548c367",
+  "37228335e316",
+  "c2c815f8be06",
+  "aaece2f68464"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1424,9 +1428,21 @@
   "University of Surrey",
   "University of Aberdeen"
  ],
- "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-11-02T12:07:27+00:00",
+ "pool": [
+  {
+   "id": "c2c815f8be06",
+   "link": "https://hechingerreport.org/proof-points-ai-tutor-results/",
+   "outlet": "The Hechinger Report",
+   "kind": "admissions",
+   "title": "Same researcher, opposite results",
+   "date": "2026-11-02T11:00:00+00:00",
+   "rating": 6.3,
+   "timely": 1,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 1,
+ "next_post_at": "2026-11-02T13:14:49+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1783,14 +1799,18 @@
   {
    "title": "Colleges Prepare for Credit Transfer Regulations",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "As courting students gets tougher, colleges vie to make the admissions process friendlier",
+   "outlet": "The Hechinger Report"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "Inside Higher Ed",
-  "Википедия"
+  "Википедия",
+  "The Hechinger Report"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
