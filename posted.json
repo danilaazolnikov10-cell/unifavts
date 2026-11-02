@@ -265,7 +265,8 @@
   "University of Warwick",
   "University of Tübingen",
   "University of York",
-  "University of Erlangen–Nuremberg"
+  "University of Erlangen–Nuremberg",
+  "University of Leeds"
  ],
  "seen": [
   "741cd072e273",
@@ -1178,7 +1179,11 @@
   "ce4d5e651e38",
   "15ba1c90b8d0",
   "0265ab3798d6",
-  "74e8baacf40e"
+  "74e8baacf40e",
+  "15a201124ab0",
+  "517a655c9e50",
+  "9f5a31fa20f1",
+  "c9cc05270f1d"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1405,7 +1410,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-02T05:52:11+00:00",
+ "next_post_at": "2026-11-02T06:53:49+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1816,7 +1821,7 @@
   "University of Colorado Boulder"
  ],
  "article_day": "2026-11-02",
- "deadlines_week": "2026-44",
+ "deadlines_week": "2026-45",
  "poll_day": "2026-11-01",
  "poll_hist": [
   "p_country",
