@@ -1184,9 +1184,20 @@
   "15a201124ab0",
   "517a655c9e50",
   "9f5a31fa20f1",
-  "c9cc05270f1d"
+  "c9cc05270f1d",
+  "e49f46b109f6",
+  "f9cbb95b1715",
+  "7da2827b1db6",
+  "2521fcf05a73",
+  "f8688b9f3812",
+  "ec8749a23077",
+  "4deeae7d5acf",
+  "7609bb5d901c",
+  "0c8543092116",
+  "2868951cb21d",
+  "25d416c40eaa"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1410,8 +1421,8 @@
   "University of Aberdeen"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-11-02T09:34:18+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-11-02T10:23:19+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1764,6 +1775,10 @@
   {
    "title": "Times Higher Education to wind down BMI by end of 2026",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Colleges Prepare for Credit Transfer Regulations",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
@@ -1771,7 +1786,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
