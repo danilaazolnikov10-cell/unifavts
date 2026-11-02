@@ -1206,7 +1206,14 @@
   "aaece2f68464",
   "728c21b3deeb",
   "54d517bb1328",
-  "de4833677960"
+  "de4833677960",
+  "ac8650d2a6d1",
+  "df01736177cf",
+  "5f7ba44a9f94",
+  "dd04bf52381a",
+  "7d64ef461a6a",
+  "1839467c15b4",
+  "63f9b0151b5f"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1431,21 +1438,9 @@
   "University of Surrey",
   "University of Aberdeen"
  ],
- "pool": [
-  {
-   "id": "c2c815f8be06",
-   "link": "https://hechingerreport.org/proof-points-ai-tutor-results/",
-   "outlet": "The Hechinger Report",
-   "kind": "admissions",
-   "title": "Same researcher, opposite results",
-   "date": "2026-11-02T11:00:00+00:00",
-   "rating": 6.3,
-   "timely": 1,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 2,
- "next_post_at": "2026-11-02T14:26:55+00:00",
+ "pool": [],
+ "since_fact": 3,
+ "next_post_at": "2026-11-02T15:26:52+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1810,14 +1805,18 @@
   {
    "title": "Partnership is a long game",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Same researcher, opposite results",
+   "outlet": "The Hechinger Report"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "Inside Higher Ed",
   "Википедия",
   "The Hechinger Report",
-  "The PIE News"
+  "The PIE News",
+  "The Hechinger Report"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
