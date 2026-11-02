@@ -262,7 +262,8 @@
   "University of Nottingham",
   "University of Bath",
   "University of Reading",
-  "University of Warwick"
+  "University of Warwick",
+  "University of Tübingen"
  ],
  "seen": [
   "741cd072e273",
@@ -1173,7 +1174,8 @@
   "82aef178822d",
   "29fcf81fabb3",
   "ce4d5e651e38",
-  "15ba1c90b8d0"
+  "15ba1c90b8d0",
+  "0265ab3798d6"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1400,7 +1402,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-02T00:53:06+00:00",
+ "next_post_at": "2026-11-02T02:43:20+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
