@@ -1203,7 +1203,10 @@
   "8c01c548c367",
   "37228335e316",
   "c2c815f8be06",
-  "aaece2f68464"
+  "aaece2f68464",
+  "728c21b3deeb",
+  "54d517bb1328",
+  "de4833677960"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1441,8 +1444,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-11-02T13:14:49+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-11-02T14:26:55+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1803,14 +1806,18 @@
   {
    "title": "As courting students gets tougher, colleges vie to make the admissions process friendlier",
    "outlet": "The Hechinger Report"
+  },
+  {
+   "title": "Partnership is a long game",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "Inside Higher Ed",
   "Википедия",
-  "The Hechinger Report"
+  "The Hechinger Report",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
