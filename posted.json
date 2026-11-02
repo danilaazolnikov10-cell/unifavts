@@ -1213,7 +1213,12 @@
   "dd04bf52381a",
   "7d64ef461a6a",
   "1839467c15b4",
-  "63f9b0151b5f"
+  "63f9b0151b5f",
+  "af064394163f",
+  "6a16b7040a04",
+  "b18fd62b6771",
+  "340053f855d8",
+  "6cc0d822ff77"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1439,8 +1444,8 @@
   "University of Aberdeen"
  ],
  "pool": [],
- "since_fact": 3,
- "next_post_at": "2026-11-02T16:25:12+00:00",
+ "since_fact": 4,
+ "next_post_at": "2026-11-02T17:22:07+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1809,14 +1814,18 @@
   {
    "title": "Same researcher, opposite results",
    "outlet": "The Hechinger Report"
+  },
+  {
+   "title": "New Zealand student experience hits record high, but work opportunities lag",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "Википедия",
   "The Hechinger Report",
   "The PIE News",
-  "The Hechinger Report"
+  "The Hechinger Report",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
