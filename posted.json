@@ -274,7 +274,8 @@
   "University of Delhi",
   "Chulalongkorn University",
   "University of Lugano",
-  "Hanyang University"
+  "Hanyang University",
+  "University of the West Indies, Cave Hill"
  ],
  "seen": [
   "741cd072e273",
@@ -1253,7 +1254,10 @@
   "9bc962990227",
   "fb4151d93932",
   "e307584ab652",
-  "33b36c323d4e"
+  "33b36c323d4e",
+  "104f76f38fb7",
+  "8497680b2836",
+  "bcfb20d425ec"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1490,7 +1494,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-03T10:15:16+00:00",
+ "next_post_at": "2026-11-03T11:10:29+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
