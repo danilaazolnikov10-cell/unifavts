@@ -277,7 +277,8 @@
   "Hanyang University",
   "University of the West Indies, Cave Hill",
   "University of Neuchâtel",
-  "University of Benin (Nigeria)"
+  "University of Benin (Nigeria)",
+  "University of the Andes (Venezuela)"
  ],
  "seen": [
   "741cd072e273",
@@ -1281,7 +1282,8 @@
   "f435ac555b03",
   "84049460ae87",
   "0ad045761e1b",
-  "bd41b4d05cab"
+  "bd41b4d05cab",
+  "c902065c5aad"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1519,7 +1521,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-03T20:47:53+00:00",
+ "next_post_at": "2026-11-03T22:17:31+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1923,9 +1925,9 @@
   }
  ],
  "last_outlets": [
-  "ICEF Monitor",
   "The PIE News",
   "NASA",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
