@@ -1262,9 +1262,17 @@
   "14e1aa048f76",
   "c7a94f8b7c58",
   "7e66f6399138",
-  "f099278d4261"
+  "f099278d4261",
+  "600007ec570d",
+  "6bd88fe9252b",
+  "2589476f072b",
+  "3a441115c6c9",
+  "2661bb752d26",
+  "03809a7f8933",
+  "e66d3b28d0ad",
+  "80a8d9572798"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1499,19 +1507,30 @@
  ],
  "pool": [
   {
-   "id": "c7a94f8b7c58",
-   "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
-   "outlet": "MIT Technology Review",
-   "kind": "science",
-   "title": "How “reverse game theory” could keep AI agents in check",
-   "date": "2026-11-03T10:43:41+00:00",
+   "id": "600007ec570d",
+   "link": "https://thepienews.com/five-things-we-learned-about-australian-tne-at-aiec-2026/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Five things we learned about Australian TNE at AIEC 2026",
+   "date": "2026-11-03T13:13:16+00:00",
    "rating": 6.6,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "2589476f072b",
+   "link": "https://monitor.icef.com/2026/11/english-uk-spearheads-effort-to-strengthen-protections-for-language-students-affected-by-school-closures/",
+   "outlet": "ICEF Monitor",
+   "kind": "admissions",
+   "title": "English UK spearheads effort to strengthen protections for language students affected by school closures",
+   "date": "2026-11-03T13:09:48+00:00",
+   "rating": 6.5,
    "timely": 0,
    "tier": "reserve"
   }
  ],
- "since_fact": 2,
- "next_post_at": "2026-11-03T12:50:00+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-11-03T14:14:08+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1896,14 +1915,18 @@
   {
    "title": "Are students choosing university programmes aligned with the skills employers need most?",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "How “reverse game theory” could keep AI agents in check",
+   "outlet": "MIT Technology Review"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "The PIE News",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "MIT Technology Review"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
