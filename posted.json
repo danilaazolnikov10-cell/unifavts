@@ -271,7 +271,8 @@
   "University of Glasgow",
   "University of East Anglia",
   "University of Vilnius",
-  "University of Delhi"
+  "University of Delhi",
+  "Chulalongkorn University"
  ],
  "seen": [
   "741cd072e273",
@@ -1238,7 +1239,9 @@
   "c2d562a91019",
   "971d0ce0f8f5",
   "0c9240313ae9",
-  "9099393b6629"
+  "9099393b6629",
+  "dad84c615e9e",
+  "8e21ccbfd5fa"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1472,7 +1475,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-03T05:59:58+00:00",
+ "next_post_at": "2026-11-03T06:44:28+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1853,7 +1856,7 @@
  ],
  "last_outlets": [
   "The PIE News",
-  "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия"
