@@ -1231,7 +1231,8 @@
   "9fbe97bda3ba",
   "f342a2672539",
   "4767e299c168",
-  "525b9bab95b0"
+  "525b9bab95b0",
+  "756675a905e7"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1455,11 +1456,17 @@
   "University of Reading",
   "University of Surrey",
   "University of Aberdeen",
-  "University of Vilnius"
+  "University of Vilnius",
+  "Chulalongkorn University",
+  "Hanyang University",
+  "University of Delhi",
+  "University of the Andes (Venezuela)",
+  "University of the West Indies, Mona",
+  "University of the West Indies, Cave Hill"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-03T02:47:15+00:00",
+ "next_post_at": "2026-11-03T03:43:00+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
