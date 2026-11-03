@@ -1273,7 +1273,12 @@
   "80a8d9572798",
   "e8b356170bc9",
   "c2c3ad33dfcc",
-  "c86c5ee9d33e"
+  "c86c5ee9d33e",
+  "e9eef3f27cf1",
+  "7fa0941e3c7f",
+  "f435ac555b03",
+  "84049460ae87",
+  "0ad045761e1b"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1508,9 +1513,21 @@
   "University of Lucerne",
   "University of Lugano"
  ],
- "pool": [],
- "since_fact": 4,
- "next_post_at": "2026-11-03T15:50:45+00:00",
+ "pool": [
+  {
+   "id": "84049460ae87",
+   "link": "https://www.nasa.gov/learning-resources/nasa-astronaut-stem-creator-connect-with-students-for-stem-day/",
+   "outlet": "NASA",
+   "kind": "science",
+   "title": "NASA Astronaut, STEM Creator Connect with Students for STEM Day",
+   "date": "2026-11-03T15:15:50+00:00",
+   "rating": 6.5,
+   "timely": 1,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 5,
+ "next_post_at": "2026-11-03T16:47:49+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1903,14 +1920,18 @@
   {
    "title": "English UK spearheads effort to strengthen protections for language students affected by school closures",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "Canada-EU alliance to expand opportunities for students",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "ICEF Monitor",
   "MIT Technology Review",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
