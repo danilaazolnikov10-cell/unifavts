@@ -273,7 +273,8 @@
   "University of Vilnius",
   "University of Delhi",
   "Chulalongkorn University",
-  "University of Lugano"
+  "University of Lugano",
+  "Hanyang University"
  ],
  "seen": [
   "741cd072e273",
@@ -1242,7 +1243,17 @@
   "0c9240313ae9",
   "9099393b6629",
   "dad84c615e9e",
-  "8e21ccbfd5fa"
+  "8e21ccbfd5fa",
+  "4b79961925fc",
+  "f3333859fa03",
+  "64b25d65cc0c",
+  "3cf7deb870dc",
+  "82e85a8d9110",
+  "955fb9ea8a18",
+  "9bc962990227",
+  "fb4151d93932",
+  "e307584ab652",
+  "33b36c323d4e"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1479,7 +1490,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-03T09:12:27+00:00",
+ "next_post_at": "2026-11-03T10:15:16+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
