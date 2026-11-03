@@ -1257,9 +1257,12 @@
   "33b36c323d4e",
   "104f76f38fb7",
   "8497680b2836",
-  "bcfb20d425ec"
+  "bcfb20d425ec",
+  "e9ed4c39330b",
+  "14e1aa048f76",
+  "c7a94f8b7c58"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1492,9 +1495,21 @@
   "University of Lucerne",
   "University of Lugano"
  ],
- "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-11-03T11:10:29+00:00",
+ "pool": [
+  {
+   "id": "c7a94f8b7c58",
+   "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+   "outlet": "MIT Technology Review",
+   "kind": "science",
+   "title": "How “reverse game theory” could keep AI agents in check",
+   "date": "2026-11-03T10:43:41+00:00",
+   "rating": 6.6,
+   "timely": 0,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 1,
+ "next_post_at": "2026-11-03T11:58:41+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1871,6 +1886,10 @@
   {
    "title": "UK to raise HPI visa cap as eligibility expands to top 150 universities",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Germany’s international student push turns to retention",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
@@ -1878,7 +1897,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
