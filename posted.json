@@ -270,7 +270,8 @@
   "University of Lahore",
   "University of Glasgow",
   "University of East Anglia",
-  "University of Vilnius"
+  "University of Vilnius",
+  "University of Delhi"
  ],
  "seen": [
   "741cd072e273",
@@ -1232,7 +1233,12 @@
   "f342a2672539",
   "4767e299c168",
   "525b9bab95b0",
-  "756675a905e7"
+  "756675a905e7",
+  "bdefad5dcd98",
+  "c2d562a91019",
+  "971d0ce0f8f5",
+  "0c9240313ae9",
+  "9099393b6629"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1466,7 +1472,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-03T04:50:34+00:00",
+ "next_post_at": "2026-11-03T05:59:58+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1846,9 +1852,9 @@
   }
  ],
  "last_outlets": [
-  "The Hechinger Report",
   "The PIE News",
   "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
