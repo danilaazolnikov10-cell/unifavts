@@ -275,7 +275,8 @@
   "Chulalongkorn University",
   "University of Lugano",
   "Hanyang University",
-  "University of the West Indies, Cave Hill"
+  "University of the West Indies, Cave Hill",
+  "University of Neuchâtel"
  ],
  "seen": [
   "741cd072e273",
@@ -1281,7 +1282,7 @@
   "0ad045761e1b",
   "bd41b4d05cab"
  ],
- "last_kind": "science",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1515,8 +1516,8 @@
   "University of Lugano"
  ],
  "pool": [],
- "since_fact": 6,
- "next_post_at": "2026-11-03T17:51:53+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-11-03T18:49:46+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1920,11 +1921,11 @@
   }
  ],
  "last_outlets": [
-  "ICEF Monitor",
   "MIT Technology Review",
   "ICEF Monitor",
   "The PIE News",
-  "NASA"
+  "NASA",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
