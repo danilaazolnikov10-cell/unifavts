@@ -1260,7 +1260,9 @@
   "bcfb20d425ec",
   "e9ed4c39330b",
   "14e1aa048f76",
-  "c7a94f8b7c58"
+  "c7a94f8b7c58",
+  "7e66f6399138",
+  "f099278d4261"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1508,8 +1510,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-11-03T11:58:41+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-11-03T12:50:00+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1890,14 +1892,18 @@
   {
    "title": "Germany’s international student push turns to retention",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Are students choosing university programmes aligned with the skills employers need most?",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "The PIE News"
+  "The PIE News",
+  "ICEF Monitor"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
