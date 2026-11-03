@@ -269,7 +269,8 @@
   "University of Leeds",
   "University of Lahore",
   "University of Glasgow",
-  "University of East Anglia"
+  "University of East Anglia",
+  "University of Vilnius"
  ],
  "seen": [
   "741cd072e273",
@@ -1228,7 +1229,8 @@
   "2d388f71e487",
   "4e865d9a1341",
   "9fbe97bda3ba",
-  "f342a2672539"
+  "f342a2672539",
+  "4767e299c168"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1451,11 +1453,12 @@
   "University of Bath",
   "University of Reading",
   "University of Surrey",
-  "University of Aberdeen"
+  "University of Aberdeen",
+  "University of Vilnius"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-03T00:09:02+00:00",
+ "next_post_at": "2026-11-03T01:53:51+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1835,10 +1838,10 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "The Hechinger Report",
   "The PIE News",
   "The PIE News",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
