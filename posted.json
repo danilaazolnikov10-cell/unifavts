@@ -276,7 +276,8 @@
   "University of Lugano",
   "Hanyang University",
   "University of the West Indies, Cave Hill",
-  "University of Neuchâtel"
+  "University of Neuchâtel",
+  "University of Benin (Nigeria)"
  ],
  "seen": [
   "741cd072e273",
@@ -1513,11 +1514,12 @@
   "University of the West Indies, Cave Hill",
   "University of Neuchâtel",
   "University of Lucerne",
-  "University of Lugano"
+  "University of Lugano",
+  "University of Benin (Nigeria)"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-03T18:49:46+00:00",
+ "next_post_at": "2026-11-03T20:47:53+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1921,10 +1923,10 @@
   }
  ],
  "last_outlets": [
-  "MIT Technology Review",
   "ICEF Monitor",
   "The PIE News",
   "NASA",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
