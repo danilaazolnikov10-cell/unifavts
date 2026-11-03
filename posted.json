@@ -279,7 +279,8 @@
   "University of Neuchâtel",
   "University of Benin (Nigeria)",
   "University of the Andes (Venezuela)",
-  "University of the West Indies, Mona"
+  "University of the West Indies, Mona",
+  "University of Sao Paulo"
  ],
  "seen": [
   "741cd072e273",
@@ -1286,7 +1287,8 @@
   "bd41b4d05cab",
   "c902065c5aad",
   "c74bb8f10fd9",
-  "c6e55817b302"
+  "c6e55817b302",
+  "8da2c0eb8df5"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1525,7 +1527,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-03T23:48:55+00:00",
+ "next_post_at": "2026-11-04T01:44:28+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1929,7 +1931,7 @@
   }
  ],
  "last_outlets": [
-  "NASA",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия",
