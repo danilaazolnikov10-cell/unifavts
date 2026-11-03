@@ -272,7 +272,8 @@
   "University of East Anglia",
   "University of Vilnius",
   "University of Delhi",
-  "Chulalongkorn University"
+  "Chulalongkorn University",
+  "University of Lugano"
  ],
  "seen": [
   "741cd072e273",
@@ -1471,11 +1472,14 @@
   "University of Delhi",
   "University of the Andes (Venezuela)",
   "University of the West Indies, Mona",
-  "University of the West Indies, Cave Hill"
+  "University of the West Indies, Cave Hill",
+  "University of Neuchâtel",
+  "University of Lucerne",
+  "University of Lugano"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-03T06:44:28+00:00",
+ "next_post_at": "2026-11-03T08:08:37+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1855,7 +1859,7 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия",
