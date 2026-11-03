@@ -1278,9 +1278,10 @@
   "7fa0941e3c7f",
   "f435ac555b03",
   "84049460ae87",
-  "0ad045761e1b"
+  "0ad045761e1b",
+  "bd41b4d05cab"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1513,21 +1514,9 @@
   "University of Lucerne",
   "University of Lugano"
  ],
- "pool": [
-  {
-   "id": "84049460ae87",
-   "link": "https://www.nasa.gov/learning-resources/nasa-astronaut-stem-creator-connect-with-students-for-stem-day/",
-   "outlet": "NASA",
-   "kind": "science",
-   "title": "NASA Astronaut, STEM Creator Connect with Students for STEM Day",
-   "date": "2026-11-03T15:15:50+00:00",
-   "rating": 6.5,
-   "timely": 1,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 5,
- "next_post_at": "2026-11-03T16:47:49+00:00",
+ "pool": [],
+ "since_fact": 6,
+ "next_post_at": "2026-11-03T17:51:53+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1924,14 +1913,18 @@
   {
    "title": "Canada-EU alliance to expand opportunities for students",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "NASA Astronaut, STEM Creator Connect with Students for STEM Day",
+   "outlet": "NASA"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "ICEF Monitor",
   "MIT Technology Review",
   "ICEF Monitor",
-  "The PIE News"
+  "The PIE News",
+  "NASA"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
