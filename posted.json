@@ -1510,7 +1510,7 @@
  ],
  "pool": [],
  "since_fact": 4,
- "next_post_at": "2026-11-03T14:58:15+00:00",
+ "next_post_at": "2026-11-03T15:50:45+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1914,7 +1914,7 @@
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
- "ranking_day": "2026-11-02",
+ "ranking_day": "2026-11-03",
  "rank_hist": [
   "arwus:2026:0",
   "gras:2026:AS0215",
@@ -1935,7 +1935,8 @@
   "grasc:2026:AS0105:United Kingdom",
   "the_top10",
   "rise:2026:AS0215",
-  "gras:2026:AS0105"
+  "gras:2026:AS0105",
+  "qs_usa"
  ],
  "profiled": [
   "Rockefeller University",
