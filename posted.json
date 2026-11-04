@@ -1326,7 +1326,9 @@
   "6059ef3a52dd",
   "917d636c7270",
   "11e21462d76e",
-  "06c34b210643"
+  "06c34b210643",
+  "eddbc7b49428",
+  "9858f91e2062"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1565,7 +1567,7 @@
  ],
  "pool": [],
  "since_fact": 3,
- "next_post_at": "2026-11-04T14:04:47+00:00",
+ "next_post_at": "2026-11-04T14:59:00+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
