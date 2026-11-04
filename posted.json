@@ -1313,7 +1313,10 @@
   "f0f4c0edaa73",
   "7cf35f2de75a",
   "d9807e673ae0",
-  "8691c9f94eee"
+  "8691c9f94eee",
+  "195f7df1e524",
+  "5b4527e6df70",
+  "37b1a0d5755b"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1550,21 +1553,9 @@
   "University of Benin (Nigeria)",
   "University of Sao Paulo"
  ],
- "pool": [
-  {
-   "id": "d9807e673ae0",
-   "link": "https://www.insidehighered.com/news/quick-takes/2026/11/04/wsus-plan-cancel-fall-rush-draws-criticism",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "WSU’s Plan to Cancel Fall Rush Draws Criticism",
-   "date": "2026-11-04T08:00:00+00:00",
-   "rating": 6.1,
-   "timely": 1,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 2,
- "next_post_at": "2026-11-04T12:23:27+00:00",
+ "pool": [],
+ "since_fact": 3,
+ "next_post_at": "2026-11-04T13:06:41+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1973,13 +1964,17 @@
   {
    "title": "CSU System Researchers Sue Trump Administration Over Grant Cancellations",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "WSU’s Plan to Cancel Fall Rush Draws Criticism",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "The PIE News",
+  "Inside Higher Ed",
   "Inside Higher Ed"
  ],
  "arwu_year": 2026,
