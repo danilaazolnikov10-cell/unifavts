@@ -1312,7 +1312,8 @@
   "abbbff98c2a5",
   "f0f4c0edaa73",
   "7cf35f2de75a",
-  "d9807e673ae0"
+  "d9807e673ae0",
+  "8691c9f94eee"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1551,17 +1552,6 @@
  ],
  "pool": [
   {
-   "id": "f0f4c0edaa73",
-   "link": "https://www.insidehighered.com/news/quick-takes/2026/11/04/csu-researchers-sue-trump-over-grant-cancellations",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "CSU System Researchers Sue Trump Administration Over Grant Cancellations",
-   "date": "2026-11-04T08:00:00+00:00",
-   "rating": 6.6,
-   "timely": 1,
-   "tier": "reserve"
-  },
-  {
    "id": "d9807e673ae0",
    "link": "https://www.insidehighered.com/news/quick-takes/2026/11/04/wsus-plan-cancel-fall-rush-draws-criticism",
    "outlet": "Inside Higher Ed",
@@ -1573,8 +1563,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-11-04T10:06:54+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-11-04T11:25:10+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1979,14 +1969,18 @@
   {
    "title": "The graduate visa U-turn: are we rewarding outcomes or reinforcing old hierarchies?",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "CSU System Researchers Sue Trump Administration Over Grant Cancellations",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "The PIE News"
+  "The PIE News",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
