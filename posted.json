@@ -1328,7 +1328,12 @@
   "11e21462d76e",
   "06c34b210643",
   "eddbc7b49428",
-  "9858f91e2062"
+  "9858f91e2062",
+  "225ef2e7db64",
+  "015fb729056b",
+  "e199d2bf8a7e",
+  "da12f1490c72",
+  "9115c34092aa"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1566,8 +1571,8 @@
   "University of Sao Paulo"
  ],
  "pool": [],
- "since_fact": 3,
- "next_post_at": "2026-11-04T16:08:03+00:00",
+ "since_fact": 4,
+ "next_post_at": "2026-11-04T16:57:51+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -1980,14 +1985,18 @@
   {
    "title": "WSU’s Plan to Cancel Fall Rush Draws Criticism",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Beyond academic support: why mentoring matters for international students",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "The PIE News",
   "Inside Higher Ed",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
