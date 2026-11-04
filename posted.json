@@ -1337,9 +1337,10 @@
   "943b2cb16dd8",
   "2c2a12276f0f",
   "e150b219d599",
-  "1e7babd5b5d0"
+  "1e7babd5b5d0",
+  "2e62bc2ded66"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1574,21 +1575,9 @@
   "University of Benin (Nigeria)",
   "University of Sao Paulo"
  ],
- "pool": [
-  {
-   "id": "e150b219d599",
-   "link": "https://thepienews.com/international-universities-face-pressure-to-prove-value-in-india/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "International universities face pressure to prove value in India",
-   "date": "2026-11-04T16:39:48+00:00",
-   "rating": 6.5,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 5,
- "next_post_at": "2026-11-04T18:06:16+00:00",
+ "pool": [],
+ "since_fact": 6,
+ "next_post_at": "2026-11-04T18:55:59+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2009,14 +1998,18 @@
   {
    "title": "What’s next for US energy policy after the midterm elections?",
    "outlet": "MIT Technology Review"
+  },
+  {
+   "title": "International universities face pressure to prove value in India",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Inside Higher Ed",
   "Inside Higher Ed",
   "The PIE News",
-  "MIT Technology Review"
+  "MIT Technology Review",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
