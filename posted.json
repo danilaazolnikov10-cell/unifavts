@@ -1344,9 +1344,10 @@
   "3285fd735bda",
   "c0cef7393626",
   "f850ed3385b0",
-  "b37636184124"
+  "b37636184124",
+  "d4ad9a48d21b"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1582,8 +1583,8 @@
   "University of Sao Paulo"
  ],
  "pool": [],
- "since_fact": 6,
- "next_post_at": "2026-11-05T00:35:14+00:00",
+ "since_fact": 7,
+ "next_post_at": "2026-11-05T03:02:30+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2008,14 +2009,18 @@
   {
    "title": "International universities face pressure to prove value in India",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "A Quantum Computer Could Crack Major Internet Encryption in Just 3 Days, Study Suggests",
+   "outlet": "ScienceAlert"
   }
  ],
  "last_outlets": [
   "Inside Higher Ed",
-  "Inside Higher Ed",
   "The PIE News",
   "MIT Technology Review",
-  "The PIE News"
+  "The PIE News",
+  "ScienceAlert"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
