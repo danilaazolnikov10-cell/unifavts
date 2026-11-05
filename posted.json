@@ -1362,7 +1362,9 @@
   "9a89c22d9dd4",
   "38201161887d",
   "a1a56e621366",
-  "95d66720a385"
+  "95d66720a385",
+  "1025afbf9ca2",
+  "bcd1fc17239e"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1597,11 +1599,12 @@
   "University of Lucerne",
   "University of Lugano",
   "University of Benin (Nigeria)",
-  "University of Sao Paulo"
+  "University of Sao Paulo",
+  "University of Lusaka"
  ],
  "pool": [],
  "since_fact": 9,
- "next_post_at": "2026-11-05T10:06:42+00:00",
+ "next_post_at": "2026-11-05T11:08:46+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
