@@ -281,7 +281,8 @@
   "University of the Andes (Venezuela)",
   "University of the West Indies, Mona",
   "University of Sao Paulo",
-  "University of Lucerne"
+  "University of Lucerne",
+  "University of Lusaka"
  ],
  "seen": [
   "741cd072e273",
@@ -1364,9 +1365,11 @@
   "a1a56e621366",
   "95d66720a385",
   "1025afbf9ca2",
-  "bcd1fc17239e"
+  "bcd1fc17239e",
+  "68f32687eedf",
+  "c92ecab86f1d"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1602,9 +1605,21 @@
   "University of Sao Paulo",
   "University of Lusaka"
  ],
- "pool": [],
- "since_fact": 9,
- "next_post_at": "2026-11-05T11:08:46+00:00",
+ "pool": [
+  {
+   "id": "68f32687eedf",
+   "link": "https://thepienews.com/us-midterm-elections-what-could-change-for-international-education/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "US midterm elections: what could change for international education?",
+   "date": "2026-11-05T11:47:07+00:00",
+   "rating": 7.5,
+   "timely": 1,
+   "tier": "top"
+  }
+ ],
+ "since_fact": 0,
+ "next_post_at": "2026-11-05T12:12:21+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2044,11 +2059,11 @@
   }
  ],
  "last_outlets": [
-  "MIT Technology Review",
   "The PIE News",
   "ScienceAlert",
   "Inside Higher Ed",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
