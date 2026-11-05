@@ -1345,9 +1345,13 @@
   "c0cef7393626",
   "f850ed3385b0",
   "b37636184124",
-  "d4ad9a48d21b"
+  "d4ad9a48d21b",
+  "c6cb388629aa",
+  "32f654e7a58b",
+  "2a30ea6c6933",
+  "23d1674c640f"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1582,9 +1586,21 @@
   "University of Benin (Nigeria)",
   "University of Sao Paulo"
  ],
- "pool": [],
- "since_fact": 7,
- "next_post_at": "2026-11-05T03:02:30+00:00",
+ "pool": [
+  {
+   "id": "23d1674c640f",
+   "link": "https://www.insidehighered.com/news/government/politics-elections/2026/11/04/democrats-texas-takeover-could-reshape-boards-and",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "Democrats’ Texas Takeover Could Reshape Boards, Laws and More",
+   "date": "2026-11-04T23:48:37+00:00",
+   "rating": 6.1,
+   "timely": 1,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 8,
+ "next_post_at": "2026-11-05T03:59:49+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2013,14 +2029,18 @@
   {
    "title": "A Quantum Computer Could Crack Major Internet Encryption in Just 3 Days, Study Suggests",
    "outlet": "ScienceAlert"
+  },
+  {
+   "title": "5 Takeaways From Democrats’ Historic Night",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "The PIE News",
   "MIT Technology Review",
   "The PIE News",
-  "ScienceAlert"
+  "ScienceAlert",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
