@@ -1369,7 +1369,10 @@
   "68f32687eedf",
   "c92ecab86f1d",
   "cb53a8325971",
-  "e5f571be55b0"
+  "e5f571be55b0",
+  "9a8003d8f806",
+  "2009a33d518f",
+  "1d342b24619c"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1620,8 +1623,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-11-05T13:11:14+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-11-05T14:29:07+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2062,13 +2065,17 @@
   {
    "title": "US midterm elections: what could change for international education?",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Philippines to fast-track student visas as TNE strategy takes off",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "ScienceAlert",
   "Inside Higher Ed",
   "Inside Higher Ed",
   "Википедия",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
