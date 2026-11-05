@@ -1385,7 +1385,8 @@
   "28f1c898c691",
   "bc1fadbb88d0",
   "e69d2ba9ad45",
-  "55c94e75485b"
+  "55c94e75485b",
+  "0bdd2a51c7db"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1624,8 +1625,8 @@
   "University of Lusaka"
  ],
  "pool": [],
- "since_fact": 3,
- "next_post_at": "2026-11-05T19:53:19+00:00",
+ "since_fact": 4,
+ "next_post_at": "2026-11-05T22:11:23+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2074,14 +2075,18 @@
   {
    "title": "AAU and Others Warn Congress That Trump Is Changing Grant Rules",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Global agent survey provides an early indication of how international student markets are taking shape this year",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "Википедия",
   "The PIE News",
   "The PIE News",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "ICEF Monitor"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
