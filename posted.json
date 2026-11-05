@@ -1349,7 +1349,8 @@
   "c6cb388629aa",
   "32f654e7a58b",
   "2a30ea6c6933",
-  "23d1674c640f"
+  "23d1674c640f",
+  "af9fdaf0d947"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1586,21 +1587,9 @@
   "University of Benin (Nigeria)",
   "University of Sao Paulo"
  ],
- "pool": [
-  {
-   "id": "23d1674c640f",
-   "link": "https://www.insidehighered.com/news/government/politics-elections/2026/11/04/democrats-texas-takeover-could-reshape-boards-and",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "Democrats’ Texas Takeover Could Reshape Boards, Laws and More",
-   "date": "2026-11-04T23:48:37+00:00",
-   "rating": 6.1,
-   "timely": 1,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 8,
- "next_post_at": "2026-11-05T05:01:33+00:00",
+ "pool": [],
+ "since_fact": 9,
+ "next_post_at": "2026-11-05T06:04:42+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2033,13 +2022,17 @@
   {
    "title": "5 Takeaways From Democrats’ Historic Night",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Democrats’ Texas Takeover Could Reshape Boards, Laws and More",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "MIT Technology Review",
   "The PIE News",
   "ScienceAlert",
+  "Inside Higher Ed",
   "Inside Higher Ed"
  ],
  "arwu_year": 2026,
