@@ -1372,7 +1372,14 @@
   "e5f571be55b0",
   "9a8003d8f806",
   "2009a33d518f",
-  "1d342b24619c"
+  "1d342b24619c",
+  "f2b15375e1f5",
+  "df544b94f58f",
+  "7c2b61ad5f5e",
+  "0104c7b9ce84",
+  "0bab44666b06",
+  "4a9bb134f643",
+  "ac4413a3e10a"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1610,21 +1617,9 @@
   "University of Sao Paulo",
   "University of Lusaka"
  ],
- "pool": [
-  {
-   "id": "e5f571be55b0",
-   "link": "https://www.insidehighered.com/news/quick-takes/2026/11/05/coalition-warns-congress-trump-changing-grant-rules",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "AAU and Others Warn Congress That Trump Is Changing Grant Rules",
-   "date": "2026-11-05T10:00:00+00:00",
-   "rating": 6.6,
-   "timely": 1,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 2,
- "next_post_at": "2026-11-05T14:29:07+00:00",
+ "pool": [],
+ "since_fact": 3,
+ "next_post_at": "2026-11-05T15:22:02+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2069,14 +2064,18 @@
   {
    "title": "Philippines to fast-track student visas as TNE strategy takes off",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "AAU and Others Warn Congress That Trump Is Changing Grant Rules",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Inside Higher Ed",
-  "Inside Higher Ed",
   "Википедия",
   "The PIE News",
-  "The PIE News"
+  "The PIE News",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-10-29T15:24:36+00:00",
