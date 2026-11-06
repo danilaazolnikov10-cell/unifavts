@@ -1390,9 +1390,10 @@
   "b66453d13d67",
   "60695b952388",
   "70dc3bbe10db",
-  "756b8312f8fc"
+  "756b8312f8fc",
+  "1d0bfda35920"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1629,8 +1630,8 @@
   "University of Lusaka"
  ],
  "pool": [],
- "since_fact": 4,
- "next_post_at": "2026-11-06T02:48:53+00:00",
+ "since_fact": 5,
+ "next_post_at": "2026-11-06T03:54:10+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2083,14 +2084,18 @@
   {
    "title": "Global agent survey provides an early indication of how international student markets are taking shape this year",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "After 42 Years of Searching, Physicists Find Evidence of a One-in-10-Billion Particle Decay",
+   "outlet": "ScienceAlert"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "The PIE News",
   "Inside Higher Ed",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "ScienceAlert"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
