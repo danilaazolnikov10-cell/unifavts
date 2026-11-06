@@ -1425,9 +1425,10 @@
   "2422db091340",
   "a41d2dd5ef02",
   "9ee29b170407",
-  "7a3513031f56"
+  "7a3513031f56",
+  "c02f8c818986"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1664,8 +1665,8 @@
   "University of Lusaka"
  ],
  "pool": [],
- "since_fact": 9,
- "next_post_at": "2026-11-06T19:09:41+00:00",
+ "since_fact": 10,
+ "next_post_at": "2026-11-06T20:57:21+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2138,14 +2139,18 @@
   {
    "title": "Canada extends 150,000 international student arrivals target to 2029",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "MIT Scientists Break a 20-Year Rule And Unlock Never-Before-Seen Crystal Structures",
+   "outlet": "ScienceAlert"
   }
  ],
  "last_outlets": [
-  "ScienceAlert",
   "The PIE News",
   "ScienceDaily",
   "The PIE News",
-  "The PIE News"
+  "The PIE News",
+  "ScienceAlert"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
