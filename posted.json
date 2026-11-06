@@ -1421,9 +1421,13 @@
   "effdb9c4e032",
   "f1f911468f4d",
   "4f23755d9e81",
-  "0ec5b3370c5a"
+  "0ec5b3370c5a",
+  "2422db091340",
+  "a41d2dd5ef02",
+  "9ee29b170407",
+  "7a3513031f56"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1659,9 +1663,21 @@
   "University of Sao Paulo",
   "University of Lusaka"
  ],
- "pool": [],
- "since_fact": 7,
- "next_post_at": "2026-11-06T16:33:37+00:00",
+ "pool": [
+  {
+   "id": "a41d2dd5ef02",
+   "link": "https://thepienews.com/canada-extends-150000-international-student-arrivals-target-to-2029/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Canada extends 150,000 international student arrivals target to 2029",
+   "date": "2026-11-06T16:24:40+00:00",
+   "rating": 7.9,
+   "timely": 1,
+   "tier": "top"
+  }
+ ],
+ "since_fact": 8,
+ "next_post_at": "2026-11-06T17:41:10+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2126,14 +2142,18 @@
   {
    "title": "An anti-aging drug may help protect the brain before Alzheimer's symptoms begin",
    "outlet": "ScienceDaily"
+  },
+  {
+   "title": "Why the Philippines’ new TNE strategy could make it  South East Asia’s partnership hotspot",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "ICEF Monitor",
   "ScienceAlert",
   "The PIE News",
-  "ScienceDaily"
+  "ScienceDaily",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
