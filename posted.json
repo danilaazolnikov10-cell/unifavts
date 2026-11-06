@@ -1663,21 +1663,9 @@
   "University of Sao Paulo",
   "University of Lusaka"
  ],
- "pool": [
-  {
-   "id": "a41d2dd5ef02",
-   "link": "https://thepienews.com/canada-extends-150000-international-student-arrivals-target-to-2029/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "Canada extends 150,000 international student arrivals target to 2029",
-   "date": "2026-11-06T16:24:40+00:00",
-   "rating": 7.9,
-   "timely": 1,
-   "tier": "top"
-  }
- ],
- "since_fact": 8,
- "next_post_at": "2026-11-06T17:41:10+00:00",
+ "pool": [],
+ "since_fact": 9,
+ "next_post_at": "2026-11-06T18:33:39+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2146,13 +2134,17 @@
   {
    "title": "Why the Philippines’ new TNE strategy could make it  South East Asia’s partnership hotspot",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Canada extends 150,000 international student arrivals target to 2029",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "ICEF Monitor",
   "ScienceAlert",
   "The PIE News",
   "ScienceDaily",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
