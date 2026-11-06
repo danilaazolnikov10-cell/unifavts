@@ -1415,9 +1415,10 @@
   "835761b55cc5",
   "ffaae19f99e2",
   "225ab5981c9d",
-  "794bc3250f57"
+  "794bc3250f57",
+  "69dd96b9d4af"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1653,21 +1654,9 @@
   "University of Sao Paulo",
   "University of Lusaka"
  ],
- "pool": [
-  {
-   "id": "794bc3250f57",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261104084017.htm",
-   "outlet": "ScienceDaily",
-   "kind": "science",
-   "title": "An anti-aging drug may help protect the brain before Alzheimer's symptoms begin",
-   "date": "2026-11-05T20:11:19-05:00",
-   "rating": 6.6,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 6,
- "next_post_at": "2026-11-06T13:09:46+00:00",
+ "pool": [],
+ "since_fact": 7,
+ "next_post_at": "2026-11-06T14:21:13+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2128,14 +2117,18 @@
   {
    "title": "South Korea’s free tuition plan could reshape international student recruitment",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "An anti-aging drug may help protect the brain before Alzheimer's symptoms begin",
+   "outlet": "ScienceDaily"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Inside Higher Ed",
   "ICEF Monitor",
   "ScienceAlert",
-  "The PIE News"
+  "The PIE News",
+  "ScienceDaily"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
