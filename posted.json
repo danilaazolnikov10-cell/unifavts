@@ -1633,7 +1633,7 @@
  ],
  "pool": [],
  "since_fact": 5,
- "next_post_at": "2026-11-06T08:06:24+00:00",
+ "next_post_at": "2026-11-06T09:25:40+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2157,7 +2157,7 @@
  ],
  "article_day": "2026-11-06",
  "deadlines_week": "2026-45",
- "poll_day": "2026-11-05",
+ "poll_day": "2026-11-06",
  "poll_hist": [
   "p_country",
   "p_main",
@@ -2180,7 +2180,8 @@
   "p_prep",
   "quiz:Nanyang Technological University|UCLA|University of Minnesota, Twin Cities",
   "quiz:EPFL|UC San Diego|University of Southern California",
-  "quiz:University of Geneva|University of Oslo|University of Pennsylvania"
+  "quiz:University of Geneva|University of Oslo|University of Pennsylvania",
+  "p_dir"
  ],
  "tips_day": "2026-11-04",
  "tips_hist": [
