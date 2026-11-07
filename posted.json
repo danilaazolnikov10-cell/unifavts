@@ -292,7 +292,8 @@
   "University of the West of Scotland",
   "University of Strathclyde",
   "University of Kyoto",
-  "University of Sofia"
+  "University of Sofia",
+  "University of Bucharest"
  ],
  "seen": [
   "741cd072e273",
@@ -1456,7 +1457,8 @@
   "aff8c97b0bc1",
   "2d8d0ec30b82",
   "3159f6a2c261",
-  "f7635b03b49c"
+  "f7635b03b49c",
+  "8a4cc8d29532"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1705,11 +1707,13 @@
   "University of Osaka",
   "University of Krakow",
   "University of Sofia",
-  "University of Bucharest"
+  "University of Bucharest",
+  "University of the Philippines",
+  "University of the West Indies, Cave Hill Campus"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-07T22:50:37+00:00",
+ "next_post_at": "2026-11-08T00:33:19+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
