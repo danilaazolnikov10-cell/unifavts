@@ -289,7 +289,8 @@
   "University of Dundee",
   "University of Navarra",
   "University of Hull",
-  "University of the West of Scotland"
+  "University of the West of Scotland",
+  "University of Strathclyde"
  ],
  "seen": [
   "741cd072e273",
@@ -1449,7 +1450,8 @@
   "10fb0c4d7d52",
   "467bfcc0f8ca",
   "eb9f81bba305",
-  "e9fdfb195fe7"
+  "e9fdfb195fe7",
+  "aff8c97b0bc1"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1697,7 +1699,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-07T18:23:28+00:00",
+ "next_post_at": "2026-11-07T19:11:31+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
