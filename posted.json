@@ -282,7 +282,8 @@
   "University of the West Indies, Mona",
   "University of Sao Paulo",
   "University of Lucerne",
-  "University of Lusaka"
+  "University of Lusaka",
+  "University of Algiers"
  ],
  "seen": [
   "741cd072e273",
@@ -1436,9 +1437,14 @@
   "c1a02b4f50f1",
   "06407556cd7c",
   "8f09b3b92aaa",
-  "7ad2a396836e"
+  "7ad2a396836e",
+  "413adeb247b0",
+  "186947cb61d4",
+  "10fb0c4d7d52",
+  "467bfcc0f8ca",
+  "eb9f81bba305"
  ],
- "last_kind": "science",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1672,11 +1678,12 @@
   "University of Lugano",
   "University of Benin (Nigeria)",
   "University of Sao Paulo",
-  "University of Lusaka"
+  "University of Lusaka",
+  "University of Algiers"
  ],
  "pool": [],
- "since_fact": 10,
- "next_post_at": "2026-11-07T10:31:33+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-11-07T11:34:38+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2156,11 +2163,11 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "ScienceDaily",
   "The PIE News",
   "The PIE News",
-  "ScienceAlert"
+  "ScienceAlert",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
