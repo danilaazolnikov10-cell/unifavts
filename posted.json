@@ -296,7 +296,8 @@
   "University of Bucharest",
   "University of the West Indies, Cave Hill Campus",
   "University of the Philippines",
-  "University of Krakow"
+  "University of Krakow",
+  "University of Osaka"
  ],
  "seen": [
   "741cd072e273",
@@ -1463,7 +1464,8 @@
   "f7635b03b49c",
   "8a4cc8d29532",
   "7be949019429",
-  "ba98dbf99754"
+  "ba98dbf99754",
+  "6662e17f843a"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1718,7 +1720,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-08T05:43:12+00:00",
+ "next_post_at": "2026-11-08T06:45:44+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
