@@ -297,7 +297,8 @@
   "University of the West Indies, Cave Hill Campus",
   "University of the Philippines",
   "University of Krakow",
-  "University of Osaka"
+  "University of Osaka",
+  "University of Padua"
  ],
  "seen": [
   "741cd072e273",
@@ -1480,7 +1481,7 @@
   "5e5b4920e591",
   "616c0e514806"
  ],
- "last_kind": "science",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1729,11 +1730,13 @@
   "University of Sofia",
   "University of Bucharest",
   "University of the Philippines",
-  "University of the West Indies, Cave Hill Campus"
+  "University of the West Indies, Cave Hill Campus",
+  "University of Milan",
+  "University of Padua"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-11-08T17:43:03+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-11-08T18:29:46+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2220,8 +2223,8 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "NASA"
+  "NASA",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
