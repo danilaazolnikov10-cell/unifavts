@@ -1476,9 +1476,11 @@
   "815f64161be9",
   "00f19074f409",
   "ff03b4bafa04",
-  "0570d4854f9d"
+  "0570d4854f9d",
+  "5e5b4920e591",
+  "616c0e514806"
  ],
- "last_kind": "fact",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1730,8 +1732,8 @@
   "University of the West Indies, Cave Hill Campus"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-11-08T16:06:09+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-11-08T16:48:20+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2208,6 +2210,10 @@
   {
    "title": "MIT Scientists Break a 20-Year Rule And Unlock Never-Before-Seen Crystal Structures",
    "outlet": "ScienceAlert"
+  },
+  {
+   "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+   "outlet": "NASA"
   }
  ],
  "last_outlets": [
@@ -2215,7 +2221,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "NASA"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
