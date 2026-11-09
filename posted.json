@@ -1541,9 +1541,13 @@
   "50d303e5bf84",
   "120d17002b6e",
   "5ddd414c050c",
-  "422fb850b078"
+  "422fb850b078",
+  "6319f4f4dd41",
+  "edbfab0de815",
+  "3ec2e278915e",
+  "d544226bf8e6"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1810,8 +1814,8 @@
   "University of the Punjab"
  ],
  "pool": [],
- "since_fact": 5,
- "next_post_at": "2026-11-09T21:19:49+00:00",
+ "since_fact": 6,
+ "next_post_at": "2026-11-09T23:12:42+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2320,14 +2324,18 @@
   {
    "title": "Nancy Pelosi’s replacement is ready to regulate AI",
    "outlet": "MIT Technology Review"
+  },
+  {
+   "title": "Can at-home English testing be made “fit for purpose” for high-stakes decisions?",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
   "The PIE News",
-  "The PIE News",
   "NASA",
   "The PIE News",
-  "MIT Technology Review"
+  "MIT Technology Review",
+  "ICEF Monitor"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
