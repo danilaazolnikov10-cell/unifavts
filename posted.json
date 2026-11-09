@@ -1507,7 +1507,10 @@
   "c9dd47642b53",
   "22eb8fd2e53c",
   "2eb3d81c7a85",
-  "a1d2675989fd"
+  "a1d2675989fd",
+  "58446515405f",
+  "1bf53a520974",
+  "8fe01598e66e"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1772,32 +1775,9 @@
   "University of South Wales",
   "University of Wales Trinity Saint David"
  ],
- "pool": [
-  {
-   "id": "f79899e62214",
-   "link": "https://www.insidehighered.com/news/student-success/life-after-college/2026/11/09/untapped-potential-stem-transfer-students",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "The Untapped Potential of STEM Transfer Students",
-   "date": "2026-11-09T08:00:00+00:00",
-   "rating": 6.0,
-   "timely": 0,
-   "tier": "reserve"
-  },
-  {
-   "id": "c1dd552fdd47",
-   "link": "https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/11/09/new-ai-chicago-rethinks-writing-eiu",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "New in AI: UChicago Rethinks Writing, EIU Students Want Faculty Rules",
-   "date": "2026-11-09T08:00:00+00:00",
-   "rating": 6.0,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 1,
- "next_post_at": "2026-11-09T10:05:03+00:00",
+ "pool": [],
+ "since_fact": 2,
+ "next_post_at": "2026-11-09T11:02:09+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2282,13 +2262,17 @@
   {
    "title": "DOJ Sues Penn State Over In-State Tuition for Noncitizens",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "New in AI: UChicago Rethinks Writing, EIU Students Want Faculty Rules",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
+  "Inside Higher Ed",
   "Inside Higher Ed"
  ],
  "arwu_year": 2026,
