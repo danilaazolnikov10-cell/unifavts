@@ -303,7 +303,8 @@
   "University of East London",
   "University of Central Lancashire",
   "University of Brighton",
-  "University of the Arts London"
+  "University of the Arts London",
+  "University of the West of England, Bristol"
  ],
  "seen": [
   "741cd072e273",
@@ -1495,7 +1496,8 @@
   "f9d22f2f6cb2",
   "850fd6bdc88e",
   "de7f772dfc8f",
-  "33121b8cb496"
+  "33121b8cb496",
+  "78bda217608c"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1762,7 +1764,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-09T06:17:09+00:00",
+ "next_post_at": "2026-11-09T07:15:28+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2315,7 +2317,7 @@
   "Columbia University"
  ],
  "article_day": "2026-11-09",
- "deadlines_week": "2026-45",
+ "deadlines_week": "2026-46",
  "poll_day": "2026-11-08",
  "poll_hist": [
   "p_country",
