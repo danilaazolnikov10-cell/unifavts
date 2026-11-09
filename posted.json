@@ -302,7 +302,8 @@
   "University of Milan",
   "University of East London",
   "University of Central Lancashire",
-  "University of Brighton"
+  "University of Brighton",
+  "University of the Arts London"
  ],
  "seen": [
   "741cd072e273",
@@ -1491,7 +1492,10 @@
   "25ceb6beb032",
   "82c6d33a018c",
   "540f5c4dadbc",
-  "f9d22f2f6cb2"
+  "f9d22f2f6cb2",
+  "850fd6bdc88e",
+  "de7f772dfc8f",
+  "33121b8cb496"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1758,7 +1762,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-09T05:07:32+00:00",
+ "next_post_at": "2026-11-09T06:17:09+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
