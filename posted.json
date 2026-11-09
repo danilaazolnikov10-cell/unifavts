@@ -1539,9 +1539,10 @@
   "0d16d254946a",
   "f78cfd6f3421",
   "50d303e5bf84",
-  "120d17002b6e"
+  "120d17002b6e",
+  "5ddd414c050c"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1820,8 +1821,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 3,
- "next_post_at": "2026-11-09T18:18:41+00:00",
+ "since_fact": 4,
+ "next_post_at": "2026-11-09T19:09:00+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2322,14 +2323,18 @@
   {
    "title": "La NASA destina un millón de dólares al reto estudiantil Base Lunar",
    "outlet": "NASA"
+  },
+  {
+   "title": "Canada cuts, NZ grows as Australia and US rethink international education",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "The PIE News",
   "The PIE News",
-  "NASA"
+  "NASA",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
