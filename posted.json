@@ -307,7 +307,8 @@
   "University of the West of England, Bristol",
   "University of Salford",
   "University of South Wales",
-  "University of Portsmouth"
+  "University of Portsmouth",
+  "University of the Punjab"
  ],
  "seen": [
   "741cd072e273",
@@ -1545,9 +1546,14 @@
   "6319f4f4dd41",
   "edbfab0de815",
   "3ec2e278915e",
-  "d544226bf8e6"
+  "d544226bf8e6",
+  "e3b542e0f080",
+  "2efbd66871b2",
+  "28ce724ae892",
+  "9746aded8a97",
+  "814369afabb2"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1813,9 +1819,21 @@
   "University of the Arts Helsinki",
   "University of the Punjab"
  ],
- "pool": [],
- "since_fact": 6,
- "next_post_at": "2026-11-09T23:12:42+00:00",
+ "pool": [
+  {
+   "id": "814369afabb2",
+   "link": "https://www.highereddive.com/news/researchers-and-faculty-sue-nsf-over-axing-of-its-social-science-unit/874186/",
+   "outlet": "Higher Ed Dive",
+   "kind": "admissions",
+   "title": "Researchers and faculty sue NSF over axing of its social science unit",
+   "date": "2026-11-09T16:09:01-05:00",
+   "rating": 6.6,
+   "timely": 0,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 0,
+ "next_post_at": "2026-11-10T00:54:56+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2331,11 +2349,11 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "NASA",
   "The PIE News",
   "MIT Technology Review",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
