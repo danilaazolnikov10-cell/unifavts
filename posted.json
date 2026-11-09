@@ -300,7 +300,8 @@
   "University of Osaka",
   "University of Padua",
   "University of Milan",
-  "University of East London"
+  "University of East London",
+  "University of Central Lancashire"
  ],
  "seen": [
   "741cd072e273",
@@ -1482,7 +1483,13 @@
   "0570d4854f9d",
   "5e5b4920e591",
   "616c0e514806",
-  "6ef1ae071457"
+  "6ef1ae071457",
+  "61164f23e3fb",
+  "93a536fa5d05",
+  "90df9cb8c2e5",
+  "25ceb6beb032",
+  "82c6d33a018c",
+  "540f5c4dadbc"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1749,7 +1756,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-09T00:57:22+00:00",
+ "next_post_at": "2026-11-09T03:02:26+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2233,8 +2240,8 @@
   }
  ],
  "last_outlets": [
-  "Википедия",
   "NASA",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия"
