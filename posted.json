@@ -305,7 +305,8 @@
   "University of Brighton",
   "University of the Arts London",
   "University of the West of England, Bristol",
-  "University of Salford"
+  "University of Salford",
+  "University of South Wales"
  ],
  "seen": [
   "741cd072e273",
@@ -1514,7 +1515,13 @@
   "8fe01598e66e",
   "9192c11ff85a",
   "4212fd7ce73b",
-  "ed42dfce56fa"
+  "ed42dfce56fa",
+  "fd508b5bbee7",
+  "cdaccc15501b",
+  "ff96022f7e79",
+  "e41da7202b54",
+  "fe00b55b7450",
+  "cf7f59e55738"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1784,7 +1791,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-09T12:02:06+00:00",
+ "next_post_at": "2026-11-09T12:56:39+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2277,9 +2284,9 @@
  ],
  "last_outlets": [
   "Википедия",
+  "Inside Higher Ed",
+  "Inside Higher Ed",
   "Википедия",
-  "Inside Higher Ed",
-  "Inside Higher Ed",
   "Википедия"
  ],
  "arwu_year": 2026,
