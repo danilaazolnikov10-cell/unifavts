@@ -1540,9 +1540,10 @@
   "f78cfd6f3421",
   "50d303e5bf84",
   "120d17002b6e",
-  "5ddd414c050c"
+  "5ddd414c050c",
+  "422fb850b078"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1808,21 +1809,9 @@
   "University of the Arts Helsinki",
   "University of the Punjab"
  ],
- "pool": [
-  {
-   "id": "50d303e5bf84",
-   "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
-   "outlet": "MIT Technology Review",
-   "kind": "science",
-   "title": "Nancy Pelosi’s replacement is ready to regulate AI",
-   "date": "2026-11-09T17:05:43+00:00",
-   "rating": 6.1,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 4,
- "next_post_at": "2026-11-09T19:09:00+00:00",
+ "pool": [],
+ "since_fact": 5,
+ "next_post_at": "2026-11-09T21:19:49+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2327,14 +2316,18 @@
   {
    "title": "Canada cuts, NZ grows as Australia and US rethink international education",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Nancy Pelosi’s replacement is ready to regulate AI",
+   "outlet": "MIT Technology Review"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "The PIE News",
   "NASA",
-  "The PIE News"
+  "The PIE News",
+  "MIT Technology Review"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
