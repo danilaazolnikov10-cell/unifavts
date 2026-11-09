@@ -306,7 +306,8 @@
   "University of the Arts London",
   "University of the West of England, Bristol",
   "University of Salford",
-  "University of South Wales"
+  "University of South Wales",
+  "University of Portsmouth"
  ],
  "seen": [
   "741cd072e273",
@@ -1521,7 +1522,9 @@
   "ff96022f7e79",
   "e41da7202b54",
   "fe00b55b7450",
-  "cf7f59e55738"
+  "cf7f59e55738",
+  "b09ab79ba3e1",
+  "b044ec790c18"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1791,7 +1794,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-09T12:56:39+00:00",
+ "next_post_at": "2026-11-09T14:16:09+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2283,9 +2286,9 @@
   }
  ],
  "last_outlets": [
+  "Inside Higher Ed",
+  "Inside Higher Ed",
   "Википедия",
-  "Inside Higher Ed",
-  "Inside Higher Ed",
   "Википедия",
   "Википедия"
  ],
