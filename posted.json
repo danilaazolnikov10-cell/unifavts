@@ -301,7 +301,8 @@
   "University of Padua",
   "University of Milan",
   "University of East London",
-  "University of Central Lancashire"
+  "University of Central Lancashire",
+  "University of Brighton"
  ],
  "seen": [
   "741cd072e273",
@@ -1489,7 +1490,8 @@
   "90df9cb8c2e5",
   "25ceb6beb032",
   "82c6d33a018c",
-  "540f5c4dadbc"
+  "540f5c4dadbc",
+  "f9d22f2f6cb2"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1756,7 +1758,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-09T03:02:26+00:00",
+ "next_post_at": "2026-11-09T04:08:53+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2240,7 +2242,7 @@
   }
  ],
  "last_outlets": [
-  "NASA",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия",
