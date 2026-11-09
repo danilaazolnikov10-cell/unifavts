@@ -1524,9 +1524,12 @@
   "fe00b55b7450",
   "cf7f59e55738",
   "b09ab79ba3e1",
-  "b044ec790c18"
+  "b044ec790c18",
+  "c3e65e55cc80",
+  "d3252d0510de",
+  "5f1b6cca0bce"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1793,8 +1796,8 @@
   "University of the Punjab"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-11-09T14:16:09+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-11-09T15:15:51+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2283,14 +2286,18 @@
   {
    "title": "New in AI: UChicago Rethinks Writing, EIU Students Want Faculty Rules",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "AIECA backs mandatory agent accreditation as Hill signals regulatory rethink",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Inside Higher Ed",
-  "Inside Higher Ed",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
