@@ -1534,9 +1534,14 @@
   "8a0bc9b8854d",
   "4f1eff497b2a",
   "2d2a2b1de370",
-  "d655e03b5a62"
+  "d655e03b5a62",
+  "1ade761a8a3e",
+  "0d16d254946a",
+  "f78cfd6f3421",
+  "50d303e5bf84",
+  "120d17002b6e"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1802,9 +1807,21 @@
   "University of the Arts Helsinki",
   "University of the Punjab"
  ],
- "pool": [],
- "since_fact": 2,
- "next_post_at": "2026-11-09T17:19:42+00:00",
+ "pool": [
+  {
+   "id": "50d303e5bf84",
+   "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+   "outlet": "MIT Technology Review",
+   "kind": "science",
+   "title": "Nancy Pelosi’s replacement is ready to regulate AI",
+   "date": "2026-11-09T17:05:43+00:00",
+   "rating": 6.1,
+   "timely": 0,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 3,
+ "next_post_at": "2026-11-09T18:18:41+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2301,14 +2318,18 @@
   {
    "title": "Brazilian students want more than a degree abroad: this is where Ireland emerges",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "La NASA destina un millón de dólares al reto estudiantil Base Lunar",
+   "outlet": "NASA"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "The PIE News",
-  "The PIE News"
+  "The PIE News",
+  "NASA"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
