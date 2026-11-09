@@ -1764,7 +1764,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-09T07:15:28+00:00",
+ "next_post_at": "2026-11-09T08:50:13+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2318,7 +2318,7 @@
  ],
  "article_day": "2026-11-09",
  "deadlines_week": "2026-46",
- "poll_day": "2026-11-08",
+ "poll_day": "2026-11-09",
  "poll_hist": [
   "p_country",
   "p_main",
@@ -2344,7 +2344,8 @@
   "quiz:University of Geneva|University of Oslo|University of Pennsylvania",
   "p_dir",
   "quiz:ETH Zurich|Purdue University, West Lafayette|The Hebrew University of Jerusalem",
-  "quiz:MIT|Technical University of Munich|Tsinghua University"
+  "quiz:MIT|Technical University of Munich|Tsinghua University",
+  "p_start"
  ],
  "tips_day": "2026-11-08",
  "tips_hist": [
