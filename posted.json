@@ -304,7 +304,8 @@
   "University of Central Lancashire",
   "University of Brighton",
   "University of the Arts London",
-  "University of the West of England, Bristol"
+  "University of the West of England, Bristol",
+  "University of Salford"
  ],
  "seen": [
   "741cd072e273",
@@ -1510,9 +1511,12 @@
   "a1d2675989fd",
   "58446515405f",
   "1bf53a520974",
-  "8fe01598e66e"
+  "8fe01598e66e",
+  "9192c11ff85a",
+  "4212fd7ce73b",
+  "ed42dfce56fa"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1773,11 +1777,14 @@
   "University of the West of England, Bristol",
   "University of Central Lancashire",
   "University of South Wales",
-  "University of Wales Trinity Saint David"
+  "University of Wales Trinity Saint David",
+  "University of the Pacific (United States)",
+  "University of the Arts Helsinki",
+  "University of the Punjab"
  ],
  "pool": [],
- "since_fact": 2,
- "next_post_at": "2026-11-09T11:02:09+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-11-09T12:02:06+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2271,9 +2278,9 @@
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "Inside Higher Ed",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
