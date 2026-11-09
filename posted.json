@@ -1527,7 +1527,14 @@
   "b044ec790c18",
   "c3e65e55cc80",
   "d3252d0510de",
-  "5f1b6cca0bce"
+  "5f1b6cca0bce",
+  "e8a054613f45",
+  "98a2827a46e8",
+  "2f010c874639",
+  "8a0bc9b8854d",
+  "4f1eff497b2a",
+  "2d2a2b1de370",
+  "d655e03b5a62"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1796,8 +1803,8 @@
   "University of the Punjab"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-11-09T16:08:29+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-11-09T17:19:42+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2290,13 +2297,17 @@
   {
    "title": "AIECA backs mandatory agent accreditation as Hill signals regulatory rethink",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Brazilian students want more than a degree abroad: this is where Ireland emerges",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "Википедия",
   "Википедия",
   "Википедия",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
