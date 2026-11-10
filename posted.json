@@ -312,7 +312,8 @@
   "University of Huddersfield",
   "University of the Arts Helsinki",
   "University of Wales Trinity Saint David",
-  "University of the Pacific (United States)"
+  "University of the Pacific (United States)",
+  "University of the Philippines College of Law"
  ],
  "seen": [
   "741cd072e273",
@@ -1593,7 +1594,7 @@
   "9d4629ee7af9",
   "f1e81eb74762"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1863,8 +1864,8 @@
   "University of the Philippines College of Medicine"
  ],
  "pool": [],
- "since_fact": 5,
- "next_post_at": "2026-11-10T17:55:48+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-11-10T18:34:53+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2400,11 +2401,11 @@
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "The PIE News",
   "Inside Higher Ed",
   "The PIE News",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
