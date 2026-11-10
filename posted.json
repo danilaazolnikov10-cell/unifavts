@@ -315,7 +315,8 @@
   "University of the Pacific (United States)",
   "University of the Philippines College of Law",
   "University of the Philippines College of Medicine",
-  "University of the Philippines System"
+  "University of the Philippines System",
+  "National Taiwan University"
  ],
  "seen": [
   "741cd072e273",
@@ -1597,7 +1598,9 @@
   "f1e81eb74762",
   "b0a4ee550888",
   "0c075ce89994",
-  "c94fafe42723"
+  "c94fafe42723",
+  "fe65592555eb",
+  "3d5f209723cb"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1867,11 +1870,12 @@
   "University of the Philippines System",
   "University of the Philippines College of Law",
   "University of the Philippines College of Medicine",
-  "National Taiwan University"
+  "National Taiwan University",
+  "University of Aarhus"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-10T22:34:06+00:00",
+ "next_post_at": "2026-11-11T00:23:50+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2408,7 +2412,7 @@
  ],
  "last_outlets": [
   "The PIE News",
-  "The PIE News",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия"
