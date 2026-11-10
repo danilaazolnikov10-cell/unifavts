@@ -313,7 +313,8 @@
   "University of the Arts Helsinki",
   "University of Wales Trinity Saint David",
   "University of the Pacific (United States)",
-  "University of the Philippines College of Law"
+  "University of the Philippines College of Law",
+  "University of the Philippines College of Medicine"
  ],
  "seen": [
   "741cd072e273",
@@ -1593,7 +1594,8 @@
   "c3e1058f416b",
   "9d4629ee7af9",
   "f1e81eb74762",
-  "b0a4ee550888"
+  "b0a4ee550888",
+  "0c075ce89994"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1867,7 +1869,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-10T19:09:56+00:00",
+ "next_post_at": "2026-11-10T20:52:35+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2403,10 +2405,10 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Inside Higher Ed",
   "The PIE News",
   "The PIE News",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
