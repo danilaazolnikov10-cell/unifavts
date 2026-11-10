@@ -1585,7 +1585,11 @@
   "8482284ea775",
   "a12962b9958b",
   "be197ae20f97",
-  "285dd7083e61"
+  "285dd7083e61",
+  "1aca4268cb36",
+  "7c5737398611",
+  "262906979a82",
+  "c3e1058f416b"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1857,8 +1861,8 @@
   "University of the Philippines College of Medicine"
  ],
  "pool": [],
- "since_fact": 3,
- "next_post_at": "2026-11-10T15:51:19+00:00",
+ "since_fact": 4,
+ "next_post_at": "2026-11-10T16:52:49+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2383,14 +2387,18 @@
   {
    "title": "What the Blue Wave Could Mean for Future of Tuition Equity Laws",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "AIEC 2026: Australia rethinks its international education promise",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "Inside Higher Ed",
   "The PIE News",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
