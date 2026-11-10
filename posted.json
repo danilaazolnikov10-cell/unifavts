@@ -311,7 +311,8 @@
   "University of the Punjab",
   "University of Huddersfield",
   "University of the Arts Helsinki",
-  "University of Wales Trinity Saint David"
+  "University of Wales Trinity Saint David",
+  "University of the Pacific (United States)"
  ],
  "seen": [
   "741cd072e273",
@@ -1562,7 +1563,9 @@
   "ef1254c304ff",
   "e109ed741d26",
   "69d28f4480ab",
-  "1f204bc24230"
+  "1f204bc24230",
+  "da1bc8f6f8f3",
+  "270106a6716f"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1832,7 +1835,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-10T05:52:14+00:00",
+ "next_post_at": "2026-11-10T06:46:16+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2348,7 +2351,7 @@
   }
  ],
  "last_outlets": [
-  "ICEF Monitor",
+  "Википедия",
   "Википедия",
   "Википедия",
   "Википедия",
