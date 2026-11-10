@@ -1565,9 +1565,19 @@
   "69d28f4480ab",
   "1f204bc24230",
   "da1bc8f6f8f3",
-  "270106a6716f"
+  "270106a6716f",
+  "8b8f8f7164aa",
+  "efd4b9ac3665",
+  "7771e34c7266",
+  "8d35386086c1",
+  "f9838a1d27cc",
+  "8ea3a8960df5",
+  "0311e1bff5f9",
+  "013a9d905c84",
+  "70bd8fb1394b",
+  "638363cb4840"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1833,9 +1843,21 @@
   "University of the Arts Helsinki",
   "University of the Punjab"
  ],
- "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-11-10T09:13:07+00:00",
+ "pool": [
+  {
+   "id": "8d35386086c1",
+   "link": "https://www.insidehighered.com/news/government/politics-elections/2026/11/10/what-blue-wave-could-mean-future-tuition-equity",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "What the Blue Wave Could Mean for Future of Tuition Equity Laws",
+   "date": "2026-11-10T08:00:00+00:00",
+   "rating": 6.9,
+   "timely": 1,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 1,
+ "next_post_at": "2026-11-10T10:12:02+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2348,6 +2370,10 @@
   {
    "title": "Can at-home English testing be made “fit for purpose” for high-stakes decisions?",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "International Student Interest in U.S. Surges After Midterms",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
@@ -2355,7 +2381,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
