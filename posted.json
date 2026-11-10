@@ -1589,7 +1589,9 @@
   "1aca4268cb36",
   "7c5737398611",
   "262906979a82",
-  "c3e1058f416b"
+  "c3e1058f416b",
+  "9d4629ee7af9",
+  "f1e81eb74762"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1861,8 +1863,8 @@
   "University of the Philippines College of Medicine"
  ],
  "pool": [],
- "since_fact": 4,
- "next_post_at": "2026-11-10T16:52:49+00:00",
+ "since_fact": 5,
+ "next_post_at": "2026-11-10T17:55:48+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2391,13 +2393,17 @@
   {
    "title": "AIEC 2026: Australia rethinks its international education promise",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Global PBSA leaders outline China’s new student-centric era",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "Inside Higher Ed",
   "The PIE News",
   "Inside Higher Ed",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
