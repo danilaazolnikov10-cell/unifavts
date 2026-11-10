@@ -309,7 +309,8 @@
   "University of South Wales",
   "University of Portsmouth",
   "University of the Punjab",
-  "University of Huddersfield"
+  "University of Huddersfield",
+  "University of the Arts Helsinki"
  ],
  "seen": [
   "741cd072e273",
@@ -1554,7 +1555,13 @@
   "9746aded8a97",
   "814369afabb2",
   "95706a23d828",
-  "7a85f92df402"
+  "7a85f92df402",
+  "7e73d2ea927c",
+  "aa5ff3ce791b",
+  "ef1254c304ff",
+  "e109ed741d26",
+  "69d28f4480ab",
+  "1f204bc24230"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1824,7 +1831,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-10T02:48:21+00:00",
+ "next_post_at": "2026-11-10T03:45:49+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2340,9 +2347,9 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "MIT Technology Review",
   "ICEF Monitor",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
