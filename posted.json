@@ -308,7 +308,8 @@
   "University of Salford",
   "University of South Wales",
   "University of Portsmouth",
-  "University of the Punjab"
+  "University of the Punjab",
+  "University of Huddersfield"
  ],
  "seen": [
   "741cd072e273",
@@ -1551,7 +1552,9 @@
   "2efbd66871b2",
   "28ce724ae892",
   "9746aded8a97",
-  "814369afabb2"
+  "814369afabb2",
+  "95706a23d828",
+  "7a85f92df402"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1819,21 +1822,9 @@
   "University of the Arts Helsinki",
   "University of the Punjab"
  ],
- "pool": [
-  {
-   "id": "814369afabb2",
-   "link": "https://www.highereddive.com/news/researchers-and-faculty-sue-nsf-over-axing-of-its-social-science-unit/874186/",
-   "outlet": "Higher Ed Dive",
-   "kind": "admissions",
-   "title": "Researchers and faculty sue NSF over axing of its social science unit",
-   "date": "2026-11-09T16:09:01-05:00",
-   "rating": 6.6,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
+ "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-10T00:54:56+00:00",
+ "next_post_at": "2026-11-10T02:48:21+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2349,10 +2340,10 @@
   }
  ],
  "last_outlets": [
-  "NASA",
   "The PIE News",
   "MIT Technology Review",
   "ICEF Monitor",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
