@@ -1578,7 +1578,9 @@
   "638363cb4840",
   "ce9c9b01ef19",
   "1ab72461c1f3",
-  "d56bf69edde5"
+  "d56bf69edde5",
+  "bfb10c6b60c0",
+  "f5102ed338a2"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1846,21 +1848,9 @@
   "University of the Arts Helsinki",
   "University of the Punjab"
  ],
- "pool": [
-  {
-   "id": "8d35386086c1",
-   "link": "https://www.insidehighered.com/news/government/politics-elections/2026/11/10/what-blue-wave-could-mean-future-tuition-equity",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "What the Blue Wave Could Mean for Future of Tuition Equity Laws",
-   "date": "2026-11-10T08:00:00+00:00",
-   "rating": 6.9,
-   "timely": 1,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 2,
- "next_post_at": "2026-11-10T12:03:53+00:00",
+ "pool": [],
+ "since_fact": 3,
+ "next_post_at": "2026-11-10T12:49:26+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2381,14 +2371,18 @@
   {
    "title": "ASEAN-UK higher education partnerships must reflect local priorities",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "What the Blue Wave Could Mean for Future of Tuition Equity Laws",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "Inside Higher Ed",
-  "The PIE News"
+  "The PIE News",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
