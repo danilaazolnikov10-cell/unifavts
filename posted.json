@@ -1860,7 +1860,7 @@
   }
  ],
  "since_fact": 2,
- "next_post_at": "2026-11-10T11:12:49+00:00",
+ "next_post_at": "2026-11-10T12:03:53+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2486,7 +2486,7 @@
   "p_start",
   "q_harv"
  ],
- "tips_day": "2026-11-08",
+ "tips_day": "2026-11-10",
  "tips_hist": [
   "t_sat",
   "t_ed",
@@ -2500,6 +2500,7 @@
   "t_rank",
   "t_essay",
   "t_choose",
-  "t_sch_master"
+  "t_sch_master",
+  "t_sch_bach"
  ]
 }
