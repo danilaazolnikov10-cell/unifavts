@@ -1575,7 +1575,10 @@
   "0311e1bff5f9",
   "013a9d905c84",
   "70bd8fb1394b",
-  "638363cb4840"
+  "638363cb4840",
+  "ce9c9b01ef19",
+  "1ab72461c1f3",
+  "d56bf69edde5"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1856,8 +1859,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-11-10T10:12:02+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-11-10T11:12:49+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2374,14 +2377,18 @@
   {
    "title": "International Student Interest in U.S. Surges After Midterms",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "ASEAN-UK higher education partnerships must reflect local priorities",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
