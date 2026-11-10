@@ -1592,7 +1592,8 @@
   "262906979a82",
   "c3e1058f416b",
   "9d4629ee7af9",
-  "f1e81eb74762"
+  "f1e81eb74762",
+  "b0a4ee550888"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1861,11 +1862,12 @@
   "University of the Punjab",
   "University of the Philippines System",
   "University of the Philippines College of Law",
-  "University of the Philippines College of Medicine"
+  "University of the Philippines College of Medicine",
+  "National Taiwan University"
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-10T18:34:53+00:00",
+ "next_post_at": "2026-11-10T19:09:56+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
