@@ -1652,7 +1652,8 @@
   "198edc5850c5",
   "7b545b85fbda",
   "09523186b9fb",
-  "f74ad6e6388e"
+  "f74ad6e6388e",
+  "c10878433eb6"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1936,21 +1937,10 @@
    "rating": 6.1,
    "timely": 0,
    "tier": "reserve"
-  },
-  {
-   "id": "f74ad6e6388e",
-   "link": "https://monitor.icef.com/2026/11/uk-business-schools-report-declining-international-enrolments-and-predict-the-downturn-will-persist-through-2027/",
-   "outlet": "ICEF Monitor",
-   "kind": "admissions",
-   "title": "UK business schools report declining international enrolments and predict the downturn will persist through 2027",
-   "date": "2026-11-11T16:41:40+00:00",
-   "rating": 7.0,
-   "timely": 0,
-   "tier": "reserve"
   }
  ],
- "since_fact": 4,
- "next_post_at": "2026-11-11T17:59:59+00:00",
+ "since_fact": 5,
+ "next_post_at": "2026-11-11T18:53:16+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2499,14 +2489,18 @@
   {
    "title": "International business student decline could cost UK economy £4.2bn",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "UK business schools report declining international enrolments and predict the downturn will persist through 2027",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "Science News",
   "Inside Higher Ed",
-  "The PIE News"
+  "The PIE News",
+  "ICEF Monitor"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
