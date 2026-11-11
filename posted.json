@@ -1623,9 +1623,11 @@
   "8ce5a4dee6ae",
   "c36275f694ed",
   "f9d6dd73cb42",
-  "ee474b1952ae"
+  "ee474b1952ae",
+  "e3ae3f7870b4",
+  "ab5f69f98f7b"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1897,8 +1899,8 @@
   "University of Aarhus"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-11-11T10:59:26+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-11-11T12:10:56+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2431,6 +2433,10 @@
   {
    "title": "Global PBSA leaders outline China’s new student-centric era",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Exclusive: London Met returns to Bangladesh, warns of UKVI fallout",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
@@ -2438,7 +2444,7 @@
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
