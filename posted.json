@@ -1636,9 +1636,20 @@
   "1e328afeb6e1",
   "1c6f950365a2",
   "38c4fe1a117d",
-  "847ffdfabc65"
+  "847ffdfabc65",
+  "a0434e2ab4e8",
+  "6d6847df6c1e",
+  "3f792f275b1e",
+  "3d916f85ea4c",
+  "11016b521583",
+  "d9c803190003",
+  "8cb353c75883",
+  "25312ab78db4",
+  "dae66cb984f7",
+  "8355267b60b1",
+  "6aa13057a6f3"
  ],
- "last_kind": "science",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1910,8 +1921,8 @@
   "University of Aarhus"
  ],
  "pool": [],
- "since_fact": 2,
- "next_post_at": "2026-11-11T16:14:59+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-11-11T17:07:46+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2452,14 +2463,18 @@
   {
    "title": "Light is hard to block from every direction. This physicist found a way",
    "outlet": "Science News"
+  },
+  {
+   "title": "Longtime Hispanic Scholarship Now Open to All Students",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "The PIE News",
-  "Science News"
+  "Science News",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
