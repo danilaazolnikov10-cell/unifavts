@@ -1647,7 +1647,12 @@
   "25312ab78db4",
   "dae66cb984f7",
   "8355267b60b1",
-  "6aa13057a6f3"
+  "6aa13057a6f3",
+  "4b584d5b3fad",
+  "198edc5850c5",
+  "7b545b85fbda",
+  "09523186b9fb",
+  "f74ad6e6388e"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1920,9 +1925,32 @@
   "National Taiwan University",
   "University of Aarhus"
  ],
- "pool": [],
- "since_fact": 3,
- "next_post_at": "2026-11-11T17:07:46+00:00",
+ "pool": [
+  {
+   "id": "7b545b85fbda",
+   "link": "https://www.sciencealert.com/scientists-measure-gravitational-pull-between-the-smallest-objects-yet-in-quest-for-quantum-gravity",
+   "outlet": "ScienceAlert",
+   "kind": "science",
+   "title": "Scientists Measure Gravitational Pull Between The Smallest Objects Yet in Quest For Quantum Gravity",
+   "date": "2026-11-11T17:00:00+00:00",
+   "rating": 6.1,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "f74ad6e6388e",
+   "link": "https://monitor.icef.com/2026/11/uk-business-schools-report-declining-international-enrolments-and-predict-the-downturn-will-persist-through-2027/",
+   "outlet": "ICEF Monitor",
+   "kind": "admissions",
+   "title": "UK business schools report declining international enrolments and predict the downturn will persist through 2027",
+   "date": "2026-11-11T16:41:40+00:00",
+   "rating": 7.0,
+   "timely": 0,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 4,
+ "next_post_at": "2026-11-11T17:59:59+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2467,14 +2495,18 @@
   {
    "title": "Longtime Hispanic Scholarship Now Open to All Students",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "International business student decline could cost UK economy £4.2bn",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "The PIE News",
   "Science News",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
