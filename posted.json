@@ -1653,9 +1653,11 @@
   "7b545b85fbda",
   "09523186b9fb",
   "f74ad6e6388e",
-  "c10878433eb6"
+  "c10878433eb6",
+  "8afe2d6773d2",
+  "a0147b23b8bb"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1926,21 +1928,9 @@
   "National Taiwan University",
   "University of Aarhus"
  ],
- "pool": [
-  {
-   "id": "7b545b85fbda",
-   "link": "https://www.sciencealert.com/scientists-measure-gravitational-pull-between-the-smallest-objects-yet-in-quest-for-quantum-gravity",
-   "outlet": "ScienceAlert",
-   "kind": "science",
-   "title": "Scientists Measure Gravitational Pull Between The Smallest Objects Yet in Quest For Quantum Gravity",
-   "date": "2026-11-11T17:00:00+00:00",
-   "rating": 6.1,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 5,
- "next_post_at": "2026-11-11T18:53:16+00:00",
+ "pool": [],
+ "since_fact": 6,
+ "next_post_at": "2026-11-11T20:42:52+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2493,14 +2483,18 @@
   {
    "title": "UK business schools report declining international enrolments and predict the downturn will persist through 2027",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "Scientists Measure Gravitational Pull Between The Smallest Objects Yet in Quest For Quantum Gravity",
+   "outlet": "ScienceAlert"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Science News",
   "Inside Higher Ed",
   "The PIE News",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "ScienceAlert"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
