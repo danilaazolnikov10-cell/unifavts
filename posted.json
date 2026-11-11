@@ -1625,9 +1625,11 @@
   "f9d6dd73cb42",
   "ee474b1952ae",
   "e3ae3f7870b4",
-  "ab5f69f98f7b"
+  "ab5f69f98f7b",
+  "f5a977c5ee4b",
+  "1c7173c61705"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1899,8 +1901,8 @@
   "University of Aarhus"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-11-11T12:10:56+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-11-11T13:15:09+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2437,14 +2439,18 @@
   {
    "title": "Exclusive: London Met returns to Bangladesh, warns of UKVI fallout",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Light is hard to block from every direction. This physicist found a way",
+   "outlet": "Science News"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "The PIE News"
+  "The PIE News",
+  "Science News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
