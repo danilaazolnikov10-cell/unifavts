@@ -322,7 +322,8 @@
   "University of Białystok",
   "University of Tallinn",
   "University of Łódź",
-  "University of Kraków"
+  "University of Kraków",
+  "University of Gdańsk"
  ],
  "seen": [
   "741cd072e273",
@@ -1706,9 +1707,13 @@
   "4f938b3e6124",
   "d0db878e429d",
   "8bb408cacc66",
-  "14c088e766cd"
+  "14c088e766cd",
+  "d0cfea727dde",
+  "07356858caea",
+  "341a4664d13d",
+  "df2e9940ad34"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1988,8 +1993,8 @@
   "University of Rzeszów"
  ],
  "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-11-12T21:10:24+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-11-12T23:13:04+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2577,11 +2582,11 @@
   }
  ],
  "last_outlets": [
-  "ICEF Monitor",
   "ScienceAlert",
   "The PIE News",
   "Википедия",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
