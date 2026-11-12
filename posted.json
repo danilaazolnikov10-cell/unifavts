@@ -1679,7 +1679,11 @@
   "52642ec361c5",
   "6d521e6c6a31",
   "e8a2bc310ca5",
-  "dd3e1177b687"
+  "dd3e1177b687",
+  "9abf85280d9f",
+  "dac2a5cdb70b",
+  "4586c52b8bd4",
+  "9b120136d1a2"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1971,10 +1975,32 @@
    "rating": 6.1,
    "timely": 1,
    "tier": "reserve"
+  },
+  {
+   "id": "9abf85280d9f",
+   "link": "https://www.sciencealert.com/jwst-detects-a-forbidden-signal-never-before-seen-in-the-universe-not-even-in-a-lab",
+   "outlet": "ScienceAlert",
+   "kind": "science",
+   "title": "JWST Detects a 'Forbidden' Signal Never Before Seen in The Universe – Not Even in a Lab",
+   "date": "2026-11-12T12:00:00+00:00",
+   "rating": 6.8,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "dac2a5cdb70b",
+   "link": "https://thepienews.com/ai-can-improve-test-fairness-but-human-judgement-remains-vital/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "AI can improve test fairness, but human judgement remains vital",
+   "date": "2026-11-12T11:25:16+00:00",
+   "rating": 6.5,
+   "timely": 1,
+   "tier": "reserve"
   }
  ],
- "since_fact": 1,
- "next_post_at": "2026-11-12T11:41:18+00:00",
+ "since_fact": 2,
+ "next_post_at": "2026-11-12T12:35:56+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2535,14 +2561,18 @@
   {
    "title": "13 AGs Ask Supreme Court to Uphold Florida’s Stop WOKE Act",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Migration is essential to education and the Australian way of life",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
