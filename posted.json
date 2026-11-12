@@ -1670,9 +1670,18 @@
   "7465136bf7d2",
   "5f65a973a7e7",
   "25b9c6c58b62",
-  "2d81832da3e7"
+  "2d81832da3e7",
+  "e208d0b84893",
+  "7189260018ce",
+  "9d33b7b63dbb",
+  "0bf3f2e24927",
+  "ff0aa7c3b5cc",
+  "52642ec361c5",
+  "6d521e6c6a31",
+  "e8a2bc310ca5",
+  "dd3e1177b687"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1951,9 +1960,21 @@
   "University of Białystok",
   "University of Rzeszów"
  ],
- "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-11-12T09:34:43+00:00",
+ "pool": [
+  {
+   "id": "ff0aa7c3b5cc",
+   "link": "https://www.insidehighered.com/opinion/views/2026/11/12/whats-next-higher-ed-texas-opinion",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "What’s Next for Higher Ed in Texas?",
+   "date": "2026-11-12T08:00:00+00:00",
+   "rating": 6.1,
+   "timely": 1,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 1,
+ "next_post_at": "2026-11-12T10:32:19+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2510,14 +2531,18 @@
   {
    "title": "Scientists Measure Gravitational Pull Between The Smallest Objects Yet in Quest For Quantum Gravity",
    "outlet": "ScienceAlert"
+  },
+  {
+   "title": "13 AGs Ask Supreme Court to Uphold Florida’s Stop WOKE Act",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "ScienceAlert",
   "Википедия",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
