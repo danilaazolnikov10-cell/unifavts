@@ -1683,7 +1683,15 @@
   "9abf85280d9f",
   "dac2a5cdb70b",
   "4586c52b8bd4",
-  "9b120136d1a2"
+  "9b120136d1a2",
+  "56aae23ea0ec",
+  "8dfedd22892e",
+  "7f4c51747612",
+  "b02b6222521e",
+  "fa7c3c27c998",
+  "987c319c717c",
+  "fbc05e648916",
+  "6c51134bbe15"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -1999,8 +2007,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 2,
- "next_post_at": "2026-11-12T12:35:56+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-11-12T13:37:58+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2565,13 +2573,17 @@
   {
    "title": "Migration is essential to education and the Australian way of life",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "UK student visa applications down 31% as Russell Group warns of volatility",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "Inside Higher Ed",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
