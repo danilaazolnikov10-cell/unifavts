@@ -1691,7 +1691,11 @@
   "fa7c3c27c998",
   "987c319c717c",
   "fbc05e648916",
-  "6c51134bbe15"
+  "6c51134bbe15",
+  "617e7e3f8f37",
+  "17dcd545f05d",
+  "0884d348a400",
+  "e8dad5c8e21c"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2007,8 +2011,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 3,
- "next_post_at": "2026-11-12T13:37:58+00:00",
+ "since_fact": 4,
+ "next_post_at": "2026-11-12T14:53:32+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2577,14 +2581,18 @@
   {
    "title": "UK student visa applications down 31% as Russell Group warns of volatility",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Global survey tracks universities’ foreign enrolment for 2026 and outlook for 2027",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "Inside Higher Ed",
   "The PIE News",
-  "The PIE News"
+  "The PIE News",
+  "ICEF Monitor"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
