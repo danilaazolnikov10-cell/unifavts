@@ -318,7 +318,8 @@
   "University of the Philippines System",
   "National Taiwan University",
   "University of Aarhus",
-  "University of Silesia in Katowice"
+  "University of Silesia in Katowice",
+  "University of Białystok"
  ],
  "seen": [
   "741cd072e273",
@@ -1660,7 +1661,10 @@
   "6acfae0f84a0",
   "276aded12d2a",
   "76f24f87fb3a",
-  "0708a0cf0f92"
+  "0708a0cf0f92",
+  "a79560825366",
+  "d7ad22ed8273",
+  "e99a3aace497"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1943,7 +1947,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-12T05:08:24+00:00",
+ "next_post_at": "2026-11-12T06:04:55+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2503,10 +2507,10 @@
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "The PIE News",
   "ICEF Monitor",
   "ScienceAlert",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
