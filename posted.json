@@ -321,7 +321,8 @@
   "University of Silesia in Katowice",
   "University of Białystok",
   "University of Tallinn",
-  "University of Łódź"
+  "University of Łódź",
+  "University of Kraków"
  ],
  "seen": [
   "741cd072e273",
@@ -1702,9 +1703,11 @@
   "279ca1e27c4a",
   "8424de47fe34",
   "00161a5dd9a3",
-  "4f938b3e6124"
+  "4f938b3e6124",
+  "d0db878e429d",
+  "8bb408cacc66"
  ],
- "last_kind": "admissions",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1996,8 +1999,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 6,
- "next_post_at": "2026-11-12T17:58:21+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-11-12T18:49:30+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2582,10 +2585,10 @@
  ],
  "last_outlets": [
   "The PIE News",
-  "The PIE News",
   "ICEF Monitor",
   "ScienceAlert",
-  "The PIE News"
+  "The PIE News",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
