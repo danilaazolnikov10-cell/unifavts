@@ -1952,7 +1952,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-12T07:09:48+00:00",
+ "next_post_at": "2026-11-12T08:37:28+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2588,7 +2588,7 @@
  ],
  "article_day": "2026-11-12",
  "deadlines_week": "2026-46",
- "poll_day": "2026-11-11",
+ "poll_day": "2026-11-12",
  "poll_hist": [
   "p_country",
   "p_main",
@@ -2617,7 +2617,8 @@
   "quiz:MIT|Technical University of Munich|Tsinghua University",
   "p_start",
   "q_harv",
-  "q_cambr"
+  "q_cambr",
+  "quiz:Peking University|University of Illinois Urbana, Champaign|University of Zurich"
  ],
  "tips_day": "2026-11-10",
  "tips_hist": [
