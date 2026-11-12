@@ -317,7 +317,8 @@
   "University of the Philippines College of Medicine",
   "University of the Philippines System",
   "National Taiwan University",
-  "University of Aarhus"
+  "University of Aarhus",
+  "University of Silesia in Katowice"
  ],
  "seen": [
   "741cd072e273",
@@ -1661,7 +1662,7 @@
   "76f24f87fb3a",
   "0708a0cf0f92"
  ],
- "last_kind": "science",
+ "last_kind": "fact",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1941,8 +1942,8 @@
   "University of Rzeszów"
  ],
  "pool": [],
- "since_fact": 6,
- "next_post_at": "2026-11-12T03:02:08+00:00",
+ "since_fact": 0,
+ "next_post_at": "2026-11-12T04:11:10+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2502,11 +2503,11 @@
   }
  ],
  "last_outlets": [
-  "Science News",
   "Inside Higher Ed",
   "The PIE News",
   "ICEF Monitor",
-  "ScienceAlert"
+  "ScienceAlert",
+  "Википедия"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
