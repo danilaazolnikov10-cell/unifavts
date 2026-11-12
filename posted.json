@@ -323,7 +323,8 @@
   "University of Tallinn",
   "University of Łódź",
   "University of Kraków",
-  "University of Gdańsk"
+  "University of Gdańsk",
+  "University of Rzeszów"
  ],
  "seen": [
   "741cd072e273",
@@ -1711,7 +1712,10 @@
   "d0cfea727dde",
   "07356858caea",
   "341a4664d13d",
-  "df2e9940ad34"
+  "df2e9940ad34",
+  "011dda3f85c3",
+  "13473d74d879",
+  "bcc37ad3ad60"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1994,7 +1998,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-12T23:13:04+00:00",
+ "next_post_at": "2026-11-13T00:50:40+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2582,10 +2586,10 @@
   }
  ],
  "last_outlets": [
-  "ScienceAlert",
   "The PIE News",
   "Википедия",
   "Inside Higher Ed",
+  "Википедия",
   "Википедия"
  ],
  "arwu_year": 2026,
