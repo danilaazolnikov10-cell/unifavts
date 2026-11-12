@@ -1695,9 +1695,15 @@
   "617e7e3f8f37",
   "17dcd545f05d",
   "0884d348a400",
-  "e8dad5c8e21c"
+  "e8dad5c8e21c",
+  "1ede005b0c61",
+  "479072e2ddae",
+  "6786df56423f",
+  "279ca1e27c4a",
+  "8424de47fe34",
+  "00161a5dd9a3"
  ],
- "last_kind": "admissions",
+ "last_kind": "science",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -1989,17 +1995,6 @@
    "tier": "reserve"
   },
   {
-   "id": "9abf85280d9f",
-   "link": "https://www.sciencealert.com/jwst-detects-a-forbidden-signal-never-before-seen-in-the-universe-not-even-in-a-lab",
-   "outlet": "ScienceAlert",
-   "kind": "science",
-   "title": "JWST Detects a 'Forbidden' Signal Never Before Seen in The Universe – Not Even in a Lab",
-   "date": "2026-11-12T12:00:00+00:00",
-   "rating": 6.8,
-   "timely": 1,
-   "tier": "reserve"
-  },
-  {
    "id": "dac2a5cdb70b",
    "link": "https://thepienews.com/ai-can-improve-test-fairness-but-human-judgement-remains-vital/",
    "outlet": "The PIE News",
@@ -2011,8 +2006,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 4,
- "next_post_at": "2026-11-12T15:59:58+00:00",
+ "since_fact": 5,
+ "next_post_at": "2026-11-12T16:54:13+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2585,14 +2580,18 @@
   {
    "title": "Global survey tracks universities’ foreign enrolment for 2026 and outlook for 2027",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "JWST Detects a 'Forbidden' Signal Never Before Seen in The Universe – Not Even in a Lab",
+   "outlet": "ScienceAlert"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "Inside Higher Ed",
   "The PIE News",
   "The PIE News",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "ScienceAlert"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-05T15:52:40+00:00",
