@@ -1974,7 +1974,7 @@
   }
  ],
  "since_fact": 1,
- "next_post_at": "2026-11-12T10:32:19+00:00",
+ "next_post_at": "2026-11-12T11:41:18+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2646,7 +2646,7 @@
   "q_cambr",
   "quiz:Peking University|University of Illinois Urbana, Champaign|University of Zurich"
  ],
- "tips_day": "2026-11-10",
+ "tips_day": "2026-11-12",
  "tips_hist": [
   "t_sat",
   "t_ed",
@@ -2661,6 +2661,7 @@
   "t_essay",
   "t_choose",
   "t_sch_master",
-  "t_sch_bach"
+  "t_sch_bach",
+  "t_sch_search"
  ]
 }
