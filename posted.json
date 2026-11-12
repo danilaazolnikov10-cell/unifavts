@@ -319,7 +319,8 @@
   "National Taiwan University",
   "University of Aarhus",
   "University of Silesia in Katowice",
-  "University of Białystok"
+  "University of Białystok",
+  "University of Tallinn"
  ],
  "seen": [
   "741cd072e273",
@@ -1664,7 +1665,11 @@
   "0708a0cf0f92",
   "a79560825366",
   "d7ad22ed8273",
-  "e99a3aace497"
+  "e99a3aace497",
+  "7465136bf7d2",
+  "5f65a973a7e7",
+  "25b9c6c58b62",
+  "2d81832da3e7"
  ],
  "last_kind": "fact",
  "extra_universities": [
@@ -1947,7 +1952,7 @@
  ],
  "pool": [],
  "since_fact": 0,
- "next_post_at": "2026-11-12T06:04:55+00:00",
+ "next_post_at": "2026-11-12T07:09:48+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2507,9 +2512,9 @@
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "ICEF Monitor",
   "ScienceAlert",
+  "Википедия",
   "Википедия",
   "Википедия"
  ],
