@@ -1738,7 +1738,26 @@
   "23acedb47d7d",
   "5c02d83b68e5",
   "d5a1100783c7",
-  "9ad79be6a7ec"
+  "9ad79be6a7ec",
+  "15f02320804f",
+  "586c35e891d3",
+  "5b52327aa014",
+  "5eefb7321fbf",
+  "27c1c8ac1816",
+  "1cbd2bca9bd5",
+  "17ce9d884138",
+  "8c9408141f19",
+  "d3f2c1071d47",
+  "59a961630769",
+  "16a8a69cef3e",
+  "2f1bd71069ef",
+  "4952d5bce795",
+  "f1dbc25a6463",
+  "673e1144cf72",
+  "84e452452aa1",
+  "3cebc2227579",
+  "bcd1b15318a8",
+  "6111ca3be9f4"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2019,9 +2038,32 @@
   "University of Białystok",
   "University of Rzeszów"
  ],
- "pool": [],
- "since_fact": 1,
- "next_post_at": "2026-11-13T19:06:09+00:00",
+ "pool": [
+  {
+   "id": "27c1c8ac1816",
+   "link": "https://thepienews.com/5-bizarre-reasons-international-students-have-been-refused-visas/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "5 bizarre reasons international students have been refused visas",
+   "date": "2026-11-13T17:14:48+00:00",
+   "rating": 8.9,
+   "timely": 1,
+   "tier": "top"
+  },
+  {
+   "id": "59a961630769",
+   "link": "https://thepienews.com/access-for-whom/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Access for whom?",
+   "date": "2026-11-13T15:07:43+00:00",
+   "rating": 6.5,
+   "timely": 0,
+   "tier": "reserve"
+  }
+ ],
+ "since_fact": 2,
+ "next_post_at": "2026-11-14T01:22:50+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2610,14 +2652,18 @@
   {
    "title": "Brazil strengthens position as source market amid decline in global student mobility",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Florida University System Punts on Restoring Admission for Some Noncitizens",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "Википедия",
   "Википедия",
   "Википедия",
-  "The PIE News"
+  "The PIE News",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-13T04:56:39+00:00",
