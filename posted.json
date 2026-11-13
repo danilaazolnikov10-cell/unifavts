@@ -1736,9 +1736,11 @@
   "d8d326018be1",
   "b407c80137ae",
   "23acedb47d7d",
-  "5c02d83b68e5"
+  "5c02d83b68e5",
+  "d5a1100783c7",
+  "9ad79be6a7ec"
  ],
- "last_kind": "fact",
+ "last_kind": "admissions",
  "extra_universities": [
   "University of Sydney",
   "University of Auckland",
@@ -2018,8 +2020,8 @@
   "University of Rzeszów"
  ],
  "pool": [],
- "since_fact": 0,
- "next_post_at": "2026-11-13T10:36:56+00:00",
+ "since_fact": 1,
+ "next_post_at": "2026-11-13T11:58:56+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2604,14 +2606,18 @@
   {
    "title": "What’s Next for Higher Ed in Texas?",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Brazil strengthens position as source market amid decline in global student mobility",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "Inside Higher Ed",
   "Википедия",
   "Википедия",
-  "Википедия"
+  "Википедия",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-13T04:56:39+00:00",
