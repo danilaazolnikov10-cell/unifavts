@@ -2063,7 +2063,7 @@
   }
  ],
  "since_fact": 2,
- "next_post_at": "2026-11-14T05:32:18+00:00",
+ "next_post_at": "2026-11-14T12:37:55+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2739,7 +2739,7 @@
  ],
  "article_day": "2026-11-14",
  "deadlines_week": "2026-46",
- "poll_day": "2026-11-13",
+ "poll_day": "2026-11-14",
  "poll_hist": [
   "p_country",
   "p_main",
@@ -2770,7 +2770,8 @@
   "q_harv",
   "q_cambr",
   "quiz:Peking University|University of Illinois Urbana, Champaign|University of Zurich",
-  "quiz:Heidelberg University|The University of Texas MD Anderson Cancer Center|Tsinghua University"
+  "quiz:Heidelberg University|The University of Texas MD Anderson Cancer Center|Tsinghua University",
+  "q_oldest"
  ],
  "tips_day": "2026-11-12",
  "tips_hist": [
