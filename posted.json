@@ -1757,7 +1757,21 @@
   "84e452452aa1",
   "3cebc2227579",
   "bcd1b15318a8",
-  "6111ca3be9f4"
+  "6111ca3be9f4",
+  "7b3fa9f63382",
+  "240dae3e583f",
+  "5f466ebd3381",
+  "0b7ca146e1ee",
+  "df42fd5a2698",
+  "c43b9ae16815",
+  "d837e9eb2622",
+  "dc0bc5c2063c",
+  "d183c4afaa44",
+  "171b720aca8e",
+  "8afbf497212b",
+  "39136d85fce3",
+  "5dc94a16f599",
+  "33572078a0c6"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2040,17 +2054,6 @@
  ],
  "pool": [
   {
-   "id": "27c1c8ac1816",
-   "link": "https://thepienews.com/5-bizarre-reasons-international-students-have-been-refused-visas/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "5 bizarre reasons international students have been refused visas",
-   "date": "2026-11-13T17:14:48+00:00",
-   "rating": 8.9,
-   "timely": 1,
-   "tier": "top"
-  },
-  {
    "id": "59a961630769",
    "link": "https://thepienews.com/access-for-whom/",
    "outlet": "The PIE News",
@@ -2062,8 +2065,8 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 2,
- "next_post_at": "2026-11-14T18:39:56+00:00",
+ "since_fact": 3,
+ "next_post_at": "2026-11-15T00:18:17+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2656,14 +2659,18 @@
   {
    "title": "Florida University System Punts on Restoring Admission for Some Noncitizens",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "5 bizarre reasons international students have been refused visas",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
   "Википедия",
-  "Википедия",
   "The PIE News",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-13T04:56:39+00:00",
