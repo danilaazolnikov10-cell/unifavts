@@ -1771,7 +1771,9 @@
   "8afbf497212b",
   "39136d85fce3",
   "5dc94a16f599",
-  "33572078a0c6"
+  "33572078a0c6",
+  "70050eb51969",
+  "926454567bca"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2052,21 +2054,9 @@
   "University of Białystok",
   "University of Rzeszów"
  ],
- "pool": [
-  {
-   "id": "59a961630769",
-   "link": "https://thepienews.com/access-for-whom/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "Access for whom?",
-   "date": "2026-11-13T15:07:43+00:00",
-   "rating": 6.5,
-   "timely": 0,
-   "tier": "reserve"
-  }
- ],
- "since_fact": 3,
- "next_post_at": "2026-11-15T00:18:17+00:00",
+ "pool": [],
+ "since_fact": 4,
+ "next_post_at": "2026-11-15T03:27:18+00:00",
  "recent": [
   {
    "title": "Expanding College Success for Low-Income Students",
@@ -2663,13 +2653,17 @@
   {
    "title": "5 bizarre reasons international students have been refused visas",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Access for whom?",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "Википедия",
-  "Википедия",
   "The PIE News",
   "Inside Higher Ed",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
