@@ -1791,7 +1791,48 @@
   "5d04dde7507a",
   "b53dbb591be4",
   "78557d390fa9",
-  "b5ed721ca19e"
+  "b5ed721ca19e",
+  "2b0a435a8a48",
+  "bcabf23b97c0",
+  "835c03e96712",
+  "d622b8aed7bb",
+  "f53ce50f606b",
+  "f27f78fe7f3f",
+  "4e449716da96",
+  "52b415c3a5a5",
+  "6e0c614892de",
+  "689e78df5c10",
+  "149de7498bd8",
+  "9c493a96e3fa",
+  "c6377ff964f9",
+  "3032b77656db",
+  "1c9a0e24ee4a",
+  "a33fac057cba",
+  "d5212f1a926d",
+  "adba844aff17",
+  "cf45dc23a19d",
+  "9d183449ca70",
+  "2eb37a9d39b5",
+  "7cdbe86bc804",
+  "b36d837f79bc",
+  "c19b4349bac2",
+  "69cec50353a0",
+  "019575aece95",
+  "d9f515a3f9f0",
+  "e6b37f5da94e",
+  "c4ea9a5a749e",
+  "0baf2c27ca6a",
+  "4020571db03c",
+  "01f228174640",
+  "7930165fe14d",
+  "8baac7c02e26",
+  "5773dc77fc94",
+  "f172aed81570",
+  "e2c01c0c1fc1",
+  "2367153c7073",
+  "f15ba9f0eff3",
+  "698e6f56ce73",
+  "a4a9ade6731e"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2072,14 +2113,66 @@
   "University of Białystok",
   "University of Rzeszów"
  ],
- "pool": [],
- "since_fact": 4,
- "next_post_at": "2026-11-16T18:26:12+00:00",
- "recent": [
+ "pool": [
   {
-   "title": "Expanding College Success for Low-Income Students",
-   "outlet": "Inside Higher Ed"
+   "id": "4e449716da96",
+   "link": "https://monitor.icef.com/2026/11/new-international-enrolments-in-us-fell-18-in-2025-26-new-data-says-trend-is-continuing/",
+   "outlet": "ICEF Monitor",
+   "kind": "admissions",
+   "title": "New international enrolments in US fell -18% in 2025/26; new data says trend is continuing",
+   "date": "2026-11-16T22:33:57+00:00",
+   "rating": 7.6,
+   "timely": 1,
+   "tier": "top"
   },
+  {
+   "id": "d5212f1a926d",
+   "link": "https://thepienews.com/tighter-compliance-not-tactic-to-manage-international-student-numbers-says-uk-home-office/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Tighter compliance not tactic to manage international student numbers, says UK Home Office",
+   "date": "2026-11-16T16:26:11+00:00",
+   "rating": 7.3,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "8baac7c02e26",
+   "link": "https://thepienews.com/us-total-number-of-international-students-drops-for-first-time-in-five-years/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "US: Total number of international students drops for first time in five years",
+   "date": "2026-11-16T10:18:51+00:00",
+   "rating": 9.0,
+   "timely": 1,
+   "tier": "top"
+  },
+  {
+   "id": "f15ba9f0eff3",
+   "link": "https://www.insidehighered.com/news/government/science-research-policy/2026/11/16/nsf-may-finally-get-director-will-anything",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "NSF May Finally Get a Director. It’s Unclear What That Would Change.",
+   "date": "2026-11-16T08:00:00+00:00",
+   "rating": 6.6,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "a4a9ade6731e",
+   "link": "https://www.insidehighered.com/news/global/international-students-us/2026/11/16/international-student-enrollment-down-9-fall-2026",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "International Student Enrollment Down 9% in Fall 2026",
+   "date": "2026-11-16T08:00:00+00:00",
+   "rating": 8.0,
+   "timely": 1,
+   "tier": "top"
+  }
+ ],
+ "since_fact": 5,
+ "next_post_at": "2026-11-17T03:00:31+00:00",
+ "recent": [
   {
    "title": "Ireland’s international education challenge is access, not demand",
    "outlet": "The PIE News"
@@ -2675,14 +2768,18 @@
   {
    "title": "Access for whom?",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Breaking news: US court strikes down rule that would have ended Duration of Status (D/S) for international students",
+   "outlet": "ICEF Monitor"
   }
  ],
  "last_outlets": [
-  "Википедия",
   "The PIE News",
   "Inside Higher Ed",
   "The PIE News",
-  "The PIE News"
+  "The PIE News",
+  "ICEF Monitor"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-13T04:56:39+00:00",
