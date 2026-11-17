@@ -2171,7 +2171,7 @@
   }
  ],
  "since_fact": 5,
- "next_post_at": "2026-11-17T10:20:54+00:00",
+ "next_post_at": "2026-11-17T19:11:12+00:00",
  "recent": [
   {
    "title": "Ireland’s international education challenge is access, not demand",
@@ -2783,7 +2783,7 @@
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-13T04:56:39+00:00",
- "ranking_day": "2026-11-16",
+ "ranking_day": "2026-11-17",
  "rank_hist": [
   "arwus:2026:0",
   "gras:2026:AS0215",
@@ -2818,7 +2818,8 @@
   "grasc:2026:AS0401:France",
   "arwus:2026:30",
   "the_usa",
-  "arwuc:2026:United Kingdom"
+  "arwuc:2026:United Kingdom",
+  "gras:2026:AS0301"
  ],
  "profiled": [
   "Rockefeller University",
