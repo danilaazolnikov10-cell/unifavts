@@ -2223,7 +2223,7 @@
   }
  ],
  "since_fact": 6,
- "next_post_at": "2026-11-18T09:25:35+00:00",
+ "next_post_at": "2026-11-18T18:16:04+00:00",
  "recent": [
   {
    "title": "Survey: Majority of College Students Say Free Speech Threatened",
@@ -2835,7 +2835,7 @@
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-13T04:56:39+00:00",
- "ranking_day": "2026-11-17",
+ "ranking_day": "2026-11-18",
  "rank_hist": [
   "arwus:2026:0",
   "gras:2026:AS0215",
@@ -2871,7 +2871,8 @@
   "arwus:2026:30",
   "the_usa",
   "arwuc:2026:United Kingdom",
-  "gras:2026:AS0301"
+  "gras:2026:AS0301",
+  "records"
  ],
  "profiled": [
   "Rockefeller University",
