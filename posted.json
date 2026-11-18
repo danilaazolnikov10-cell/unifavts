@@ -1832,7 +1832,48 @@
   "2367153c7073",
   "f15ba9f0eff3",
   "698e6f56ce73",
-  "a4a9ade6731e"
+  "a4a9ade6731e",
+  "3cb267fed8c7",
+  "7c520d3f9c72",
+  "d71d8a041ca0",
+  "32110fc5e0f5",
+  "310b0bf5a829",
+  "69fee50cb49a",
+  "322fa129b2e5",
+  "33623c6d773d",
+  "63e33b4081ff",
+  "c00a30f7ecef",
+  "6a38a59720a4",
+  "6404bbe8c5c3",
+  "bcd64c149894",
+  "3feff6ed9928",
+  "20e2bf9ea4fd",
+  "ae6a51543db6",
+  "4541910cbbd9",
+  "604e8be395cb",
+  "86f07be892b0",
+  "ba0788f83e9f",
+  "5a54cb77fca1",
+  "15316cf2cd2a",
+  "6612879baba9",
+  "200e11e79525",
+  "6d5c06b1e0d8",
+  "f23b070fa6c8",
+  "cf69a4fedaab",
+  "4946bda7fe48",
+  "d7cfc27ad1e5",
+  "806fb125132f",
+  "eb98baebaaa3",
+  "74fe4ae9adab",
+  "07e8319dd236",
+  "fa2d7e6ce926",
+  "6b92840cdf40",
+  "8cc13912ab37",
+  "a817f3cab1e5",
+  "126b51258c06",
+  "ebde261133ee",
+  "8d6c711cf89f",
+  "b2a5abdbbfc3"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2137,17 +2178,6 @@
    "tier": "reserve"
   },
   {
-   "id": "8baac7c02e26",
-   "link": "https://thepienews.com/us-total-number-of-international-students-drops-for-first-time-in-five-years/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "US: Total number of international students drops for first time in five years",
-   "date": "2026-11-16T10:18:51+00:00",
-   "rating": 9.0,
-   "timely": 1,
-   "tier": "top"
-  },
-  {
    "id": "f15ba9f0eff3",
    "link": "https://www.insidehighered.com/news/government/science-research-policy/2026/11/16/nsf-may-finally-get-director-will-anything",
    "outlet": "Inside Higher Ed",
@@ -2168,15 +2198,33 @@
    "rating": 8.0,
    "timely": 1,
    "tier": "top"
+  },
+  {
+   "id": "63e33b4081ff",
+   "link": "https://www.technologyreview.com/2026/11/17/1148049/roundtables-inside-the-quest-for-cognitive-immortality/",
+   "outlet": "MIT Technology Review",
+   "kind": "science",
+   "title": "Roundtables: Inside the Quest for Cognitive Immortality",
+   "date": "2026-11-17T18:46:47+00:00",
+   "rating": 6.5,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "d7cfc27ad1e5",
+   "link": "https://thepienews.com/hong-kong-takes-three-of-asias-top-five-places-in-qs-university-rankings/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Hong Kong takes three of Asia’s top five places in QS university rankings",
+   "date": "2026-11-17T11:49:28+00:00",
+   "rating": 7.5,
+   "timely": 0,
+   "tier": "reserve"
   }
  ],
- "since_fact": 5,
- "next_post_at": "2026-11-17T19:11:12+00:00",
+ "since_fact": 6,
+ "next_post_at": "2026-11-18T03:13:00+00:00",
  "recent": [
-  {
-   "title": "Ireland’s international education challenge is access, not demand",
-   "outlet": "The PIE News"
-  },
   {
    "title": "Survey: Majority of College Students Say Free Speech Threatened",
    "outlet": "Inside Higher Ed"
@@ -2772,14 +2820,18 @@
   {
    "title": "Breaking news: US court strikes down rule that would have ended Duration of Status (D/S) for international students",
    "outlet": "ICEF Monitor"
+  },
+  {
+   "title": "US: Total number of international students drops for first time in five years",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Inside Higher Ed",
   "The PIE News",
   "The PIE News",
-  "ICEF Monitor"
+  "ICEF Monitor",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-13T04:56:39+00:00",
