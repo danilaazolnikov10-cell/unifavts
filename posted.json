@@ -1873,7 +1873,47 @@
   "126b51258c06",
   "ebde261133ee",
   "8d6c711cf89f",
-  "b2a5abdbbfc3"
+  "b2a5abdbbfc3",
+  "ed969136d553",
+  "b1e6933c0ea0",
+  "2b43fabf0350",
+  "af5d0c9506bd",
+  "0e229a79566c",
+  "4f40dc855b51",
+  "9b896caf0bb4",
+  "fa9282dc2fee",
+  "4860f27995d2",
+  "883e59987eb4",
+  "69bbe9808d15",
+  "49c56cb191c4",
+  "8a7ec3734b98",
+  "7adf4d298b3b",
+  "e7b1fb348415",
+  "a8c81f68cdcd",
+  "bb3ee1cf50e2",
+  "a9ca4a0e8643",
+  "a32ebac4c407",
+  "3b512e5d8837",
+  "2abb0041b00c",
+  "5fe5c48115f1",
+  "9755352155b6",
+  "d6d7c9810020",
+  "f9401287c2ce",
+  "68a44d63a594",
+  "f6625ca47cad",
+  "628e5b47dfdd",
+  "d4dab4e3b2e4",
+  "b5128f6cb027",
+  "66e9082e751b",
+  "d1dd49b4f83d",
+  "d48c52a82952",
+  "5611404ff97c",
+  "dd372e073c80",
+  "7ac6719965f5",
+  "2f76b766c0a8",
+  "6fe917153413",
+  "19e29ec3dde0",
+  "6fd01b8544f3"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2220,15 +2260,55 @@
    "rating": 7.5,
    "timely": 0,
    "tier": "reserve"
+  },
+  {
+   "id": "69bbe9808d15",
+   "link": "https://thepienews.com/independent-he-grows-as-minister-signals-enormous-opportunities/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Independent HE grows as minister signals “enormous opportunities”",
+   "date": "2026-11-18T16:44:05+00:00",
+   "rating": 6.5,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "d6d7c9810020",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261116023358.htm",
+   "outlet": "ScienceDaily",
+   "kind": "science",
+   "title": "New discovery reveals what may be holding back room-temperature superconductors",
+   "date": "2026-11-18T07:16:46-05:00",
+   "rating": 6.0,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "f9401287c2ce",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261114202137.htm",
+   "outlet": "ScienceDaily",
+   "kind": "science",
+   "title": "MIT discovers that aging weakens the brain’s nighttime cleaning system",
+   "date": "2026-11-18T07:06:44-05:00",
+   "rating": 6.0,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "68a44d63a594",
+   "link": "https://hechingerreport.org/job-pipelines-for-black-and-latino-students-dry-up-after-dei-and-affirmative-action-attacks/",
+   "outlet": "The Hechinger Report",
+   "kind": "admissions",
+   "title": "Job pipelines for Black and Latino students ‘dry up’ after attacks on DEI and affirmative action",
+   "date": "2026-11-18T12:05:00+00:00",
+   "rating": 7.6,
+   "timely": 1,
+   "tier": "top"
   }
  ],
- "since_fact": 6,
- "next_post_at": "2026-11-18T18:16:04+00:00",
+ "since_fact": 7,
+ "next_post_at": "2026-11-19T00:46:32+00:00",
  "recent": [
-  {
-   "title": "Survey: Majority of College Students Say Free Speech Threatened",
-   "outlet": "Inside Higher Ed"
-  },
   {
    "title": "Administrative clarity in TNE: Making the student journey easier to navigate",
    "outlet": "ICEF Monitor"
@@ -2824,13 +2904,17 @@
   {
    "title": "US: Total number of international students drops for first time in five years",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "UKVI rejects 80% of students called to interview as visa refusals surge",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "The PIE News",
   "The PIE News",
   "ICEF Monitor",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
