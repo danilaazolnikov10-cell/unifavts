@@ -1913,7 +1913,50 @@
   "2f76b766c0a8",
   "6fe917153413",
   "19e29ec3dde0",
-  "6fd01b8544f3"
+  "6fd01b8544f3",
+  "1208f01e00a6",
+  "313ed2109cc5",
+  "cdc41c056ae3",
+  "472edcef85ab",
+  "7389df7e2409",
+  "0211446d57a5",
+  "a28849f44b1f",
+  "fb8fc283801a",
+  "5773e6a4f571",
+  "8057805ccf2b",
+  "230e1560daf2",
+  "470f7b58a80a",
+  "634743bc9709",
+  "4cc59e849f09",
+  "de9900e9f86f",
+  "20cee07f23a9",
+  "f6f9e873ea54",
+  "0011ae0145f0",
+  "3ecaa487d95b",
+  "200c26dcc801",
+  "a06e4be6a937",
+  "cced664dad6e",
+  "8b988991748a",
+  "93aa0cf86ec7",
+  "98f0f0a59340",
+  "7b4a931179c9",
+  "acf1fa3f77ee",
+  "e5355563bf3f",
+  "c1a94137cff8",
+  "c22ef799b26b",
+  "32eccf25d0fe",
+  "74c3a4de10a6",
+  "7c4674c9d85d",
+  "ea5b9b04bede",
+  "ebc23be71f87",
+  "49bed2427020",
+  "41b2424ff360",
+  "a0ea1ce05d1c",
+  "0c57e789aab0",
+  "158426426e7d",
+  "b7e52b65eb9b",
+  "6a992e18bccb",
+  "e23ee2ffb4c5"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2295,24 +2338,97 @@
    "tier": "reserve"
   },
   {
-   "id": "68a44d63a594",
-   "link": "https://hechingerreport.org/job-pipelines-for-black-and-latino-students-dry-up-after-dei-and-affirmative-action-attacks/",
-   "outlet": "The Hechinger Report",
+   "id": "0211446d57a5",
+   "link": "https://thepienews.com/former-bmi-founders-launch-new-international-education-events-company/",
+   "outlet": "The PIE News",
    "kind": "admissions",
-   "title": "Job pipelines for Black and Latino students ‘dry up’ after attacks on DEI and affirmative action",
-   "date": "2026-11-18T12:05:00+00:00",
-   "rating": 7.6,
+   "title": "Former BMI founders launch new international education events company",
+   "date": "2026-11-19T18:03:20+00:00",
+   "rating": 6.5,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "a28849f44b1f",
+   "link": "https://thepienews.com/what-the-cpt-dispute-reveals-about-the-promise-of-a-us-education/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "What the CPT dispute reveals about the promise of a US education",
+   "date": "2026-11-19T17:56:14+00:00",
+   "rating": 7.5,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "fb8fc283801a",
+   "link": "https://thepienews.com/home-office-has-hung-together-all-uk-unis-think-tank-warns/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Home Office has “hung together” all UK unis, think tank warns",
+   "date": "2026-11-19T17:42:55+00:00",
+   "rating": 6.5,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "20cee07f23a9",
+   "link": "https://thepienews.com/a-major-relief-us-stakeholders-react-to-duration-of-status-reprieve/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "“A major relief”: US stakeholders react to Duration of Status reprieve",
+   "date": "2026-11-19T13:22:20+00:00",
+   "rating": 8.4,
    "timely": 1,
    "tier": "top"
+  },
+  {
+   "id": "3ecaa487d95b",
+   "link": "https://thepienews.com/record-400m-erasmus-funding-opens-international-opportunities-for-uk/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Record £400m Erasmus+ funding opens international opportunities for UK",
+   "date": "2026-11-19T12:54:40+00:00",
+   "rating": 7.5,
+   "timely": 1,
+   "tier": "top"
+  },
+  {
+   "id": "acf1fa3f77ee",
+   "link": "https://www.insidehighered.com/news/admissions/traditional-age/2026/11/19/will-more-international-students-enroll-next-year",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "Will More International Students Enroll Next Year?",
+   "date": "2026-11-19T08:00:00+00:00",
+   "rating": 6.9,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "c1a94137cff8",
+   "link": "https://www.insidehighered.com/news/admissions/adult-post-traditional/2026/11/19/more-million-stop-outs-returned-school-2024-25",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "More Than a Million Stop-Outs Returned to School in 2024–25",
+   "date": "2026-11-19T08:00:00+00:00",
+   "rating": 6.0,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "ebc23be71f87",
+   "link": "https://thepienews.com/shoolini-and-edinburgh-partner-on-engineering-degrees-across-india-and-the-uk/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Shoolini and Edinburgh partner on engineering degrees across India and the UK",
+   "date": "2026-11-19T05:30:00+00:00",
+   "rating": 6.5,
+   "timely": 0,
+   "tier": "reserve"
   }
  ],
- "since_fact": 7,
- "next_post_at": "2026-11-19T14:17:10+00:00",
+ "since_fact": 8,
+ "next_post_at": "2026-11-19T23:06:32+00:00",
  "recent": [
-  {
-   "title": "Administrative clarity in TNE: Making the student journey easier to navigate",
-   "outlet": "ICEF Monitor"
-  },
   {
    "title": "TrustEd framework and consistent visa process should enhance Ireland’s position",
    "outlet": "The PIE News"
@@ -2908,14 +3024,18 @@
   {
    "title": "UKVI rejects 80% of students called to interview as visa refusals surge",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Job pipelines for Black and Latino students ‘dry up’ after attacks on DEI and affirmative action",
+   "outlet": "The Hechinger Report"
   }
  ],
  "last_outlets": [
   "The PIE News",
-  "The PIE News",
   "ICEF Monitor",
   "The PIE News",
-  "The PIE News"
+  "The PIE News",
+  "The Hechinger Report"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-13T04:56:39+00:00",
