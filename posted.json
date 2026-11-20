@@ -1956,7 +1956,33 @@
   "158426426e7d",
   "b7e52b65eb9b",
   "6a992e18bccb",
-  "e23ee2ffb4c5"
+  "e23ee2ffb4c5",
+  "188bc2ecf408",
+  "bf367e0ac21f",
+  "6e15cb24f2c8",
+  "8da598244bbc",
+  "366c86cd47e1",
+  "e9ee07cbdc82",
+  "e6d126c7a138",
+  "cd4974df67e1",
+  "ed432ce5b905",
+  "e90d61333e76",
+  "9ee2f3c8f52f",
+  "c99b4176b04b",
+  "34e42e1f26e5",
+  "d750709df889",
+  "79a7e2d0cf50",
+  "73c78aa6eff9",
+  "1867c408e61c",
+  "8de839b62dd0",
+  "1978c7b347c3",
+  "005e5629dbf4",
+  "df52f23daad9",
+  "25b27a09eb2f",
+  "4a8eb2237af9",
+  "adb130866a5e",
+  "4cb0de891c19",
+  "96fc81785713"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2371,17 +2397,6 @@
    "tier": "reserve"
   },
   {
-   "id": "20cee07f23a9",
-   "link": "https://thepienews.com/a-major-relief-us-stakeholders-react-to-duration-of-status-reprieve/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "“A major relief”: US stakeholders react to Duration of Status reprieve",
-   "date": "2026-11-19T13:22:20+00:00",
-   "rating": 8.4,
-   "timely": 1,
-   "tier": "top"
-  },
-  {
    "id": "3ecaa487d95b",
    "link": "https://thepienews.com/record-400m-erasmus-funding-opens-international-opportunities-for-uk/",
    "outlet": "The PIE News",
@@ -2424,15 +2439,33 @@
    "rating": 6.5,
    "timely": 0,
    "tier": "reserve"
+  },
+  {
+   "id": "8da598244bbc",
+   "link": "https://www.highereddive.com/news/senate-appropriations-committee-proposes-15b-in-additional-pell-grant-fund/875275/",
+   "outlet": "Higher Ed Dive",
+   "kind": "admissions",
+   "title": "Senate appropriations committee proposes $15B in additional Pell Grant funding",
+   "date": "2026-11-19T17:57:00-05:00",
+   "rating": 7.6,
+   "timely": 1,
+   "tier": "top"
+  },
+  {
+   "id": "79a7e2d0cf50",
+   "link": "https://www.highereddive.com/news/passhe-moves-to-close-commonwealth-universitys-mansfield-campus/875127/",
+   "outlet": "Higher Ed Dive",
+   "kind": "admissions",
+   "title": "PASSHE moves to close Commonwealth University’s Mansfield campus",
+   "date": "2026-11-18T16:18:04-05:00",
+   "rating": 6.0,
+   "timely": 0,
+   "tier": "reserve"
   }
  ],
- "since_fact": 8,
- "next_post_at": "2026-11-19T23:06:32+00:00",
+ "since_fact": 9,
+ "next_post_at": "2026-11-20T04:20:43+00:00",
  "recent": [
-  {
-   "title": "TrustEd framework and consistent visa process should enhance Ireland’s position",
-   "outlet": "The PIE News"
-  },
   {
    "title": "AI reveals a hidden chemical shortcut that could turn CO2 into fuel",
    "outlet": "ScienceDaily"
@@ -3028,14 +3061,18 @@
   {
    "title": "Job pipelines for Black and Latino students ‘dry up’ after attacks on DEI and affirmative action",
    "outlet": "The Hechinger Report"
+  },
+  {
+   "title": "“A major relief”: US stakeholders react to Duration of Status reprieve",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "ICEF Monitor",
   "The PIE News",
   "The PIE News",
-  "The Hechinger Report"
+  "The Hechinger Report",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-13T04:56:39+00:00",
