@@ -2464,7 +2464,7 @@
   }
  ],
  "since_fact": 9,
- "next_post_at": "2026-11-20T11:51:55+00:00",
+ "next_post_at": "2026-11-20T20:20:25+00:00",
  "recent": [
   {
    "title": "AI reveals a hidden chemical shortcut that could turn CO2 into fuel",
@@ -3076,7 +3076,7 @@
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-20T11:15:11+00:00",
- "ranking_day": "2026-11-18",
+ "ranking_day": "2026-11-20",
  "rank_hist": [
   "arwus:2026:0",
   "gras:2026:AS0215",
@@ -3113,7 +3113,8 @@
   "the_usa",
   "arwuc:2026:United Kingdom",
   "gras:2026:AS0301",
-  "records"
+  "records",
+  "grasc:2026:AS0202:Australia"
  ],
  "profiled": [
   "Rockefeller University",
