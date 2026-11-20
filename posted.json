@@ -2464,7 +2464,7 @@
   }
  ],
  "since_fact": 9,
- "next_post_at": "2026-11-20T04:20:43+00:00",
+ "next_post_at": "2026-11-20T11:51:55+00:00",
  "recent": [
   {
    "title": "AI reveals a hidden chemical shortcut that could turn CO2 into fuel",
@@ -3075,7 +3075,7 @@
   "The PIE News"
  ],
  "arwu_year": 2026,
- "arwu_year_at": "2026-11-13T04:56:39+00:00",
+ "arwu_year_at": "2026-11-20T11:15:11+00:00",
  "ranking_day": "2026-11-18",
  "rank_hist": [
   "arwus:2026:0",
@@ -3154,9 +3154,11 @@
   "Central South University",
   "Harbin Institute of Technology",
   "University of Wisconsin, Madison",
-  "University of British Columbia"
+  "University of British Columbia",
+  "Shanghai Jiao Tong University",
+  "The University of Hong Kong"
  ],
- "article_day": "2026-11-19",
+ "article_day": "2026-11-20",
  "deadlines_week": "2026-47",
  "poll_day": "2026-11-14",
  "poll_hist": [
