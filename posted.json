@@ -1982,7 +1982,48 @@
   "4a8eb2237af9",
   "adb130866a5e",
   "4cb0de891c19",
-  "96fc81785713"
+  "96fc81785713",
+  "956a058c400b",
+  "b9c4b08fe391",
+  "b61998a18fb4",
+  "85fccf34df79",
+  "d3ad5848c745",
+  "a3382425d928",
+  "9d844413d676",
+  "ce0488e4a493",
+  "2c15e84b8a09",
+  "6b4cce5b4dd0",
+  "01449c61c8b8",
+  "a71b60cf74f5",
+  "57bebe29f83b",
+  "9d809e313004",
+  "3c75783da394",
+  "c965cd185399",
+  "0b326858acc9",
+  "afdc57f42f35",
+  "488f394ae9e8",
+  "fe11507ed1d3",
+  "39197d6b88a4",
+  "1f7371d321a7",
+  "a58d5865f701",
+  "6e01833fee6b",
+  "3321894c5bc6",
+  "52d235f865f7",
+  "8821ec0b4e9f",
+  "8ea20efb7ee8",
+  "6fb6c5dbfecc",
+  "c7d082a2fae2",
+  "02c54d21b0ee",
+  "a1b478f90829",
+  "f8b596fc9a74",
+  "ab876f7602cc",
+  "396ef269752c",
+  "c5b9e307ec52",
+  "0f9423ccc016",
+  "85eb88373637",
+  "7d625a5cccdb",
+  "ea6f6bfd95ee",
+  "47da8a8df212"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2273,7 +2314,7 @@
    "date": "2026-11-16T22:33:57+00:00",
    "rating": 7.6,
    "timely": 1,
-   "tier": "top"
+   "tier": "reserve"
   },
   {
    "id": "d5212f1a926d",
@@ -2306,7 +2347,7 @@
    "date": "2026-11-16T08:00:00+00:00",
    "rating": 8.0,
    "timely": 1,
-   "tier": "top"
+   "tier": "reserve"
   },
   {
    "id": "63e33b4081ff",
@@ -2461,15 +2502,110 @@
    "rating": 6.0,
    "timely": 0,
    "tier": "reserve"
+  },
+  {
+   "id": "ce0488e4a493",
+   "link": "https://www.sciencenews.org/article/super-el-nino-historic-effect-hurricane",
+   "outlet": "Science News",
+   "kind": "science",
+   "title": "This year’s El Niño is unlike any other on record",
+   "date": "2026-11-20T21:00:00+00:00",
+   "rating": 6.0,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "01449c61c8b8",
+   "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+   "outlet": "MIT Technology Review",
+   "kind": "science",
+   "title": "The most misunderstood graph in AI just got a major update",
+   "date": "2026-11-20T18:15:15+00:00",
+   "rating": 6.6,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "c965cd185399",
+   "link": "https://thepienews.com/200k-uk-eu-youth-mobility-places-agreed-as-tuition-fee-decision-delayed/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "200k UK-EU youth mobility places agreed as tuition fee decision delayed",
+   "date": "2026-11-20T15:40:47+00:00",
+   "rating": 7.9,
+   "timely": 1,
+   "tier": "top"
+  },
+  {
+   "id": "1f7371d321a7",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261119194525.htm",
+   "outlet": "ScienceDaily",
+   "kind": "science",
+   "title": "Scientists turn Moon dust into LEGO-like bricks for future lunar bases",
+   "date": "2026-11-20T07:34:56-05:00",
+   "rating": 6.5,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "3321894c5bc6",
+   "link": "https://thepienews.com/a-one-year-decline-is-not-a-one-year-problem-americas-shrinking-talent-pipeline/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "“A one-year decline is not a one-year problem”: America’s shrinking talent pipeline",
+   "date": "2026-11-20T10:48:17+00:00",
+   "rating": 9.0,
+   "timely": 1,
+   "tier": "top"
+  },
+  {
+   "id": "6fb6c5dbfecc",
+   "link": "https://www.insidehighered.com/news/admissions/graduate/2026/11/20/latest-law-school-data-shows-20-year-low-acceptance-rate",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "Latest Law School Data Shows Lowest Acceptance Rate Since 2006",
+   "date": "2026-11-20T08:00:00+00:00",
+   "rating": 6.0,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "c7d082a2fae2",
+   "link": "https://www.insidehighered.com/news/governance/accreditation/2026/11/20/how-will-trumps-new-rule-change-programmatic-accreditation",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "New Rule Changes the Future of Programmatic Accreditation",
+   "date": "2026-11-20T08:00:00+00:00",
+   "rating": 6.6,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "0f9423ccc016",
+   "link": "https://www.sciencealert.com/physicists-propose-a-hidden-periodic-table-of-dark-matter",
+   "outlet": "ScienceAlert",
+   "kind": "science",
+   "title": "Physicists Propose a Hidden Periodic Table of Dark Matter",
+   "date": "2026-11-20T06:00:00+00:00",
+   "rating": 6.2,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "47da8a8df212",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261118065531.htm",
+   "outlet": "ScienceDaily",
+   "kind": "science",
+   "title": "A 3-million-year-old child just made human evolution far more complicated",
+   "date": "2026-11-19T22:17:52-05:00",
+   "rating": 6.1,
+   "timely": 0,
+   "tier": "reserve"
   }
  ],
- "since_fact": 9,
- "next_post_at": "2026-11-20T20:20:25+00:00",
+ "since_fact": 10,
+ "next_post_at": "2026-11-21T02:16:23+00:00",
  "recent": [
-  {
-   "title": "AI reveals a hidden chemical shortcut that could turn CO2 into fuel",
-   "outlet": "ScienceDaily"
-  },
   {
    "title": "Gene therapy and special goggles give some blind people limited sight",
    "outlet": "Science News"
@@ -3065,14 +3201,18 @@
   {
    "title": "“A major relief”: US stakeholders react to Duration of Status reprieve",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Judge Blocks DHS Restrictions on International Student Internships",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "ICEF Monitor",
   "The PIE News",
   "The PIE News",
   "The Hechinger Report",
-  "The PIE News"
+  "The PIE News",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-20T11:15:11+00:00",
