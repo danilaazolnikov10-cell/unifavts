@@ -2604,7 +2604,7 @@
   }
  ],
  "since_fact": 10,
- "next_post_at": "2026-11-21T08:20:52+00:00",
+ "next_post_at": "2026-11-21T16:10:10+00:00",
  "recent": [
   {
    "title": "Gene therapy and special goggles give some blind people limited sight",
@@ -3216,7 +3216,7 @@
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-20T11:15:11+00:00",
- "ranking_day": "2026-11-20",
+ "ranking_day": "2026-11-21",
  "rank_hist": [
   "arwus:2026:0",
   "gras:2026:AS0215",
@@ -3254,7 +3254,8 @@
   "arwuc:2026:United Kingdom",
   "gras:2026:AS0301",
   "records",
-  "grasc:2026:AS0202:Australia"
+  "grasc:2026:AS0202:Australia",
+  "grasc:2026:AS0103:United States"
  ],
  "profiled": [
   "Rockefeller University",
