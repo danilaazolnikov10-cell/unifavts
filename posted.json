@@ -2023,7 +2023,30 @@
   "85eb88373637",
   "7d625a5cccdb",
   "ea6f6bfd95ee",
-  "47da8a8df212"
+  "47da8a8df212",
+  "1b3116f25108",
+  "a5d16485fa2c",
+  "3cb65bbf8205",
+  "5c0487ac07a1",
+  "88875db0d172",
+  "7abc5bc9e674",
+  "f025afeb57c9",
+  "be7efb155272",
+  "42f91793f3ba",
+  "18bc28c1ba92",
+  "6c106c9fc1f6",
+  "39db11e0045f",
+  "2c9d704d8349",
+  "082418afe15d",
+  "e569459c8753",
+  "de05828c7469",
+  "11c4cdc3af2a",
+  "9f54447fad30",
+  "5a4b566bfea6",
+  "4c9896fc58b7",
+  "de4e289ea610",
+  "a6f299bb7eb0",
+  "774d92d73f68"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2548,17 +2571,6 @@
    "tier": "reserve"
   },
   {
-   "id": "3321894c5bc6",
-   "link": "https://thepienews.com/a-one-year-decline-is-not-a-one-year-problem-americas-shrinking-talent-pipeline/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "“A one-year decline is not a one-year problem”: America’s shrinking talent pipeline",
-   "date": "2026-11-20T10:48:17+00:00",
-   "rating": 9.0,
-   "timely": 1,
-   "tier": "top"
-  },
-  {
    "id": "6fb6c5dbfecc",
    "link": "https://www.insidehighered.com/news/admissions/graduate/2026/11/20/latest-law-school-data-shows-20-year-low-acceptance-rate",
    "outlet": "Inside Higher Ed",
@@ -2603,13 +2615,9 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 10,
- "next_post_at": "2026-11-21T16:10:10+00:00",
+ "since_fact": 11,
+ "next_post_at": "2026-11-21T22:27:36+00:00",
  "recent": [
-  {
-   "title": "Gene therapy and special goggles give some blind people limited sight",
-   "outlet": "Science News"
-  },
   {
    "title": "ITECA warns Australian policy is “choking” international education and skills pipeline",
    "outlet": "The PIE News"
@@ -3205,14 +3213,18 @@
   {
    "title": "Judge Blocks DHS Restrictions on International Student Internships",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "“A one-year decline is not a one-year problem”: America’s shrinking talent pipeline",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "The PIE News",
-  "The PIE News",
   "The Hechinger Report",
   "The PIE News",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-20T11:15:11+00:00",
