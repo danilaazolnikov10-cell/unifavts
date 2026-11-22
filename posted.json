@@ -2595,7 +2595,7 @@
   }
  ],
  "since_fact": 12,
- "next_post_at": "2026-11-22T09:00:29+00:00",
+ "next_post_at": "2026-11-22T17:08:32+00:00",
  "recent": [
   {
    "title": "Can Colleges Achieve Viewpoint Diversity Without ‘Affirmative Action for Conservatives’?",
@@ -3207,7 +3207,7 @@
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-20T11:15:11+00:00",
- "ranking_day": "2026-11-21",
+ "ranking_day": "2026-11-22",
  "rank_hist": [
   "arwus:2026:0",
   "gras:2026:AS0215",
@@ -3246,7 +3246,8 @@
   "gras:2026:AS0301",
   "records",
   "grasc:2026:AS0202:Australia",
-  "grasc:2026:AS0103:United States"
+  "grasc:2026:AS0103:United States",
+  "grasc:2026:AS0208:Canada"
  ],
  "profiled": [
   "Rockefeller University",
