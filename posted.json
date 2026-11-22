@@ -2047,7 +2047,23 @@
   "de4e289ea610",
   "a6f299bb7eb0",
   "774d92d73f68",
-  "50ac6992c606"
+  "50ac6992c606",
+  "300213e61b48",
+  "6bfc22039f06",
+  "8a2dbf593542",
+  "1ae76073d764",
+  "d86a93e6eb63",
+  "60fa3497653f",
+  "fb014a1e7ee7",
+  "d1e96f4988a8",
+  "4829fda5229d",
+  "6f1ac1be7637",
+  "cf136eb3c9e5",
+  "b2402f625d2c",
+  "37f57ebd81a8",
+  "9884dabb702d",
+  "ae2b5cf58ec3",
+  "2f795dcf5334"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2462,17 +2478,6 @@
    "tier": "reserve"
   },
   {
-   "id": "3ecaa487d95b",
-   "link": "https://thepienews.com/record-400m-erasmus-funding-opens-international-opportunities-for-uk/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "Record £400m Erasmus+ funding opens international opportunities for UK",
-   "date": "2026-11-19T12:54:40+00:00",
-   "rating": 7.5,
-   "timely": 1,
-   "tier": "top"
-  },
-  {
    "id": "acf1fa3f77ee",
    "link": "https://www.insidehighered.com/news/admissions/traditional-age/2026/11/19/will-more-international-students-enroll-next-year",
    "outlet": "Inside Higher Ed",
@@ -2594,13 +2599,9 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 12,
- "next_post_at": "2026-11-22T17:08:32+00:00",
+ "since_fact": 13,
+ "next_post_at": "2026-11-22T23:11:36+00:00",
  "recent": [
-  {
-   "title": "Can Colleges Achieve Viewpoint Diversity Without ‘Affirmative Action for Conservatives’?",
-   "outlet": "Inside Higher Ed"
-  },
   {
    "title": "New injection makes fat cells self-destruct",
    "outlet": "ScienceDaily"
@@ -3196,12 +3197,16 @@
   {
    "title": "200k UK-EU youth mobility places agreed as tuition fee decision delayed",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Record £400m Erasmus+ funding opens international opportunities for UK",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "The Hechinger Report",
   "The PIE News",
   "Inside Higher Ed",
+  "The PIE News",
   "The PIE News",
   "The PIE News"
  ],
