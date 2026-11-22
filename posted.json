@@ -2046,7 +2046,8 @@
   "4c9896fc58b7",
   "de4e289ea610",
   "a6f299bb7eb0",
-  "774d92d73f68"
+  "774d92d73f68",
+  "50ac6992c606"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2505,17 +2506,6 @@
    "tier": "reserve"
   },
   {
-   "id": "8da598244bbc",
-   "link": "https://www.highereddive.com/news/senate-appropriations-committee-proposes-15b-in-additional-pell-grant-fund/875275/",
-   "outlet": "Higher Ed Dive",
-   "kind": "admissions",
-   "title": "Senate appropriations committee proposes $15B in additional Pell Grant funding",
-   "date": "2026-11-19T17:57:00-05:00",
-   "rating": 7.6,
-   "timely": 1,
-   "tier": "top"
-  },
-  {
    "id": "79a7e2d0cf50",
    "link": "https://www.highereddive.com/news/passhe-moves-to-close-commonwealth-universitys-mansfield-campus/875127/",
    "outlet": "Higher Ed Dive",
@@ -2547,17 +2537,6 @@
    "rating": 6.6,
    "timely": 0,
    "tier": "reserve"
-  },
-  {
-   "id": "c965cd185399",
-   "link": "https://thepienews.com/200k-uk-eu-youth-mobility-places-agreed-as-tuition-fee-decision-delayed/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "200k UK-EU youth mobility places agreed as tuition fee decision delayed",
-   "date": "2026-11-20T15:40:47+00:00",
-   "rating": 7.9,
-   "timely": 1,
-   "tier": "top"
   },
   {
    "id": "1f7371d321a7",
@@ -2615,13 +2594,9 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 11,
- "next_post_at": "2026-11-21T22:27:36+00:00",
+ "since_fact": 12,
+ "next_post_at": "2026-11-22T03:03:12+00:00",
  "recent": [
-  {
-   "title": "ITECA warns Australian policy is “choking” international education and skills pipeline",
-   "outlet": "The PIE News"
-  },
   {
    "title": "Can Colleges Achieve Viewpoint Diversity Without ‘Affirmative Action for Conservatives’?",
    "outlet": "Inside Higher Ed"
@@ -3217,13 +3192,17 @@
   {
    "title": "“A one-year decline is not a one-year problem”: America’s shrinking talent pipeline",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "200k UK-EU youth mobility places agreed as tuition fee decision delayed",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "The Hechinger Report",
   "The PIE News",
   "Inside Higher Ed",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
