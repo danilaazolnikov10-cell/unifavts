@@ -2064,7 +2064,47 @@
   "9884dabb702d",
   "ae2b5cf58ec3",
   "2f795dcf5334",
-  "e31c1b542f81"
+  "e31c1b542f81",
+  "f7d3b4867b11",
+  "f3fd81bd31d7",
+  "02af000e203f",
+  "646ccdb8bd5c",
+  "d3ffaa9a56da",
+  "02839082ff9f",
+  "25af7379426c",
+  "d7229f632137",
+  "bac9e080d06b",
+  "a82e1c0977e5",
+  "b80c607cfb59",
+  "67813de0a1c8",
+  "35535c48a5a6",
+  "559936212336",
+  "ba370a553b87",
+  "5ecf837b9719",
+  "9c079ad7f691",
+  "8adea61f8135",
+  "8047a786f444",
+  "75275dfbd530",
+  "478879921c05",
+  "dc02d0ba7ca7",
+  "00448dc0214e",
+  "3d84f8f36717",
+  "6ea68965c428",
+  "21877946cb9a",
+  "9e1a831cc649",
+  "ef0d772fdac1",
+  "92cef78e55f4",
+  "79a14d5b63fd",
+  "97aec4e37c9b",
+  "b0b5231f2f6b",
+  "587aaaa0e06a",
+  "fc56d688704d",
+  "93e0a0e29ef6",
+  "28131f5d3c28",
+  "aae762afbfb3",
+  "2c4cf4d38e75",
+  "2b121389b164",
+  "781c0604c48f"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2587,15 +2627,66 @@
    "rating": 6.1,
    "timely": 0,
    "tier": "reserve"
+  },
+  {
+   "id": "5ecf837b9719",
+   "link": "https://thepienews.com/universities-urged-to-rethink-expansion-at-going-global-2026/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Universities urged to rethink expansion at Going Global 2026",
+   "date": "2026-11-23T13:10:49+00:00",
+   "rating": 7.0,
+   "timely": 1,
+   "tier": "top"
+  },
+  {
+   "id": "9e1a831cc649",
+   "link": "https://www.insidehighered.com/news/quick-takes/2026/11/23/arizona-universities-defer-rush-spring-semester",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "Arizona Universities Push Rush to Spring Semester",
+   "date": "2026-11-23T08:00:00+00:00",
+   "rating": 6.5,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "93e0a0e29ef6",
+   "link": "https://www.insidehighered.com/news/government/science-research-policy/2026/11/23/vaccine-injuries-5g-harms-and-more-research",
+   "outlet": "Inside Higher Ed",
+   "kind": "admissions",
+   "title": "Vaccine Injuries, 5G Harms and More: The Research Trump Is Funding",
+   "date": "2026-11-23T08:00:00+00:00",
+   "rating": 6.1,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "2b121389b164",
+   "link": "https://www.sciencealert.com/after-60-years-chemists-finally-isolate-elusive-molecules-thought-too-unstable-to-survive",
+   "outlet": "ScienceAlert",
+   "kind": "science",
+   "title": "After 60 Years, Chemists Finally Isolate Elusive Molecules Thought Too Unstable to Survive",
+   "date": "2026-11-23T06:00:00+00:00",
+   "rating": 7.1,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "781c0604c48f",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261122060338.htm",
+   "outlet": "ScienceDaily",
+   "kind": "science",
+   "title": "Archaeologists reveal a powerful Iron Age king may have been a woman",
+   "date": "2026-11-23T00:30:23-05:00",
+   "rating": 6.1,
+   "timely": 0,
+   "tier": "reserve"
   }
  ],
- "since_fact": 14,
- "next_post_at": "2026-11-23T11:51:08+00:00",
+ "since_fact": 15,
+ "next_post_at": "2026-11-24T00:03:22+00:00",
  "recent": [
-  {
-   "title": "NASA Develops Batteries to Power Humanity’s Return to Moon",
-   "outlet": "NASA"
-  },
   {
    "title": "How NYU Can Fix Its Free Speech Crisis",
    "outlet": "Inside Higher Ed"
@@ -3191,14 +3282,18 @@
   {
    "title": "International Student Enrollment Down 9% in Fall 2026",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "Passage acquires Kira Talent from ETS in AI admissions push",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
+  "The PIE News",
+  "The PIE News",
+  "The PIE News",
   "Inside Higher Ed",
-  "The PIE News",
-  "The PIE News",
-  "The PIE News",
-  "Inside Higher Ed"
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-20T11:15:11+00:00",
