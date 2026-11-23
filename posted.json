@@ -2063,7 +2063,8 @@
   "37f57ebd81a8",
   "9884dabb702d",
   "ae2b5cf58ec3",
-  "2f795dcf5334"
+  "2f795dcf5334",
+  "e31c1b542f81"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2379,17 +2380,6 @@
    "tier": "reserve"
   },
   {
-   "id": "a4a9ade6731e",
-   "link": "https://www.insidehighered.com/news/global/international-students-us/2026/11/16/international-student-enrollment-down-9-fall-2026",
-   "outlet": "Inside Higher Ed",
-   "kind": "admissions",
-   "title": "International Student Enrollment Down 9% in Fall 2026",
-   "date": "2026-11-16T08:00:00+00:00",
-   "rating": 8.0,
-   "timely": 1,
-   "tier": "reserve"
-  },
-  {
    "id": "63e33b4081ff",
    "link": "https://www.technologyreview.com/2026/11/17/1148049/roundtables-inside-the-quest-for-cognitive-immortality/",
    "outlet": "MIT Technology Review",
@@ -2599,13 +2589,9 @@
    "tier": "reserve"
   }
  ],
- "since_fact": 13,
- "next_post_at": "2026-11-22T23:11:36+00:00",
+ "since_fact": 14,
+ "next_post_at": "2026-11-23T03:49:27+00:00",
  "recent": [
-  {
-   "title": "New injection makes fat cells self-destruct",
-   "outlet": "ScienceDaily"
-  },
   {
    "title": "NASA Develops Batteries to Power Humanity’s Return to Moon",
    "outlet": "NASA"
@@ -3201,14 +3187,18 @@
   {
    "title": "Record £400m Erasmus+ funding opens international opportunities for UK",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "International Student Enrollment Down 9% in Fall 2026",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Inside Higher Ed",
   "The PIE News",
   "The PIE News",
-  "The PIE News"
+  "The PIE News",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-20T11:15:11+00:00",
