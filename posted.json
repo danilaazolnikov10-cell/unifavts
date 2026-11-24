@@ -2685,7 +2685,7 @@
   }
  ],
  "since_fact": 15,
- "next_post_at": "2026-11-24T07:23:28+00:00",
+ "next_post_at": "2026-11-24T18:48:03+00:00",
  "recent": [
   {
    "title": "How NYU Can Fix Its Free Speech Crisis",
@@ -3297,7 +3297,7 @@
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-20T11:15:11+00:00",
- "ranking_day": "2026-11-22",
+ "ranking_day": "2026-11-24",
  "rank_hist": [
   "arwus:2026:0",
   "gras:2026:AS0215",
@@ -3337,7 +3337,8 @@
   "records",
   "grasc:2026:AS0202:Australia",
   "grasc:2026:AS0103:United States",
-  "grasc:2026:AS0208:Canada"
+  "grasc:2026:AS0208:Canada",
+  "arwus:2026:70"
  ],
  "profiled": [
   "Rockefeller University",
