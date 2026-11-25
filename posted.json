@@ -2104,7 +2104,47 @@
   "aae762afbfb3",
   "2c4cf4d38e75",
   "2b121389b164",
-  "781c0604c48f"
+  "781c0604c48f",
+  "5e41773f7c06",
+  "082cb587f7e8",
+  "bfabfd5e8482",
+  "a0ea39e86246",
+  "f3ca5451c3c1",
+  "846e33022f1f",
+  "f78eeb5c4dbc",
+  "ba44a48be421",
+  "d97b36890430",
+  "d53362694930",
+  "0fc14089684c",
+  "40b4609b4a62",
+  "e073b66d8d6c",
+  "0d6c17c85dbc",
+  "8d0e58502c37",
+  "3800cfcd9fb2",
+  "f10fb9241afd",
+  "d97b339455e3",
+  "c218307c4bde",
+  "22d7270e7a58",
+  "5f55d62c42e4",
+  "ae81e9842c66",
+  "7b9fce499d3b",
+  "5ece1567bced",
+  "d65b8cff54e5",
+  "95e8c29b7d5e",
+  "4d3f1109582b",
+  "f423ade633ad",
+  "9f04eb00d9b2",
+  "02bb4402397a",
+  "356e35930276",
+  "f86adc29611e",
+  "d9e86a5d1c27",
+  "8456f1df2b47",
+  "448c8037ca55",
+  "c871e71d7349",
+  "d532f8a5c8b9",
+  "d1632c6ad8d3",
+  "3c2ebb70fa56",
+  "bdb5a69918f9"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2682,15 +2722,33 @@
    "rating": 6.1,
    "timely": 0,
    "tier": "reserve"
+  },
+  {
+   "id": "0d6c17c85dbc",
+   "link": "https://thepienews.com/brazils-bilingual-school-boom-fuels-study-abroad-ambitions/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Brazil’s bilingual school boom fuels study abroad ambitions",
+   "date": "2026-11-24T17:09:40+00:00",
+   "rating": 6.9,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "c218307c4bde",
+   "link": "https://monitor.icef.com/2026/11/the-changing-shape-of-japanese-student-mobility/",
+   "outlet": "ICEF Monitor",
+   "kind": "admissions",
+   "title": "The changing shape of Japanese student mobility",
+   "date": "2026-11-24T15:34:51+00:00",
+   "rating": 6.5,
+   "timely": 0,
+   "tier": "reserve"
   }
  ],
- "since_fact": 15,
- "next_post_at": "2026-11-24T18:48:03+00:00",
+ "since_fact": 16,
+ "next_post_at": "2026-11-25T03:55:27+00:00",
  "recent": [
-  {
-   "title": "How NYU Can Fix Its Free Speech Crisis",
-   "outlet": "Inside Higher Ed"
-  },
   {
    "title": "The eye has a hidden cleanup system scientists never knew existed",
    "outlet": "ScienceDaily"
@@ -3286,13 +3344,17 @@
   {
    "title": "Passage acquires Kira Talent from ETS in AI admissions push",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "US CPT ruling welcomed, but concerns over student confidence remain",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "The PIE News",
   "The PIE News",
-  "The PIE News",
   "Inside Higher Ed",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
