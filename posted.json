@@ -2144,7 +2144,47 @@
   "d532f8a5c8b9",
   "d1632c6ad8d3",
   "3c2ebb70fa56",
-  "bdb5a69918f9"
+  "bdb5a69918f9",
+  "ecb5d293ef4c",
+  "c0522b4ee074",
+  "7c3f08682427",
+  "f44291a2b4b1",
+  "8cd7bb44a04c",
+  "ddad6bd46fa1",
+  "8d2b6f887c4c",
+  "afc105b15bba",
+  "cf8860160a4b",
+  "0a54c50cca1e",
+  "72f4f8fdc090",
+  "15ee6e7dc247",
+  "2c204d0c0f42",
+  "1d9cf67cf255",
+  "05b1b424b020",
+  "f0f042e86b06",
+  "79d027e2e048",
+  "686282bfe0fd",
+  "af3029491a12",
+  "dd2885ab72f2",
+  "39da44040eda",
+  "1b2bc57310d8",
+  "8f5e714b16e1",
+  "4ed26426a8fe",
+  "16dfb72df17e",
+  "cb4782794f2f",
+  "9226f0797834",
+  "d4a89565eb20",
+  "ca4378cd23dc",
+  "c0800776025e",
+  "9fa176bc4670",
+  "e32fc517ad05",
+  "a4915d631e96",
+  "271b697964eb",
+  "b148682bb7fb",
+  "fbca22de7619",
+  "ad3dfb689e91",
+  "3299a9d6f1a5",
+  "510005df2a32",
+  "602ff95b1740"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2744,15 +2784,88 @@
    "rating": 6.5,
    "timely": 0,
    "tier": "reserve"
+  },
+  {
+   "id": "7c3f08682427",
+   "link": "https://www.highereddive.com/news/how-colleges-and-schools-can-grow-career-focused-dual-enrollment/875769/",
+   "outlet": "Higher Ed Dive",
+   "kind": "admissions",
+   "title": "How colleges and schools can grow career-focused dual enrollment",
+   "date": "2026-11-25T13:20:00-05:00",
+   "rating": 6.3,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "cf8860160a4b",
+   "link": "https://thepienews.com/china-looks-to-deepen-international-university-partnerships/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "China looks to deepen international university partnerships",
+   "date": "2026-11-25T16:21:06+00:00",
+   "rating": 6.5,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "15ee6e7dc247",
+   "link": "https://thepienews.com/uk-tne-expands-amid-uzbekistans-higher-education-boom/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "UK TNE expands amid Uzbekistan’s higher education boom",
+   "date": "2026-11-25T15:49:06+00:00",
+   "rating": 7.5,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "af3029491a12",
+   "link": "https://thepienews.com/push-immigration-minister-to-back-international-students-canadian-mp-urges/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Push immigration minister to back international students, Canadian MP urges",
+   "date": "2026-11-25T12:54:01+00:00",
+   "rating": 7.9,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "39da44040eda",
+   "link": "https://thepienews.com/after-a-decade-of-growth-whats-next-for-hungary-as-a-study-destination/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "After a decade of growth, what’s next for Hungary as a study destination?",
+   "date": "2026-11-25T11:27:25+00:00",
+   "rating": 6.5,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "16dfb72df17e",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261124055849.htm",
+   "outlet": "ScienceDaily",
+   "kind": "science",
+   "title": "Physicists trap antimatter in a breakthrough that could explain why the universe exists",
+   "date": "2026-11-25T05:06:22-05:00",
+   "rating": 6.0,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "d4a89565eb20",
+   "link": "https://thepienews.com/india-plans-iit-campus-in-nepal/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "India plans IIT campus in Nepal",
+   "date": "2026-11-25T09:00:00+00:00",
+   "rating": 8.4,
+   "timely": 1,
+   "tier": "top"
   }
  ],
- "since_fact": 16,
- "next_post_at": "2026-11-25T12:24:05+00:00",
+ "since_fact": 17,
+ "next_post_at": "2026-11-25T21:59:52+00:00",
  "recent": [
-  {
-   "title": "The eye has a hidden cleanup system scientists never knew existed",
-   "outlet": "ScienceDaily"
-  },
   {
    "title": "Student voice: How Malta turned an English course into a new beginning",
    "outlet": "The PIE News"
@@ -3348,14 +3461,18 @@
   {
    "title": "US CPT ruling welcomed, but concerns over student confidence remain",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "The 2027 Tipping Point: When Humanoid Robots Walk Onto Campus",
+   "outlet": "Inside Higher Ed"
   }
  ],
  "last_outlets": [
   "The PIE News",
-  "The PIE News",
   "Inside Higher Ed",
   "The PIE News",
-  "The PIE News"
+  "The PIE News",
+  "Inside Higher Ed"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-20T11:15:11+00:00",
