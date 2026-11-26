@@ -2184,7 +2184,22 @@
   "ad3dfb689e91",
   "3299a9d6f1a5",
   "510005df2a32",
-  "602ff95b1740"
+  "602ff95b1740",
+  "91374f1def80",
+  "cf8585134f55",
+  "dc6fbeafb878",
+  "0cce68e216c8",
+  "e91939e15f3f",
+  "a9fcd8a22136",
+  "f8165500d54b",
+  "cecb33e1b7ed",
+  "48e6eb0f71e2",
+  "45a8edf6953e",
+  "dd854c2367be",
+  "b5b507248c53",
+  "2e3dfe7e09d3",
+  "2d4c97de74e0",
+  "39d646e1f805"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2850,26 +2865,11 @@
    "rating": 6.0,
    "timely": 0,
    "tier": "reserve"
-  },
-  {
-   "id": "d4a89565eb20",
-   "link": "https://thepienews.com/india-plans-iit-campus-in-nepal/",
-   "outlet": "The PIE News",
-   "kind": "admissions",
-   "title": "India plans IIT campus in Nepal",
-   "date": "2026-11-25T09:00:00+00:00",
-   "rating": 8.4,
-   "timely": 1,
-   "tier": "top"
   }
  ],
- "since_fact": 17,
- "next_post_at": "2026-11-25T21:59:52+00:00",
+ "since_fact": 18,
+ "next_post_at": "2026-11-26T03:48:55+00:00",
  "recent": [
-  {
-   "title": "Student voice: How Malta turned an English course into a new beginning",
-   "outlet": "The PIE News"
-  },
   {
    "title": "The hidden math of Alzheimer's could point to new treatments",
    "outlet": "ScienceDaily"
@@ -3465,14 +3465,18 @@
   {
    "title": "The 2027 Tipping Point: When Humanoid Robots Walk Onto Campus",
    "outlet": "Inside Higher Ed"
+  },
+  {
+   "title": "India plans IIT campus in Nepal",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "The PIE News",
   "Inside Higher Ed",
   "The PIE News",
   "The PIE News",
-  "Inside Higher Ed"
+  "Inside Higher Ed",
+  "The PIE News"
  ],
  "arwu_year": 2026,
  "arwu_year_at": "2026-11-20T11:15:11+00:00",
