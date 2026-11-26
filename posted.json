@@ -2199,7 +2199,27 @@
   "b5b507248c53",
   "2e3dfe7e09d3",
   "2d4c97de74e0",
-  "39d646e1f805"
+  "39d646e1f805",
+  "83b82b256213",
+  "2549be15374e",
+  "fd35264a3a9c",
+  "6e910b85e0ae",
+  "dcc1ec53a120",
+  "4bb183e1d96b",
+  "df757b3ca1dd",
+  "90d5b858865a",
+  "2964048fefbd",
+  "d25a45a9e68e",
+  "45bf85215b6d",
+  "d3b576197c67",
+  "33bbc8519c05",
+  "8ec4dc28688b",
+  "34e52cea82e0",
+  "3351794e6a63",
+  "3f56ca1bcbbc",
+  "d4ca1bd6c0ba",
+  "1ebb5952d094",
+  "cfea6ef40c3a"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2865,15 +2885,55 @@
    "rating": 6.0,
    "timely": 0,
    "tier": "reserve"
+  },
+  {
+   "id": "2549be15374e",
+   "link": "https://monitor.icef.com/2026/11/leakproofing-a-toolkit-for-optimising-your-enrolment-pipeline/",
+   "outlet": "ICEF Monitor",
+   "kind": "admissions",
+   "title": "Leakproofing: A toolkit for optimising your enrolment pipeline",
+   "date": "2026-11-26T19:05:24+00:00",
+   "rating": 6.5,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "6e910b85e0ae",
+   "link": "https://thepienews.com/nepals-new-rules-could-push-responsible-education-agencies-out-of-business/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Nepal’s new rules could push responsible education agencies out of business",
+   "date": "2026-11-26T16:40:04+00:00",
+   "rating": 7.5,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "2964048fefbd",
+   "link": "https://thepienews.com/australia-faces-challenging-2027-as-early-international-student-figures-emerge/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Australia faces challenging 2027 as early international student figures emerge",
+   "date": "2026-11-26T11:37:12+00:00",
+   "rating": 8.0,
+   "timely": 0,
+   "tier": "reserve"
+  },
+  {
+   "id": "d25a45a9e68e",
+   "link": "https://thepienews.com/iran-looks-to-online-courses-to-recruit-students-in-kenya/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Iran looks to online courses to recruit students in Kenya",
+   "date": "2026-11-26T11:31:49+00:00",
+   "rating": 6.0,
+   "timely": 0,
+   "tier": "reserve"
   }
  ],
- "since_fact": 18,
- "next_post_at": "2026-11-26T13:17:22+00:00",
+ "since_fact": 19,
+ "next_post_at": "2026-11-26T23:43:32+00:00",
  "recent": [
-  {
-   "title": "The hidden math of Alzheimer's could point to new treatments",
-   "outlet": "ScienceDaily"
-  },
   {
    "title": "The PIE Live Ireland – live feed",
    "outlet": "The PIE News"
@@ -3469,13 +3529,17 @@
   {
    "title": "India plans IIT campus in Nepal",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "UK study visa refusals hit highest rate in over a decade as withdrawals soar",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
-  "Inside Higher Ed",
   "The PIE News",
   "The PIE News",
   "Inside Higher Ed",
+  "The PIE News",
   "The PIE News"
  ],
  "arwu_year": 2026,
