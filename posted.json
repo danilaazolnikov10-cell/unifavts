@@ -2219,7 +2219,29 @@
   "3f56ca1bcbbc",
   "d4ca1bd6c0ba",
   "1ebb5952d094",
-  "cfea6ef40c3a"
+  "cfea6ef40c3a",
+  "b4e61911e477",
+  "a6ed1724a186",
+  "38d3debad854",
+  "8321e5c4a364",
+  "e0750e6833be",
+  "75aa51f4c5f8",
+  "89e9fd561ff7",
+  "b326c4bb9688",
+  "286b8fcfed26",
+  "f7c430bedf7a",
+  "0d471d657ef1",
+  "dcbee2fc29c2",
+  "aa2c21499aa3",
+  "5f39c49e0cda",
+  "77bdaced24fd",
+  "96f7a47322cd",
+  "2b68afbc271e",
+  "2d9b3075b76d",
+  "ea8acbe657f6",
+  "91c2507a28b4",
+  "b1139b396949",
+  "086c38bcd379"
  ],
  "last_kind": "admissions",
  "extra_universities": [
@@ -2752,7 +2774,7 @@
    "date": "2026-11-23T13:10:49+00:00",
    "rating": 7.0,
    "timely": 1,
-   "tier": "top"
+   "tier": "reserve"
   },
   {
    "id": "9e1a831cc649",
@@ -2929,15 +2951,33 @@
    "rating": 6.0,
    "timely": 0,
    "tier": "reserve"
+  },
+  {
+   "id": "f7c430bedf7a",
+   "link": "https://www.technologyreview.com/2026/11/27/1149946/cutting-edge-prosthetics-allow-researchers-to-probe-the-human-mind/",
+   "outlet": "MIT Technology Review",
+   "kind": "science",
+   "title": "How cutting-edge prosthetics can help probe the human mind",
+   "date": "2026-11-27T10:00:00+00:00",
+   "rating": 6.6,
+   "timely": 1,
+   "tier": "reserve"
+  },
+  {
+   "id": "77bdaced24fd",
+   "link": "https://thepienews.com/goverment-urges-universities-to-move-away-from-static-models/",
+   "outlet": "The PIE News",
+   "kind": "admissions",
+   "title": "Universities urged to abandon ‘static’ models amid global uncertainty",
+   "date": "2026-11-27T08:30:00+00:00",
+   "rating": 6.5,
+   "timely": 0,
+   "tier": "reserve"
   }
  ],
- "since_fact": 19,
- "next_post_at": "2026-11-27T14:29:26+00:00",
+ "since_fact": 20,
+ "next_post_at": "2026-11-28T00:13:12+00:00",
  "recent": [
-  {
-   "title": "The PIE Live Ireland – live feed",
-   "outlet": "The PIE News"
-  },
   {
    "title": "5 Colleges Sign On as Founding Members of New Accreditor",
    "outlet": "Inside Higher Ed"
@@ -3533,12 +3573,16 @@
   {
    "title": "UK study visa refusals hit highest rate in over a decade as withdrawals soar",
    "outlet": "The PIE News"
+  },
+  {
+   "title": "Canada plans 2027 pilot to speed up study-permit processing",
+   "outlet": "The PIE News"
   }
  ],
  "last_outlets": [
   "The PIE News",
-  "The PIE News",
   "Inside Higher Ed",
+  "The PIE News",
   "The PIE News",
   "The PIE News"
  ],
